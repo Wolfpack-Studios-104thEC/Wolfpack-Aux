@@ -227,7 +227,7 @@ class CfgAmmo
 		tracerScale=5;
 		tracerStartTime=0;
 		tracerEndTime=10;
-		model="3AS\3as_Weapons\Data\tracer_shell_green";
+		model="3AS\3as_Weapons\Data\tracer_shell_green.p3d";
 	};
 	class 104th_B_GreenPlasma_127_GPR: B_20mm
 	{
@@ -250,7 +250,7 @@ class CfgAmmo
 		tracerStartTime=0;
 		tracerEndTime=10;
 		deflecting=0;
-		model="3AS\3as_Weapons\Data\tracer_shell_green";
+		model="3AS\3as_Weapons\Data\tracer_shell_green.p3d";
 		effectFly="3AS_PlasmaBolt_Medium_Green_Fly";
 	};
 	class 104th_SuperLaser_shot: ShellBase
@@ -281,28 +281,28 @@ class CfgAmmo
 		muzzleEffect="";
 		soundHit1[]=
 		{
-			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01",
+			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01.wss",
 			1.7782794,
 			1,
 			1800
 		};
 		soundHit2[]=
 		{
-			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02",
+			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02.wss",
 			1.7782794,
 			1,
 			1800
 		};
 		soundHit3[]=
 		{
-			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03",
+			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03.wss",
 			1.7782794,
 			1,
 			1800
 		};
 		soundHit4[]=
 		{
-			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04",
+			"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04.wss",
 			1.7782794,
 			1,
 			1800
@@ -1187,7 +1187,7 @@ class CfgWeapons
 		nameSound="cannon";
 		sound[]=
 		{
-			"A3\sounds_f\dummysound",
+			"A3\sounds_f\dummysound.wss",
 			2.5118864,
 			1,
 			1800
@@ -1408,14 +1408,14 @@ class CfgWeapons
 		nameSound="cannon";
 		reloadSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\Cannon_120mm_Reload_01",
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\Cannon_120mm_Reload_01.wss",
 			2.5118864,
 			1,
 			10
 		};
 		reloadMagazineSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\Cannon_120mm_Reload_01",
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\Cannon_120mm_Reload_01.wss",
 			2.5118864,
 			1,
 			10
@@ -1688,20 +1688,20 @@ class CfgWeapons
 		};
 		soundfly[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
 			3,
 			1,
 			2000
 		};
 		lockingTargetSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan.wss",
 			0.56234133,
 			1
 		};
 		lockedTargetSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan.wss",
 			0.56234133,
 			2.5
 		};
@@ -1727,20 +1727,20 @@ class CfgWeapons
 		};
 		soundfly[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
 			3,
 			1,
 			2000
 		};
 		lockingTargetSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan.wss",
 			0.56234133,
 			1
 		};
 		lockedTargetSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan.wss",
 			0.56234133,
 			2.5
 		};
@@ -1767,7 +1767,7 @@ class CfgWeapons
 		};
 		soundfly[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
 			3,
 			1,
 			2000
@@ -1795,7 +1795,7 @@ class CfgWeapons
 		};
 		soundfly[]=
 		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
 			3,
 			1,
 			2000

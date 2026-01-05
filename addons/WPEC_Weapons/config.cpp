@@ -436,21 +436,21 @@ class CfgAmmo
 		allowAgainstInfantry=0;
 		soundHit1[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01.wss",
 			2.5118864,
 			1,
 			1800
 		};
 		soundHit2[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02.wss",
 			2.5118864,
 			1,
 			1800
 		};
 		soundHit3[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03.wss",
 			2.5118864,
 			1,
 			1800
@@ -466,7 +466,7 @@ class CfgAmmo
 		};
 		soundFly[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32",
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32.wss",
 			0.31622776,
 			1.5,
 			900
@@ -878,7 +878,7 @@ class CfgMagazines
 		initSpeed=470;
 		tracersEvery=1;
 		lastRoundsTracer=100;
-		modelSpecial="3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel";
+		modelSpecial="3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel.p3d";
 		modelSpecialIsProxy=1;
 	};
 	class 104th_3AS_WestarM5_Mag: 3AS_60Rnd_EC50_Mag
@@ -900,7 +900,7 @@ class CfgMagazines
 		displayName="[104th] Commando Light AT Shot";
 		ammo="104th_3AS_RocketGrenade_HE_Commando";
 		count=1;
-		modelSpecial="3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel";
+		modelSpecial="3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel.p3d";
 		modelSpecialIsProxy=1;
 	};
 	class 104th_3AS_Z6_Mag: 3AS_300Rnd_EC60_Mag
@@ -1676,14 +1676,14 @@ class CfgWeapons
 		};
 		drySound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32",
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32.wss",
 			0.44668359,
 			1,
 			20
 		};
 		reloadMagazineSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32",
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32.wss",
 			0.25118864,
 			1,
 			10
@@ -1772,14 +1772,14 @@ class CfgWeapons
 		};
 		drySound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32",
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32.wss",
 			0.44668359,
 			1,
 			20
 		};
 		reloadMagazineSound[]=
 		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32",
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32.wss",
 			0.25118864,
 			1,
 			10
@@ -2227,7 +2227,7 @@ class CfgWeapons
 		muzzles[] = {"this"};
 		magazines[] = {};
 		JLTS_isFried = 1;
-		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx.wss",0.562341,1,10};
 	};
 	class GrenadeLauncher;
 	class Throw: GrenadeLauncher

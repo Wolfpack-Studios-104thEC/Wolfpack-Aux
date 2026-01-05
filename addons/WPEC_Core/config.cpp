@@ -1,22 +1,19 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.45
-//https://mikero.bytex.digital/Downloads
-//'now' is Wed Apr 24 11:48:44 2024 : 'file' last modified on Wed Apr 17 19:43:44 2024
-////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#include "script_component.hpp"
 
-class CfgPatches
-{
-	class WPEC_Core
-	{
-		author = "Wolfpack Studios";
-		units[] = {};
-		weapons[] = {};
-		requiredAddons[] = {"A3_Data_F_Enoch_Loadorder","CBA_MAIN"};
-		requiredversion = 0.1;
-	};
+class CfgPatches {
+    class ADDON {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"A3_Data_F_Enoch_Loadorder","CBA_MAIN"};
+        author = AUTHOR;
+        authors[] = {""};
+        url = CSTRING(URL);
+        VERSION_CONFIG;
+    };
 };
 class CfgFactionClasses
 {
