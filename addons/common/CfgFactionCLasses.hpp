@@ -1,6 +1,6 @@
 class CfgFactionClasses
 {
-	class WPEC_Category_EclipseCompany
+	class EGVAR(faction,eclipse)
 	{
 		displayName = "104th Eclipse Company";
 		priority = 2;

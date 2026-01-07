@@ -1,6 +1,6 @@
 class CfgEditorCategories
 {
-	class WPEC_categoryEmpty
+	class EGVAR(edcat,aux)
 	{
 		displayName = "104th Auxiliary Assets";
 	};

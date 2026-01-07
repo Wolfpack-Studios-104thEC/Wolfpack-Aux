@@ -1,19 +1,20 @@
 class CfgEditorSubcategories
 {
-	class WPEC_Subcategory_Trooper
+	class EGVAR(edsubcat,trooper)
 	{
 		displayName = "104th EC Trooper";
 	};
-	class WPEC_subcategoryAircraftRotary
+	class EGVAR(edsubcat,heli)
 	{
 		displayName = "104th Aircraft (Rotary-Wing)";
 	};
-	class WPEC_Subcategory_Gonk
+	class EGVAR(edsubcat,gonk)
 	{
 		displayName = "Gonk Droids";
 	};
-	class WPEC_Subcategory_Aries
+	class EGVAR(edsubcat,aries)
 	{
 		displayName = "104th Aries";
 	};
+	class GVAR(Test)
 };
