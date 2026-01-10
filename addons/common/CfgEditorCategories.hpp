@@ -2,6 +2,6 @@ class CfgEditorCategories
 {
 	class EGVAR(edcat,aux)
 	{
-		displayName = "104th Auxiliary Assets";
+		displayName = "[104th] Auxiliary Assets";
 	};
 };
