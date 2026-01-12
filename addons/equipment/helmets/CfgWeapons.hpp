@@ -1,5 +1,8 @@
 class CfgWeapons {
     class WPS_Phase_2_Helmet_Base;
+    class WPS_Phase_2_ARC_Helmet_Base;
+
+    //P2
     P2_HELMET_RANK_MACRO(2,CR);
     P2_HELMET_RANK_MACRO(2,CT);
     P2_HELMET_RANK_MACRO(2,SCT);
@@ -40,4 +43,16 @@ class CfgWeapons {
 
     P2_HELMET_CUSTOM_GLOW_MACRO(2,Odin,Glow);
     P2_HELMET_CUSTOM_GLOW_MACRO(2,Ricebowl,White);
+
+    //ARC
+    ARC_HELMET_RANK_MACRO(2,Trainee);
+    ARC_HELMET_RANK_MACRO(2,Veteran);
+
+    ARC_HELMET_CUSTOM_MACRO(2,Blue);
+    ARC_HELMET_CUSTOM_MACRO(2,Nook);
+    ARC_HELMET_CUSTOM_MACRO(2,Boxing);
+    ARC_HELMET_CUSTOM_MACRO(2,Husky);
+    ARC_HELMET_CUSTOM_MACRO(2,Firehawk);
+
+    ARC_HELMET_CUSTOM_GLOW_MACRO(2,Graves,Chrome);
 };
