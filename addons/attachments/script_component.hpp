@@ -1,6 +1,6 @@
 #define COMPONENT attachments
 #define COMPONENT_BEAUTIFIED Attachments
-#include "\Z\Wolfpack-Core\addons\main\script_mod.hpp"
+#include "\Z\wpec\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,4 +14,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_ATTACHMENTS
 #endif
 
-#include "\Z\Wolfpack-Core\addons\main\script_macros.hpp"
+#include "\Z\wpec\addons\main\script_macros.hpp"

@@ -235,4 +235,4 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
     };\
 }
 
-#include "\z\Wolfpack-Core\addons\equipment\script_component.hpp"
+#include "\z\wpec\addons\equipment\script_component.hpp"

@@ -1,6 +1,6 @@
 #define COMPONENT helmets
 #define COMPONENT_BEAUTIFIED Helmets
-#include "\Z\Wolfpack-Core\addons\main\script_mod.hpp"
+#include "\Z\wpec\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,4 +14,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_HELMETS
 #endif
 
-#include "\Z\Wolfpack-Core\addons\main\script_macros.hpp"
+#include "\Z\wpec\addons\main\script_macros.hpp"

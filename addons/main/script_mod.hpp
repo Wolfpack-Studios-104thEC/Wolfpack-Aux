@@ -20,8 +20,17 @@
 
 #define RELEASE_BUILD
 
-#ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(wpec - COMPONENT_BEAUTIFIED)
+
+#ifdef SUBCOMPONENT
+    #ifdef SUBCOMPONENT_BEAUTIFIED
+        #define COMPONENT_NAME QUOTE(Wolfpack-core - SUBCOMPONENT_BEAUTIFIED)
+    #else
+        #define COMPONENT_NAME QUOTE(Wolfpack-core - SUBCOMPONENT)
+    #endif
 #else
-    #define COMPONENT_NAME QUOTE(wpec - COMPONENT)
+    #ifdef COMPONENT_BEAUTIFIED
+        #define COMPONENT_NAME QUOTE(Wolfpack-core - COMPONENT_BEAUTIFIED)
+    #else
+        #define COMPONENT_NAME QUOTE(Wolfpack-core - COMPONENT)
+    #endif
 #endif

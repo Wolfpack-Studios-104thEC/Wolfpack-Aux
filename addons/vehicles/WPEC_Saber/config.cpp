@@ -1,14 +1,3 @@
-class CfgPatches
-{
-	class WPEC_3AS_SaberTank
-	{
-		author = "Queue";
-		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Armor_F_Beta","3AS_Main","3AS_Animations","3AS_UTAT"};
-		units[] = {"WPEC_Saber", "WPEC_Saber_AshHound", "WPEC_Super_Saber", "WPEC_Super_Saber_AshHound"};
-		weapons[] = {};
-	};
-};
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;

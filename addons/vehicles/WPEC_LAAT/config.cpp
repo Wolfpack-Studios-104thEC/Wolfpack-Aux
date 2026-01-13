@@ -13,29 +13,6 @@
 #define Private 0
 #define Protected 1
 #define Public 2
-
-class CfgPatches
-{
-	class WPEC_VehicleLaat
-	{
-		author="Maldova";
-		requiredAddons[]=
-		{
-			"WPEC_VehicleWeapons",
-			"WPEC_3AS_Weapons",
-			"WPEC_Core",
-			"3AS_LAAT"
-		};
-		requiredVersion=0.1;
-		units[]=
-		{
-			"104th_3AS_LAAT_Turrets",
-			"104th_3AS_LAAT_Doors",
-			"104th_3AS_LAAT_Floodlights"
-		};
-		weapons[]={};
-	};
-};
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;

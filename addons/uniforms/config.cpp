@@ -1,15 +1,18 @@
 #define _ARMA_
+#include "script_component.hpp"
 
-class CfgPatches
-{
-	class WPEC_Armor
-	{
-		author = "Queue";
-		units[] = {"WPEC_Phase_2_Unit_Base_New","WPEC_Phase_2_Command_Unit_Base_New","WPEC_Phase_2_ARC_Unit_Base_New","WPEC_Phase_2_Unit_Trooper","WPEC_Phase_2_Unit_Trooper_VCT","WPEC_Phase_2_Unit_Trooper_Medic_CSP1","WPEC_Phase_2_Unit_Trooper_Medic_CSP2","WPEC_Phase_2_Unit_Trooper_CSP1","WPEC_Phase_2_Unit_Trooper_CSP2","WPEC_Phase_2_Unit_Trooper_CLC","WPEC_Phase_2_Unit_Trooper_CS","WPEC_Phase_2_Unit_Trooper_Command"};
-		weapons[] = {"WPEC_Phase_2_Uniform_Base_New","WPEC_Phase_2_Command_Uniform_Base_New","WPEC_Phase_2_ARC_Uniform_Base_New","WPEC_Phase_2_Uniform_Base_New_CT","WPEC_Phase_2_Uniform_Base_New_VCT","WPEC_Phase_2_Uniform_Base_New_Medic_CSP1","WPEC_Phase_2_Uniform_Base_New_Medic_CSP2","WPEC_Phase_2_Uniform_Base_New_CSP1","WPEC_Phase_2_Uniform_Base_New_CSP2","WPEC_Phase_2_Uniform_Base_New_CLC","WPEC_Phase_2_Uniform_Base_New_NCO",};
-		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_characters_f","WPS_Uniforms","WPEC_Core"};
-	};
+class CfgPatches {
+    class ADDON {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {};
+        author = AUTHOR;
+        authors[] = {""};
+        url = ECSTRING(main,URL);
+        VERSION_CONFIG;
+    };
 };
 class CfgWeapons
 {

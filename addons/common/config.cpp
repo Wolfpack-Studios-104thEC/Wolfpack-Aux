@@ -6,9 +6,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {""};
+        requiredAddons[] = {QE_ADDON(main)};
         author = AUTHOR;
-        authors[] = {""};
+        authors[] = {AUTHOR};
         url = CSTRING(URL);
         VERSION_CONFIG;
     };

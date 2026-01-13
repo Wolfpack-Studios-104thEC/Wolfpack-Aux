@@ -1,58 +1,17 @@
-class CfgPatches
-{
-	class WPEC_VehicleWeapons
-	{
-		units[]={};
-		weapons[]=
-		{
-			"104th_LAAT_Cannon_Low",
-			"104th_LAAT_Cannon_High",
-			"104th_Maramu_A2A_MissileSystem",
-			"104th_Hoska_A2A_MissileSystem",
-			"104th_Dianoga_WGM_MissileSystem",
-			"104th_Kaada_DF_MissileSystem"
-		};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Weapons_F",
-			"WPEC_Core"
-		};
-		magazines[]=
-		{
-			"104th_2000Rnd_LAAT_laser",
-			"104th_LAAT_Cannon_LowPower_Magazine",
-			"104th_LAAT_Cannon_HighPower_Magazine",
-			"4Rnd_104th_SuperLaser",
-			"4Rnd_104th_SuperLaser_HE",
-			"104th_Maramu_6Rnd_A2A_mag",
-			"104th_Hoska_6Rnd_A2A_mag",
-			"104th_Dianoga_4Rnd_WGM_mag",
-			"104th_Kaada_10Rnd_Unguided_Rocket_mag",
-			"104th_Loper_6Rnd_SR_Mag",
-			"104th_Loper_12Rnd_SR_Mag",
-			"104th_Nuna_12Rnd_SR_Mag",
-			"104th_Oslet_4Rnd_LR_Mag"
-		};
-		ammo[]=
-		{
-			"104th_B_redPlasma_40_GPR",
-			"104th_Ball_Turret",
-			"104th_B_GreenPlasma_127_GPR",
-			"104th_B_redPlasma_30mm_GPR",
-			"104th_SuperLaser_shot",
-			"104th_SuperLaser_shotHE",
-			"LAAT_Cannon_Ammo_Base",
-			"104th_LAAT_Cannon_LowPower_Ammo",
-			"104th_LAAT_Cannon_HighPower_Ammo",
-			"104th_Dianoga_WGM_Missile",
-			"104th_Kaada_Unguided_Rocket",
-			"104th_Loper_SR_AtA_Missile",
-			"104th_Nuna_SR_GP_Missile",
-			"104th_Maramu_A2A_Missile",
-			"104th_Hoska_A2A_Missile"
-		};
-	};
+#include "script_component.hpp"
+
+class CfgPatches {
+    class ADDON {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {};
+        author = AUTHOR;
+        authors[] = {""};
+        url = ECSTRING(main,URL);
+        VERSION_CONFIG;
+    };
 };
 class Mode_SemiAuto;
 class Mode_FullAuto;
