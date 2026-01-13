@@ -3,6 +3,7 @@ class CfgWeapons {
     class WPS_Phase_2_ARC_Helmet_Base;
     class WPS_ARF_Helmet_Base;
     class WPS_BARC_Helmet_Base;
+    class WPS_Engineer_Helmet_Base;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
@@ -103,4 +104,21 @@ class CfgWeapons {
     BARC_HELMET_CUSTOM_MACRO(2,Gus);
     BARC_HELMET_CUSTOM_MACRO(2,CJ);
     BARC_HELMET_CUSTOM_MACRO(2,Firehawk);
+
+//Engineer
+    class GHELMET(Phase2_Engineer_Billeted): WPS_Engineer_Helmet_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] Engineer Helmet";
+        picture = "\WPEC\WPEC_Helmets\icons\IconEngineer_co.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\engineer\rank\Phase2EngineerBillet_co.paa), QPATHTOF(helmets\data\engineer\light\EngineerLight_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
+    };
+
+    ENGINEER_HELMET_RANK_MACRO(2,Billeted);
+
+    ENGINEER_HELMET_CUSTOM_MACRO(2,Hippo);
+    ENGINEER_HELMET_CUSTOM_MACRO(2,Lone);
+    ENGINEER_HELMET_CUSTOM_MACRO(2,Paddy);
+    ENGINEER_HELMET_CUSTOM_MACRO(2,Shark);
 };
