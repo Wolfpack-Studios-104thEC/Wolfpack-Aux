@@ -2,6 +2,7 @@ class CfgWeapons {
     class WPS_Phase_2_Helmet_Base;
     class WPS_Phase_2_ARC_Helmet_Base;
     class WPS_ARF_Helmet_Base;
+    class WPS_BARC_Helmet_Base;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
@@ -46,7 +47,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_GLOW_MACRO(2,Ricebowl,White);
 
     //ARC
-    class WPEC_Phase_2_ARC_Helmet: WPS_Phase_2_ARC_Helmet_Base
+    class GHELMET(Phase2_ARC): WPS_Phase_2_ARC_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -67,7 +68,7 @@ class CfgWeapons {
     ARC_HELMET_CUSTOM_GLOW_MACRO(2,Graves,Chrome);
 
     //ARF
-    class WPEC_ARF_Helmet: WPS_ARF_Helmet_Base
+    class GHELMET(Phase2_ARF): WPS_ARF_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -81,4 +82,25 @@ class CfgWeapons {
     ARF_HELMET_CUSTOM_MACRO(2,Drom);
     ARF_HELMET_CUSTOM_MACRO(2,Spec);
     ARF_HELMET_CUSTOM_MACRO(2,Subbie);
+
+    //BARC
+    class GHELMET(Phase2_BARC): WPS_BARC_Helmet_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] BARC Helmet (Unmarked)";
+        picture = "\WPEC\WPEC_Helmets\icons\IconBARC_co.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\barc\rank\Phase2BARC_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
+
+        class XtdGearInfo { 
+            model = QGVAR(barc_rank); 
+            camo = QUOTE(name); 
+	}; 
+    };
+
+    BARC_HELMET_RANK_MACRO(2,Billeted);
+
+    BARC_HELMET_CUSTOM_MACRO(2,Gus);
+    BARC_HELMET_CUSTOM_MACRO(2,CJ);
+    BARC_HELMET_CUSTOM_MACRO(2,Firehawk);
 };

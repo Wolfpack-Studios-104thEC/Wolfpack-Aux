@@ -1,5 +1,5 @@
 //Config macro's go here
-
+//P@
 #define P2_HELMET_RANK_MACRO(scope,name)\
 	class GHELMET(phase2_##name##): WPS_Phase_2_Helmet_Base {\
 	scope = scope;\
@@ -34,6 +34,7 @@
 	}; \
 	}
 
+//ARC
 	#define ARC_HELMET_RANK_MACRO(scope,name)\
 	class GHELMET(arc_##name##): WPS_Phase_2_ARC_Helmet_Base {\
 	scope = scope;\
@@ -61,13 +62,14 @@
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 2 ARC (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\ARC\custom\Phase2ARC##name##_co.paa),QPATHTOF(helmets\data\arc\light\ARCLight_co.paa),QPATHTOF(helmets\data\visor\##color#\visor##color##_co.paa)};\
-	hiddenSelectionsMaterials[] = {"\WPS\WPS_Helmets\data\Phase2.rvmat", QPATHTOF(helmets\data\arc\light\ARCLight.rvmat),QPATHTOF(helmets\data\visor\##color##\Visor##color##.rvmat)};\
+	hiddenSelectionsMaterials[] = {QPATHTOF(helmets\data\arc\Phase2ARC.rvmat), QPATHTOF(helmets\data\arc\light\ARCLight.rvmat),QPATHTOF(helmets\data\visor\##color##\Visor##color##.rvmat)};\
 	class XtdGearInfo { \
 		model = QGVAR(arc_custom); \
 		camo = QUOTE(name); \
 	}; \
 	}
 
+//ARF
 	#define ARF_HELMET_RANK_MACRO(scope,name)\
 	class GHELMET(arf_##name##): WPS_ARF_Helmet_Base {\
 	scope = scope;\
@@ -86,6 +88,41 @@
 	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\ARF\custom\Phase2ARF##name##_co.paa),QPATHTOF(helmets\data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
 		model = QGVAR(arf_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define ARF_HELMET_CUSTOM_GLOW_MACRO(scope,name)\
+	class GHELMET(arf_##name##): WPS_ARF_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] ARF Helmet (name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\ARC\custom\Phase2ARC##name##_co.paa),QPATHTOF(helmets\data\visor\##color#\visor##color##_co.paa)};\
+	hiddenSelectionsMaterials[] = {QPATHTOF(helmets\data\arf\rank\ARF.rvmat),QPATHTOF(helmets\data\visor\##color##\Visor##color##.rvmat)};\
+	class XtdGearInfo { \
+		model = QGVAR(arf_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+//BARC
+#define BARC_HELMET_RANK_MACRO(scope,name)\
+	class GHELMET(barc_##name##): WPS_BARC_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] BARC Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\barc\rank\Phase2##name##_co.paa),QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(barc_rank); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define BARC_HELMET_CUSTOM_MACRO(scope,name)\
+	class GHELMET(barc_##name##): WPS_BARC_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] BARC Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\barc\custom\Phase2##name##_co.paa),QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(barc_custom); \
 		camo = QUOTE(name); \
 	}; \
 	}
