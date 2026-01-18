@@ -6,6 +6,7 @@ class CfgWeapons {
     class WPS_Engineer_Helmet_Base;
     class WPS_Phase_2_Pilot_Base;
     class WPS_Phase_2_Tanker_Helmet_Base;
+    class WPS_Phase_2_Airborne_Helmet_Base;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
@@ -50,7 +51,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_GLOW_MACRO(2,Ricebowl,White);
 
     //ARC
-    class GHELMET(Phase2_ARC): WPS_Phase_2_ARC_Helmet_Base
+    class GHELMET(ARC): WPS_Phase_2_ARC_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -71,7 +72,7 @@ class CfgWeapons {
     ARC_HELMET_CUSTOM_GLOW_MACRO(2,Graves,Chrome);
 
     //ARF
-    class GHELMET(Phase2_ARF): WPS_ARF_Helmet_Base
+    class GHELMET(ARF): WPS_ARF_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -87,7 +88,7 @@ class CfgWeapons {
     ARF_HELMET_CUSTOM_MACRO(2,Subbie);
 
     //BARC
-    class GHELMET(Phase2_BARC): WPS_BARC_Helmet_Base
+    class GHELMET(BARC): WPS_BARC_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -108,7 +109,7 @@ class CfgWeapons {
     BARC_HELMET_CUSTOM_MACRO(2,Firehawk);
 
 //Engineer
-    class GHELMET(Phase2_Engineer_Billeted): WPS_Engineer_Helmet_Base
+    class GHELMET(Engineer_Billeted): WPS_Engineer_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -124,7 +125,7 @@ class CfgWeapons {
     ENGINEER_HELMET_CUSTOM_MACRO(2,Paddy);
     ENGINEER_HELMET_CUSTOM_MACRO(2,Shark);
 
-    class GHELMET(Phase2_Pilot_Billetedd): WPS_Phase_2_Pilot_Base
+    class GHELMET(Pilot_Billetedd): WPS_Phase_2_Pilot_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -141,7 +142,7 @@ class CfgWeapons {
     PILOT_HELMET_CUSTOM_MACRO(2,Trash);
     PILOT_HELMET_CUSTOM_MACRO(2,Odin);
 
-    class GHELMET(Phase2_Tanker_Billeted): WPS_Phase_2_Tanker_Helmet_Base
+    class GHELMET(Tanker_Billeted): WPS_Phase_2_Tanker_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
@@ -155,7 +156,7 @@ class CfgWeapons {
     TANKER_HELMET_CUSTOM_MACRO(2,Gambler);
     TANKER_HELMET_CUSTOM_MACRO(2,Maverick);
 
-    class GHELMET(Phase2_Airborne_billeted): WPS_Phase_2_Airborne_Helmet_Base
+    class GHELMET(Airborne_billeted): WPS_Phase_2_Airborne_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;
