@@ -1,0 +1,37 @@
+[default]
+workshop = [
+    "3499977893",  # Advanced Dev Tools
+    "450814997",   # CBA_A3
+    "463939057",   # ACE
+    "894678801",   # TFAR Beta
+    "2162749089",  # LS: Core
+    "2320596778",  # LS: Battlefields
+    "1940589429",  # JLTS - The Great War
+    "2058554822",  # 3AS Beta
+    "2215872933",  # 3AS Terrains
+    "3020930712",  # Starforge Armory
+    "3388121219",  # Wolfpack Studios core
+    "2173635424",  # 501st Aux
+    "2291129343",  # Improved Melee System
+    "623475643",   # 3DEN Enhanced
+    "1779063631",  # Zeus Enhanced
+    "2522638637"  # ACEAX
+]
+parameters = []
+
+[anim]
+extends = "default"
+binarize = true
+file_patching = false
+
+[settings]
+extends = "default"
+workshop = []
+
+[ew]
+extends = "default"
+workshop = []
+
+[tpw]
+extends = "default"
+workshop = []
