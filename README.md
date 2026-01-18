@@ -37,6 +37,37 @@
 - Errors are probelms with the code that need to be fixed. It will be a big red error and show you what's wrong. These NEED to be fixed otherwise your mod will not build or run.
 - ALl of this information will popup in the terminal when you run `hemtt build` or `hemtt release`
 
+# Macro Usage
+
+## Class Names
+- Within the mod, rather than manually tpying out classnames we use macro'd classnames. Macro'd classnames help keep consistentcy within mods, as well avoids repeat classnames. Now if there are addon specific classnames, the information will be found in the `readme` of that addon, however common classnames will be found below.
+
+### GVAR
+- `GVAR` is the basic macro'd classname used among all pbos if a specific one isn't found. `GVAR` is a one variable macro, that pulls the prefix, addonname, and your variable into one classname. So if you do `GVAR(BASE)` inside of your `equipment` PBO, it will come out to `wpec_equipment_base`
+- To use the `GVAR`'d classnames among other pbos, use the next classname macro provided.
+- To create a Quoted version of the classname, just do `QGVAR`. This would work in strings or arrays.
+
+### EGVAR
+- `EGVAR` is a two step macro used for classnames. When using `EGVAR` you are inputting two variables. 
+- When calling a `GVAR`'d class name from one PBO to another, use this macro. This macro does NOT include the addon name, just the prefix, and then to two variables.
+- So for example if you made `GVAR(Base)` in your equipment PBO, but need to reference it within your vehicle pbo, you won't do `GVAR(Base)`, you would instead of `EGVAR(equipment,base)`.
+- You may also use `EGVAR` for classes that will be used among multiple PBOs, like the Editorsubcategories, which are just `EGVAR(edsubcat,trooper)` to make life easier.
+- When working with subaddons, similarly to how your equipment PBO is set up, you'd simply just add the subaddon name to your PBO name, for example if you wish to get a helmet from your equipment PBO, you would do `EGVAR(equipment_helmets,base)`
+- To create a Quoted version of the classname, just do `QEGVAR`. This would work in strings or arrays.
+
+## File Paths
+- Instead of manually filepathing to a file, we will now use macro'd filepaths to make life simplier. Below are the two macro's that can be used.
+
+### QPATHOF
+- `QPATHOF` is a macro'd filepath, that looks within the given pbo for your file. Most of the time it's working locally, so you would just type `QPATHOF(data\foldername\filename.paa)`
+- `QPATHOF` already creates quotes around the file path, allowinge ease of access within strings and arrays
+- To find the file path of a file outside of your PBO, use the following macro
+
+### QPATHTOEF
+- `QPATHOEF` is a macro'd filepath that uses a two step variable. Similar to `QEGVAR` you'd use this to reference files from a seperate PBO than you are currently working.
+- As an example, if you wish to referene a file within equipment, you would put `QPATHOEF(equipment,data\folder\filename)`
+- When working with subaddons, similarly to how your equipment PBO is set up, you'd simply just add the subaddon name to your PBO name, for example if you wish to get a helmet from your equipment PBO, you would do `QPATHOEF(equipment_helmets,data\folder\filename)`
+
 # TODO
 - Fix Icons for Helmets
 - Set up framework for the rest of the equipment PBO
