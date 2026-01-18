@@ -1,4 +1,4 @@
-# wpec_equipment
+# Equipment
 
 ## Subaddons
 
