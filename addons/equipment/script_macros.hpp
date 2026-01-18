@@ -232,3 +232,30 @@
 		camo = QUOTE(name); \
 	}; \
 	}
+
+	//Airborne
+
+	#define AIRBONE_HELMET_RANK_MACRO(scope,name)\
+	class GHELMET(airborne_##name##): WPS_Phase_2_Airborne_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Airborne Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\airborne\Phase2Airborne##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(airborne_rank); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define AIRBORNE_HELMET_CUSTOM_MACRO(scope,name)\
+	class GHELMET(airborne_##name##): WPS_Phase_2_Airborne_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Airborne Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\airborne\custom\Phase2Airborne##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(airborne_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	//P1
+	
