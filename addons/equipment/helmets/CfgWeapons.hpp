@@ -139,4 +139,13 @@ class CfgWeapons {
     PILOT_HELMET_CUSTOM_MACRO(2,Kila);
     PILOT_HELMET_CUSTOM_MACRO(2,Trash);
     PILOT_HELMET_CUSTOM_MACRO(2,Odin);
+
+    class GHELMET(Phas2_Tanker_Billeted): WPS_Phase_2_Tanker_Helmet_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] Phase 2 Tanker";
+        picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\tanker\rank\Phase2TankerBillet_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
+    };
 };

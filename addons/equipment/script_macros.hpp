@@ -208,3 +208,27 @@
 		camo = QUOTE(name); \
 	}; \
 	}
+
+	//Tanker
+
+	#define TANKER_HELMET_RANK_MACRO(scope,name)\
+	class GHELMET(tanker_##name##): WPS_Phase_2_Tanker_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Tanker Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\tanker\rank\Phase2Tanker##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(tanker_rank); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define TANKER_HELMET_CUSTOM_MACRO(scope,name)\
+	class GHELMET(tanker_##name##): WPS_Phase_2_Tanker_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Tanker Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\tanker\custom\Phase2Tanker##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(tanker_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
