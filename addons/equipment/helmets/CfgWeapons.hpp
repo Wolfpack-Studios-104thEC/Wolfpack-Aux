@@ -4,6 +4,7 @@ class CfgWeapons {
     class WPS_ARF_Helmet_Base;
     class WPS_BARC_Helmet_Base;
     class WPS_Engineer_Helmet_Base;
+    class WPS_Phase_2_Pilot_Base;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
@@ -121,4 +122,21 @@ class CfgWeapons {
     ENGINEER_HELMET_CUSTOM_MACRO(2,Lone);
     ENGINEER_HELMET_CUSTOM_MACRO(2,Paddy);
     ENGINEER_HELMET_CUSTOM_MACRO(2,Shark);
+
+    class GHELMET(Phase2_Pilot_Billetedd): WPS_Phase_2_Pilot_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] Phase 2 Pilot";
+        hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\pilot\rank\Phase2PilotUpper_co.paa), QPATHTOF(helmets\data\pilot\rank\Phase2PilotLower_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(helmets\data\pilot\rank\Phase2PilotUpper.rvmat), QPATHTOF(helmets\data\pilot\rank\Phase2PilotLower.rvmat), QPATHTOF(helmets\data\visor\visor.rvmat)};
+    };
+
+    PILOT_HELMET_CUSTOM_MACRO(2,Lego);
+    PILOT_HELMET_CUSTOM_MACRO(2,Pigs);
+    PILOT_HELMET_CUSTOM_MACRO(2,Sleepy);
+    PILOT_HELMET_CUSTOM_MACRO(2,Kurt);
+    PILOT_HELMET_CUSTOM_MACRO(2,Kila);
+    PILOT_HELMET_CUSTOM_MACRO(2,Trash);
+    PILOT_HELMET_CUSTOM_MACRO(2,Odin);
 };

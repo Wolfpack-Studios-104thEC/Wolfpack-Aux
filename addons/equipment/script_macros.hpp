@@ -1,5 +1,5 @@
 //Config macro's go here
-//P@
+//P2
 #define P2_HELMET_RANK_MACRO(scope,name)\
 	class GHELMET(phase2_##name##): WPS_Phase_2_Helmet_Base {\
 	scope = scope;\
@@ -170,6 +170,41 @@
 	hiddenSelectionsMaterials[] = {QPATHTOF(helmets\data\engineer\rank\Phase2Engineer.rvmat),QPATHTOF(helmets\data\engineer\light\EngineerLight_co.paa),QPATHTOF(helmets\data\visor\##color##\Visor##color##.rvmat)};\
 	class XtdGearInfo { \
 		model = QGVAR(engineer_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+//Pilot
+	#define PILOT_HELMET_RANK_MACRO(scope,name)\
+	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Pilot Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\pilot\rank\Phase2PilotUpper##name##_co.paa), QPATHTOF(helmets\data\pilot\rank\Phase2PilotLower##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(pilot_rank); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define PILOT_HELMET_CUSTOM_MACRO(scope,name)\
+	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Pilot Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\pilot\custom\Phase2PilotUpper##name##_co.paa), QPATHTOF(helmets\data\pilot\rank\Phase2PilotLower_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(pilot_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define PILOT_HELMET_CUSTOM_GLOW_MACRO(scope,name)\
+	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Pilot Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\pilot\custom\Phase2PilotUpper##name##_co.paa), QPATHTOF(helmets\data\pilot\rank\Phase2PilotLower_co.paa), QPATHTOF(helmets\data\visor\##color#\visor##color##_co.paa)};\
+	hiddenSelectionsMaterials[] = {QPATHTOF(helmets\data\pilot\rank\Phase2PilotUpper.rvmat), QPATHTOF(helmets\data\pilot\rank\Phase2PilotLower.rvmat), QPATHTOF(helmets\data\visor\##color##\Visor##color##.rvmat)};\
+	class XtdGearInfo { \
+		model = QGVAR(pilot_custom); \
 		camo = QUOTE(name); \
 	}; \
 	}
