@@ -7,6 +7,7 @@ class CfgWeapons {
     class WPS_Phase_2_Pilot_Base;
     class WPS_Phase_2_Tanker_Helmet_Base;
     class WPS_Phase_2_Airborne_Helmet_Base;
+    class WPS_Phase_1_Helmet_Base;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
@@ -109,14 +110,6 @@ class CfgWeapons {
     BARC_HELMET_CUSTOM_MACRO(2,Firehawk);
 
 //Engineer
-    class GHELMET(Engineer_Billeted): WPS_Engineer_Helmet_Base
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "[104th] Engineer Helmet";
-        picture = "\WPEC\WPEC_Helmets\icons\IconEngineer_co.paa";
-        hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\engineer\rank\Phase2EngineerBillet_co.paa), QPATHTOF(helmets\data\engineer\light\EngineerLight_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
-    };
 
     ENGINEER_HELMET_RANK_MACRO(2,Billeted);
 
@@ -164,4 +157,14 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\airborne\Phase2AirborneBillet_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
     };
+
+    P1_HELMET_RANK_MACRO(2,CT);
+    P1_HELMET_RANK_MACRO(2,SCT);
+    P1_HELMET_RANK_MACRO(2,VCT);
+    P1_HELMET_RANK_MACRO(2,CLC);
+    P1_HELMET_RANK_MACRO(2,CSP1);
+    P1_HELMET_RANK_MACRO(2,ARC);
+    P1_HELMET_RANK_MACRO(2,Alpha_ARC);
+    P1_HELMET_RANK_MACRO(2,NCO);
+    P1_HELMET_RANK_MACRO(2,Command);
 };

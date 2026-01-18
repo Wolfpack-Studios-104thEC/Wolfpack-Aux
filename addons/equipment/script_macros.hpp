@@ -92,7 +92,7 @@
 	}; \
 	}
 
-	#define ARF_HELMET_CUSTOM_GLOW_MACRO(scope,name)\
+	#define ARF_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
 	class GHELMET(arf_##name##): WPS_ARF_Helmet_Base {\
 	scope = scope;\
 	displayName = QUOTE([104th] ARF Helmet (name));\
@@ -127,7 +127,7 @@
 	}; \
 	}
 
-	#define BARC_HELMET_CUSTOM_GLOW_MACRO(scope,name)\
+	#define BARC_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
 	class GHELMET(barc_##name##): WPS_BARC_Helmet_Base {\
 	scope = scope;\
 	displayName = QUOTE([104th] BARC Helmet(name));\
@@ -162,7 +162,7 @@
 	}; \
 	}
 
-	#define ENGINEER_HELMET_CUSTOM_GLOW_MACRO(scope,name)\
+	#define ENGINEER_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
 	class GHELMET(ENGINEER_##name##): WPS_Engineer_Helmet_Base {\
 	scope = scope;\
 	displayName = QUOTE([104th] Engineer Helmet(name));\
@@ -197,7 +197,7 @@
 	}; \
 	}
 
-	#define PILOT_HELMET_CUSTOM_GLOW_MACRO(scope,name)\
+	#define PILOT_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
 	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
 	scope = scope;\
 	displayName = QUOTE([104th] Pilot Helmet(name));\
@@ -259,23 +259,35 @@
 
 	//P1
 	#define P1_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(airborne_##name##): WPS_Phase_2_Airborne_Helmet_Base {\
+	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
 	scope = scope;\
-	displayName = QUOTE([104th] Airborne Helmet(name));\
-	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\airborne\Phase2Airborne##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	displayName = QUOTE([104th] Phase 1 Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\phase1\rank\Phase1##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
-		model = QGVAR(airborne_rank); \
+		model = QGVAR(phase1_rank); \
 		camo = QUOTE(name); \
 	}; \
 	}
 
-	#define AIRBORNE_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(airborne_##name##): WPS_Phase_2_Airborne_Helmet_Base {\
+	#define P1_HELMET_CUSTOM_MACRO(scope,name)\
+	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
 	scope = scope;\
-	displayName = QUOTE([104th] Airborne Helmet(name));\
-	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\airborne\custom\Phase2Airborne##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
+	displayName = QUOTE([104th] Phase 1 Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\phase1\custom\Phase1##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
-		model = QGVAR(airborne_custom); \
+		model = QGVAR(phase1_custom); \
+		camo = QUOTE(name); \
+	}; \
+	}
+
+	#define P1_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
+	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
+	scope = scope;\
+	displayName = QUOTE([104th] Phase 1 Helmet(name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\phase1\custom\Phase1##name##_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};\\
+	hiddenSelectionsMaterials[] = {QPATHTOF(helmets\data\phase1\rank\Phase1.rvmat), QPATHTOF(helmets\data\visor\##color##\Visor##color##.rvmat)};\
+	class XtdGearInfo { \
+		model = QGVAR(phase1_custom); \
 		camo = QUOTE(name); \
 	}; \
 	}
