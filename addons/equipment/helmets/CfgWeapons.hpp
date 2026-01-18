@@ -5,6 +5,7 @@ class CfgWeapons {
     class WPS_BARC_Helmet_Base;
     class WPS_Engineer_Helmet_Base;
     class WPS_Phase_2_Pilot_Base;
+    class WPS_Phase_2_Tanker_Helmet_Base;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
@@ -148,4 +149,10 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\tanker\rank\Phase2TankerBillet_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
     };
+
+    TANKER_HELMET_CUSTOM_MACRO(2,Lone);
+    TANKER_HELMET_CUSTOM_MACRO(2,DUtchmann);
+    TANKER_HELMET_CUSTOM_MACRO(2,Gambler);
+    TANKER_HELMET_CUSTOM_MACRO(2,Maverick);
+
 };
