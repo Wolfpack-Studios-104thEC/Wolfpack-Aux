@@ -13,6 +13,21 @@
 - This PBO houses all custom textures for uniforms, helmets, etc. There are multiple subaddons splitting up the equipment to ensure organization within the mod. 
 - The Equipment PBO houses all macro's and information for the inputting of customs, to see any guides and infromation, please check out the read me found in the equipment PBO. 
 
+## Requipments for each PBO
+- To add a new PBO, you'll need a few basic things, below is what every PBO should include to for it to function
+
+### $PBOPREFIX$
+- This is a single file, that holds the PBOPREFIX used for the mod. It also tells `hemtt` and other macro's how the file path works. I'd suggest copying the file from another PBO and replacing the final name with the name for the PBO
+
+### config.cpp
+- For the most part this file is copy and paste between each one. Because of the structure of this mod, most of the work will be housed in HPPs included into a CPP.
+- This file will mainly just #include the other hpps into it, as well as ensure a proper `Cfgpatches` has been set up.
+
+### script_component.hpp
+- This is needed for each addon and subaddon. This helps define the component and subcomponents used for the mod.
+- Macro's like `GVAR` and `QPATHOF` use this file to define which PBO its looking in, and what it's called. 
+- For this to properly work, you'll need to update a few lines to make sure it matches the exact name as the PBO folder name.
+
 # HEMMT Information
 
 - HEMTT is the building tool we use within the mod. Hemtt is developed and run by the ace team, and works very well to ensure code is proper and up to date. Below is the how to use
