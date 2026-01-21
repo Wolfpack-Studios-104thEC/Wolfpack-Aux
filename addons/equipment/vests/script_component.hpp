@@ -1,5 +1,5 @@
-#define SUBCOMPONENT backpacks
-#define SUBCOMPONENT_BEAUTIFIED Equipment (Backpacks)
+#define SUBCOMPONENT vests
+#define SUBCOMPONENT_BEAUTIFIED Equipment (Vests)
 
 // todo:
 #define ACEAX_LABEL_HELMET_CUSTOM "Custom Trooper Helmet"
