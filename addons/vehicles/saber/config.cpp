@@ -1,3 +1,20 @@
+#include "script_component.hpp"
+
+class CfgPatches {
+    class SUBADDON {
+        addonRootClass = QADDON;
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            QE_ADDON(vehicles)
+        };
+		skipWhenMissingDependencies = 1;
+        VERSION_CONFIG;
+    };
+};
+
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
