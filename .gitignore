@@ -1,0 +1,30 @@
+.vscode
+# HEMTT
+hemtt.exe
+.hemtt/missions/~*
+.hemttout/
+releases/
+
+# Arma
+*.biprivatekey
+*.pbo
+*.sqfc
+
+# Textures
+*.psd
+
+# Tools
+tools/output
+.idea
+.venv
+
+# keys
+.hemttprivatekey
+*.biprivatekey
+
+# compressed files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
