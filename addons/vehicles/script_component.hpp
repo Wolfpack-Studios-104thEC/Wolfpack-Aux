@@ -15,4 +15,5 @@
 #endif
 
 #include "\Z\wpec\addons\main\script_macros.hpp"
+#include "script_macros.hpp"
 
