@@ -19,21 +19,6 @@ class CfgPatches {
     };
 };
 
-#define NO_SIDE -1
-#define EAST 0			// (Russian)
-#define WEST 1			// (NATO)
-#define RESISTANCE 2	// Guerilla
-#define CIVILIAN 3
-#define NEUTRAL 4
-#define ENEMY 5
-#define FRIENDLY 6
-#define LOGIC 7
-#define VSoft 0
-#define VArmor 1
-#define VAir 2
-#define Private 0
-#define Protected 1
-#define Public 2
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
@@ -113,30 +98,27 @@ class CfgVehicles {
         };
     };
 
-
 	class GVAR(LAAT_turrets): 3AS_LAAT_Mk1 {
-        scope = Protected;//Defined above as #Define Protected 1
+        scope = 2;
 		scopecurator = 2;
 		displayName="[104th/3AS] LAAT/I (Turrets)";
 		author="Wolfpack Studios";
-		model = "3as\3AS_laat\LAATi\model\tcw_laat.p3d";//Does not usually need to be redefined if you are inheriting but it can fix issues by just having it here.  Just make sure it is the same model!
-		side = 1;
+        side = 1;
 		//Specific Defines:
 		canFloat = 1; //Defines if the vehicle will sink in the water or not. This is used here to prevent water damage
 		enableSweep = 1; //Enables AI to sweep over the target as a method of attack.
 		enableGPS = 1; //Enables the crew to use GPS and Map even if they do not have one in their inventory.
 		//Vehicle Threat Level to AI:
-		type = VAir; //Threat Type.  Defined at the top of the file.
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
 		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.
 		audible = 8; //How easy it is to hear. Higher means it is easier to hear by AI. 1 is Default.
 		//Factions Association:
-		faction="WPEC_Category_EclipseCompany";
-		vehicleClass="WPEC_subcategoryAircraftRotary";
-		editorSubcategory="WPEC_subcategoryAircraftRotary";
+        faction= QEGVAR(faction,eclipse);
+		//vehicleClass="WPEC_subcategoryAircraftRotary";
+		editorSubcategory= QEGVAR(edsubcat,heli);
 		//Crew Specifics:
-		crew="WPEC_Phase_2_Unit_Trooper_CSP2";
+		//crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later
 		crewCrashProtection = 0.1; // Means crew takes 10% of the damage they normally would on a crash.
         //Impulsor
         tas_can_impulse = 0;
@@ -683,6 +665,7 @@ class CfgVehicles {
 			};
 			class TransportCounterMeasuresComponent;
 		};
+        LAAT_INVENTORY
     };
     class GVAR(LAAT_doors): GVAR(LAAT_turrets) {
         author = AUTHOR;
