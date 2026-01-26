@@ -1,3 +1,7 @@
+
+[launch.pointers]
+my_unit = "P:\\Wolfpack-Core\\.hemttout\build"
+
 [default]
 workshop = [
     "3499977893",  # Advanced Dev Tools
@@ -11,14 +15,16 @@ workshop = [
     "2215872933",  # 3AS Terrains
     "3020930712",  # Starforge Armory
     "3388121219",  # Wolfpack Studios core
-    "2173635424",  # 501st Aux
+    #"2173635424",  # 501st Aux
     "2291129343",  # Improved Melee System
     "769440155",   # Optre
     "623475643",   # 3DEN Enhanced
     "1779063631",  # Zeus Enhanced
     "2522638637"  # ACEAX
 ]
-parameters = []
+parameters = [
+    #'-mod="P:\Wolfpack-Core\.hemttout\build"'  # Local Wolfpack Core build, Mostly just here for the rewrite. Will need to find better way since this toml is not ignored.
+]
 
 [anim]
 extends = "default"

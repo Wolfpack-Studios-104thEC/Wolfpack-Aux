@@ -115,8 +115,33 @@
 #define GWEAPON(var1) EGVAR(weapon,var1)
 #define QGWEAPON(var1) QUOTE(GWEAPON(var1))
 
-// ACE Cargo
-#define CARGO_XX(a,b) class _xx_##a## {type = QUOTE(a); amount = b;}
+//Based macro way to define sides, Use is as yuo want. Only real use is for all, if you ever actually do that
+#define OPFOR 0
+#define BLUFOR 1
+#define INDFOR 2
+#define CIVILIAN 3
+#define ALL_SIDES 6
+
+// Creates a class holding mags, weapons, items, and backpacks
+// Used in backpack loadouts and box inventories
+#define MAG_XX(a,b) class DOUBLES(_xx,a) {magazine = QUOTE(a); count = b;}
+#define WEAP_XX(a,b) class DOUBLES(_xx,a) {weapon = QUOTE(a); count = b;}
+#define ITEM_XX(a,b) class DOUBLES(_xx,a) {name = QUOTE(a); count = b;}
+#define PACK_XX(a,b) class DOUBLES(_xx,a) {backpack = QUOTE(a); count = b;}
+#define CARGO_XX(a,b) class DOUBLES(_xx,a) {type = QUOTE(a); amount = b;}
+
+//Used as shorthand to list multiples in an array
+// e.g. give MAG_8(DC-15A Mags) to a unit's magazines[] array
+#define MAG_2(a) QUOTE(a),QUOTE(a)
+#define MAG_3(a) MAG_2(a),QUOTE(a)
+#define MAG_4(a) MAG_3(a),QUOTE(a)
+#define MAG_5(a) MAG_4(a),QUOTE(a)
+#define MAG_6(a) MAG_5(a),QUOTE(a)
+#define MAG_7(a) MAG_6(a),QUOTE(a)
+#define MAG_8(a) MAG_7(a),QUOTE(a)
+#define MAG_9(a) MAG_8(a),QUOTE(a)
+#define MAG_10(a) MAG_9(a),QUOTE(a)
+
 
 // Macros for Groundholders
 #define MACRO_GH_PREAMBLE class Item_Base_F; \
@@ -141,7 +166,7 @@ class Weapon_Base_F
     author = AUTHOR; \
     displayName = NAME; \
     vehicleClass = "ItemsUniforms"; \
-	 model = "\A3\Weapons_f\dummyweapon.p3d"; \
+	model = "\A3\Weapons_f\dummyweapon.p3d"; \
     class TransportItems { \
         MACRO_ADDITEM(CLASSNAME,1); \
     }; \
