@@ -115,7 +115,7 @@ class CfgVehicles {
 		audible = 8; //How easy it is to hear. Higher means it is easier to hear by AI. 1 is Default.
 		//Factions Association:
         faction= QEGVAR(faction,eclipse);
-		//vehicleClass="WPEC_subcategoryAircraftRotary";
+		vehicleClass = "GAR_LAATCatNSub";
 		editorSubcategory= QEGVAR(edsubcat,heli);
 		//Crew Specifics:
 		//crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later
