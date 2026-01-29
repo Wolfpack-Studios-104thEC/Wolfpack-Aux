@@ -1,5 +1,6 @@
 #define SUBCOMPONENT backpacks
 #define SUBCOMPONENT_BEAUTIFIED Equipment (Backpacks)
+#include "\Z\wpec\addons\equipment\script_component.hpp"
 
 // todo:
 #define ACEAX_LABEL_HELMET_CUSTOM "Custom Trooper Helmet"
