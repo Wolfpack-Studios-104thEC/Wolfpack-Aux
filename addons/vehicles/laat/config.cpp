@@ -5,10 +5,10 @@ class CfgPatches {
         addonRootClass = QUOTE(ADDON);
         name = COMPONENT_NAME;
         units[] = {
-            "WPEC_LAAT_turrets",
-            "WPEC_LAAT_doors",
-            "WPEC_LAAT_doors_lamps",
-            "WPEC_LAAT_lamps"
+            QGVAR(LAAT_turrets),
+            QGVAR(LAAT_doors),
+            QGVAR(LAAT_doors_lamps),
+            QGVAR(LAAT_lamps)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -99,7 +99,7 @@ class CfgVehicles {
         };
     };
 
-	class WPEC_LAAT_turrets: 3AS_LAAT_Mk1 {
+	class GVAR(LAAT_turrets): 3AS_LAAT_Mk1 {
         scope = 2;
 		scopecurator = 2;
 		displayName="[104th] LAAT/I (Turrets)";
@@ -120,9 +120,10 @@ class CfgVehicles {
 		//Factions Association:
         faction= QEGVAR(faction,eclipse);
 		//vehicleClass = "GAR_LAATCatNSub";
-		editorSubcategory = "wpec_edsubcat_heli";
+		editorSubcategory = QEGVAR(edsubcat,heli);
+
 		//Crew Specifics:
-		crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later
+		//crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later
 		crewCrashProtection = 0.1; // Means crew takes 10% of the damage they normally would on a crash.
 
         //Impulsor
@@ -464,61 +465,6 @@ class CfgVehicles {
 			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapon_Details_CO.paa",
 			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Interior_CO.paa"
 		};
-		//Texture Selections for the Garage:
-		class TextureSources
-		{
-			class Apollo_Lead
-			{
-				displayName="Apollo Lead";
-				author="Ghoul";
-				factions[]=
-				{
-					"WPEC_Category_EclipseCompany"
-				};
-				textures[]=
-				{
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Hull_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Wings_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Weapons_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Weapon_Details_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Interior_CO.paa"
-				};
-			};
-			class Apollo_Pilot
-			{
-				displayName="Apollo Pilot";
-				author="Ghoul";
-				factions[]=
-				{
-					"WPEC_Category_EclipseCompany"
-				};
-				textures[]=
-				{
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Hull_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Wings_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapon_Details_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Interior_CO.paa"
-				};
-			};
-			class Apollo_Unmarked
-			{
-				displayName="Apollo Unmarked";
-				author="3AS Studios";
-				factions[]=
-				{
-					"WPEC_Category_EclipseCompany"
-				};
-				textures[]=
-				{
-					"3AS\3as_Laat\LAATI\data\Hull_CO.paa",
-					"3AS\3as_Laat\LAATI\data\Wings_CO.paa",
-					"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-					"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-					"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
-				};
-			};
-		};
 		class RotorLibHelicopterProperties: RotorLibHelicopterProperties
 		{
 			RTDconfig = "A3\Air_F\Heli_Light_01\RTD_Heli_Light_01.xml";
@@ -718,6 +664,46 @@ class CfgVehicles {
 			};
 			class TransportCounterMeasuresComponent;
 		};
+        //Deals with user actions from the scroll wheel.
+		class UserActions: UserActions
+		{
+			class rampOpen
+			{
+				available=0;
+				showWindow=0;
+				displayName="Ramp Open";
+				position="pilotview";
+				radius=9;
+				condition="((player == driver this) AND (this animationphase 'ramp' ==0))";
+				statement="this animateSource ['ramp',1,1];";
+				onlyforplayer=0;
+				shortcut="User18";
+			};
+			class rampClose
+			{
+				available=0;
+				showWindow=0;
+				displayName="Ramp Close";
+				position="pilotview";
+				radius=9;
+				condition="((player == driver this) AND (this animationphase 'ramp' ==1))";
+				statement="this animateSource ['ramp',0,1];";
+				onlyforplayer=0;
+				shortcut="User18";
+			};
+        };
+		//Deals with ACE actions in the vehicle.  Can be fairly buggy so use with caution and test with a working SQF script.  May not always work in editor so use a multiplayer setting.
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			//Adds a menu in ACE that displays the passengers who are alive in your vehicle for the pilot to see.
+			class ACE_Passengers
+			{
+				condition="alive _target";
+				displayName="Passengers";
+				insertChildren="_this call ace_interaction_fnc_addPassengersActions";
+				statement="";
+			};
+		};
 		//Defines the pilot camera they can use for firing their weapons and defines the views they have.
 		class pilotCamera
 		{
@@ -840,12 +826,67 @@ class CfgVehicles {
 				effect="ExhaustsEffectHeliBig";
 			};
 		};
+		//Texture Selections for the Garage:
+		class TextureSources
+		{
+			class Apollo_Lead
+			{
+				displayName="Apollo Lead";
+				author="Ghoul";
+				factions[]=
+				{
+					QEGVAR(faction,eclipse)
+				};
+				textures[]=
+				{
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Hull_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Wings_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Weapons_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Weapon_Details_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Interior_CO.paa"
+				};
+			};
+			class Apollo_Pilot
+			{
+				displayName="Apollo Pilot";
+				author="Ghoul";
+				factions[]=
+				{
+					QEGVAR(faction,eclipse)
+				};
+				textures[]=
+				{
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Hull_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Wings_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapon_Details_CO.paa",
+					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Interior_CO.paa"
+				};
+			};
+			class Apollo_Unmarked
+			{
+				displayName="Apollo Unmarked";
+				author="3AS Studios";
+				factions[]=
+				{
+					QEGVAR(faction,eclipse)
+				};
+				textures[]=
+				{
+					"3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+					"3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+					"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+				};
+			};
+		};
         LAAT_INVENTORY
     };
-    class WPEC_LAAT_doors: WPEC_LAAT_turrets {
+    class GVAR(LAAT_doors): GVAR(LAAT_turrets) {
 		author="Wolfpack Studios";
 		displayName = "[104th] LAAT/I (Doors)";
-        editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_doors.jpg";
+        //editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_doors.jpg";
 
 		class AnimationSources: AnimationSources {
             class Doors: Doors {
@@ -865,10 +906,10 @@ class CfgVehicles {
 			class CargoTurret_02: CargoTurret_02 {};
 		};
 	};
-    class WPEC_LAAT_doors_lamps: WPEC_LAAT_turrets {
+    class GVAR(LAAT_doors_lamps): GVAR(LAAT_turrets) {
 		author="Wolfpack Studios";
         displayName = "[104th] LAAT/I (Lights-Doors)";
-        editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_doors_lamps.jpg";
+        //editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_doors_lamps.jpg";
 
         class AnimationSources: AnimationSources {
             class Doors: Doors {
@@ -939,10 +980,10 @@ class CfgVehicles {
 			};
 		};
     };
-    class WPEC_LAAT_lamps: WPEC_LAAT_turrets {
+    class GVAR(LAAT_lamps): GVAR(LAAT_turrets) {
 		author="Wolfpack Studios";
         displayName = "[104th] LAAT/I (Lights)";
-        editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_lamps.jpg";
+        //editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_lamps.jpg";
 
         class AnimationSources: AnimationSources {
             class Doors: Doors {

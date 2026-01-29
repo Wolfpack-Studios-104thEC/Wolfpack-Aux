@@ -5,7 +5,7 @@ class CfgPatches {
         addonRootClass = QADDON;
         name = COMPONENT_NAME;
         units[] = {
-            "WPEC_LAATC"
+            QGVAR(LAATC)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -53,7 +53,7 @@ class CfgVehicles {
     };
     class 3as_LAATC: 3AS_LAAT_Cargo_Base {
     };
-    class WPEC_LAATC: 3as_LAATC
+    class GVAR(LAATC): 3as_LAATC
 	{
 		author="Wolfpack Studios";
 		displayName = "[104th] LAAT/C";
