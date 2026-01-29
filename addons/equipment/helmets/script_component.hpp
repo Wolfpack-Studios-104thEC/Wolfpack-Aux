@@ -236,4 +236,4 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
     };\
 }
 
-#include "\z\wpec\addons\equipment\script_component.hpp"
+#include "\Z\wpec\addons\equipment\script_macros.hpp"

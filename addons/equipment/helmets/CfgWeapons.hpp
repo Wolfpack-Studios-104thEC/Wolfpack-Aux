@@ -97,10 +97,10 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\IconBARC_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(helmets\data\barc\rank\Phase2BARC_co.paa), QPATHTOF(helmets\data\visor\visor_co.paa)};
 
-        class XtdGearInfo { 
-            model = QGVAR(barc_rank); 
-            camo = QUOTE(name); 
-	}; 
+        class XtdGearInfo {
+            model = QGVAR(barc_rank);
+            camo = QUOTE(name);
+	};
     };
 
     BARC_HELMET_RANK_MACRO(2,Billeted);
