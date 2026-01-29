@@ -2,12 +2,13 @@
 
 class CfgPatches {
     class SUBADDON {
-        addonRootClass = QADDON;
+        addonRootClass = QUOTE(ADDON);
         name = COMPONENT_NAME;
         units[] = {
-            QGVAR(LAAT_turrets),
-            QGVAR(LAAT_doors),
-            QGVAR(LAAT_doors_lamps)
+            "WPEC_LAAT_turrets",
+            "WPEC_LAAT_doors",
+            "WPEC_LAAT_doors_lamps",
+            "WPEC_LAAT_lamps"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -98,47 +99,99 @@ class CfgVehicles {
         };
     };
 
-	class GVAR(LAAT_turrets): 3AS_LAAT_Mk1 {
+	class WPEC_LAAT_turrets: 3AS_LAAT_Mk1 {
         scope = 2;
 		scopecurator = 2;
-		displayName="[104th/3AS] LAAT/I (Turrets)";
+		displayName="[104th] LAAT/I (Turrets)";
 		author="Wolfpack Studios";
         side = 1;
+
 		//Specific Defines:
 		canFloat = 1; //Defines if the vehicle will sink in the water or not. This is used here to prevent water damage
 		enableSweep = 1; //Enables AI to sweep over the target as a method of attack.
 		enableGPS = 1; //Enables the crew to use GPS and Map even if they do not have one in their inventory.
+
 		//Vehicle Threat Level to AI:
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
 		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.
 		audible = 8; //How easy it is to hear. Higher means it is easier to hear by AI. 1 is Default.
+
 		//Factions Association:
         faction= QEGVAR(faction,eclipse);
-		vehicleClass = "GAR_LAATCatNSub";
-		editorSubcategory= QEGVAR(edsubcat,heli);
+		//vehicleClass = "GAR_LAATCatNSub";
+		editorSubcategory = "wpec_edsubcat_heli";
 		//Crew Specifics:
-		//crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later
+		crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later
 		crewCrashProtection = 0.1; // Means crew takes 10% of the damage they normally would on a crash.
+
         //Impulsor
         tas_can_impulse = 0;
         class ls_impulsor: WPEC_impulsor_base {};
+		epeImpulseDamageCoef = 0;
+
+        //Flight Characteristics
+        liftForceCoef = 2;
+		bodyFrictionCoef = 5;
+		cyclicAsideForceCoef = 4*1.2;
+		cyclicForwardForceCoef = 2*1.2;
+		altFullForce = 10000;
+		altNoForce = 20000;
 
         ls_vehicles_rampAnims[] = {"ramp"};
         ls_vehicles_rampToggleSounds[] = {"ls_laat_ramp", "ls_laat_ramp"};
+
+        //Weapons
+        weapons[]=
+		{
+			"Laserdesignator_pilotCamera",
+			"CMFlareLauncher",
+			"104th_SmokeLauncher",
+			"104th_LAAT_Cannon_Low",
+			"104th_LAAT_Cannon_High",
+			"104th_Maramu_A2A_MissileSystem",
+            "104th_Hoska_A2A_MissileSystem",
+			"104th_Dianoga_WGM_MissileSystem",
+            "104th_Kaada_DF_MissileSystem"
+		};
+		magazines[]=
+		{
+			"Laserbatteries",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"104th_SmokeLauncherMag",
+			"104th_SmokeLauncherMag",
+			"104th_SmokeLauncherMag",
+			"104th_LAAT_Cannon_LowPower_Magazine",
+			"104th_LAAT_Cannon_LowPower_Magazine",
+			"104th_LAAT_Cannon_LowPower_Magazine",
+			"104th_LAAT_Cannon_HighPower_Magazine",
+			"104th_LAAT_Cannon_HighPower_Magazine",
+			"104th_LAAT_Cannon_HighPower_Magazine",
+			"104th_Maramu_6Rnd_A2A_mag",
+			"104th_Maramu_6Rnd_A2A_mag",
+			"104th_Hoska_6Rnd_A2A_mag",
+            "104th_Hoska_6Rnd_A2A_mag",
+            "104th_Dianoga_4Rnd_WGM_mag",
+            "104th_Dianoga_4Rnd_WGM_mag",
+            "104th_Kaada_10Rnd_Unguided_Rocket_mag",
+            "104th_Kaada_10Rnd_Unguided_Rocket_mag"
+		};
+
         class Turrets: Turrets {
 			class Gunner: Copilot {
 				weapons[]=
 				{
-					"NCA_green_CAP_plasma_weapon",
+                    "104th_LAAT_Cannon_Low",
 					"Laserdesignator_pilotCamera"
 				};
 				magazines[]=
 				{
 					"Laserbatteries",
-					"NCA_green_CAP_plasma_x1200_mag",
-					"NCA_green_CAP_plasma_x1200_mag",
-					"NCA_green_CAP_plasma_x1200_mag"
+                    "104th_LAAT_Cannon_LowPower_Magazine",
+                    "104th_LAAT_Cannon_LowPower_Magazine",
+                    "104th_LAAT_Cannon_LowPower_Magazine"
 				};
 				minelev = -60;
 				minturn = -240;
@@ -665,11 +718,133 @@ class CfgVehicles {
 			};
 			class TransportCounterMeasuresComponent;
 		};
+		//Defines the pilot camera they can use for firing their weapons and defines the views they have.
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName="WFOV";
+					initAngleX=0;
+					minAngleX=-10;
+					maxAngleX=90;
+					initAngleY=0;
+					minAngleY=-90;
+					maxAngleY=90;
+					initFov=0.42500001;
+					minFov=0.42500001;
+					maxFov=0.42500001;
+					directionStabilized=1;
+					//Optics View Modes and Effects:
+					thermalMode[]={0,1};
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera2",
+						"OpticsBlur2"
+					};
+					// All other optics inherit from this so they will all have the view modes od the wide view defined above.
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.425/4)";
+					minFov="(0.425/4)";
+					maxFov="(0.425/4)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/8)";
+					minFov="(0.42/8)";
+					maxFov="(0.42/8)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/20)";
+					minFov="(0.42/20)";
+					maxFov="(0.42/20)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/50)";
+					minFov="(0.42/50)";
+					maxFov="(0.42/50)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/70)";
+					minFov="(0.42/70)";
+					maxFov="(0.42/70)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics=1;
+				showUAVViewInOptics=0;
+				showSlingLoadManagerInOptics=1;
+			};
+			minTurn=-180;
+			maxTurn=180;
+			initTurn=0;
+			minElev=-10;
+			maxElev=90;
+			initElev=-10;
+			maxXRotSpeed=0.30000001;
+			maxYRotSpeed=0.30000001;
+			pilotOpticsShowCursor=1;
+			controllable=1;
+		};
+		class ViewPilot
+		{
+			initAngleX=0;
+			minAngleX=-55;
+			maxAngleX=85;
+			initAngleY=0;
+			minAngleY=-150;
+			maxAngleY=150;
+			minFov=0.25;
+			maxFov=1.25;
+			initFov=0.75;
+			minMoveX=-100;
+			maxMoveX=100;
+			minMoveY=0;
+			maxMoveY=0;
+			minMoveZ=0;
+			maxMoveZ=0;
+		};
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position="exhaust1";
+				direction="exhaust1_dir";
+				effect="ExhaustsEffectHeliBig";
+			};
+			class Exhaust2
+			{
+				position="exhaust2";
+				direction="exhaust2_dir";
+				effect="ExhaustsEffectHeliBig";
+			};
+		};
         LAAT_INVENTORY
     };
-    class GVAR(LAAT_doors): GVAR(LAAT_turrets) {
-        author = AUTHOR;
-		displayName = "[21st] LAAT/I XX";
+    class WPEC_LAAT_doors: WPEC_LAAT_turrets {
+		author="Wolfpack Studios";
+		displayName = "[104th] LAAT/I (Doors)";
         editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_doors.jpg";
 
 		class AnimationSources: AnimationSources {
@@ -690,14 +865,20 @@ class CfgVehicles {
 			class CargoTurret_02: CargoTurret_02 {};
 		};
 	};
-    class GVAR(LAAT_doors_lamps): GVAR(LAAT_doors) {
-        author = AUTHOR;
-        displayName = "[21st] LAAT/I XX (Lamps)";
+    class WPEC_LAAT_doors_lamps: WPEC_LAAT_turrets {
+		author="Wolfpack Studios";
+        displayName = "[104th] LAAT/I (Lights-Doors)";
         editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_doors_lamps.jpg";
 
         class AnimationSources: AnimationSources {
+            class Doors: Doors {
+                initPhase = 1;
+            };
             class Lamps: Lamps {
                 initPhase = 1;
+            };
+            class Turrets: Turrets {
+                initPhase = 0;
             };
         };
         class Reflectors
@@ -727,6 +908,80 @@ class CfgVehicles {
 					quadratic=1;
 					hardLimitStart=500;
 					hardLimitEnd=700;
+				};
+			};
+			class Right
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=550;
+				size=10;
+				innerAngle=25;
+				outerAngle=280;
+				coneFadeCoef=5;
+				position="Light_R_Pos";
+				direction="Light_R_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_R_Lamp";
+				useFlare=1;
+				flareSize=25;
+				flareMaxDistance=2000;
+				dayLight=1;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=700;
+					hardLimitEnd=900;
+				};
+			};
+		};
+    };
+    class WPEC_LAAT_lamps: WPEC_LAAT_turrets {
+		author="Wolfpack Studios";
+        displayName = "[104th] LAAT/I (Lights)";
+        editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_LAAT_lamps.jpg";
+
+        class AnimationSources: AnimationSources {
+            class Doors: Doors {
+                initPhase = 0;
+            };
+            class Lamps: Lamps {
+                initPhase = 1;
+            };
+            class Turrets: Turrets {
+                initPhase = 0;
+            };
+        };
+        class Reflectors
+		{
+			class Left
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=550;
+				size=10;
+				innerAngle=25;
+				outerAngle=280;
+				coneFadeCoef=5;
+				position="Light_L_Pos";
+				direction="Light_L_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_L_Lamp";
+				useFlare=1;
+				flareSize=25;
+				flareMaxDistance=2000;
+				dayLight=1;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=700;
+					hardLimitEnd=900;
 				};
 			};
 			class Right
