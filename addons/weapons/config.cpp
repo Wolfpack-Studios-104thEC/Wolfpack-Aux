@@ -83,7 +83,7 @@ class CfgAmmo
 			1,
 			100
 		};
-		ace_grenades_pullPinSound[] = 
+		ace_grenades_pullPinSound[] =
 		{
 			"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
 			30.0,
@@ -166,7 +166,7 @@ class CfgAmmo
 	class 104th_SmokeShellBase: SmokeShell
 	{
 		model="3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
-		ace_grenades_pullPinSound[] = 
+		ace_grenades_pullPinSound[] =
 		{
 			"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
 			30.0,
@@ -557,7 +557,7 @@ class CfgMagazines
 		count=1;
 	};
 	class 104th_3AS_BaridiumCore_Mag: HandGrenade
-	{	
+	{
 		scope=2;
 		value = 1;
 		model="\3AS\3AS_Equipment\model\3AS_coredetonator.p3d";
@@ -977,8 +977,6 @@ class CfgWeapons
 	};
 	class 3AS_DC15A_F: 3AS_DC15A_Base_F
 	{
-		class Single;
-		class Burst;
 		class WeaponSlotInfo;
 	};
 	class 104th_3AS_DC15A: 3AS_DC15A_F
@@ -990,30 +988,6 @@ class CfgWeapons
 		magazines[]=
 		{
 			"104th_3AS_DC15A_Mag"
-		};
-		class Burst: Burst
-		{
-			reloadTime=0.073000006;
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15A_Shot_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15A_Shot_SoundSet"
-				};
-			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -1041,8 +1015,6 @@ class CfgWeapons
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
 		class WeaponsSlotsInfo;
-		class Single;
-		class Burst;
 	};
 	class 104th_3AS_DC15AGL: 3AS_DC15A_GL
 	{
@@ -1051,30 +1023,6 @@ class CfgWeapons
 		magazines[]=
 		{
 			"104th_3AS_DC15A_Mag"
-		};
-		class Burst: Burst
-		{
-			reloadTime=0.073000006;
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15A_Shot_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15A_Shot_SoundSet"
-				};
-			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -1101,8 +1049,6 @@ class CfgWeapons
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
 		scope=1;
-		class Single;
-		class FullAuto;
 	};
 	class 104th_3AS_DC15S: 3AS_DC15S_F
 	{
@@ -1111,62 +1057,6 @@ class CfgWeapons
 		magazines[]=
 		{
 			"104th_3AS_DC15S_Mag"
-		};
-		class Single: Single
-		{
-			reloadTime=0.1;
-			dispersion=0.00066000002;
-			minRange=2;
-			minRangeProbab=0.30000001;
-			midRange=150;
-			midRangeProbab=0.69999999;
-			maxRange=350;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15S_Shot_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15S_Shot_SoundSet"
-				};
-			};
-		};
-		class FullAuto: FullAuto
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15S_Shot_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"3AS_DC15S_Shot_SoundSet"
-				};
-			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -1187,8 +1077,6 @@ class CfgWeapons
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		class FullAuto;
-		class Single;
 		class WeaponSlotsInfo;
 	};
 	class 104th_3AS_DC15L: 3AS_DC15L_F
@@ -1218,8 +1106,6 @@ class CfgWeapons
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		class FullAuto;
-		class Single;
 		class WeaponSlotsInfo;
 	};
 	class 104th_3AS_DC15C: 3AS_DC15C_F
@@ -1256,8 +1142,6 @@ class CfgWeapons
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		class FullAuto;
-		class Single;
 		class WeaponSlotsInfo;
 	};
 	class 104th_3AS_DC15CGL: 3AS_DC15C_GL
@@ -1291,8 +1175,6 @@ class CfgWeapons
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		class FullAuto;
-		class Single;
 		class WeaponSlotsInfo;
 	};
 	class 104th_3AS_DC17M: 3AS_DC17M_F
@@ -1311,8 +1193,6 @@ class CfgWeapons
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		class FullAuto;
-		class Single;
 		class WeaponSlotsInfo;
 		class 3AS_WestarM5_GL_F: UGL_F
 		{
@@ -1351,8 +1231,6 @@ class CfgWeapons
 	};
 	class 3AS_WestarM5_GL: 3AS_WestarM5_Base_F
 	{
-		class FullAuto;
-		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -1416,7 +1294,6 @@ class CfgWeapons
 	{
 		canShootInWater=1;
 		class WeaponSlotsInfo;
-		class FullAuto;
 	};
 	class 104th_3AS_Z6: 3AS_Z6_F
 	{
@@ -1431,7 +1308,6 @@ class CfgWeapons
 	class 3AS_Valken38X_F: 3AS_Valken38X_Base_F
 	{
 		canShootInWater=1;
-		class Single;
 		class WeaponSlotsInfo;
 	};
 	class 104th_3AS_Valken38X: 3AS_Valken38X_F
