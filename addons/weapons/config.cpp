@@ -4,8 +4,10 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
+		weapons[] = {"104th_3AS_DC15A","104th_3AS_DC15AGL","104th_3AS_DC15S","104th_3AS_DC15L","104th_3AS_DC15C","104th_3AS_DC15CGL","104th_3AS_DC17M","104th_3AS_Chaingun","104th_3AS_Valken38X","104th_3AS_WestarM5","104th_3AS_WestarM5GL","104th_3AS_Z6","104th_3AS_DC17S","104th_3AS_RPS6_F","104th_3AS_RPS6_G","104th_RPS6_K_Odin","104th_RPS6_K","104th_JLTS_DC15X","104th_JLTS_DC17SA"};
+		magazines[] = {"104th_3AS_DC15S_Mag","104th_3AS_DC15C_Mag","104th_3AS_DC15L_Mag","104th_3AS_DC15A_Mag","104th_3AS_DC17M_Mag","104th_3AS_WestarM5_Mag","104th_3AS_Z6_Mag","104th_3AS_Valken38X_Mag","104th_3AS_Chaingun_Mag","104th_3AS_MK40_AT_Unguided","104th_3AS_MK40_AT_Guided","104th_MK1_AT_Mag","104th_MK2_AT_Mag","104th_MK3_AP_Mag","104th_MK4_AP_Mag","Odins_Despair","104th_MK1_PistolMag","104th_MK2_PistolMag_Long","104th_MK2_PistolMag_Short","104th_MK3_PistolMag","104th_MK4_PistolMag","104th_DC15XM_EnergyMag","104th_DC15XM_PlasmaMag","104th_3AS_WestarLightAT","104th_3AS_DC17MLightAT","104th_3AS_DC15C_OCMag","104th_3AS_ThermalDetonator_Mag","104th_3AS_BaridiumCore_Mag","104th_3AS_SmokeGrenade_White","104th_3AS_SmokeGrenade_Red","104th_3AS_SmokeGrenade_Orange","104th_3AS_SmokeGrenade_Yellow","104th_3AS_SmokeGrenade_Blue","104th_3AS_SmokeGrenade_Green","104th_3AS_SmokeGrenade_Purple","104th_ThermalDisruptor","104th_ThermalDisruptorImpact","104th_PersonalShield_Republic_Mag","104th_PersonalShieldFull_Republic_Mag","104th_SquadShield_Republic_Mag"};
+		ammo[] = {"104th_3AS_DCLight_PlasmaAmmo","104th_3AS_DCMid_PlasmaAmmo","104th_3AS_DCHeavy_PlasmaAmmo","104th_3AS_DCExtraHeavy_PlasmaAmmo","104th_3AS_Z6_PlasmaAmmo","104th_3AS_Sniper_PlasmaAmmo","104th_3AS_ChaingunAmmo","104th_3AS_R_Mk40_AT","104th_3AS_M_Mk40_AT","104th_MK1_AT","104th_MK2_AT","104th_MK3_AP","104th_MK4_AP","104th_MK5_AP","104th_MK1_Normal_PistolAmmo","104th_MK2_Stun_PistolAmmo","104th_MK3_EMP_PistolAmmo","104th_MK4_OC_PistolAmmo","104th_DC15XM_Energy","104th_DC15XM_Plasma","104th_3AS_RocketGrenade_HE_Arc","104th_3AS_RocketGrenade_HE_Commando","MissileBase","104th_3AS_ThermalDetonator_Ammo","104th_3AS_BaridiumCore_Ammo","104th_SmokeShellBase","104th_SmokeShellRed","104th_SmokeShellOrange","104th_SmokeShellYellow","104th_SmokeShellBlue","104th_SmokeShellGreen","104th_SmokeShellPurple","104th_ThermalDisruptor_Ammo","104th_ThermalDisruptorImpact_Ammo","104th_PersonalShield_Republic_Ammo","104th_PersonalShieldFull_Republic_Ammo","104th_SquadShield_Republic_Ammo","104th_3AS_DCMid_OCPlasmaAmmo"};
+		requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {};
         author = AUTHOR;
         authors[] = {""};
@@ -78,14 +80,14 @@ class CfgAmmo
 		explosionEffects="JLTS_fx_exp_EMP";
 		soundFly[]=
 		{
-			"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Disruptor_Fly.ogg",
+			"WPEC\104th_3AS_Weapons\Sounds\Grenades\Thermal_Disruptor_Fly.ogg",
 			30.0,
 			1,
 			100
 		};
 		ace_grenades_pullPinSound[] =
 		{
-			"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
+			"WPEC\104th_3AS_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
 			30.0,
 			1,
 			50
@@ -168,7 +170,7 @@ class CfgAmmo
 		model="3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		ace_grenades_pullPinSound[] =
 		{
-			"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
+			"WPEC\104th_3AS_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
 			30.0,
 			1,
 			50
@@ -206,52 +208,52 @@ class CfgAmmo
 	class 104th_3AS_DCLight_PlasmaAmmo: 3AS_EC30_bluePlasma
 	{
 		scope=2;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_DCMid_PlasmaAmmo: 3AS_EC40_BluePlasma
 	{
 		scope=2;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_DCMid_OCPlasmaAmmo: 3AS_EC40_BluePlasma
 	{
 		scope=2;
 		hit=50;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_DCHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
 		scope=2;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_DCExtraHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
 		scope=2;
 		hit=17;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_Z6_PlasmaAmmo: 3AS_EC60_bluePlasma
 	{
 		scope=2;
 		hit=14;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_Sniper_PlasmaAmmo: 3AS_EC80_BluePlasma
 	{
 		scope=2;
-		effectfly="WPEC_FX_Bullet_Lime_Sniper";
+		effectfly="104th_3AS_FX_Bullet_Lime_Sniper";
 		timeToLive=6;
 	};
 	class 104th_3AS_ChaingunAmmo: 3AS_Chaingun_Ammo
 	{
 		scope=2;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 		timeToLive=6;
 	};
 	class 104th_3AS_R_Mk40_AT: 3AS_R_Mk40_AT
@@ -259,14 +261,14 @@ class CfgAmmo
 		scope=2;
 		displayName="[104th] MK40 AT Rocket";
 		hit=800;
-		effectsMissile="WPEC_FX_Missile_Maroon_Rocket";
+		effectsMissile="104th_3AS_FX_Missile_Maroon_Rocket";
 	};
 	class 104th_3AS_M_Mk40_AT: 3AS_M_Mk40_AT
 	{
 		scope=2;
 		displayName="[104th] MK40 AT Missile";
 		hit=800;
-		effectsMissile="WPEC_FX_Missile_Maroon_Rocket";
+		effectsMissile="104th_3AS_FX_Missile_Maroon_Rocket";
 	};
 	class 104th_DC15XM_Plasma: JLTS_bullet_sniper_blue
 	{
@@ -276,7 +278,7 @@ class CfgAmmo
 		indirectHitRange=1;
 		model="\A3\Weapons_f\Data\bullettracer\shell_tracer_green.p3d";
 		tracerScale=2;
-		effectfly="WPEC_FX_Bullet_Lime_Sniper";
+		effectfly="104th_3AS_FX_Bullet_Lime_Sniper";
 		warheadName="TandemHEAT";
 		submunitionAmmo="3AS_ammo_Penetrator_MK41";
 		submunitionDirectionType="SubmunitionModelDirection";
@@ -293,7 +295,7 @@ class CfgAmmo
 		hit=120;
 		model="\A3\Weapons_f\Data\bullettracer\shell_tracer_yellow.p3d";
 		tracerScale=2;
-		effectfly="WPEC_FX_Bullet_Yellow_Sniper";
+		effectfly="104th_3AS_FX_Bullet_Yellow_Sniper";
 	};
 	class 104th_MK1_AT: RocketBase
 	{
@@ -321,7 +323,7 @@ class CfgAmmo
 		CraterEffects="ATMissileCrater";
 		explosionEffects="ATMissileExplosion";
 		effectsMissileInit="";
-		effectsMissile="WPEC_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
 		simulationStep=0.02;
 		airLock=0;
 		aiAmmoUsageFlags="128 + 512";
@@ -401,7 +403,7 @@ class CfgAmmo
 		indirectHit=20;
 		indirectHitRange=10;
 		allowAgainstInfantry=1;
-		effectsMissile="WPEC_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
 	};
 	class 104th_MK3_AP: 104th_MK1_AT
 	{
@@ -410,7 +412,7 @@ class CfgAmmo
 		indirectHitRange=20;
 		submunitionAmmo="";
 		allowAgainstInfantry=1;
-		effectsMissile="WPEC_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
 	};
 	class 104th_MK4_AP: 104th_MK1_AT
 	{
@@ -419,7 +421,7 @@ class CfgAmmo
 		indirectHitRange=30;
 		submunitionAmmo="";
 		allowAgainstInfantry=1;
-		effectsMissile="WPEC_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
 	};
 	class 104th_MK5_AP: 104th_MK1_AT
 	{
@@ -428,41 +430,41 @@ class CfgAmmo
 		indirectHitRange=30;
 		submunitionAmmo="";
 		allowAgainstInfantry=1;
-		effectsMissile="WPEC_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
 	};
 	class JLTS_bullet_stun;
 	class JLTS_bullet_emp;
 	class 104th_MK1_Normal_PistolAmmo: 3AS_EC30_bluePlasma
 	{
 		hit=6;
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 	};
 	class 104th_MK2_Stun_PistolAmmo: JLTS_bullet_stun
 	{
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 	};
 	class 104th_MK3_EMP_PistolAmmo: JLTS_bullet_emp
 	{
 		model="\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
 		lightcolor[]={0.5,0.5,0.25};
-		effectfly="WPEC_FX_Bullet_Teal";
+		effectfly="104th_3AS_FX_Bullet_Teal";
 	};
 	class 104th_MK4_OC_PistolAmmo: 3AS_EC30_bluePlasma
 	{
 		hit=30;
 		caliber=1;
-		effectfly="WPEC_FX_Bullet_Yellow_Pistol";
+		effectfly="104th_3AS_FX_Bullet_Yellow_Pistol";
 	};
 	class 104th_3AS_RocketGrenade_HE_ARC: 3AS_RocketGrenade_HE
 	{
 		hit=250;
-		effectfly="WPEC_particle_effect_GL_Blue";
+		effectfly="104th_3AS_particle_effect_GL_Blue";
 		simulation="shotShell";
 	};
 	class 104th_3AS_RocketGrenade_HE_Commando: 3AS_RocketGrenade_HE
 	{
 		hit=275;
-		effectfly="WPEC_particle_effect_GL_Blue";
+		effectfly="104th_3AS_particle_effect_GL_Blue";
 		simulation="shotShell";
 	};
 };
@@ -519,8 +521,8 @@ class CfgMagazines
 	{
 		scope=2;
 		value = 1;
-		model="\WPEC\WPEC_Weapons\Grenades\EggDetonator.p3d";
-		picture="\WPEC\WPEC_Weapons\Grenades\icons\logo_co.paa";
+		model="\WPEC\104th_3AS_Weapons\Grenades\EggDetonator.p3d";
+		picture="\WPEC\104th_3AS_Weapons\Grenades\icons\logo_co.paa";
 		displayName="[104th] Thermal Eggonator";
 		displayNameShort="Thermal Eggonator";
 		ammo="104th_3AS_ThermalDetonator_Ammo";
@@ -946,6 +948,12 @@ class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
 class UnderBarrelSlot;
+class 3AS_UnderBarrelSlot_DC15A;
+class 3AS_MuzzleSlot_DC15S;
+class 3AS_MuzzleSlot_DC15L;
+class 3AS_UnderBarrelSlot_DC15L;
+class 3AS_MuzzleSlot_VK38X;
+class 3AS_UnderBarrelSlot_VK38X;
 class CfgWeapons
 {
 	class Rifle_Base_F;
@@ -960,8 +968,8 @@ class CfgWeapons
 	class 3AS_DC15S_Base_F;
 	class 3AS_DC15L_Base_F;
 	class 3AS_DC15C_Base_F;
-	class 3AS_DC17M_Base_F;
-	class 3AS_Z6_Base_F;
+	class 3AS_DC17M_F;
+	class 3AS_Z6_F;
 	class 3AS_Valken38X_Base_F;
 	class 3AS_Chaingun;
 	class 3AS_RPS6_Base;
@@ -975,22 +983,64 @@ class CfgWeapons
 		class Single;
 		class Mode_SemiAuto;
 	};
-	class 3AS_DC15A_F: 3AS_DC15A_Base_F
-	{
-		class WeaponSlotInfo;
-	};
-	class 104th_3AS_DC15A: 3AS_DC15A_F
+	class 104th_3AS_DC15A: 3AS_DC15A_Base_F
 	{
 		canShootinWater=1;
 		JLTS_hasEMPProtection=1;
+		model="\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15A\Data\UI\3as_dc15a.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		scope=2;
 		displayName="[104th] DC-15A";
+		baseWeapon="104th_3AS_DC15A";
 		magazines[]=
 		{
 			"104th_3AS_DC15A_Mag"
 		};
+		modes[]=
+		{
+			"Single",
+			"single_medium_optics1",
+			"single_far_optics2",
+            "Burst"
+		};
+        class Burst: Mode_Burst
+		{
+			burst=3;
+			reloadTime=0.050000001;
+			dispersion=0.00066000002;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=50;
+			midRangeProbab=0.69999999;
+			maxRange=100;
+			maxRangeProbab=0.1;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound",
+				"SilencedSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_DC15A_Shot_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_DC15A_Shot_SoundSet"
+				};
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=90;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -1008,24 +1058,81 @@ class CfgWeapons
 				{
 				};
 			};
+			class UnderBarrelSlot: 3AS_UnderBarrelSlot_DC15A
+			{
+				iconPosition[]={0.23999999,0.69999999};
+				iconScale=0.30000001;
+			};
 		};
 	};
-	class 3AS_DC15A_GL: 3AS_DC15A_Base_F
-	{
-		canShootInWater=1;
-		JLTS_hasEMPProtection=1;
-		class WeaponsSlotsInfo;
-	};
-	class 104th_3AS_DC15AGL: 3AS_DC15A_GL
+	class 104th_3AS_DC15AGL: 3AS_DC15A_Base_F
 	{
 		scope=2;
 		displayName="[104th] DC-15A/GL";
+		baseWeapon="104th_3AS_DC15AGL";
+		model="\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_GL.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15A\Data\UI\3as_dc15agl.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15aGL_Handanim.rtm"
+		};
+		muzzles[]=
+		{
+			"this",
+			"GL_3GL_F"
+		};
+		canShootInWater=1;
+		JLTS_hasEMPProtection=1;
 		magazines[]=
 		{
 			"104th_3AS_DC15A_Mag"
 		};
+		modes[]=
+		{
+			"Single",
+			"single_medium_optics1",
+			"single_far_optics2",
+            "Burst"
+		};
+        class Burst: Mode_Burst
+		{
+			burst=3;
+			reloadTime=0.050000001;
+			dispersion=0.00066000002;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=50;
+			midRangeProbab=0.69999999;
+			maxRange=100;
+			maxRangeProbab=0.1;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound",
+				"SilencedSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_DC15A_Shot_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_DC15A_Shot_SoundSet"
+				};
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=110;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -1042,29 +1149,62 @@ class CfgWeapons
 				{
 				};
 			};
+			class UnderBarrelSlot: 3AS_UnderBarrelSlot_DC15A
+			{
+				iconPosition[]={0.23999999,0.69999999};
+				iconScale=0.30000001;
+			};
 		};
 	};
-	class 3AS_DC15S_F: 3AS_DC15S_Base_F
+	class 104th_3AS_DC15S: 3AS_DC15S_Base_F
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		scope=1;
-	};
-	class 104th_3AS_DC15S: 3AS_DC15S_F
-	{
 		scope=2;
 		displayName="[104th] DC-15S";
+		baseWeapon="104th_3AS_DC15S";
+		model="\3AS\3AS_Weapons\Republic\DC15S\3AS_DC15S_F.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15S\Data\UI\3as_dc15s.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		magazines[]=
 		{
 			"104th_3AS_DC15S_Mag"
 		};
+		class Single: Mode_SemiAuto
+		{
+			reloadTime = 0.1;
+			dispersion = 0.00066;
+			minRange = 2;
+			minRangeProbab = 0.3;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 350;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_DC15S_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_DC15S_Shot_SoundSet"};
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=50;
+			class MuzzleSlot: 3AS_MuzzleSlot_DC15S
+			{
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
 				{
-					"3AS_optic_holo_DC15S",
 					"Aux501_cows_Holosight",
 					"Aux501_cows_Holosight_2",
 					"Aux501_cows_Holosight_3",
@@ -1073,16 +1213,15 @@ class CfgWeapons
 			};
 		};
 	};
-	class 3AS_DC15L_F: 3AS_DC15L_Base_F
-	{
-		canShootInWater=1;
-		JLTS_hasEMPProtection=1;
-		class WeaponSlotsInfo;
-	};
-	class 104th_3AS_DC15L: 3AS_DC15L_F
+	class 104th_3AS_DC15L: 3AS_DC15L_Base_F
 	{
 		scope=2;
 		displayName="[104th] DC-15L";
+		canShootInWater=1;
+		JLTS_hasEMPProtection=1;
+		model="\3AS\3AS_Weapons\Republic\DC15L\3AS_DC15L_F.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15L\Data\UI\3as_dc15l.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		magazines[]=
 		{
 			"104th_3AS_DC15L_Mag",
@@ -1090,6 +1229,12 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=170;
+			class MuzzleSlot: 3AS_MuzzleSlot_DC15L
+			{
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -1100,18 +1245,23 @@ class CfgWeapons
 					"Aux501_cows_Holosight_3"
 				};
 			};
+			class UnderBarrelSlot: 3AS_UnderBarrelSlot_DC15L
+			{
+				iconPosition[]={0.23999999,0.69999999};
+				iconScale=0.30000001;
+			};
 		};
 	};
-	class 3AS_DC15C_F: 3AS_DC15C_Base_F
-	{
-		canShootInWater=1;
-		JLTS_hasEMPProtection=1;
-		class WeaponSlotsInfo;
-	};
-	class 104th_3AS_DC15C: 3AS_DC15C_F
+	class 104th_3AS_DC15C: 3AS_DC15C_Base_F
 	{
 		scope=2;
 		displayName="[104th] DC-15C";
+		canShootInWater=1;
+		JLTS_hasEMPProtection=1;
+		baseWeapon="104th_3AS_DC15C";
+		model="\3AS\3AS_Weapons\Republic\DC15C\3AS_DC15C_F.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15C\Data\UI\3as_dc15c.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		magazines[]=
 		{
 			"104th_3AS_DC15C_Mag",
@@ -1119,6 +1269,7 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=70;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -1138,16 +1289,26 @@ class CfgWeapons
 			};
 		};
 	};
-	class 3AS_DC15C_GL: 3AS_DC15C_Base_F
-	{
-		canShootInWater=1;
-		JLTS_hasEMPProtection=1;
-		class WeaponSlotsInfo;
-	};
-	class 104th_3AS_DC15CGL: 3AS_DC15C_GL
+	class 104th_3AS_DC15CGL: 3AS_DC15C_Base_F
 	{
 		scope=2;
 		displayName="[104th] DC-15C/GL";
+		canShootInWater=1;
+		JLTS_hasEMPProtection=1;
+		baseWeapon="104th_3AS_DC15CGL";
+		model="\3AS\3AS_Weapons\Republic\DC15C\3AS_DC15C_GL.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15C\Data\UI\3as_dc15cgl.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		muzzles[]=
+		{
+			"this",
+			"GL_3GL_F"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"3as\3AS_Weapons\Republic\DC15C\Data\Anim\New_DC15CGL_Handanim.rtm"
+		};
 		magazines[]=
 		{
 			"104th_3AS_DC15C_Mag"
@@ -1171,16 +1332,12 @@ class CfgWeapons
 			};
 		};
 	};
-	class 3AS_DC17M_F: 3AS_DC17M_Base_F
-	{
-		canShootInWater=1;
-		JLTS_hasEMPProtection=1;
-		class WeaponSlotsInfo;
-	};
 	class 104th_3AS_DC17M: 3AS_DC17M_F
 	{
 		scope=2;
 		displayName="[104th] DC-17M";
+		canShootInWater=1;
+		JLTS_hasEMPProtection=1;
 		magazines[]=
 		{
 			"104th_3AS_DC17M_Mag",
@@ -1191,8 +1348,6 @@ class CfgWeapons
 	};
 	class 3AS_WestarM5_Base_F: Rifle_Base_F
 	{
-		canShootInWater=1;
-		JLTS_hasEMPProtection=1;
 		class WeaponSlotsInfo;
 		class 3AS_WestarM5_GL_F: UGL_F
 		{
@@ -1205,6 +1360,8 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="[104th] Westar M5";
+		canShootInWater=1;
+		JLTS_hasEMPProtection=1;
 		magazines[]=
 		{
 			"104th_3AS_WestarM5_Mag"
@@ -1290,37 +1447,39 @@ class CfgWeapons
 			"104th_WestarM5_GL_F"
 		};
 	};
-	class 3AS_Z6_F: 3AS_Z6_Base_F
-	{
-		canShootInWater=1;
-		class WeaponSlotsInfo;
-	};
 	class 104th_3AS_Z6: 3AS_Z6_F
 	{
 		JLTS_hasEMPProtection=1;
 		scope=0;
 		displayName="[104th] Z-6";
+		canShootInWater=1;
 		magazines[]=
 		{
 			"104th_3AS_Z6_Mag"
 		};
 	};
-	class 3AS_Valken38X_F: 3AS_Valken38X_Base_F
-	{
-		canShootInWater=1;
-		class WeaponSlotsInfo;
-	};
-	class 104th_3AS_Valken38X: 3AS_Valken38X_F
+	class 104th_3AS_Valken38X: 3AS_Valken38X_Base_F
 	{
 		JLTS_hasEMPProtection=1;
+		canShootInWater=1;
 		scope=2;
 		displayName="[104th] Valken 38X";
+		baseWeapon="104th_3AS_Valken38X";
+		model="\3AS\3AS_Weapons\Republic\Valken38X\3AS_Valken38X_F.p3d";
+		picture="\3AS\3AS_Weapons\Republic\Valken38X\Data\UI\3as_valken38x.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		magazines[]=
 		{
 			"104th_3AS_Valken38X_Mag"
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=231;
+			class MuzzleSlot: 3AS_MuzzleSlot_VK38X
+			{
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -1328,6 +1487,11 @@ class CfgWeapons
 					"3AS_Optic_VK38X",
 					"Optre_M393_Scope"
 				};
+			};
+			class UnderBarrelSlot: 3AS_UnderBarrelSlot_VK38X
+			{
+				iconPosition[]={0.23999999,0.69999999};
+				iconScale=0.30000001;
 			};
 		};
 	};
