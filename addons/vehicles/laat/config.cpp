@@ -146,13 +146,13 @@ class CfgVehicles {
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"104th_SmokeLauncher",
-			"104th_LAAT_Cannon_Low",
-			"104th_LAAT_Cannon_High",
-			"104th_Maramu_A2A_MissileSystem",
-            "104th_Hoska_A2A_MissileSystem",
-			"104th_Dianoga_WGM_MissileSystem",
-            "104th_Kaada_DF_MissileSystem"
+			"WPEC_SmokeLauncher",
+			"WPEC_LAAT_Cannon_Low",
+			"WPEC_LAAT_Cannon_High",
+			"WPEC_Maramu_A2A_MissileSystem",
+            "WPEC_Hoska_A2A_MissileSystem",
+			"WPEC_Dianoga_WGM_MissileSystem",
+            "WPEC_Kaada_DF_MissileSystem"
 		};
 		magazines[]=
 		{
@@ -160,38 +160,38 @@ class CfgVehicles {
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
-			"104th_LAAT_Cannon_LowPower_Magazine",
-			"104th_LAAT_Cannon_LowPower_Magazine",
-			"104th_LAAT_Cannon_LowPower_Magazine",
-			"104th_LAAT_Cannon_HighPower_Magazine",
-			"104th_LAAT_Cannon_HighPower_Magazine",
-			"104th_LAAT_Cannon_HighPower_Magazine",
-			"104th_Maramu_6Rnd_A2A_mag",
-			"104th_Maramu_6Rnd_A2A_mag",
-			"104th_Hoska_6Rnd_A2A_mag",
-            "104th_Hoska_6Rnd_A2A_mag",
-            "104th_Dianoga_4Rnd_WGM_mag",
-            "104th_Dianoga_4Rnd_WGM_mag",
-            "104th_Kaada_10Rnd_Unguided_Rocket_mag",
-            "104th_Kaada_10Rnd_Unguided_Rocket_mag"
+			"WPEC_SmokeLauncherMag",
+			"WPEC_SmokeLauncherMag",
+			"WPEC_SmokeLauncherMag",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_HighPower_Magazine",
+			"WPEC_LAAT_Cannon_HighPower_Magazine",
+			"WPEC_LAAT_Cannon_HighPower_Magazine",
+			"WPEC_Maramu_6Rnd_A2A_mag",
+			"WPEC_Maramu_6Rnd_A2A_mag",
+			"WPEC_Hoska_6Rnd_A2A_mag",
+            "WPEC_Hoska_6Rnd_A2A_mag",
+            "WPEC_Dianoga_4Rnd_WGM_mag",
+            "WPEC_Dianoga_4Rnd_WGM_mag",
+            "WPEC_Kaada_10Rnd_Unguided_Rocket_mag",
+            "WPEC_Kaada_10Rnd_Unguided_Rocket_mag"
 		};
 
         class Turrets: Turrets {
 			class Gunner: Copilot {
 				weapons[]=
 				{
-                    "104th_LAAT_Cannon_Low",
+                    "WPEC_LAAT_Cannon_Low",
 					"Laserdesignator_pilotCamera"
 				};
 				magazines[]=
 				{
 					"Laserbatteries",
-                    "104th_LAAT_Cannon_LowPower_Magazine",
-                    "104th_LAAT_Cannon_LowPower_Magazine",
-                    "104th_LAAT_Cannon_LowPower_Magazine"
+                    "WPEC_LAAT_Cannon_LowPower_Magazine",
+                    "WPEC_LAAT_Cannon_LowPower_Magazine",
+                    "WPEC_LAAT_Cannon_LowPower_Magazine"
 				};
 				minelev = -60;
 				minturn = -240;
