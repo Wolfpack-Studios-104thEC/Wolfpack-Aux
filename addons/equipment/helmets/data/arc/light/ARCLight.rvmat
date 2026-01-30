@@ -20,7 +20,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "Z\Wolfpack-Core\addons\equipment\helmets\data\arc\light\ARCLightnohq.paa";
+	texture = "Z\wpec\addons\equipment\helmets\data\arc\light\ARCLight_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "Z\Wolfpack-Core\addons\equipment\helmets\data\arc\light\ARCLightsmdi.paa";
+	texture = "Z\wpec\addons\equipment\helmets\data\arc\light\ARCLightsmdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
