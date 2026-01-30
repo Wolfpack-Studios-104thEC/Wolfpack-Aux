@@ -27,7 +27,7 @@ class CfgWeapons
     class WPS_Phase_2_Airborne_Helmet_Base;
     class HeadgearItem;
 
-    class WPEC_Phase_2_Helmet_CR: WPS_Phase_2_Helmet_Base
+    /*class WPEC_Phase_2_Helmet_CR: WPS_Phase_2_Helmet_Base
     {
         scope = 2;
         scopeCurator = 2;

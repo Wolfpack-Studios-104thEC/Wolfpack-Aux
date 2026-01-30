@@ -20,8 +20,8 @@ specularPower = 20;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
-{ 
-	texture = "z\Wolfpack-Core\addons\equipment\helmets\data\visor\glow\VisorGlow_nohq.paa";
+{
+	texture = "Z\wpec\addons\equipment\helmets\data\visor\glow\VisorGlow_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -69,7 +69,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "z\Wolfpack-Core\addons\equipment\helmets\data\visor\glow\VisorGlow_smdi.paa";
+	texture = "Z\wpec\addons\equipment\helmets\data\visor\glow\VisorGlow_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
