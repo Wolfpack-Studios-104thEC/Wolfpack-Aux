@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class SUBADDON {
-        addonRootClass = QUOTE(ADDON);
+        addonRootClass = QADDON;
         name = COMPONENT_NAME;
         units[] = {
             QGVAR(LAAT_turrets),
@@ -15,7 +15,6 @@ class CfgPatches {
         requiredAddons[] = {
             QE_ADDON(vehicles)
         };
-		skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };
@@ -120,7 +119,7 @@ class CfgVehicles {
 		//Factions Association:
         faction= QEGVAR(faction,eclipse);
 		//vehicleClass = "GAR_LAATCatNSub";
-		editorSubcategory = QEGVAR(edsubcat,heli);
+		editorSubcategory=QEGVAR(edsubcat,heli);
 
 		//Crew Specifics:
 		//crew="WPEC_Phase_2_Unit_Trooper_CSP2";  //Deal with this later

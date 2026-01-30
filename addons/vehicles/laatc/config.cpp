@@ -12,7 +12,6 @@ class CfgPatches {
         requiredAddons[] = {
             QE_ADDON(vehicles)
         };
-		skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };
