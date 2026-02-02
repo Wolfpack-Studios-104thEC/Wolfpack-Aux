@@ -53,21 +53,17 @@ class CfgVehicles {
 			class Reargun;
         };
 		class Components;
-		class ACE_SelfActions;
 		class AnimationSources;
 	};
-    class NCA_ARC170C: 3as_arc_170_base
+    class WPEC_ARC170_base: 3as_arc_170_base
     {
-        scope = 2;
-		scopecurator = 2;
+        scope = 1;
+		scopecurator = 1;
 		displayName="[104th] ARC-170";
 		author="Wolfpack Studios";
 		side = 1;
-        faction= QEGVAR(faction,eclipse);
-		//vehicleClass = "GAR_LAATCatNSub";
-		editorSubcategory=QEGVAR(edsubcat,heli);
 		driverCanEject = 1;
-		//crew = "NCA_cloneArmor_unit_tauntaunEnlisted";
+		//crew = "WPEC_cloneArmor_unit_tauntaunEnlisted";
 		acceleration=400;
 		maxSpeed=645;
 		maxOmega=2500;
@@ -88,31 +84,19 @@ class CfgVehicles {
         weapons[] =
 		{
 			"Laserdesignator_pilotCamera",
-			"NCA_voltic_plasma_weapon",
-			"NCA_coaxium_plasma_weapon",
-			"NCA_chaser_A2A_missile_launcher",
-			"NCA_hammer_AGM_missile_launcher",
-			"NCA_oro_AGM_missile_launcher",
+			"WPEC_LAAT_Cannon_Low",
+			"WPEC_coaxium_plasma_weapon",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
 			"Laserbatteries",
-			"NCA_voltic_plasma_magazine",
-			"NCA_voltic_plasma_magazine",
-			"NCA_voltic_plasma_magazine",
-			"NCA_voltic_plasma_magazine",
-			"NCA_coaxium_plasma_magazine",
-			"NCA_coaxium_plasma_magazine",
-			"NCA_coaxium_plasma_magazine",
-			"NCA_chaser_A2A_missile_magazine",
-			"NCA_chaser_A2A_missile_magazine",
-			"NCA_hammer_AGM_missile_magazine",
-			"NCA_hammer_AGM_missile_magazine",
-			"NCA_hammer_AGM_missile_magazine",
-			"NCA_hammer_AGM_missile_magazine",
-			"NCA_oro_AGM_missile_fixedwing_magazine",
-			"NCA_oro_AGM_missile_fixedwing_magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_coaxium_plasma_magazine",
+			"WPEC_coaxium_plasma_magazine",
+			"WPEC_coaxium_plasma_magazine",
 			"120Rnd_CMFlare_Chaff_Magazine",
 			"120Rnd_CMFlare_Chaff_Magazine",
 			"120Rnd_CMFlare_Chaff_Magazine",
@@ -132,22 +116,22 @@ class CfgVehicles {
 			class Muzzle_Flash
 			{
 				source="ammorandom";
-				weapon="NCA_coaxium_plasma_weapon";
+				weapon="WPEC_coaxium_plasma_weapon";
 			};
 			class Muzzle_Flash2
 			{
 				source="ammorandom";
-				weapon="NCA_voltic_plasma_weapon";
+				weapon="WPEC_LAAT_Cannon_Low";
 			};
 			class Muzzle_Flash3
 			{
 				source="ammorandom";
-				weapon="NCA_coaxium_plasma_weapon";
+				weapon="WPEC_coaxium_plasma_weapon";
 			};
 			class recoil_source
 			{
 				source="reload";
-				weapon="NCA_coaxium_plasma_weapon";
+				weapon="WPEC_coaxium_plasma_weapon";
 			};
 		};
 		class Turrets: Turrets
@@ -157,29 +141,29 @@ class CfgVehicles {
                 weapons[] =
                 {
                     "Laserdesignator_pilotCamera",
-                    "NCA_green_CAP_plasma_weapon"
+                    "WPEC_green_CAP_plasma_weapon"
                 };
                 magazines[] =
                 {
                     "Laserbatteries",
-                    "NCA_green_CAP_plasma_x1200_mag",
-                    "NCA_green_CAP_plasma_x1200_mag",
-                    "NCA_green_CAP_plasma_x1200_mag",
-                    "NCA_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
                 };
             };
 			class Reargun: Reargun
             {
                 weapons[] =
                 {
-                    "NCA_green_CAP_plasma_weapon",
+                    "WPEC_green_CAP_plasma_weapon",
                 };
                 magazines[] =
                 {
-                    "NCA_green_CAP_plasma_x1200_mag",
-                    "NCA_green_CAP_plasma_x1200_mag",
-                    "NCA_green_CAP_plasma_x1200_mag",
-                    "NCA_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
+                    "WPEC_green_CAP_plasma_x1200_mag",
                 };
             };
 		};
@@ -500,8 +484,88 @@ class CfgVehicles {
 			};
 			class TransportPylonsComponent
 			{
-				class pylons {};
-				UIPicture = "";
+				UIPicture="3as\3AS_ARC170\data\ui\pylon_arc.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[]=
+						{
+							"WPEC_ARC_Universal_1_4_Missile_rail"
+						};
+						attachment="WPEC_Dianoga_pylon_x2_WGM_mag";
+						priority=10;
+						maxweight=300;
+						UIposition[]={0.5,0.25};
+					};
+					class pylons2: pylons1
+					{
+						UIposition[]={0.15000001,0.25};
+						mirroredMissilePos=1;
+					};
+					class pylons3: pylons1
+					{
+						attachment="PylonMissile_1Rnd_Bomb_04_F";
+						priority=9;
+						maxweight=2500;
+						UIposition[]={0.55000001,0.34999999};
+					};
+					class pylons4: pylons3
+					{
+						UIposition[]={0.1,0.34999999};
+						mirroredMissilePos=3;
+					};
+					class pylons5: pylons1
+					{
+						hardpoints[]=
+						{
+							"WPEC_ARC_Universal_5_6_Missile_rail"
+						};
+						attachment="WPEC_Hoska_pylon_x2_A2A_mag";
+						priority=7;
+						maxweight=5000;
+						UIposition[]={0.60000002,0.44999999};
+					};
+					class pylons6: pylons5
+					{
+						UIposition[]={0.050000001,0.44999999};
+						mirroredMissilePos=5;
+					};
+				};
+				/*class presets
+				{
+					class empty
+					{
+						displayName="$STR_empty";
+						attachment[]={};
+					};
+					class AA
+					{
+						displayName="$STR_A3_cfgmagazines_titan_aa_dns";
+						attachment[]=
+						{
+							"PylonRack_Missile_BIM9X_x1",
+							"PylonRack_Missile_BIM9X_x1",
+							"3AS_PylonRack_ARC_6Rnd_Missile_AGM",
+							"3AS_PylonRack_ARC_6Rnd_Missile_AGM",
+							"PylonRack_Missile_AMRAAM_D_x1",
+							"PylonRack_Missile_AMRAAM_D_x1"
+						};
+					};
+					class CAS
+					{
+						displayName="$STR_A3_CAS_PRESET_DISPLAYNAME";
+						attachment[]=
+						{
+							"PylonRack_Missile_BIM9X_x1",
+							"PylonRack_Missile_BIM9X_x1",
+							"PylonMissile_1Rnd_Bomb_04_F",
+							"PylonMissile_1Rnd_Bomb_04_F",
+							"3AS_PylonRack_ARC_6Rnd_Missile_AGM",
+							"3AS_PylonRack_ARC_6Rnd_Missile_AGM"
+						};
+					};
+				};*/
 			};
 		};
 		class pilotCamera
@@ -608,6 +672,19 @@ class CfgVehicles {
 			minMoveZ = 0;
 			maxMoveZ = 0;
 		};
-		defaultUserMFDvalues[] = {0, 1, 0, 1, 0};
+    };
+    class GVAR(Arc170): WPEC_ARC170_base
+    {
+		author="Wolfpack Studios";
+        scope = 2;
+		scopeCurator = 2;
+		displayName = "[21st] ARC-170";
+        faction= QEGVAR(faction,eclipse);
+		editorSubcategory=QEGVAR(edsubcat,fixedwing);
+		class Turrets: Turrets
+		{
+			delete LaserPilot;
+			delete Reargun;
+		};
     };
 };
