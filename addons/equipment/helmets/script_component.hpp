@@ -235,5 +235,3 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
         depends = "HitHead"; \
     };\
 }
-
-#include "\Z\wpec\addons\equipment\script_macros.hpp"

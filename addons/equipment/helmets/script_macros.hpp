@@ -281,7 +281,7 @@
 	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 1 Helmet(name));\
-    picture = QPATHTOF(data\icon\Icon##name##_co.paa);\
+    picture = QPATHTOF(data\icon\IconPhase1##name##_co.paa);\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase1\rank\Phase1##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
 	/*/*class XtdGearInfo { \
 		model = QGVAR(phase1_rank); \

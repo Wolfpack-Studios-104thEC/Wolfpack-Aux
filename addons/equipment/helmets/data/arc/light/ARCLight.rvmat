@@ -1,11 +1,4 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: data\ARCLight.rvmat
-//Produced from mikero's Dos Tools Dll version 9.10
-//https://mikero.bytex.digital/Downloads
-//'now' is Fri Aug 09 16:59:46 2024 : 'file' last modified on Wed Aug 07 14:31:14 2024
-////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
 class StageTI
 {
 	texture = "#(argb,8,8,3)color(0,0,0,0)";
