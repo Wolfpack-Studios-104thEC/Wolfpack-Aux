@@ -60,7 +60,6 @@ class CfgVehicles {
         faction= QEGVAR(faction,eclipse);
 		//vehicleClass = "GAR_LAATCatNSub";
 		editorSubcategory=QEGVAR(edsubcat,fixedwing);
-		driverCanEject = 1;
 		//crew = "WPEC_cloneArmor_unit_tauntaunEnlisted";
 
 		armor=400;
