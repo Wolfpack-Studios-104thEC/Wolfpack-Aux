@@ -25,6 +25,22 @@ class SensorTemplateIR;
 class SensorTemplateVisual;
 class SensorTemplateLaser;
 class SensorTemplateNV;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class Components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class Components;
+};
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class Components;
+};
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+	class Components;
+};
 class WPEC_impulsor_base;
 
 class CfgVehicles {
