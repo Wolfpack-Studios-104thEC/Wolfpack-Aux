@@ -22,7 +22,7 @@ class CfgFunctions
 		tag = "WPEC";
 		class ShieldGrenade104th
 		{
-			file = "WPEC\WPEC_Weapons\Functions";
+			file = "Z\wpec\addons\weapons\Functions";
 			class setupEH104th
 			{
 				postInit = 1;
@@ -32,7 +32,7 @@ class CfgFunctions
 	};
 	class WPEC_Weapon
 	{
-		file = "\WPEC\WPEC_Weapons\Functions";
+		file = "\\Z\wpec\addons\weapons\Functions";
 		class scripts
 		{
 			class onHit{};

@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "script_macros.hpp"
 
 #include "config_lists.hpp"
 
@@ -10,7 +11,8 @@ class CfgPatches {
             UNIT_LIST
         };
         weapons[] = {
-            ITEM_LIST
+            CUSTOM_ITEM_LIST,
+            STANDARD_ITEM_LIST
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		author = "Queue";
 		requiredAddons[] = {"A3_characters_f","A3_data_f"};
-		units[] = {"WPEC_Backpack_Base",
+		units[] = {/*"WPEC_Backpack_Base",
 		"WPEC_Backpack",
 		"WPEC_Backpack_LR",
 		"WPEC_Backpack_Medic",
@@ -14,13 +14,13 @@ class CfgPatches
 		"WPEC_Backpack_Void_Sapper",
 		"WPEC_Backpack_Void_Shield",
 		"WPEC_Backpack_Void_Turret",
-		"WPEC_Backpack_Void_LR"};
+		"WPEC_Backpack_Void_LR"*/};
 		weapons[] = {};
 		requiredVersion = 0.1;
 	};
 };
 class CfgWeapons{};
-class CfgVehicles
+/*class CfgVehicles
 {
 	class B_Kitbag_rgr;
 	class WPEC_Backpack_Base: B_Kitbag_rgr
@@ -161,4 +161,4 @@ class CfgVehicles
         picture = "\WPEC\WPEC_Backpacks\icons\IconVoidBackpackLR_co.paa";
 	};
 
-};
+};*/
