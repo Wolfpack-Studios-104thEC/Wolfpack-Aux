@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "ls_impulsor.hpp"
 
 class CfgPatches {
     class ADDON {

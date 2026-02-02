@@ -4,7 +4,12 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[] = {};
+        weapons[] = {
+            "WPEC_LAAT_Cannon_Low",
+            "WPEC_LAAT_Cannon_High",
+            "WPEC_aircraft_green_CAP_plasma_weapon",
+            "WPEC_coaxium_plasma_weapon"
+        };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {};
         author = AUTHOR;
@@ -162,6 +167,11 @@ class CfgAmmo
 	class B_20mm_Tracer_Red;
 	class B_20mm;
 	class ShellBase;
+	class SubmunitionCore;
+    class BulletBase;
+	class B_35mm_AA_Tracer_Red;
+	class M_Zephyr;
+    class ammo_Missile_AA_R73;
 	class 104th_Ball_Turret: B_20mm_Tracer_Red
 	{
 		typicalSpeed=1000;
@@ -1095,428 +1105,27 @@ class CfgAmmo
 		};
 	};
 	class M_Jian_AT;
-	class 104th_Dianoga_WGM_Missile: M_Jian_AT
-	{
-		displayName="Dianoga WGM";
-		displayNameShort="Dianoga WGM";
-		effectsMissile="WPEC_particle_effect_Missile_fly_Teal";
-		muzzleEffect="";
-		model="\A3\Weapons_F\Ammo\Missile_AT_02_fly_F";
-		triggerTime=0.2;
-		thrustTime=15;
-		thrust=200;
-		maneuvrability=28;
-		airFriction=0.050000001;
-		hit=1600;
-		indirectHit=300;
-		indirectHitRange=10;
-		cameraViewAvailable=1;
-		explosionTime=20;
-		timeToLive=20;
-	};
-	class Rocket_04_AP_F;
-	class 104th_Kaada_Unguided_Rocket: Rocket_04_AP_F
-	{
-		displayName="Kaada Unguided Missile";
-		displayNameShort="Kaada Missile";
-		muzzleEffect="";
-		model="3AS\3AS_Weapons\Data\tracer_red.p3d";
-		triggerTime=0.1;
-		thrustTime=15;
-		hit=1300;
-		indirectHit=750;
-		indirectHitRange=10;
-		cameraViewAvailable=0;
-		effectsMissile="WPEC_particle_effect_Missile_fly_Maroon";
-	};
+	class M_AT;
+    class Bo_Mk82;
+    class ammo_Bomb_SDB;
+
+    #include "ammo.hpp"
+};
+class CfgMagazines
+{
+	class VehicleMagazine;
+	class 4Rnd_AAA_missiles;
+	class 4Rnd_LG_Jian;
+	class 7Rnd_Rocket_04_AP_F;
+	class 4Rnd_GAA_missiles;
+	class 2Rnd_Mk82_MI08;
+    class magazine_Bomb_SDB_x1;
+
+    #include "magazines.hpp"
 };
 class CfgWeapons
 {
 	class CannonCore;
-	class 104th_autocannon_Base_F: CannonCore
-	{
-		scope=1;
-		cursor="EmptyCursor";
-		cursorAim="cannon";
-		nameSound="cannon";
-		sound[]=
-		{
-			"A3\sounds_f\dummysound.wss",
-			2.5118864,
-			1,
-			1800
-		};
-		soundContinuous=0;
-		reloadTime=0.30000001;
-		aiRateOfFire=0.60000002;
-		magazineReloadTime=2;
-		autoReload=1;
-		ballisticsComputer="2 + 16";
-		FCSMaxLeadSpeed=27.778;
-		FCSZeroingDelay=1;
-		canLock=0;
-		autoFire=1;
-		modes[]=
-		{
-			"player",
-			"close",
-			"short",
-			"medium",
-			"far"
-		};
-		shotFromTurret=0;
-		showAimCursorInternal=0;
-		class player: Mode_FullAuto
-		{
-			soundContinuous=0;
-			reloadTime=0.30000001;
-			dispersion=0.00089999998;
-			aiRateOfFire=1;
-			aiRateOfFireDistance=10;
-			minRange=0;
-			minRangeProbab=0.0099999998;
-			midRange=1;
-			midRangeProbab=0.0099999998;
-			maxRange=2;
-			maxRangeProbab=0.0099999998;
-		};
-		class close: player
-		{
-			aiBurstTerminable=1;
-			showToPlayer=0;
-			burst=3;
-			burstRangeMax=6;
-			aiRateOfFire=1;
-			aiRateOfFireDispersion=2;
-			aiRateOfFireDistance=200;
-			minRange=0;
-			minRangeProbab=0.1;
-			midRange=400;
-			midRangeProbab=0.69999999;
-			maxRange=800;
-			maxRangeProbab=0.80000001;
-		};
-		class short: close
-		{
-			aiBurstTerminable=1;
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=5;
-			aiRateOfFire=2;
-			aiRateOfFireDispersion=2;
-			aiRateOfFireDistance=600;
-			minRange=600;
-			minRangeProbab=0.75;
-			midRange=800;
-			midRangeProbab=0.80000001;
-			maxRange=1200;
-			maxRangeProbab=0.80000001;
-		};
-		class medium: close
-		{
-			aiBurstTerminable=1;
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=3;
-			aiRateOfFire=2;
-			aiRateOfFireDispersion=3;
-			aiRateOfFireDistance=1000;
-			minRange=1000;
-			minRangeProbab=0.80000001;
-			midRange=1500;
-			midRangeProbab=0.80000001;
-			maxRange=2000;
-			maxRangeProbab=0.69999999;
-		};
-		class far: close
-		{
-			aiBurstTerminable=1;
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=1;
-			aiRateOfFire=2;
-			aiRateOfFireDispersion=4;
-			aiRateOfFireDistance=1800;
-			minRange=1800;
-			minRangeProbab=0.74000001;
-			midRange=2400;
-			midRangeProbab=0.64999998;
-			maxRange=3000;
-			maxRangeProbab=0.050000001;
-		};
-	};
-	class 104th_LAAT_LASER: 104th_autocannon_Base_F
-	{
-		displayName="$STR_A3_autocannon_40mm_CTWS0";
-		muzzles[]=
-		{
-			"HE"
-		};
-		class HE: 104th_autocannon_Base_F
-		{
-			displayName="$STR_A3_autocannon_40mm_CTWS0";
-			magazines[]=
-			{
-				"104th_2000Rnd_LAAT_laser",
-				"104th_2000Rnd_LAAT_laser"
-			};
-			class player: player
-			{
-				dispersion=0;
-				reloadTime=0.016666668;
-				burst=144;
-				sounds[]=
-				{
-					"StandardSound"
-				};
-				class StandardSound
-				{
-					begin1[]=
-					{
-						"A3\Sounds_F\arsenal\weapons_vehicles\cannon_105mm\slammer_105mm_distant",
-						3,
-						1,
-						150
-					};
-					soundBegin[]=
-					{
-						"begin1",
-						1
-					};
-				};
-				soundContinuous=1;
-			};
-			class close: player
-			{
-				aiBurstTerminable=1;
-				showToPlayer=0;
-				burst=3;
-				burstRangeMax=6;
-				aiRateOfFire=1;
-				aiRateOfFireDispersion=2;
-				aiRateOfFireDistance=200;
-				minRange=0;
-				minRangeProbab=0.1;
-				midRange=400;
-				midRangeProbab=0.69999999;
-				maxRange=800;
-				maxRangeProbab=0.80000001;
-			};
-			class short: close
-			{
-				aiBurstTerminable=1;
-				showToPlayer=0;
-				burst=1;
-				burstRangeMax=5;
-				aiRateOfFire=2;
-				aiRateOfFireDispersion=2;
-				aiRateOfFireDistance=600;
-				minRange=600;
-				minRangeProbab=0.75;
-				midRange=800;
-				midRangeProbab=0.80000001;
-				maxRange=1200;
-				maxRangeProbab=0.80000001;
-			};
-			class medium: close
-			{
-				aiBurstTerminable=1;
-				showToPlayer=0;
-				burst=1;
-				burstRangeMax=3;
-				aiRateOfFire=2;
-				aiRateOfFireDispersion=3;
-				aiRateOfFireDistance=1000;
-				minRange=1000;
-				minRangeProbab=0.80000001;
-				midRange=1500;
-				midRangeProbab=0.80000001;
-				maxRange=2000;
-				maxRangeProbab=0.69999999;
-			};
-			class far: close
-			{
-				aiBurstTerminable=1;
-				showToPlayer=0;
-				burst=1;
-				burstRangeMax=1;
-				aiRateOfFire=2;
-				aiRateOfFireDispersion=4;
-				aiRateOfFireDistance=1800;
-				minRange=1800;
-				minRangeProbab=0.74000001;
-				midRange=2400;
-				midRangeProbab=0.64999998;
-				maxRange=3000;
-				maxRangeProbab=0.050000001;
-			};
-		};
-	};
-	class 104th_SuperLaser: CannonCore
-	{
-		scope=1;
-		displayName="104th_SuperLaser";
-		cursor="EmptyCursor";
-		cursorAim="cannon";
-		showAimCursorInternal=0;
-		nameSound="cannon";
-		reloadSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\Cannon_120mm_Reload_01.wss",
-			2.5118864,
-			1,
-			10
-		};
-		reloadMagazineSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\Cannon_120mm_Reload_01.wss",
-			2.5118864,
-			1,
-			10
-		};
-		magazines[]=
-		{
-			"4Rnd_104th_SuperLaser",
-			"4Rnd_104th_SuperLaser_HE"
-		};
-		reloadTime=10;
-		magazineReloadTime=30;
-		autoReload=1;
-		canLock=0;
-		ballisticsComputer="2 + 16";
-		FCSMaxLeadSpeed=25;
-		FCSZeroingDelay=1;
-		aiDispersionCoefY=2;
-		aiDispersionCoefX=2;
-		autoFire=0;
-		modes[]=
-		{
-			"player",
-			"topDown",
-			"close",
-			"short",
-			"medium",
-			"far"
-		};
-		class GunParticles
-		{
-			class FirstEffect
-			{
-				effectName="CannonFired";
-				positionName="Usti hlavne";
-				directionName="Konec hlavne";
-			};
-		};
-		class player: Mode_SemiAuto
-		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons_vehicles\cannon_120mm\slammer_120mm_distant",
-					3.1622777,
-					1,
-					1500
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-			soundContinuous=0;
-			reloadTime=6;
-			magazineReloadTime=6;
-			autoReload=1;
-			autoFire=0;
-			dispersion=0.00056999997;
-			aiRateOfFire=1;
-			aiRateOfFireDistance=10;
-			minRange=0;
-			minRangeProbab=0.0099999998;
-			midRange=1;
-			midRangeProbab=0.0099999998;
-			maxRange=2;
-			maxRangeProbab=0.0099999998;
-		};
-		class TopDown: player
-		{
-			textureType="topDown";
-			displayName="$STR_A3_FireMode_TopDown0";
-			minRange=150;
-			minRangeProbab=0.40000001;
-			midRange=400;
-			midRangeProbab=0.94999999;
-			maxRange=8000;
-			maxRangeProbab=0.94999999;
-		};
-		class close: player
-		{
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=1;
-			aiRateOfFire=6;
-			aiRateOfFireDispersion=0.5;
-			aiRateOfFireDistance=500;
-			minRange=5;
-			minRangeProbab=0.1;
-			midRange=500;
-			midRangeProbab=0.80000001;
-			maxRange=1000;
-			maxRangeProbab=0.85000002;
-		};
-		class short: close
-		{
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=1;
-			aiRateOfFire=6;
-			aiRateOfFireDispersion=1;
-			aiRateOfFireDistance=1000;
-			minRange=500;
-			minRangeProbab=0.30000001;
-			midRange=1000;
-			midRangeProbab=0.85000002;
-			maxRange=1500;
-			maxRangeProbab=0.85000002;
-		};
-		class medium: close
-		{
-			dispersion=0.00071250001;
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=1;
-			aiRateOfFire=8;
-			aiRateOfFireDispersion=4;
-			aiRateOfFireDistance=1250;
-			minRange=1000;
-			minRangeProbab=0.60000002;
-			midRange=1500;
-			midRangeProbab=0.85000002;
-			maxRange=2000;
-			maxRangeProbab=0.80000001;
-		};
-		class far: close
-		{
-			dispersion=0.00071250001;
-			showToPlayer=0;
-			burst=1;
-			burstRangeMax=1;
-			aiRateOfFire=10;
-			aiRateOfFireDispersion=8;
-			aiRateOfFireDistance=1500;
-			minRange=1500;
-			minRangeProbab=0.75;
-			midRange=2000;
-			midRangeProbab=0.80000001;
-			maxRange=3500;
-			maxRangeProbab=0.050000001;
-		};
-	};
 	class Cannon_30mm_Plane_CAS_02_F: CannonCore
 	{
 		class LowROF;
@@ -1612,138 +1221,11 @@ class CfgWeapons
 		};
 	};
 	class missiles_ASRAAM;
-	class 104th_Maramu_A2A_MissileSystem: missiles_ASRAAM
-	{
-		displayName="Maramu Missile System";
-		displayNameShort="Maramu";
-		magazines[]=
-		{
-			"104th_Maramu_6Rnd_A2A_mag"
-		};
-		sounds[]=
-		{
-			"StandardSound"
-		};
-		class StandardSound
-		{
-			soundsetshot[]=
-			{
-				"3AS_Missle_SoundSet"
-			};
-		};
-		soundfly[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
-			3,
-			1,
-			2000
-		};
-		lockingTargetSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan.wss",
-			0.56234133,
-			1
-		};
-		lockedTargetSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan.wss",
-			0.56234133,
-			2.5
-		};
-	};
-	class 104th_Hoska_A2A_MissileSystem: missiles_ASRAAM
-	{
-		displayName="Hoska Missile System";
-		displayNameShort="Hoska";
-		magazines[]=
-		{
-			"104th_Hoska_6Rnd_A2A_mag"
-		};
-		sounds[]=
-		{
-			"StandardSound"
-		};
-		class StandardSound
-		{
-			soundsetshot[]=
-			{
-				"3AS_Missle_SoundSet"
-			};
-		};
-		soundfly[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
-			3,
-			1,
-			2000
-		};
-		lockingTargetSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan.wss",
-			0.56234133,
-			1
-		};
-		lockedTargetSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan.wss",
-			0.56234133,
-			2.5
-		};
-	};
+    class weapon_R73Launcher;
 	class missiles_Jian;
-	class 104th_Dianoga_WGM_MissileSystem: missiles_Jian
-	{
-		displayName="Dianoga Missile System";
-		displayNameShort="Dianoga";
-		magazines[]=
-		{
-			"104th_Dianoga_4Rnd_WGM_mag"
-		};
-		sounds[]=
-		{
-			"StandardSound"
-		};
-		class StandardSound
-		{
-			soundsetshot[]=
-			{
-				"3AS_Missle_SoundSet"
-			};
-		};
-		soundfly[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
-			3,
-			1,
-			2000
-		};
-	};
 	class Rocket_04_AP_Plane_CAS_01_F;
-	class 104th_Kaada_DF_MissileSystem: Rocket_04_AP_Plane_CAS_01_F
-	{
-		displayName="Kaada Rocket System";
-		displayNameShort="Kaada";
-		magazines[]=
-		{
-			"104th_Kaada_10Rnd_Unguided_Rocket_mag"
-		};
-		sounds[]=
-		{
-			"StandardSound"
-		};
-		class StandardSound
-		{
-			soundsetshot[]=
-			{
-				"3AS_Missle_SoundSet"
-			};
-		};
-		soundfly[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly.wss",
-			3,
-			1,
-			2000
-		};
-	};
+    class Mk82BombLauncher;
+    class weapon_SDBLauncher;
+
+    #include "weapons.hpp"
 };
