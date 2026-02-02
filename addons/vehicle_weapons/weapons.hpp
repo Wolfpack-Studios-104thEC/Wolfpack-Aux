@@ -358,6 +358,20 @@
 			};
 		};
 	};
+    class WPEC_coaxium_plasma_weapon: WPEC_aircraft_green_CAP_plasma_weapon
+	{
+		scope = 2;
+		displayName = "Coaxium Plasma Cannons";
+		displayNameShort = "Coaxium Plasma";
+		magazines[] = {"WPEC_coaxium_plasma_magazine"};
+		modes[] = {"LowROF"};
+		dispersion = 9.9999997e-006;
+		aiRateOfFire = 0.40000001;
+		reloadTime = 0.40000001;
+		canLock = 1;
+		weaponLockSystem = 0;
+		burst = 1;
+    };
 
     //Missiles
 	class WPEC_Maramu_A2A_MissileSystem: missiles_ASRAAM
@@ -399,6 +413,16 @@
 			2.5
 		};
 	};
+    class WPEC_Maramu_A2A_Pylons_MissileSystem: WPEC_Maramu_A2A_MissileSystem
+	{
+		displayName="Maramu Missile System";
+		displayNameShort="Maramu";
+		magazines[]=
+		{
+			"WPEC_Maramu_pylon_x2_A2A_mag",
+            "WPEC_Maramu_pylon_x1_A2A_mag"
+		};
+    };
 	class WPEC_Hoska_A2A_MissileSystem: missiles_ASRAAM
 	{
 		displayName="Hoska Missile System";
@@ -438,7 +462,17 @@
 			2.5
 		};
 	};
-	class NCA_Talon_A2A_missile_launcher: weapon_R73Launcher
+    class WPEC_Hoska_A2A_Pylons_MissileSystem: WPEC_Hoska_A2A_MissileSystem
+	{
+		displayName="Hoska Missile System";
+		displayNameShort="Hoska";
+		magazines[]=
+		{
+			"WPEC_Hoska_pylon_x2_A2A_mag",
+            "WPEC_Hoska_pylon_x1_A2A_mag"
+		};
+    };
+	class NCA_Talon_A2A_MissileSystem: weapon_R73Launcher
 	{
 		scope=2;
         author = AUTHOR;
@@ -477,6 +511,16 @@
 			2000
 		};
 	};
+	class WPEC_Dianoga_WGM_Pylons_MissileSystem: WPEC_Dianoga_WGM_MissileSystem
+	{
+		displayName="Dianoga Missile System";
+		displayNameShort="Dianoga";
+		magazines[]=
+		{
+			"WPEC_Dianoga_pylon_x2_WGM_mag",
+            "WPEC_Dianoga_pylon_x1_WGM_mag"
+		};
+    };
 	class WPEC_Kaada_DF_MissileSystem: Rocket_04_AP_Plane_CAS_01_F
 	{
 		displayName="Kaada Rocket System";
@@ -503,6 +547,33 @@
 			1,
 			2000
 		};
+	};
+	class WPEC_Kaada_DF_Pylons_MissileSystem: WPEC_Kaada_DF_MissileSystem
+	{
+		displayName="Kaada Missile System";
+		displayNameShort="Kaada";
+		magazines[]=
+		{
+			"WPEC_Kaada_pylon_x2_DF_mag",
+            "WPEC_Kaada_pylon_x1_DF_mag"
+		};
+    };
+
+    //Bombs
+	class WPEC_Dianoga_Unguided_BombSystem: Mk82BombLauncher
+	{
+        author = AUTHOR;
+		displayName="$STR_DN_MK82LAUNCHER";
+		magazines[]=
+		{
+			"WPEC_Dianoga_Unguided_Bomb_mag"
+		};
+	};
+	class WPEC_Dianoga_Guided_BombSystem: weapon_SDBLauncher
+	{
+        author = AUTHOR;
+		displayName="[21st] GBU";
+		magazines[]={"WPEC_Dianoga_Guided_Bomb_mag"};
 	};
 
 //Landcraft

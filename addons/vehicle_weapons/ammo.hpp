@@ -675,6 +675,70 @@
 		tracerEndTime=10;
 		model="3AS\3as_Weapons\Data\tracer_shell_green.p3d";
 	};
+    class WPEC_coaxium_plasma_ammo: B_35mm_AA_Tracer_Red
+	{
+		hit = 6000;
+		indirectHit = 4000;
+		indirectHitRange = 12;
+		caliber = 6;
+		explosive = 1;
+		model = "\ls\core\addons\data\effects\ls_laser_blue.p3d";
+		aiAmmoUsageFlags = 64 + 128 + 256 + 512;
+		simulation = "shotShell";
+		effectsFire = "CannonFire";
+		//explosionEffects="NCA_Coax_Rounds_Explosion_Effects";
+		CraterEffects="ArtyShellCrater";
+		explosionSoundEffect = "DefaultExplosion";
+		tracertScale = 1;
+		tracerStartTime = 0.11;
+		tracerEndTime = 10;
+		soundHit1[] =
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01.wss",
+			2.5118899,
+			1,
+			2000
+		};
+			soundHit2[] =
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02.wss",
+			2.5118899,
+			1,
+			2000
+		};
+		soundHit3[] =
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03.wss",
+			2.5118899,
+			1,
+			2000
+		};
+		SoundSetExplosion[] =
+		{
+			"Shell155mm_Exp_SoundSet",
+			"Shell155mm_Tail_SoundSet",
+			"Explosion_Debris_SoundSet"
+		};
+		soundSetSonicCrack[] =
+		{
+			"bulletSonicCrack_SoundSet",
+			"bulletSonicCrackTail_SoundSet"
+		};
+		supersonicCrackFar[] =
+		{
+			"A3\Sounds_F\weapons\Explosion\supersonic_crack_50meters",
+			0.22387201,
+			1,
+			150
+		};
+		supersonicCrackNear[] =
+		{
+			"A3\Sounds_F\weapons\Explosion\supersonic_crack_close",
+			0.316228,
+			1,
+			50
+		};
+	};
 
     //Missiles
 	class WPEC_Maramu_A2A_Missile_ammo_01: ammo_Missile_AA_R73  //Internal base class to call Components
@@ -865,6 +929,10 @@
 		explosionTime=20;
 		timeToLive=20;
 	};
+    class WPEC_Dianoga_WGM_FixWing_Missile_ammo: WPEC_Dianoga_WGM_Missile_ammo  //1 shot AAT
+	{
+		initTime = 1;
+    };
 	class WPEC_Kaada_Unguided_Rocket_ammo: M_AT //Inantry killer
 	{
 		displayName="UGM";
@@ -873,6 +941,27 @@
 		indirectHit=950;
 		indirectHitRange=6.5;
 		effectsMissile="WPEC_particle_effect_Missile_fly_Maroon";
+	};
+
+    //Bombs
+	class WPEC_Dianoga_Unguided_Bomb_ammo: Bo_Mk82
+	{
+		hit=2000;
+		indirectHit=1800;
+		indirectHitRange=7;
+		//CraterEffects="NCA_ProtonBombBombCrater";
+		//explosionEffects="NCA_Proton_Bomb_ExplosionEffects";
+	};
+
+	class WPEC_Dianoga_Guided_Bomb_ammo: ammo_Bomb_SDB
+	{
+		hit=4000;
+		indirectHit=1000;
+		indirectHitRange=2;
+		dangerRadiusHit=1500;
+		suppressionRadiusHit=200;
+		craterEffects="AAMissileCrater";
+		explosionEffects="AAMissileExplosion";
 	};
 
 
