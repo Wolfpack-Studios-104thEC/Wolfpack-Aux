@@ -20,42 +20,18 @@ class CfgPatches {
 };
 
 class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
 class SensorTemplateIR;
 class SensorTemplateVisual;
-class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
-class SensorTemplateDataLink;
-class DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
-class DefaultEventhandlers;
 class WPEC_impulsor_base;
 
 class CfgVehicles {
     class Air;
     class Helicopter: Air {
-        class ACE_Actions;
     };
     class Helicopter_Base_F: Helicopter {
-        class ACE_Actions: ACE_Actions {
-            class ACE_MainActions;
-        };
     };
     class Helicopter_Base_H: Helicopter_Base_F {
         class Turrets;
@@ -73,7 +49,6 @@ class CfgVehicles {
         class UserActions;
         class ACE_SelfActions;
 
-        class Components;
         class RotorLibHelicopterProperties;
 
         class Turrets: Turrets {
@@ -109,9 +84,9 @@ class CfgVehicles {
 		canFloat = 1; //Defines if the vehicle will sink in the water or not. This is used here to prevent water damage
 		enableSweep = 1; //Enables AI to sweep over the target as a method of attack.
 		enableGPS = 1; //Enables the crew to use GPS and Map even if they do not have one in their inventory.
-    
+
 		//Vehicle Threat Level to AI:
-		type = VAir; //Threat Type.  Defined at the top of the file.
+		//type = VAir; //Threat Type.  Defined at the top of the file.
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
 		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.
