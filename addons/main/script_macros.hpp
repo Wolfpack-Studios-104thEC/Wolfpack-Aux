@@ -243,6 +243,10 @@ class Weapon_Base_F
 	#define TRACE_CHAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) /* disabled */
 #endif
 
+#ifndef VERSION_CONFIG
+    #define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION_STR); versionAr[] = {VERSION_AR}
+#endif
+
 // PATHTOF defines for referencing JLTS uniforms/characters
 #define PATHTOF_JLTSE(var1) \MRC\JLTS\characters\var1
 #define QPATHTOF_JLTSE(var1) QUOTE(PATHTOF_JLTSE(var1))
