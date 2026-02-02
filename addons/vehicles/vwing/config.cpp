@@ -30,7 +30,7 @@ class CfgVehicles {
 		side = 1;
         faction= QEGVAR(faction,eclipse);
 		//vehicleClass = "GAR_LAATCatNSub";
-		editorSubcategory=QEGVAR(edsubcat,heli);
+		editorSubcategory=QEGVAR(edsubcat,fixedwing);
         //editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_VWing.jpg";
 		crew = "NCA_cloneArmor_unit_tauntaunEnlisted";
 		cost = 1000000;
@@ -66,7 +66,7 @@ class CfgVehicles {
 		{
 			"Laserdesignator_pilotCamera",
 			"WPEC_aircraft_green_CAP_plasma_weapon",
-            "NCA_Talon_A2A_missile_launcher",
+            "NCA_Talon_A2A_MissileSystem",
 			"CMFlareLauncher"
 		};
 		magazines[] =
