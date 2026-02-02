@@ -102,7 +102,7 @@ class CfgVehicles
 		type = VAir; //Threat Type.  Defined at the top of the file.
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
-		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default. 
+		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.
 		audible = 8; //How easy it is to hear. Higher means it is easier to hear by AI. 1 is Default.
 		//Factions Association:
 		faction="WPEC_Category_EclipseCompany";
@@ -548,7 +548,7 @@ class CfgVehicles
 		};
 		//Components deals with the radar range for the Vehicle.  Here it is set to 8000 so the range will be 8000M or 8KM.
 		class Components
-		{	
+		{
 			class SensorsManagerComponent
 			{
 				class Components
@@ -941,7 +941,7 @@ class CfgVehicles
 		type = VAir; //Threat Type.  Defined at the top of the file.
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
-		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default. 
+		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.
 		audible = 8; //How easy it is to hear. Higher means it is easier to hear by AI. 1 is Default.
 		//Factions Association:
 		faction="WPEC_Category_EclipseCompany";
@@ -1387,7 +1387,7 @@ class CfgVehicles
 		};
 		//Components deals with the radar range for the Vehicle.  Here it is set to 8000 so the range will be 8000M or 8KM.
 		class Components
-		{	
+		{
 			class SensorsManagerComponent
 			{
 				class Components
@@ -1626,7 +1626,7 @@ class CfgVehicles
 		//Deals with ACE actions in the vehicle.  Can be fairly buggy so use with caution and test with a working SQF script.  May not always work in editor so use a multiplayer setting.
 		class ACE_SelfActions: ACE_SelfActions
 		{
-			
+
 			//Adds a menu in ACE that displays the passengers who are alive in your vehicle for the pilot to see.
 			class ACE_Passengers
 			{
@@ -1781,7 +1781,7 @@ class CfgVehicles
 		type = VAir; //Threat Type.  Defined at the top of the file.
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
-		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default. 
+		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.
 		audible = 8; //How easy it is to hear. Higher means it is easier to hear by AI. 1 is Default.
 		//Factions Association:
 		faction="WPEC_Category_EclipseCompany";
@@ -2227,7 +2227,7 @@ class CfgVehicles
 		};
 		//Components deals with the radar range for the Vehicle.  Here it is set to 8000 so the range will be 8000M or 8KM.
 		class Components
-		{	
+		{
 			class SensorsManagerComponent
 			{
 				class Components
@@ -2466,7 +2466,7 @@ class CfgVehicles
 		//Deals with ACE actions in the vehicle.  Can be fairly buggy so use with caution and test with a working SQF script.  May not always work in editor so use a multiplayer setting.
 		class ACE_SelfActions: ACE_SelfActions
 		{
-			
+
 			//Adds a menu in ACE that displays the passengers who are alive in your vehicle for the pilot to see.
 			class ACE_Passengers
 			{

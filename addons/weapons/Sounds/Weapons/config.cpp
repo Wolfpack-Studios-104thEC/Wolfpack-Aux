@@ -2,6 +2,8 @@
 #define Protected 1
 #define Public 2
 
+#include "script_component.hpp"
+
 class CfgPatches
 {
 	class WPEC_Weapons_Sounds_Weapons
@@ -19,14 +21,14 @@ class CfgPatches
 		};
 		ammo[]=
 		{
-		};	
+		};
 	};
 };
 class CfgSoundShaders
 {
 	class WPEC_BlasterBolt_FlyBy
 	{
-		samples[] = {{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-01.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-02.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-03.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-04.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-05.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-06.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-07.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-08.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-09.ogg",1},{"WPEC\WPEC_Weapons\Sounds\Weapons\Blaster_Fly-10.ogg",1}};
+		samples[] = {{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-01.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-02.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-03.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-04.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-05.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-06.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-07.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-08.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-09.ogg",1},{"\Z\wpec\addons\weapons\Sounds\Weapons\Blaster_Fly-10.ogg",1}};
 		volume = 1;
 		range = 50;
 	};
@@ -34,14 +36,14 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Weapons\WPECBlasterDC17One",
+				"\Z\wpec\addons\weapons\Sounds\Weapons\WPECBlasterDC17One.wss",
 				1
 			},
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Weapons\WPECBlasterDC17Two",
+				"\Z\wpec\addons\weapons\Sounds\Weapons\WPECBlasterDC17Two.wss",
 				1
 			}
 		};
@@ -58,14 +60,14 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Weapons\WPECBlasterDC17One",
+				"\Z\wpec\addons\weapons\Sounds\Weapons\WPECBlasterDC17One.wss",
 				1
 			},
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Weapons\WPECBlasterDC17Two",
+				"\Z\wpec\addons\weapons\Sounds\Weapons\WPECBlasterDC17Two.wss",
 				1
 			}
 		};

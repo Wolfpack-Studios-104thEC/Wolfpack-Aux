@@ -15,7 +15,6 @@ class CfgPatches {
 };
 class Mode_SemiAuto;
 class Mode_FullAuto;
-class Mode_Burst;
 class CfgMagazines
 {
 	class VehicleMagazine;
@@ -161,11 +160,8 @@ class SensorTemplateDataLink;
 class CfgAmmo
 {
 	class B_20mm_Tracer_Red;
-	class 60Rnd_30mm_APFSDS_shells_Tracer_Red;
-	class B_127x99_Ball_Tracer_Green;
 	class B_20mm;
 	class ShellBase;
-	class SubmunitionCore;
 	class 104th_Ball_Turret: B_20mm_Tracer_Red
 	{
 		typicalSpeed=1000;
@@ -380,7 +376,6 @@ class CfgAmmo
 		timeToLive=120;
 	};
 	class BulletBase;
-	class B_35mm_AA_Tracer_Red;
 	class LAAT_Cannon_Ammo_Base: BulletBase
 	{
 		aiAmmoUsageFlags="64 + 128 + 256 + 512";
@@ -1526,10 +1521,6 @@ class CfgWeapons
 	{
 		class LowROF;
 	};
-	class Gatling_30mm_Plane_CAS_01_F: CannonCore
-	{
-		class LowROF;
-	};
 	class 104th_LAAT_Cannon_Base: Cannon_30mm_Plane_CAS_02_F
 	{
 		scope=1;
@@ -1547,11 +1538,6 @@ class CfgWeapons
 		{
 			displayName="Low ROF";
 			multiplier=1;
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound;
 			flashSize=1;
 			dispersion=0;
 			autoFire="true";
