@@ -2,69 +2,7 @@
 #define SUBCOMPONENT_BEAUTIFIED Equipment (Uniforms)
 #include "\Z\wpec\addons\equipment\script_component.hpp"
 
-// todo:
-#define ACEAX_LABEL_HELMET_CUSTOM "Custom Trooper Helmet"
-
-#define HELMET_PROTECTION \
-        class HitpointsProtectionInfo {\
-            class Head {\
-                armor = 8;\
-                hitpointName = "HitHead";\
-                passThrough = 0.5;\
-            };\
-        }
-
-#define HEARING_PROTECTION 0.80
-#define HEARING_MUFFLING 0.50
-
-#define HELMET_ACE_HEARING ace_hearing_protection = HEARING_PROTECTION;\
-ace_hearing_lowerVolume = HEARING_MUFFLING
-
-#define BACKPACK_MAXLOAD 280
-#define LR_RANGE 15000
-
 #define UNIFORM_SUPPLYCLASS QUOTE(Supply100)
-
-#define VEST_SUPPLYCLASS QUOTE(Supply120)
-#define VEST_SUPPLYCLASS_CMD QUOTE(Supply300)
-
-#define VEST_PROTECTION \
-        class HitpointsProtectionInfo {\
-			class Chest {\
-				HitpointName = "HitChest";\
-				armor = 6;\
-				PassThrough = 0.3;\
-			};\
-			class Legs {\
-				hitpointName = "HitLegs";\
-				armor = 6;\
-				passThrough = 0.3;\
-			};\
-			class Arms {\
-				hitpointName = "HitArms";\
-				armor = 4;\
-				passThrough = 0.3;\
-			};\
-		}
-
-#define VEST_PROTECTION_OFFICER \
-        class HitpointsProtectionInfo {\
-			class Chest {\
-				HitpointName = "HitChest";\
-				armor = 9;\
-				PassThrough = 0.3;\
-			};\
-			class Legs {\
-				hitpointName = "HitLegs";\
-				armor = 9;\
-				passThrough = 0.3;\
-			};\
-			class Arms {\
-				hitpointName = "HitArms";\
-				armor = 4;\
-				passThrough = 0.3;\
-			};\
-		}
 
 #define UNIT_ARMOR 2
 #define UNIT_ARMOR_STRUCTURAL 4
@@ -235,5 +173,3 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
         depends = "HitHead"; \
     };\
 }
-
-#include "\z\wpec\addons\equipment\script_component.hpp"
