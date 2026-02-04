@@ -2,6 +2,8 @@
 #define Protected 1
 #define Public 2
 
+#include "script_component.hpp"
+
 class CfgPatches
 {
 	class WPEC_Weapons_Sounds_Grenades
@@ -19,7 +21,7 @@ class CfgPatches
 		};
 		ammo[]=
 		{
-		};	
+		};
 	};
 };
 class CfgSoundShaders
@@ -28,14 +30,14 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Imploder_Explosion",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Imploder_Explosion.wss",
 				1
 			},
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Imploder_Explosion2",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Imploder_Explosion2.wss",
 				1
 			}
 		};
@@ -52,14 +54,12 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Imploder_Explosion",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Imploder_Explosion.wss",
 				1
 			},
-			
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Imploder_Explosion2",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Imploder_Explosion2.wss",
 				1
 			}
 		};
@@ -76,14 +76,14 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Explosion01",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Thermal_Explosion01.wss",
 				1
 			},
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Thermal_Explosion02",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Thermal_Explosion02.wss",
 				1
 			}
 		};
@@ -100,21 +100,21 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Concussion_Explosion1",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Concussion_Explosion1.wss",
 				1
 			},
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Concussion_Explosion2",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Concussion_Explosion2.wss",
 				1
 			},
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Concussion_Explosion3",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Concussion_Explosion3.wss",
 				1
 			},
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Concussion_Explosion4",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Concussion_Explosion4.wss",
 				1
 			}
 		};
@@ -131,19 +131,19 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Grenade_Explosion_General1",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Grenade_Explosion_General1.wss",
 				1
 			},
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Grenade_Explosion_General2",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Grenade_Explosion_General2.wss",
 				1
 			},
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Grenade_Explosion_General3",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Grenade_Explosion_General3.wss",
 				1
 			}
 		};
@@ -160,9 +160,9 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			
+
 			{
-				"WPEC\WPEC_Weapons\Sounds\Grenades\Smoke_Grenade_Hiss",
+				"\Z\wpec\addons\weapons\Sounds\Grenades\Smoke_Grenade_Hiss.wss",
 				1
 			}
 		};
