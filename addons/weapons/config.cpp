@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
 		weapons[] = {"104th_3AS_DC15A","104th_3AS_DC15AGL","104th_3AS_DC15S","104th_3AS_DC15L","104th_3AS_DC15C","104th_3AS_DC15CGL","104th_3AS_DC17M","104th_3AS_Chaingun","104th_3AS_Valken38X","104th_3AS_WestarM5","104th_3AS_WestarM5GL","104th_3AS_Z6","104th_3AS_DC17S","104th_3AS_RPS6_F","104th_3AS_RPS6_G","104th_RPS6_K_Odin","104th_RPS6_K","104th_JLTS_DC15X","104th_JLTS_DC17SA"};
 		magazines[] = {"104th_3AS_DC15S_Mag","104th_3AS_DC15C_Mag","104th_3AS_DC15L_Mag","104th_3AS_DC15A_Mag","104th_3AS_DC17M_Mag","104th_3AS_WestarM5_Mag","104th_3AS_Z6_Mag","104th_3AS_Valken38X_Mag","104th_3AS_Chaingun_Mag","104th_3AS_MK40_AT_Unguided","104th_3AS_MK40_AT_Guided","104th_MK1_AT_Mag","104th_MK2_AT_Mag","104th_MK3_AP_Mag","104th_MK4_AP_Mag","Odins_Despair","104th_MK1_PistolMag","104th_MK2_PistolMag_Long","104th_MK2_PistolMag_Short","104th_MK3_PistolMag","104th_MK4_PistolMag","104th_DC15XM_EnergyMag","104th_DC15XM_PlasmaMag","104th_3AS_WestarLightAT","104th_3AS_DC17MLightAT","104th_3AS_DC15C_OCMag","104th_3AS_ThermalDetonator_Mag","104th_3AS_BaridiumCore_Mag","104th_3AS_SmokeGrenade_White","104th_3AS_SmokeGrenade_Red","104th_3AS_SmokeGrenade_Orange","104th_3AS_SmokeGrenade_Yellow","104th_3AS_SmokeGrenade_Blue","104th_3AS_SmokeGrenade_Green","104th_3AS_SmokeGrenade_Purple","104th_ThermalDisruptor","104th_ThermalDisruptorImpact","104th_PersonalShield_Republic_Mag","104th_PersonalShieldFull_Republic_Mag","104th_SquadShield_Republic_Mag"};
-		ammo[] = {"104th_3AS_DCLight_PlasmaAmmo","104th_3AS_DCMid_PlasmaAmmo","104th_3AS_DCHeavy_PlasmaAmmo","104th_3AS_DCExtraHeavy_PlasmaAmmo","104th_3AS_Z6_PlasmaAmmo","104th_3AS_Sniper_PlasmaAmmo","104th_3AS_ChaingunAmmo","104th_3AS_R_Mk40_AT","104th_3AS_M_Mk40_AT","104th_MK1_AT","104th_MK2_AT","104th_MK3_AP","104th_MK4_AP","104th_MK5_AP","104th_MK1_Normal_PistolAmmo","104th_MK2_Stun_PistolAmmo","104th_MK3_EMP_PistolAmmo","104th_MK4_OC_PistolAmmo","104th_DC15XM_Energy","104th_DC15XM_Plasma","104th_3AS_RocketGrenade_HE_Arc","104th_3AS_RocketGrenade_HE_Commando","MissileBase","104th_3AS_ThermalDetonator_Ammo","104th_3AS_BaridiumCore_Ammo","104th_SmokeShellBase","104th_SmokeShellRed","104th_SmokeShellOrange","104th_SmokeShellYellow","104th_SmokeShellBlue","104th_SmokeShellGreen","104th_SmokeShellPurple","104th_ThermalDisruptor_Ammo","104th_ThermalDisruptorImpact_Ammo","104th_PersonalShield_Republic_Ammo","104th_PersonalShieldFull_Republic_Ammo","104th_SquadShield_Republic_Ammo","104th_3AS_DCMid_OCPlasmaAmmo"};
+		ammo[] = {"104th_3AS_DCLight_PlasmaAmmo","104th_3AS_DCMid_PlasmaAmmo","104th_3AS_DCHeavy_PlasmaAmmo","104th_3AS_DCExtraHeavy_PlasmaAmmo","104th_3AS_Z6_PlasmaAmmo","104th_3AS_Sniper_PlasmaAmmo","104th_3AS_ChaingunAmmo","104th_3AS_R_Mk40_AT","104th_3AS_M_Mk40_AT","104th_MK1_AT","104th_MK2_AT","104th_MK3_AP","104th_MK4_AP","104th_MK5_AP","104th_MK1_Normal_PistolAmmo","104th_MK2_Stun_PistolAmmo","104th_MK3_EMP_PistolAmmo","104th_MK4_OC_PistolAmmo","104th_DC15XM_Energy","104th_DC15XM_Plasma","104th_3AS_RocketGrenade_HE_Arc","104th_3AS_RocketGrenade_HE_Commando","104th_3AS_ThermalDetonator_Ammo","104th_3AS_BaridiumCore_Ammo","104th_SmokeShellBase","104th_SmokeShellRed","104th_SmokeShellOrange","104th_SmokeShellYellow","104th_SmokeShellBlue","104th_SmokeShellGreen","104th_SmokeShellPurple","104th_ThermalDisruptor_Ammo","104th_ThermalDisruptorImpact_Ammo","104th_PersonalShield_Republic_Ammo","104th_PersonalShieldFull_Republic_Ammo","104th_SquadShield_Republic_Ammo","104th_3AS_DCMid_OCPlasmaAmmo"};
 		requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {};
         author = AUTHOR;
@@ -30,7 +30,6 @@ class CBA_DisposableLaunchers
 };
 class CfgAmmo
 {
-	class 3AS_PlasmaBase;
 	class 3AS_EC30_bluePlasma;
 	class 3AS_EC40_BluePlasma;
 	class 3AS_EC50_bluePlasma;
@@ -40,7 +39,6 @@ class CfgAmmo
 	class 3AS_R_Mk40_AT;
 	class 3AS_M_Mk40_AT;
 	class 3AS_RocketGrenade_HE;
-	class 3AS_Detonator_1RND;
 	class SmokeShell;
 	class GrenadeHand;
 	class Grenade;
@@ -201,10 +199,6 @@ class CfgAmmo
 		smokeColor[]={0.66970003,0.22750001,0.10053,1};
 	};
 	class RocketBase;
-	class MissileBase
-	{
-		class Components;
-	};
 	class 104th_3AS_DCLight_PlasmaAmmo: 3AS_EC30_bluePlasma
 	{
 		scope=2;
@@ -479,7 +473,6 @@ class CfgMagazines
 	class 3AS_300Rnd_EC60_Mag;
 	class 3AS_10Rnd_EC80_Mag;
 	class 3AS_Chaingun_Drum_Mag;
-	class 3AS_500_Rnd_BlasterTurret_mag;
 	class 3AS_MK40_AT;
 	class 3AS_MK40_AT_Guided;
 	class 3AS_6Rnd_RocketGrenades_HE;
@@ -492,7 +485,6 @@ class CfgMagazines
 	class CA_LauncherMagazine: CA_Magazine
 	{
 	};
-	class FakeMagazine;
 	class HandGrenade;
 	class 104th_3AS_ThermalDetonator_Mag: 3AS_ThermalDetonator
 	{
@@ -943,7 +935,6 @@ class CfgMagazines
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
-class SlotInfo;
 class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
@@ -960,7 +951,6 @@ class CfgWeapons
 	class arifle_MX_Base_F: Rifle_Base_F
 	{
 		class WeaponSlotsInfo;
-		class GunParticles;
 	};
 	class UGL_F;
 	class WeaponSlotsInfo;
@@ -980,7 +970,6 @@ class CfgWeapons
 	};
 	class Odins_Launch: launch_RPG32_F
 	{
-		class Single;
 		class Mode_SemiAuto;
 	};
 	class 104th_3AS_DC15A: 3AS_DC15A_Base_F
@@ -1745,7 +1734,6 @@ class CfgWeapons
 	class Pistol_Base_F: Pistol
 	{
 		class WeaponSlotsInfo;
-		class GunParticles;
 	};
 	class 104th_3AS_DC17S_Base_F: Pistol_Base_F
 	{

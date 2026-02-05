@@ -14,7 +14,7 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
-class CfgWeapons
+/*class CfgWeapons
 {
 	class ItemInfo;
 	class WPS_Phase_2_Uniform_Base;
@@ -938,7 +938,7 @@ class CfgVehicles
 	};
 
 	//event stuff below
-			
+
 	class WPEC_Phase_2_Unit_Trooper_Halloween: WPEC_Phase_2_Unit_Base_New
 	{
 		scope = 2;
@@ -950,4 +950,4 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\WPEC\WPEC_Uniforms\data\WPS_104th_Phase_2_Halloween_Upper_co.paa","\WPEC\WPEC_Uniforms\data\WPS_104th_Phase_2_Halloween_Lower_co.paa","\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
 	};
 
-};
+};*/

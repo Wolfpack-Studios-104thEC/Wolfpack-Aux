@@ -8,6 +8,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "[104th] Aircraft (Rotary-Wing)";
 	};
+	class EGVAR(edsubcat,fixedwing)
+	{
+		displayName = "[104th] Aircraft (Fixed-Wing)";
+	};
 	class EGVAR(edsubcat,gonk)
 	{
 		displayName = "[104th] Gonk Droids";
