@@ -25,6 +25,7 @@
     #define QQADDON QUOTE(QUOTE(ADDON))
 #endif
 
+// Subaddon Macros
 #ifdef SUBCOMPONENT
     #define SUBADDON DOUBLES(ADDON,SUBCOMPONENT)
 #endif
