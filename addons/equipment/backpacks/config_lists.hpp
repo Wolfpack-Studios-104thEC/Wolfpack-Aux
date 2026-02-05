@@ -4,8 +4,7 @@
 
 
 #define UNIT_LIST \
-    QGBACKPACK(Base),\
-    QGBACKPACK(Backpack),\
+    QGBACKPACK(Standard),\
     QGBACKPACK(LR),\
     QGBACKPACK(Medic),\
     QGBACKPACK(Mechanized),\

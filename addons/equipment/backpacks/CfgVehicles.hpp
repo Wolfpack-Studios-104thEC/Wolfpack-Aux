@@ -5,15 +5,7 @@ class CfgVehicles {
 	class WPS_backpacks_backpack_trooper_lr;
     class WPS_backpacks_backpack_engineer;
 	class WPS_backpacks_backpack_mini_lr;
-	class GBACKPACK(Base): WPS_backpacks_backpack_trooper
-	{
-		author = "Queue";
-		scope = 1;
-		picture = QPATHTOF(data\icons\IconCloneTrooperBackpack_co.paa);
-		displayname = "[104thEC] Backpack (base)";
-		maximumload = 800;
-	};
-	class GBACKPACK(Backpack): GBACKPACK(Base)
+	class GBACKPACK(Standard): WPS_backpacks_backpack_trooper
 	{
 		author = "Queue";
 		scope = 2;
@@ -21,7 +13,7 @@ class CfgVehicles {
 		displayName = "[104th] Clone Trooper Backpack";
         picture = QPATHTOF(data\icons\IconCloneTrooperBackpack_co.paa);
 	};
-    class GBACKPACK(Medic): GBACKPACK(Base)
+    class GBACKPACK(Medic): GBACKPACK(Standard)
 	{
 		author = "Queue";
 		scope = 2;
@@ -31,7 +23,7 @@ class CfgVehicles {
         picture = QPATHTOF(data\icons\IconCloneTrooperBackpackMedic_co.paa);
 		hiddenSelectionsTextures[] = {QPATHTOF(data\clone\CloneTrooperBackpackMedic_co.paa)};
 	};
-	class GBACKPACK(Mechanized): GBACKPACK(Base)
+	class GBACKPACK(Mechanized): GBACKPACK(Standard)
 	{
 		author = "Queue";
 		scope = 2;
