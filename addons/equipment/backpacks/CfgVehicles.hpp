@@ -5,6 +5,7 @@ class CfgVehicles {
 	class WPS_backpacks_backpack_trooper_lr;
     class WPS_backpacks_backpack_engineer;
 	class WPS_backpacks_backpack_mini_lr;
+	class WPS_backpacks_backpack_arc;
 	class GBACKPACK(Standard): WPS_backpacks_backpack_trooper
 	{
 		author = "Queue";
@@ -109,6 +110,14 @@ class CfgVehicles {
 		tf_range = 35000;
 		tf_hasLRradio = 1;
 		maximumload = 800;
+	};
+	class GBACKPACK(arc): WPS_backpacks_backpack_arc
+	{
+		author = "Queue";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[104th] ARC Backpack";
+        picture = QPATHTOF(data\icons\IconARCBackpack_co.paa);
 	};
     #include "groundholders.hpp"
 };
