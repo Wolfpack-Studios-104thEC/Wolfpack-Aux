@@ -1,3 +1,4 @@
+
 class CfgEditorCategories
 {
 	class EGVAR(edcat,aux)

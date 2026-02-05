@@ -66,7 +66,7 @@ class CfgAmmo
 		ace_frag_metal=210;
 		ace_frag_charge=185;
 		ace_frag_gurney_c=2843;
-		ace_frag_gurney_k="3/5";
+		ace_frag_gurney_k=0.6;
 		allowAgainstInfantry=1;
 	};
 	class 104th_ThermalDisruptor_Ammo: 104th_3AS_ThermalDetonator_Ammo
@@ -100,7 +100,7 @@ class CfgAmmo
 		ace_frag_metal=100;
 		ace_frag_charge=100;
 		ace_frag_gurney_c=1843;
-		ace_frag_gurney_k="3/5";
+		ace_frag_gurney_k=0.6;
 		allowAgainstInfantry=1;
 	};
 	class 104th_ThermalDisruptorImpact_Ammo: 104th_ThermalDisruptor_Ammo
@@ -320,7 +320,7 @@ class CfgAmmo
 		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
 		simulationStep=0.02;
 		airLock=0;
-		aiAmmoUsageFlags="128 + 512";
+		aiAmmoUsageFlags= 128 + 512;
 		irLock=0;
 		timeToLive=15;
 		maneuvrability=0;

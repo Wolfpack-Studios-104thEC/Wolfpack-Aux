@@ -17,7 +17,7 @@
 		aiRateOfFire=0.60000002;
 		magazineReloadTime=2;
 		autoReload=1;
-		ballisticsComputer="2 + 16";
+		ballisticsComputer=2 + 16;
 		FCSMaxLeadSpeed=27.778;
 		FCSZeroingDelay=1;
 		canLock=0;
@@ -603,7 +603,7 @@
 		magazineReloadTime=30;
 		autoReload=1;
 		canLock=0;
-		ballisticsComputer="2 + 16";
+		ballisticsComputer=2 + 16;
 		FCSMaxLeadSpeed=25;
 		FCSZeroingDelay=1;
 		aiDispersionCoefY=2;

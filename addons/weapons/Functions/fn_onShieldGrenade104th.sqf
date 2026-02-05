@@ -22,7 +22,7 @@ _this spawn {
 			playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", player, false, getPos player, 5, 0.7, 25];
 
 			// Attach to player
-			_shield attachTo [_unit, [0.3, 1, -0.3], "Weapon", true]; _shield setdir 0;
+			_shield attachTo [_unit, [0.3, 1, -0.3], "Weapon", true]; _shield setDir 0;
 			if (_DEBUG) then {
 				hint "Attached Personal Shield";
 			};
@@ -47,7 +47,7 @@ _this spawn {
 			deleteVehicle _shield;
 		};
 		case "104th_PersonalShieldFull_Republic_Ammo": {
-		
+
 			// Create _shieldClass
 			private _shield = _fullShieldClass createVehicle getPos _unit;
 
@@ -84,15 +84,15 @@ _this spawn {
 		case "104th_SquadShield_Republic_Ammo": {
 			// Delay a little
 			//sleep 0.95;
-			
+
 			private _velocity = vectorMagnitude (velocity _projectile);
-			
+
 			while {_velocity > 0.1} do
 			{
 				_velocity = vectorMagnitude (velocity _projectile);
 				sleep 0.1;
 			};
-			
+
 			private _offset = 0.2;
 			private _position = getPosATL _projectile vectorAdd [0,0,_offset];
 

@@ -627,14 +627,14 @@ class CfgVehicles {
 		linkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		respawnLinkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		displayName = "[104th/WPS] Phase 2 Trooper";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPS_104th_Phase_2_CT_Upper_co.paa),QPATHTOF(data\WPS_104th_Phase_2_CT_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Phase_2_CT_Upper_co.paa),QPATHTOF(data\WPEC_Phase_2_CT_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
 	};
 
     RANKUNITS(2,VCT);
     RANKUNITS(2,CSP1);
     RANKUNITS(2,CSP2);
-    RANKUNITS(2,Medic_CSP1);
-    RANKUNITS(2,Medic_CSP2);
+    RANKUNITS(2,CSP1_Medic);
+    RANKUNITS(2,CSP2_Medic);
     RANKUNITS(2,CS);
 
 	class GUNIT(Phase_2_Unit_Trooper_ARC): GUNIT(Phase_2_ARC_Unit_Base)
@@ -645,7 +645,7 @@ class CfgVehicles {
 		linkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		respawnLinkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		displayName = "[104th/WPS] Phase 2 ARC";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPS_104th_Phase_2_ARC_Lower_co.paa),QPATHTOF(data\WPS_104th_Phase_2_ARC_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Phase_2_ARC_Lower_co.paa),QPATHTOF(data\WPEC_Phase_2_ARC_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
 	};
 	class GUNIT(Phase_2_Unit_Trooper_Command): GUNIT(Phase_2_Command_Unit_Base)
 	{
@@ -655,7 +655,7 @@ class CfgVehicles {
 		linkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		respawnLinkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		displayName = "[104th/WPS] Phase 2 Command";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPS_104th_Phase_2_Command_Upper_co.paa),QPATHTOF(data\WPS_104th_Phase_2_Command_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Phase_2_Command_Upper_co.paa),QPATHTOF(data\WPEC_Phase_2_Command_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
 	};
 
 	//event stuff below
@@ -668,7 +668,7 @@ class CfgVehicles {
 		linkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		respawnLinkedItems[] = {QEGHELMET(helmets,phase2_CT)};
 		displayName = "[104th/WPS] Phase 2 SNCO";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPS_104th_Phase_2_Halloween_Upper_co.paa),QPATHTOF(data\WPS_104th_Phase_2_Halloween_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Phase_2_Halloween_Upper_co.paa),QPATHTOF(data\WPEC_Phase_2_Halloween_Lower_co.paa),"\WPS\WPS_Uniforms\Phase2\data\Phase2ArmorUndersuit_co.paa"};
 	};
     #include "groundholders.hpp"
 };
