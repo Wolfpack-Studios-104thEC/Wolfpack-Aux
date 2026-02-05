@@ -17,20 +17,16 @@ class CfgPatches {
 };
 
 class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
 class SensorTemplateIR;
 class SensorTemplateVisual;
-class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
-class SensorTemplateDataLink;
 
 class CfgVehicles {
 	class 3AS_Z95_VTOL_Dynamic_Base_F;
 	class 3AS_Z95_VTOL_Dynamic_Base_F_H: 3AS_Z95_VTOL_Dynamic_Base_F {
 		class Components;
-        class ACE_SelfActions;
 	};
     class GVAR(z95): 3AS_Z95_VTOL_Dynamic_Base_F_H
     {

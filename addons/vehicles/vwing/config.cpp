@@ -17,10 +17,7 @@ class CfgPatches {
 };
 
 class CfgVehicles {
-    class Plane_Fighter_03_base_F;
-	class 3AS_Vwing_base: Plane_Fighter_03_base_F {
-        class ACE_SelfActions;
-    };
+	class 3AS_Vwing_base;
     class GVAR(VWing): 3AS_Vwing_base
     {
         scope = 2;

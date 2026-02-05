@@ -77,7 +77,7 @@
 			hitWater="ImpactEffectsWater";
 			default_mat="ImpactEffectsGroundSabot";
 		};
-		aiAmmoUsageFlags="128 + 512";
+		aiAmmoUsageFlags=128 + 512;
 		class CamShakeExplode
 		{
 			power=13.4164;
@@ -138,7 +138,7 @@
 //Aircraft
 	class LAAT_Cannon_Ammo_Base: BulletBase
 	{
-		aiAmmoUsageFlags="64 + 128 + 256 + 512";
+		aiAmmoUsageFlags=64 + 128 + 256 + 512;
 		allowAgainstInfantry=1;
 		cmImmunity=1;
 		soundSetBulletFly[]=
@@ -995,7 +995,7 @@
 	{
 		displayName="Loper Short Range Missile";
 		displayNameShort="Loper SR Missile";
-		aiAmmoUsageFlags="64 + 128 + 256 + 512";
+		aiAmmoUsageFlags=64 + 128 + 256 + 512;
 		allowAgainstInfantry=1;
 		cmImmunity=0.80001;
 		effectsMissile="WPEC_particle_effect_Missile_fly_Teal";

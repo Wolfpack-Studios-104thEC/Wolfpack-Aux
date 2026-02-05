@@ -1,9 +1,9 @@
 params ["_player"];
 
-_canOpen = true;
+private _canOpen = true;
 
 // check if the player is the driver
-_driver = driver _this;
+private _driver = driver _this;
 //hint str _driver;
 
 if ( _driver != _player ) then {
@@ -13,10 +13,10 @@ if ( _driver != _player ) then {
 };
 
 // get animation state
-_rampState = _this animationphase 'ramp'; // 0 is closed
+private _rampState = _this animationPhase 'ramp'; // 0 is closed
 //hint str _rampState;
 if _canOpen then {
-	switch _rampState do 
+	switch _rampState do
 	{
 		case 0:
 		{

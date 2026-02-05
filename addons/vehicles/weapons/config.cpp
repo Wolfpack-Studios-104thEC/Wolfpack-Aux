@@ -33,7 +33,6 @@ class CfgAmmo
 	class B_20mm_Tracer_Red;
 	class B_20mm;
 	class ShellBase;
-	class SubmunitionCore;
     class BulletBase;
 	class B_35mm_AA_Tracer_Red;
 	class M_Zephyr;

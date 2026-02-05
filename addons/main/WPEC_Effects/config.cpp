@@ -29,7 +29,7 @@ class CfgAmmo
 	{
 		muzzleEffect="BIS_fnc_effectFiredSmokeLauncher";
 		effectsSmoke="EmptyEffect";
-		weaponLockSystem="1 + 2 + 4";
+		weaponLockSystem=1 + 2 + 4;
 		hit=4;
 		indirectHit=0;
 		indirectHitRange=0;
@@ -40,7 +40,7 @@ class CfgAmmo
 		model="\A3\weapons_f\empty";
 		maxControlRange=50;
 		initTime=2;
-		aiAmmoUsageFlags="4 + 8";
+		aiAmmoUsageFlags=4 + 8;
 	};
 };
 class CfgMagazines

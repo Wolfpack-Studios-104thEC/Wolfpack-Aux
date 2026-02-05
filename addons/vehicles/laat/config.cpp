@@ -36,15 +36,6 @@ class DefaultVehicleSystemsDisplayManagerRight
 {
 	class Components;
 };
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
-class DefaultEventhandlers;
 class WPEC_impulsor_base;
 
 class CfgVehicles {
@@ -741,41 +732,41 @@ class CfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov="(0.425/4)";
-					minFov="(0.425/4)";
-					maxFov="(0.425/4)";
+					initFov=(0.425/4);
+					minFov=(0.425/4);
+					maxFov=(0.425/4);
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov="(0.42/8)";
-					minFov="(0.42/8)";
-					maxFov="(0.42/8)";
+					initFov=(0.42/8);
+					minFov=(0.42/8);
+					maxFov=(0.42/8);
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov="(0.42/20)";
-					minFov="(0.42/20)";
-					maxFov="(0.42/20)";
+					initFov=(0.42/20);
+					minFov=(0.42/20);
+					maxFov=(0.42/20);
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov="(0.42/50)";
-					minFov="(0.42/50)";
-					maxFov="(0.42/50)";
+					initFov=(0.42/50);
+					minFov=(0.42/50);
+					maxFov=(0.42/50);
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov="(0.42/70)";
-					minFov="(0.42/70)";
-					maxFov="(0.42/70)";
+					initFov=(0.42/70);
+					minFov=(0.42/70);
+					maxFov=(0.42/70);
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics=1;

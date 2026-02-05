@@ -37,8 +37,8 @@ class CfgWeapons {
     RANKUNIFORMS(2,VCT);
     RANKUNIFORMS(2,CSP1);
     RANKUNIFORMS(2,CSP2);
-    RANKUNIFORMS(2,Medic_CSP1);
-    RANKUNIFORMS(2,Medic_CSP2);
+    RANKUNIFORMS(2,CSP1_Medic);
+    RANKUNIFORMS(2,CSP2_Medic);
     RANKUNIFORMS(2,CS);
 
     class GUNIFORM(Phase_2_Command_Uniform_Base): WPS_Phase_2_Command_Uniform_Base
