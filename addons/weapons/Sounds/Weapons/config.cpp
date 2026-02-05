@@ -2,6 +2,8 @@
 #define Protected 1
 #define Public 2
 
+#include "script_component.hpp"
+
 class CfgPatches
 {
 	class WPEC_Weapons_Sounds_Weapons

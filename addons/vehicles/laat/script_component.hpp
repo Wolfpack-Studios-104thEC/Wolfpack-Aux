@@ -2,4 +2,4 @@
 #define SUBCOMPONENT_BEAUTIFIED Vehicles (laat)
 
 
-#include "\z\wpec\addons\vehicles\script_component.hpp"
+#include "\Z\wpec\addons\vehicles\script_component.hpp"
