@@ -109,9 +109,9 @@ class CfgVehicles {
 		canFloat = 1; //Defines if the vehicle will sink in the water or not. This is used here to prevent water damage
 		enableSweep = 1; //Enables AI to sweep over the target as a method of attack.
 		enableGPS = 1; //Enables the crew to use GPS and Map even if they do not have one in their inventory.
-    
+
 		//Vehicle Threat Level to AI:
-		type = VAir; //Threat Type.  Defined at the top of the file.
+		//type = VAir; //Threat Type.  Defined at the top of the file.
 		threat[] = {0.750001,0.8500001, 0.8500001}; //Threat to Soft Targets (Soldiers), Armor, and Air assets in that order.
 		cost = 1000; //Higher cost means AI are more likely to target it.
 		camouflage = 15; //How hard the vehicle is to see. Higher value means it is easier to see.  1 is default.

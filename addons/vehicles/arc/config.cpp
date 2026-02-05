@@ -505,7 +505,7 @@ class CfgVehicles {
 					};
 					class pylons3: pylons1
 					{
-						attachment="PylonMissile_1Rnd_Bomb_04_F";
+						attachment="WPEC_Hoska_pylon_x2_A2A_mag";
 						priority=9;
 						maxweight=2500;
 						UIposition[]={0.55000001,0.34999999};
@@ -521,7 +521,7 @@ class CfgVehicles {
 						{
 							"WPEC_ARC_Universal_5_6_Missile_rail"
 						};
-						attachment="WPEC_Hoska_pylon_x2_A2A_mag";
+						attachment="WPEC_Kaada_pylon_x8_Unguided_Rocket_mag";
 						priority=7;
 						maxweight=5000;
 						UIposition[]={0.60000002,0.44999999};

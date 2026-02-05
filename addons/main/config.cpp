@@ -32,7 +32,7 @@ class CfgFunctions
 	};
 	class WPEC_Weapon
 	{
-		file = "\\Z\wpec\addons\weapons\Functions";
+		file = "Z\wpec\addons\weapons\Functions";
 		class scripts
 		{
 			class onHit{};

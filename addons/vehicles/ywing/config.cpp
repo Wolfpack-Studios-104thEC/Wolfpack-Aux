@@ -76,7 +76,6 @@ class CfgVehicles {
 		airFriction0[] = {100,50,12};
 		airFriction1[] = {100,50,12};
 		airFriction2[] = {100,50,12};
-		driverCanEject = 1;
 		cost = 1000000;
 		threat[] = {0.2,0.7,0.7};
         weapons[] =
@@ -401,7 +400,7 @@ class CfgVehicles {
 						{
 							"WPEC_Ywing_Universal_1_2_Missile_rail"
 						};
-						attachment="PylonRack_Bomb_SDB_x4";
+						attachment="WPEC_Unguided_Bomb_mag";
 						priority=10;
 						maxweight=2500;
 						UIposition[]={0.5,0.25};
@@ -417,7 +416,7 @@ class CfgVehicles {
 						{
 							"WPEC_Ywing_Universal_3_6_Missile_rail"
 						};
-						attachment="PylonRack_Bomb_SDB_x4";
+						attachment="WPEC_Dianoga_pylon_x2_WGM_mag";
 						priority=9;
 						maxweight=2500;
 						UIposition[]={0.55000001,0.34999999};
@@ -429,12 +428,12 @@ class CfgVehicles {
 					};
 					class pylons5: pylons3
 					{
-						attachment="PylonRack_Missile_AGM_02_x2";
+						attachment="WPEC_Guided_Bomb_mag";
 						priority=7;
 						maxweight=5000;
 						UIposition[]={0.60000002,0.44999999};
 					};
-					class pylons6: pylons3
+					class pylons6: pylons5
 					{
 						UIposition[]={0.050000001,0.44999999};
 						mirroredMissilePos=5;
@@ -445,7 +444,7 @@ class CfgVehicles {
 						{
 							"WPEC_Ywing_Universal_7_8_Missile_rail"
 						};
-						attachment="PylonRack_Bomb_SDB_x4";
+						attachment="WPEC_Maramu_pylon_x1_A2A_mag";
 						priority=9;
 						maxweight=2500;
 						UIposition[]={0.44999999,0.40000001};

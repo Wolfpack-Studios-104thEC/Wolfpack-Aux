@@ -164,11 +164,8 @@ class CfgSoundShaders
 		{
 
 			{
-<<<<<<< HEAD
 				"Z\wpec\addons\weapons\Sounds\Grenades\Smoke_Grenade_Hiss.wss",
-=======
 				"\Z\wpec\addons\weapons\Sounds\Grenades\Smoke_Grenade_Hiss.wss",
->>>>>>> Fixeslive
 				1
 			}
 		};

@@ -153,7 +153,8 @@
 			"WPEC_ARC_Universal_1_4_Missile_rail",
 			"WPEC_ARC_Universal_5_6_Missile_rail",
 			"WPEC_Ywing_Universal_3_6_Missile_rail",
-			"WPEC_Ywing_Universal_7_8_Missile_rail"
+			"WPEC_Ywing_Universal_7_8_Missile_rail",
+			"WPEC_z95_Universal_Missile_rail"
 		};
 		pylonWeapon="WPEC_Dianoga_WGM_Pylons_MissileSystem";
 	};
