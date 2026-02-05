@@ -235,11 +235,6 @@
 		{
 			displayName="Low ROF";
 			multiplier=1;
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound;
 			flashSize=1;
 			dispersion=0;
 			autoFire="true";

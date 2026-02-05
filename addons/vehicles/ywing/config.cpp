@@ -17,31 +17,13 @@ class CfgPatches {
 };
 
 class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
 class SensorTemplateIR;
 class SensorTemplateVisual;
-class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
-class SensorTemplateDataLink;
-class DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
-class DefaultEventhandlers;
+class DefaultVehicleSystemsDisplayManagerLeft;
+class DefaultVehicleSystemsDisplayManagerRight;
 
 class CfgVehicles {
 	class Plane_Fighter_03_dynamicLoadout_base_F;

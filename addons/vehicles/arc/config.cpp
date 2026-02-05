@@ -25,23 +25,16 @@ class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
-class DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
+class DefaultVehicleSystemsDisplayManagerLeft;
+class DefaultVehicleSystemsDisplayManagerRight;
 class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
 {
-	class Components;
+    class Components;
 };
 class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 {
-	class Components;
+    class Components;
 };
-class DefaultEventhandlers;
 
 class CfgVehicles {
 	class Plane_Fighter_03_dynamicLoadout_base_F;

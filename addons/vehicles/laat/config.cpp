@@ -36,15 +36,6 @@ class DefaultVehicleSystemsDisplayManagerRight
 {
 	class Components;
 };
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
-{
-	class Components;
-};
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{
-	class Components;
-};
-class DefaultEventhandlers;
 class WPEC_impulsor_base;
 
 class CfgVehicles {
