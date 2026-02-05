@@ -26,9 +26,6 @@
 #endif
 
 // Subaddon Macros
-#define ADDON DOUBLES(PREFIX,COMPONENT)
-#define MAIN_ADDON DOUBLES(PREFIX,main)
-
 #ifdef SUBCOMPONENT
     #define SUBADDON DOUBLES(ADDON,SUBCOMPONENT)
 #endif
