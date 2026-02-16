@@ -8,6 +8,7 @@ class CfgWeapons {
     class WPS_Phase_2_Tanker_Helmet_Base;
     class WPS_Phase_2_Airborne_Helmet_Base;
     class WPS_Phase_1_Helmet_Base;
+    class WPS_helmets_helmet_phase2;
 
     //P2
     P2_HELMET_RANK_MACRO(2,CR);
