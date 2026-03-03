@@ -317,7 +317,8 @@
 		magazines[] = {"WPEC_aircraft_green_CAP_plasma_mag"};
 		FCSMaxLeadSpeed = 1800;
 		weaponLockSystem = 2;
-		dexterity = 5;modes[] = {"LowROF"};
+		dexterity = 5;
+        modes[] = {"LowROF"};
 		canLock = 1;
 		ballisticsComputer = 1;
 		class LowROF: LowROF
@@ -344,13 +345,6 @@
 			maxRange = 2;
 			maxRangeProbab = 0.01;
 			textureType = "fullAuto";
-			sounds[] = {"StandardSounds"};
-			class StandardSounds
-			{
-				begin1[] = {"\z\NCA\addons\vehicles\weapons\sounds\cannons\plasmaCannon_fire_left.ogg",1.1,1,1800};
-				begin2[] = {"\z\NCA\addons\vehicles\weapons\sounds\cannons\plasmaCannon_fire_right.ogg",1.1,1,1800};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
-			};
 		};
 	};
     class WPEC_coaxium_plasma_weapon: WPEC_aircraft_green_CAP_plasma_weapon
@@ -366,6 +360,27 @@
 		canLock = 1;
 		weaponLockSystem = 0;
 		burst = 1;
+        class LowROF: LowROF
+		{
+			displayName = "Coaxium Plasma Cannons";
+			multiplier = 1;
+			dispersion = 9.9999997e-006;
+			autoFire = "true";
+			aiRateOfFire = 0.40000001;
+			reloadTime = 0.40000001;
+			burst = 1;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				soundsetshot[]=
+				{
+					"3AS_LAAT_Shot_SoundSet"
+				};
+			};
+		};
     };
 
     //Missiles

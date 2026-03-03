@@ -757,6 +757,9 @@
 			"blue"
 		};
 		brightness=20000;
+        //airLock=1;
+        //irLock=1;
+        //laserLock=1;
 		lightColor[]={0,0,1,1};
 		triggerTime=0.1;
 		hit = 900;
