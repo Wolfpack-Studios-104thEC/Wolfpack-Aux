@@ -20,4 +20,8 @@ class CfgEditorSubcategories
 	{
 		displayName = "[104th] Aries";
 	};
+	class EGVAR(edsubcat,turrets)
+	{
+		displayName = "[104th] Turrets";
+	};
 };
