@@ -46,8 +46,8 @@ class CfgVehicles
 		author="Wolfpack Studios";
 		displayName = "[104th] Tyrant";
 		side = 0;
-		faction = "WPEC_separatistArmy";
-		editorSubcategory = "WPEC_subcategoryTurrets";
+        faction= QEGVAR(faction,eclipse);
+		editorSubcategory=QEGVAR(edsubcat,turrets);
 		model="\A3\Static_F_Jets\SAM_system_02\SAM_system_02_F.p3d";
 		crew="B_UAV_AI";
 		class Turrets: Turrets

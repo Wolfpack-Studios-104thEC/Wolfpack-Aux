@@ -49,9 +49,8 @@ class CfgVehicles
 		author="Wolfpack Studios";
         displayName = "[104th] Overlord";
         side = 0;
-        faction = "WPEC_separatistArmy";
-        editorSubcategory = "WPEC_subcategoryTurrets";
-        editorPreview = "\z\WPEC\addons\vehicles\turrets\data\ui\editorPreviews\WPEC_Overlord.jpg";
+        faction= QEGVAR(faction,eclipse);
+		editorSubcategory=QEGVAR(edsubcat,turrets);
         model="\A3\Static_F_Jets\SAM_system_01\SAM_system_01_F.p3d";
         crew="B_UAV_AI";
         class Turrets: Turrets

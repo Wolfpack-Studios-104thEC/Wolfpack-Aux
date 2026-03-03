@@ -36,8 +36,8 @@ class CfgVehicles
 		scope = 1;
 		scopeCurator = 1;
 		displayName = "[104th] Particle Cannon";
-		faction = "WPEC_separatistArmy";
-		editorSubcategory = "WPEC_subcategoryTurrets";
+        faction= QEGVAR(faction,eclipse);
+		editorSubcategory=QEGVAR(edsubcat,turrets);
 		side = 0;
 		crew = "WPEC_separatistArmy_B1_unit_crew";
 		class Turrets: Turrets
