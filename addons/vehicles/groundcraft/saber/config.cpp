@@ -35,20 +35,20 @@ class CfgVehicles
 		editorSubcategory=QEGVAR(edsubcat,aries);
 		hiddenSelections[] = {"Camo1","Camo2"};
 		editorPreview = "\3AS\3AS_Saber\images\3AS_Saber_M1.jpg";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Saber_hull_co.paa),"3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = {"\Z\wpec\addons\vehicles\groundcraft\saber\data\WPEC_Saber_hull_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
 		accuracy = 1000;
 	};
 	class GVAR(Saber_AshHound): GVAR(Saber)
 	{
 		scope = 2;
 		displayname = "[104th] TX-130 (Ash Hound)";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Saber_Hull_AshHound_co.paa),"3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = {"\Z\wpec\addons\vehicles\groundcraft\saber\data\WPEC_Saber_Hull_AshHound_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
 	};
 	class GVAR(Saber_BloodHowl): GVAR(Saber)
 	{
 		scope = 2;
 		displayname = "[104th] TX-130 (Blood Howl)";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Saber_Hull_BloodHowl_co.paa),"3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = {"\Z\wpec\addons\vehicles\groundcraft\saber\data\WPEC_Saber_Hull_BloodHowl_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
 	};
 	class GVAR(Super_Saber): 3as_saber_super
 	{
@@ -59,19 +59,19 @@ class CfgVehicles
 		editorSubcategory=QEGVAR(edsubcat,aries);
 		hiddenSelections[] = {"Camo1","Camo2"};
 		editorPreview = "\3AS\3AS_Saber\images\3AS_Saber_Super.jpg";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Saber_hull_co.paa),"3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = {"\Z\wpec\addons\vehicles\groundcraft\saber\data\WPEC_Saber_hull_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
 		accuracy = 1000;
 	};
 	class GVAR(Super_Saber_AshHound): GVAR(Super_Saber)
 	{
 		scope = 2;
 		displayname = "[104th] TX-130 Super (Ash Hound)";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Saber_Hull_AshHound_co.paa),"3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = {"\Z\wpec\addons\vehicles\groundcraft\saber\data\WPEC_Saber_Hull_AshHound_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
 	};
 	class GVAR(Super_Saber_BloodHowl): GVAR(Super_Saber)
 	{
 		scope = 2;
 		displayname = "[104th] TX-130 Super (Blood Howl)";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\WPEC_Saber_Hull_BloodHowl_co.paa),"3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = {"\Z\wpec\addons\vehicles\groundcraft\saber\data\WPEC_Saber_Hull_BloodHowl_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
 	};
 };

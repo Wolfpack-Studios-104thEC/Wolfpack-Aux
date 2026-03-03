@@ -6,13 +6,13 @@
 		displayNameShort="Ball Turret";
 		picture="";
 		ammo="WPEC_Ball_Turret";
-		mass=6;
 		count=2000;
 		tracersEvery=1;
 		lastRoundsTracer=2000;
 		timeToLive=3;
 		tracerScale=5;
 		tracerStartTime=0;
+		muzzleImpulseFactor[] = {0,0};
 	};
 	class WPEC_LAAT_Cannon_LowPower_Magazine: VehicleMagazine
 	{
@@ -22,35 +22,27 @@
 		picture="";
 		count=1000;
 		tracersEvery=1;
-		lastRoundsTracer=1000;
 		maxLeadSpeed=300;
 		ammo="WPEC_LAAT_Cannon_LowPower_Ammo";
+		muzzleImpulseFactor[] = {0,0};
 	};
-	class WPEC_LAAT_Cannon_HighPower_Magazine: VehicleMagazine
+	class WPEC_LAAT_Cannon_HighPower_Magazine: WPEC_LAAT_Cannon_LowPower_Magazine
 	{
 		scope=2;
 		displayName="High Power Laser Cell";
 		displayNameShort="High Power Cell";
-		picture="";
 		count=50;
-		tracersEvery=1;
-		lastRoundsTracer=500;
-		maxLeadSpeed=300;
 		ammo="WPEC_LAAT_Cannon_HighPower_Ammo";
 	};
-	class WPEC_aircraft_green_CAP_plasma_mag: VehicleMagazine
+	class WPEC_aircraft_green_CAP_plasma_mag: WPEC_LAAT_Cannon_LowPower_Magazine
 	{
 		scope=2;
 		displayName="Green CAP plasma";
 		displayNameShort="Green CAP plasma";
-		picture="";
 		count=1000;
-		tracersEvery=1;
-		lastRoundsTracer=1000;
-		maxLeadSpeed=300;
 		ammo="WPEC_aircraft_green_CAP_plasma_ammo";
 	};
-    class WPEC_coaxium_plasma_magazine: WPEC_aircraft_green_CAP_plasma_mag
+    class WPEC_coaxium_plasma_magazine: WPEC_LAAT_Cannon_LowPower_Magazine
 	{
 		scope=2;
 		displayName="Coaxium Plasma Cannons";

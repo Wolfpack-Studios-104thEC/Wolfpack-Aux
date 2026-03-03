@@ -67,11 +67,11 @@ class CfgVehicles {
 			"guns",
 			"glass"
 		};
-		hiddenselectionstextures[] =
+		hiddenselectionsTextures[]=
 		{
-			"\z\NCA\addons\vehicles\aircraft\arc170\data\ARC170_main_21st_co.paa",
-			"\z\NCA\addons\vehicles\aircraft\arc170\data\ARC170_wings_21st_co.paa",
-			"\z\NCA\addons\vehicles\aircraft\arc170\data\ARC170_guns_21st_co.paa",
+			"3as\3AS_ARC170\Data\Main_Frame_CO.paa",
+			"3as\3AS_ARC170\Data\Wings_Engines_CO.paa",
+			"3as\3AS_ARC170\Data\Guns_CO.paa",
 			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
 		};
         weapons[] =
@@ -96,8 +96,6 @@ class CfgVehicles {
 			"120Rnd_CMFlare_Chaff_Magazine",
 			"120Rnd_CMFlare_Chaff_Magazine"
 		};
-		soundLocked[] = {"\z\NCA\addons\vehicles\aircraft\sounds\targeted_alarm.ogg", 1.0, 1};
-		soundIncommingMissile[] = {"\z\NCA\addons\vehicles\aircraft\sounds\incomingMissile_alarm.ogg", 1.0, 1};
 		class AnimationSources: AnimationSources
 		{
 			class SFoil
