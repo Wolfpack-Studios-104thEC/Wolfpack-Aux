@@ -1,13 +1,12 @@
 class CfgWeapons {
-    class WPS_Phase_2_Helmet_Base;
-    class WPS_Phase_2_ARC_Helmet_Base;
-    class WPS_ARF_Helmet_Base;
-    class WPS_BARC_Helmet_Base;
-    class WPS_Engineer_Helmet_Base;
-    class WPS_Phase_2_Pilot_Base;
-    class WPS_Phase_2_Tanker_Helmet_Base;
-    class WPS_Phase_2_Airborne_Helmet_Base;
-    class WPS_Phase_1_Helmet_Base;
+    class wps_helmets_helmet_arc;
+    class wps_helmets_helmet_arf;
+    class wps_helmets_helmet_barc;
+    class wps_helmets_helmet_engineer;
+    class wps_helmets_helmet_p2_pilot;
+    class wps_helmets_helmet_tanker;
+    class wps_helmets_helmet_airbone;
+    class wps_helmets_helmet_phase1;
     class WPS_helmets_helmet_phase2;
 
     //P2
@@ -56,7 +55,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_GLOW_MACRO(2,Ricebowl,White);
 
     //ARC
-    class GHELMET(ARC): WPS_Phase_2_ARC_Helmet_Base
+    class GHELMET(ARC): wps_helmets_helmet_arc
     {
         scope = 2;
         scopeCurator = 2;
@@ -77,7 +76,7 @@ class CfgWeapons {
     ARC_HELMET_CUSTOM_GLOW_MACRO(2,Graves,Chrome);
 
     //ARF
-    class GHELMET(ARF): WPS_ARF_Helmet_Base
+    class GHELMET(ARF): wps_helmets_helmet_arf
     {
         scope = 2;
         scopeCurator = 2;
@@ -93,7 +92,7 @@ class CfgWeapons {
     ARF_HELMET_CUSTOM_MACRO(2,Subbie);
 
     //BARC
-    class GHELMET(BARC): WPS_BARC_Helmet_Base
+    class GHELMET(BARC): wps_helmets_helmet_barc
     {
         scope = 2;
         scopeCurator = 2;
@@ -122,7 +121,7 @@ class CfgWeapons {
     ENGINEER_HELMET_CUSTOM_MACRO(2,Paddy);
     ENGINEER_HELMET_CUSTOM_MACRO(2,Shark);
 
-    class GHELMET(Pilot_Billeted): WPS_Phase_2_Pilot_Base
+    class GHELMET(Pilot_Billeted): wps_helmets_helmet_p2_pilot
     {
         scope = 2;
         scopeCurator = 2;
@@ -140,7 +139,7 @@ class CfgWeapons {
     PILOT_HELMET_CUSTOM_MACRO(2,Sleepy);
     PILOT_HELMET_CUSTOM_MACRO(2,Trash);
 
-    class GHELMET(Tanker_Billeted): WPS_Phase_2_Tanker_Helmet_Base
+    class GHELMET(Tanker_Billeted): wps_helmets_helmet_tanker
     {
         scope = 2;
         scopeCurator = 2;
@@ -154,7 +153,7 @@ class CfgWeapons {
     TANKER_HELMET_CUSTOM_MACRO(2,Lone);
     TANKER_HELMET_CUSTOM_MACRO(2,Maverick);
 
-    class GHELMET(Airborne_billeted): WPS_Phase_2_Airborne_Helmet_Base
+    class GHELMET(Airborne_billeted): wps_helmets_helmet_airbone
     {
         scope = 2;
         scopeCurator = 2;

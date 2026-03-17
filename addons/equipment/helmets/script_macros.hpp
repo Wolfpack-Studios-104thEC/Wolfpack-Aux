@@ -37,7 +37,7 @@
 
 //ARC
 	#define ARC_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(arc_##name##): WPS_Phase_2_ARC_Helmet_Base {\
+	class GHELMET(arc_##name##): wps_helmets_helmet_arc {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 2 ARC (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARC\rank\Phase2ARC##name##_co.paa),QPATHTOF(data\arc\light\ARCLight_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -49,7 +49,7 @@
 	}
 
 	#define ARC_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(arc_##name##): WPS_Phase_2_ARC_Helmet_Base {\
+	class GHELMET(arc_##name##): wps_helmets_helmet_arc {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 2 ARC (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARC\custom\Phase2ARC##name##_co.paa),QPATHTOF(data\arc\light\ARCLight_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -61,7 +61,7 @@
 	}
 
 	#define ARC_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
-	class GHELMET(arc_##name##): WPS_Phase_2_ARC_Helmet_Base {\
+	class GHELMET(arc_##name##): wps_helmets_helmet_arc {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 2 ARC (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARC\custom\Phase2ARC##name##_co.paa),QPATHTOF(data\arc\light\ARCLight_co.paa),QPATHTOF(data\visor\##color##\visor##color##_co.paa)};\
@@ -75,7 +75,7 @@
 
 //ARF
 	#define ARF_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(arf_##name##): WPS_ARF_Helmet_Base {\
+	class GHELMET(arf_##name##): wps_helmets_helmet_arf {\
 	scope = scope;\
 	displayName = QUOTE([104th] ARF Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARF\rank\Phase2ARF##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -86,7 +86,7 @@
 	}
 
 	#define ARF_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(arf_##name##): WPS_ARF_Helmet_Base {\
+	class GHELMET(arf_##name##): wps_helmets_helmet_arf {\
 	scope = scope;\
 	displayName = QUOTE([104th] ARF Helmet (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARF\custom\Phase2ARF##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -98,7 +98,7 @@
 	}
 
 	#define ARF_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
-	class GHELMET(arf_##name##): WPS_ARF_Helmet_Base {\
+	class GHELMET(arf_##name##): wps_helmets_helmet_arf {\
 	scope = scope;\
 	displayName = QUOTE([104th] ARF Helmet (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARC\custom\Phase2ARC##name##_co.paa),QPATHTOF(data\visor\##color#\visor##color##_co.paa)};\
@@ -112,7 +112,7 @@
 
 //BARC
 #define BARC_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(barc_##name##): WPS_BARC_Helmet_Base {\
+	class GHELMET(barc_##name##): wps_helmets_helmet_barc {\
 	scope = scope;\
 	displayName = QUOTE([104th] BARC Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\barc\rank\Phase2BARC##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -124,7 +124,7 @@
 	}
 
 	#define BARC_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(barc_##name##): WPS_BARC_Helmet_Base {\
+	class GHELMET(barc_##name##): wps_helmets_helmet_barc {\
 	scope = scope;\
 	displayName = QUOTE([104th] BARC Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\barc\custom\Phase2BARC##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -136,7 +136,7 @@
 	}
 
 	#define BARC_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
-	class GHELMET(barc_##name##): WPS_BARC_Helmet_Base {\
+	class GHELMET(barc_##name##): wps_helmets_helmet_barc {\
 	scope = scope;\
 	displayName = QUOTE([104th] BARC Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\barc\custom\Phase2BARC##name##_co.paa),QPATHTOF(data\visor\##color#\visor##color##_co.paa)};\
@@ -150,7 +150,7 @@
 
 //Engineer
 #define ENGINEER_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(engineer_##name##): WPS_Engineer_Helmet_Base {\
+	class GHELMET(engineer_##name##): wps_helmets_helmet_engineer {\
 	scope = scope;\
 	displayName = QUOTE([104th] Engineer Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\engineer\rank\Phase2Engineer##name##_co.paa),QPATHTOF(data\engineer\light\EngineerLight_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -162,7 +162,7 @@
 	}
 
 	#define ENGINEER_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(engineer_##name##): WPS_Engineer_Helmet_Base {\
+	class GHELMET(engineer_##name##): wps_helmets_helmet_engineer {\
 	scope = scope;\
 	displayName = QUOTE([104th] Engineer Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\engineer\custom\Phase2Engineer##name##_co.paa),QPATHTOF(data\engineer\light\EngineerLight_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
@@ -174,7 +174,7 @@
 	}
 
 	#define ENGINEER_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
-	class GHELMET(engineer_##name##): WPS_Engineer_Helmet_Base {\
+	class GHELMET(engineer_##name##): wps_helmets_helmet_engineer {\
 	scope = scope;\
 	displayName = QUOTE([104th] Engineer Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\engineer\custom\Phase2Engineer##name##_co.paa),QPATHTOF(data\engineer\light\EngineerLight_co.paa),QPATHTOF(data\visor\##color#\visor##color##_co.paa)};\
@@ -188,7 +188,7 @@
 
 //Pilot
 	#define PILOT_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
+	class GHELMET(pilot_##name##): wps_helmets_helmet_p2_pilot {\
 	scope = scope;\
 	displayName = QUOTE([104th] Pilot Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\pilot\rank\Phase2PilotUpper##name##_co.paa), QPATHTOF(data\pilot\rank\Phase2PilotLower##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -200,7 +200,7 @@
 	}
 
 	#define PILOT_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
+	class GHELMET(pilot_##name##): wps_helmets_helmet_p2_pilot {\
 	scope = scope;\
 	displayName = QUOTE([104th] Pilot Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\pilot\custom\Phase2Pilot##name##_co.paa), QPATHTOF(data\pilot\rank\Phase2PilotLower_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -212,7 +212,7 @@
 	}
 
 	#define PILOT_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
-	class GHELMET(pilot_##name##): WPS_Phase_2_Pilot_Base {\
+	class GHELMET(pilot_##name##): wps_helmets_helmet_p2_pilot {\
 	scope = scope;\
 	displayName = QUOTE([104th] Pilot Helmet(name)); \
 	hiddenSelectionsTextures[] = {QPATHTOF(data\pilot\custom\Phase2PilotUpper##name##_co.paa), QPATHTOF(data\pilot\rank\Phase2PilotLower_co.paa), QPATHTOF(data\visor\##color#\visor##color##_co.paa)};\
@@ -227,7 +227,7 @@
 	//Tanker
 
 	#define TANKER_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(tanker_##name##): WPS_Phase_2_Tanker_Helmet_Base {\
+	class GHELMET(tanker_##name##): wps_helmets_helmet_tanker {\
 	scope = scope;\
 	displayName = QUOTE([104th] Tanker Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\tanker\rank\Phase2Tanker##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -239,7 +239,7 @@
 	}
 
 	#define TANKER_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(tanker_##name##): WPS_Phase_2_Tanker_Helmet_Base {\
+	class GHELMET(tanker_##name##): wps_helmets_helmet_tanker {\
 	scope = scope;\
 	displayName = QUOTE([104th] Tanker Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\tanker\custom\Phase2Tanker##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -253,7 +253,7 @@
 	//Airborne
 
 	#define AIRBONE_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(airborne_##name##): WPS_Phase_2_Airborne_Helmet_Base {\
+	class GHELMET(airborne_##name##): wps_helmets_helmet_airbone {\
 	scope = scope;\
 	displayName = QUOTE([104th] Airborne Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\airborne\Phase2Airborne##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -265,7 +265,7 @@
 	}
 
 	#define AIRBORNE_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(airborne_##name##): WPS_Phase_2_Airborne_Helmet_Base {\
+	class GHELMET(airborne_##name##): wps_helmets_helmet_airbone {\
 	scope = scope;\
 	displayName = QUOTE([104th] Airborne Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\airborne\custom\Phase2Airborne##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -278,7 +278,7 @@
 
 	//P1
 	#define P1_HELMET_RANK_MACRO(scope,name)\
-	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
+	class GHELMET(phase1_##name##): wps_helmets_helmet_phase1 {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 1 Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase1\rank\Phase1##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -290,7 +290,7 @@
 	}
 
 	#define P1_HELMET_CUSTOM_MACRO(scope,name)\
-	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
+	class GHELMET(phase1_##name##): wps_helmets_helmet_phase1 {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 1 Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase1\custom\Phase1##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
@@ -301,7 +301,7 @@
 	}
 
 	#define P1_HELMET_CUSTOM_GLOW_MACRO(scope,name,color)\
-	class GHELMET(phase1_##name##): WPS_Phase_1_Helmet_Base {\
+	class GHELMET(phase1_##name##): wps_helmets_helmet_phase1 {\
 	scope = scope;\
 	displayName = QUOTE([104th] Phase 1 Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase1\custom\Phase1##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\\
