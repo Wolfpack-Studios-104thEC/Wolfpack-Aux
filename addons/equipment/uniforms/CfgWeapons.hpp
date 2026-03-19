@@ -1,9 +1,14 @@
 class CfgWeapons {
-    class ItemInfo;
-	class WPS_Phase_2_Uniform_Base;
-	class WPS_Phase_2_Command_Uniform_Base;
-	class WPS_Phase_2_ARC_Uniform_Base;
-	class GUNIFORM(Phase_2_Uniform_Base): WPS_Phase_2_Uniform_Base
+    class wps_uniforms_uniform_P2{
+        class ItemInfo;
+    };
+    class wps_uniforms_uniform_arc{
+        class ItemInfo;
+    };
+    class wps_uniforms_uniform_command{
+        class ItemInfo;
+    };
+	class GUNIFORM(Phase_2_Uniform_Base): wps_uniforms_uniform_P2
 	{
 		author = "Queue";
 		scope = 1;
@@ -41,7 +46,7 @@ class CfgWeapons {
     RANKUNIFORMS(2,CSP2_Medic);
     RANKUNIFORMS(2,CS);
 
-    class GUNIFORM(Phase_2_Command_Uniform_Base): WPS_Phase_2_Command_Uniform_Base
+    class GUNIFORM(Phase_2_Command_Uniform_Base): wps_uniforms_uniform_command
 	{
 		author = "Queue";
 		scope = 2;
@@ -50,14 +55,14 @@ class CfgWeapons {
 		class ItemInfo: ItemInfo
 		{
 			uniformmodel = "-";
-			uniformclass = QGUNIT(Phase_2_Unit_trooper_Command);
+			uniformclass = QGUNIT(Phase_2_Unit_Trooper_Command);
 			uniformtype = "Neopren";
 			containerclass = "supply150";
 			mass = 40;
 		};
 	};
 
-	class GUNIFORM(Phase_2_ARC_Uniform_Base): WPS_Phase_2_ARC_Uniform_Base
+	class GUNIFORM(Phase_2_ARC_Uniform_Base): wps_uniforms_uniform_arc
 	{
 		author = "Queue";
 		scope = 2;
@@ -74,7 +79,7 @@ class CfgWeapons {
 	};
 	//Event Stuff Below
 
-	class GUNIFORM(Phase_2_Uniform_Base_Halloween): WPS_Phase_2_Uniform_Base
+	class GUNIFORM(Phase_2_Uniform_Base_Halloween): wps_uniforms_uniform_P2
 	{
 		author = "Queue";
 		scope = 2;

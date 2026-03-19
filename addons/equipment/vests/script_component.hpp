@@ -7,3 +7,12 @@
 
 #define VEST_SUPPLYCLASS QUOTE(Supply120)
 #define VEST_SUPPLYCLASS_CMD QUOTE(Supply300)
+#define ARC_VEST_PROTRECTIONS class HitpointsProtectionInfo\
+            {\
+                class Chest\
+                {\
+                    hitpointName = "HitChest";\
+                    armor = 6;\
+                    passThrough	= 0.3;\
+                };\
+            }
