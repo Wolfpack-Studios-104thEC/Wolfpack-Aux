@@ -4,7 +4,7 @@
 	{
 		scope=2;
 		displayName="DC-17 Charge Cell";
-		ammo="104th_MK1_Normal_PistolAmmo";
+		ammo="WPEC_MK1_Normal_PistolAmmo";
 		count=30;
 		lastRoundsTracer=30;
 	};
@@ -13,7 +13,7 @@
 		scope=2;
 		JLTS_hasEMPProtection=1;
 		displayName="DC-17 MK2 Stun Cell (Long)";
-		ammo="104th_MK2_Stun_PistolAmmo";
+		ammo="WPEC_MK2_Stun_PistolAmmo";
 		count=10;
 		lastRoundsTracer=10;
 		JLTS_stunDuration=30;
@@ -23,7 +23,7 @@
 		scope=2;
 		JLTS_hasEMPProtection=1;
 		displayName="DC-17 MK1 Stun Cell (Short)";
-		ammo="104th_MK2_Stun_PistolAmmo";
+		ammo="WPEC_MK2_Stun_PistolAmmo";
 		count=10;
 		lastRoundsTracer=10;
 		JLTS_stunDuration=10;
@@ -32,7 +32,7 @@
 	{
 		scope=2;
 		displayName="DC-17 EMP Cell";
-		ammo="104th_MK3_EMP_PistolAmmo";
+		ammo="WPEC_MK3_EMP_PistolAmmo";
 		count=10;
 		lastRoundsTracer=10;
 	};
@@ -40,7 +40,7 @@
 	{
 		scope=2;
 		displayName="DC-17 Overcharged Cell";
-		ammo="104th_MK4_OC_PistolAmmo";
+		ammo="WPEC_MK4_OC_PistolAmmo";
 		count=10;
 		lastRoundsTracer=5;
 	};

@@ -34,14 +34,14 @@
 		explosionEffects="JLTS_fx_exp_EMP";
 		soundFly[]=
 		{
-			"WPEC\104th_3AS_Weapons\Sounds\Grenades\Thermal_Disruptor_Fly.ogg",
+			"\Z\wps\addons\weapons\Sounds\Grenades\fly\Thermal_Disruptor_Fly.ogg"
 			30.0,
 			1,
 			100
 		};
 		ace_grenades_pullPinSound[] =
 		{
-			"WPEC\104th_3AS_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
+			"\Z\wps\addons\weapons\Sounds\Grenades\pin\Thermal_Disruptor_Pin.ogg",
 			30.0,
 			1,
 			50
@@ -124,7 +124,7 @@
 		model="3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		ace_grenades_pullPinSound[] =
 		{
-			"WPEC\104th_3AS_Weapons\Sounds\Grenades\Thermal_Disruptor_Pin.ogg",
+			"\Z\wps\addons\weapons\Sounds\Grenades\pin\Thermal_Disruptor_Pin.ogg",
 			30.0,
 			1,
 			50

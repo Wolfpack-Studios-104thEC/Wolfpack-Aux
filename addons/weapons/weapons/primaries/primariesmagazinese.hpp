@@ -4,7 +4,7 @@
 		scope=2;
 		displayName="[104th] XM Energy Cell";
 		displayNameShort = "Energy Cell";
-		ammo="104th_DC15XM_Energy";
+		ammo="WPEC_DC15XM_Energy";
 		count = 10;
 	};
 	class WPEC_DC15XM_PlasmaMag: JLTS_DC15X_mag
@@ -12,27 +12,27 @@
 		scope=2;
 		displayName="[104th] XM Plasma Cell";
 		displayNameShort = "Plasma Cell";
-		ammo="104th_DC15XM_Plasma";
+		ammo="WPEC_DC15XM_Plasma";
 		count = 1;
 	};
 	class WPEC_3AS_DC15S_Mag: 3AS_60Rnd_EC30_mag
 	{
 		scope=2;
 		displayName="[104th] DC-15S Energy Cell";
-		ammo="104th_3AS_DCLight_PlasmaAmmo";
+		ammo="WPEC_3AS_DCLight_PlasmaAmmo";
 	};
 	class WPEC_3AS_DC15C_Mag: 3AS_40Rnd_EC40_Mag
 	{
 		scope=2;
 		displayName="[104th] DC-15C Energy Cell";
-		ammo="104th_3AS_DCMid_PlasmaAmmo";
+		ammo="WPEC_3AS_DCMid_PlasmaAmmo";
 	};
 	class WPEC_3AS_DC15C_OCMag: 3AS_40Rnd_EC40_Mag
 	{
 		scope=2;
 		displayName="[104th] DC-15 Plasma Cell";
 		displayNameShort = "Light Plasma Cell";
-		ammo="104th_3AS_DCMid_OCPlasmaAmmo";
+		ammo="WPEC_3AS_DCMid_OCPlasmaAmmo";
 		count=10;
 		tracersEvery=1;
 		lastRoundsTracer=10;
@@ -41,19 +41,19 @@
 	{
 		scope=2;
 		displayName="[104th] DC-15L Energy Cell";
-		ammo="104th_3AS_DCMid_PlasmaAmmo";
+		ammo="WPEC_3AS_DCMid_PlasmaAmmo";
 	};
 	class WPEC_3AS_DC15A_Mag: 3AS_45Rnd_EC50_Mag
 	{
 		scope=2;
 		displayName="[104th] DC-15A Energy Cell";
-		ammo="104th_3AS_DCHeavy_PlasmaAmmo";
+		ammo="WPEC_3AS_DCHeavy_PlasmaAmmo";
 	};
 	class WPEC_3AS_DC17M_Mag: 3AS_60Rnd_EC50_Mag
 	{
 		scope=2;
 		displayName="[104th] DC-17M Energy Cell";
-		ammo="104th_3AS_DCHeavy_PlasmaAmmo";
+		ammo="WPEC_3AS_DCHeavy_PlasmaAmmo";
 		count=100;
 		mass=16;
 		initSpeed=470;
@@ -66,20 +66,20 @@
 	{
 		scope=2;
 		displayName="[104th] Westar M5 Energy Cell";
-		ammo="104th_3AS_DCExtraHeavy_PlasmaAmmo";
+		ammo="WPEC_3AS_DCExtraHeavy_PlasmaAmmo";
 	};
 	class WPEC_3AS_WestarLightAT: 3AS_6Rnd_RocketGrenades_HE
 	{
 		scope=2;
 		displayName="[104th] Westar Light AT Shot";
-		ammo="104th_3AS_RocketGrenade_HE_Arc";
+		ammo="WPEC_3AS_RocketGrenade_HE_Arc";
 		count=1;
 	};
 	class WPEC_3AS_DC17MLightAT: 3AS_6Rnd_RocketGrenades_HE
 	{
 		scope=2;
 		displayName="[104th] Commando Light AT Shot";
-		ammo="104th_3AS_RocketGrenade_HE_Commando";
+		ammo="WPEC_3AS_RocketGrenade_HE_Commando";
 		count=1;
 		modelSpecial="3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel.p3d";
 		modelSpecialIsProxy=1;
@@ -88,7 +88,7 @@
 	{
 		scope=2;
 		displayName="Z-6 Cannon Energy Cell";
-		ammo="104th_3AS_Z6_PlasmaAmmo";
+		ammo="WPEC_3AS_Z6_PlasmaAmmo";
 		mass=40;
 		count=500;
 		initSpeed=400;
@@ -99,5 +99,5 @@
 	{
 		scope=2;
 		displayName="[104th] Valken-38X Energy Cell";
-		ammo="104th_3AS_Sniper_PlasmaAmmo";
+		ammo="WPEC_3AS_Sniper_PlasmaAmmo";
 	};

@@ -7,7 +7,7 @@
 		picture="\3AS\3AS_Equipment\UI\Thermal_Detonator_UI_ca.paa";
 		displayName="[104th] Thermal Detonator";
 		displayNameShort="Thermal Detonator";
-		ammo="104th_3AS_ThermalDetonator_Ammo";
+		ammo="WPEC_3AS_ThermalDetonator_Ammo";
 		mass=4;
 		descriptionShort="Standard-Issue Thermal Detonator";
 		type=256;
@@ -30,7 +30,7 @@
 		picture="\WPEC\104th_3AS_Weapons\Grenades\icons\logo_co.paa";
 		displayName="[104th] Thermal Eggonator";
 		displayNameShort="Thermal Eggonator";
-		ammo="104th_3AS_ThermalDetonator_Ammo";
+		ammo="WPEC_3AS_ThermalDetonator_Ammo";
 		mass=4;
 		descriptionShort="Standard-Issue Thermal Eggonator";
 		type=256;
@@ -51,7 +51,7 @@
 		displayName="[104th] Thermal Disruptor";
 		displayNameShort="Thermal Disruptor";
 		descriptionShort="A cross between a Detonator and Droid Popper.";
-		ammo="104th_ThermalDisruptor_Ammo";
+		ammo="WPEC_ThermalDisruptor_Ammo";
 		count=1;
 	};
 	class WPEC_ThermalDisruptorImpact: WPEC_ThermalDisruptor
@@ -60,7 +60,7 @@
 		displayName="[104th] Thermal Disruptor Impact";
 		displayNameShort="Thermal Disruptor Impact";
 		descriptionShort="A cross between a Detonator and Droid Popper.";
-		ammo="104th_ThermalDisruptorImpact_Ammo";
+		ammo="WPEC_ThermalDisruptorImpact_Ammo";
 		count=1;
 	};
 	class WPEC_3AS_BaridiumCore_Mag: HandGrenade
@@ -71,7 +71,7 @@
 		picture="\3AS\3AS_Equipment\UI\Baradium_Core_UI_ca.paa";
 		displayName="[104th] Baridium-Core Detonator";
 		displayNameShort="Baridium Detonator";
-		ammo="104th_3AS_BaridiumCore_Ammo";
+		ammo="WPEC_3AS_BaridiumCore_Ammo";
 		count=1;
 		type=256;
 		initSpeed=18;
@@ -97,7 +97,7 @@
 		nameSound="smokeshell";
 		displayName="[104th] GS-1 White Smoke";
 		displayNameShort="GS-1 White Smoke";
-		ammo="104th_SmokeShellBase";
+		ammo="WPEC_SmokeShellBase";
 		maxLeadSpeed=6;
 		initSpeed=22;
 		count=1;
@@ -110,7 +110,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 White Smoke";
 		displayNameShort="GS-1 White Smoke";
-		ammo="104th_SmokeShellBase";
+		ammo="WPEC_SmokeShellBase";
 		count=1;
 	};
 	class WPEC_3AS_SmokeGrenade_Red: WPEC_3AS_SmokeGrenade_Base
@@ -119,7 +119,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 Red Smoke";
 		displayNameShort="GS-1 Red Smoke";
-		ammo="104th_SmokeShellRed";
+		ammo="WPEC_SmokeShellRed";
 		count=1;
 	};
 	class WPEC_3AS_SmokeGrenade_Blue: WPEC_3AS_SmokeGrenade_Base
@@ -128,7 +128,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 Blue Smoke";
 		displayNameShort="GS-1 Blue Smoke";
-		ammo="104th_SmokeShellBlue";
+		ammo="WPEC_SmokeShellBlue";
 		count=1;
 	};
 	class WPEC_3AS_SmokeGrenade_Green: WPEC_3AS_SmokeGrenade_Base
@@ -137,7 +137,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 Green Smoke";
 		displayNameShort="GS-1 Green Smoke";
-		ammo="104th_SmokeShellGreen";
+		ammo="WPEC_SmokeShellGreen";
 		count=1;
 	};
 	class WPEC_3AS_SmokeGrenade_Yellow: WPEC_3AS_SmokeGrenade_Base
@@ -146,7 +146,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 Yellow Smoke";
 		displayNameShort="GS-1 Yellow Smoke";
-		ammo="104th_SmokeShellYellow";
+		ammo="WPEC_SmokeShellYellow";
 		count=1;
 	};
 	class WPEC_3AS_SmokeGrenade_Purple: WPEC_3AS_SmokeGrenade_Base
@@ -155,7 +155,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 Purple Smoke";
 		displayNameShort="GS-1 Purple Smoke";
-		ammo="104th_SmokeShellPurple";
+		ammo="WPEC_SmokeShellPurple";
 		count=1;
 	};
 	class WPEC_3AS_SmokeGrenade_Orange: WPEC_3AS_SmokeGrenade_Base
@@ -164,7 +164,7 @@
 		model="\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
 		displayName="[104th] GS-1 Orange Smoke";
 		displayNameShort="GS-1 Orange Smoke";
-		ammo="104th_SmokeShellOrange";
+		ammo="WPEC_SmokeShellOrange";
 		count=1;
 	};
 	class WPEC_PersonalShield_Republic_Mag: SmokeShell
@@ -176,7 +176,7 @@
 		displayName = "[104th] Personal Shield";
 		displayNameShort = "Weapon Shield";
 		type = 256;
-		ammo = "104th_PersonalShield_Republic_Ammo";
+		ammo = "WPEC_PersonalShield_Republic_Ammo";
 		count = 1;
 		initSpeed = 18;
 		nameSound = "handgrenade";
@@ -193,7 +193,7 @@
 		displayName = "[104th] Full Body Shield";
 		displayNameShort = "Full Body Personal Shield";
 		type = 256;
-		ammo = "104th_PersonalShieldFull_Republic_Ammo";
+		ammo = "WPEC_PersonalShieldFull_Republic_Ammo";
 		count = 1;
 		initSpeed = 18;
 		nameSound = "handgrenade";
@@ -212,7 +212,7 @@
 		model = "3as\3as_shield\SquadShield_Throwable.p3d";
 		picture = "\3AS\3AS_Equipment\UI\Squad_Shield_UI_ca.paa";
 		type = 256;
-		ammo = "104th_SquadShield_Republic_Ammo";
+		ammo = "WPEC_SquadShield_Republic_Ammo";
 		count = 1;
 		initSpeed = 18;
 		nameSound = "handgrenade";
