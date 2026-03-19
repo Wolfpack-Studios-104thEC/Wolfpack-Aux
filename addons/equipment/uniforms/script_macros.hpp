@@ -1,4 +1,4 @@
-#define RANKUNIFORMS(scope,name) class GUNIFORM(Phase_2_Uniform_##name##): GUNIFORM(Phase_2_Uniform_Base) \
+#define RANKUNIFORMS(scope,name) class GUNIFORM(Phase_2_Uniform_##name##): wps_uniforms_uniform_P2 \
 	{\
 		scope = ##scope##;\
 		scopecurator = ##scope##;\
@@ -13,7 +13,7 @@
 		};\
 	}
 
-#define RANKUNITS(scope,name) class GUNIT(Phase_2_Unit_##name##): GUNIT(Phase_2_Unit_Base)\
+#define RANKUNITS(scope,name) class GUNIT(Phase_2_Unit_##name##): wps_uniforms_unit_P2\
 	{\
 		scope = ##scope##;\
 		scopeCurator = ##scope##;\

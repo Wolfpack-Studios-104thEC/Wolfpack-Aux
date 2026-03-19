@@ -1,5 +1,27 @@
 
-#define UNIT_LIST \
+
+#define ITEM_LIST \
+QGVEST(ARC_Trooper_A), \
+QGVEST(ARC_Trooper_B), \
+QGVEST(ARC_Trooper_C), \
+QGVEST(ARC_Trooper_D), \
+QGVEST(ARC_Trooper_E), \
+QGVEST(ARC_EOD_A), \
+QGVEST(ARC_EOD_B), \
+QGVEST(ARC_EOD_C), \
+QGVEST(ARC_EOD_D), \
+QGVEST(ARC_EOD_E), \
+QGVEST(ARC_Medic_A), \
+QGVEST(ARC_Medic_B), \
+QGVEST(ARC_Medic_C), \
+QGVEST(ARC_Medic_D), \
+QGVEST(ARC_Medic_E), \
+QGVEST(ARC_TL_A), \
+QGVEST(ARC_TL_B), \
+QGVEST(ARC_TL_C), \
+QGVEST(ARC_TL_D), \
+QGVEST(ARC_TL_E), \
+QGVEST(ARC_Graves)
 
 
 #define ITEM_LIST \
