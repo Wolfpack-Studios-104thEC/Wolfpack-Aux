@@ -1,0 +1,236 @@
+
+	class WPEC_3AS_RPS6_Unguided: 3AS_RPS6_Base
+	{
+		baseWeapon="WPEC_3AS_RPS6_F";
+		displayname="[104th] RPS6-L Disposable";
+		magazines[]=
+		{
+			"WPEC_3AS_MK40_AT_Unguided"
+		};
+	};
+	class WPEC_3AS_RPS6_F: WPEC_3AS_RPS6_Unguided
+	{
+		scope=2;
+		baseWeapon="WPEC_3AS_RPS6_F";
+		displayname="[104th] RPS6-L Disposable";
+		magazines[]=
+		{
+			"CBA_FakeLauncherMagazine"
+		};
+	};
+	class WPEC_3AS_RPS6_Guided: 3AS_RPS6_Guided
+	{
+		baseWeapon="WPEC_3AS_RPS6_G";
+		displayname="[104th] RPS6-L Disposable Guided";
+		magazines[]=
+		{
+			"WPEC_3AS_MK40_AT_Guided"
+		};
+	};
+	class WPEC_3AS_RPS6_G: WPEC_3AS_RPS6_Guided
+	{
+		scope=2;
+		baseWeapon="WPEC_3AS_RPS6_G";
+		displayname="[104th] RPS6-L Disposable Guided";
+		magazines[]=
+		{
+			"CBA_FakeLauncherMagazine"
+		};
+	};
+	class WPEC_RPS6_K_Odin: Odins_Launch
+	{
+		JLTS_hasEMPProtection=1;
+		reloadaction="ReloadRPG";
+		displayName="Backblastinator";
+		scope=1;
+		scopeCurator=1;
+		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
+		UiPicture="\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		model="\3AS\3AS_Weapons\RPS6HP\3AS_RPS6_HP.p3d";
+		modelSpecial="";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\MRC\JLTS\weapons\E60R\anims\E60R_handanim.rtm"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+		};
+		magazines[]=
+		{
+			"Odins_Despair"
+		};
+		magazineWell[]={};
+		magazineReloadTime=65;
+		modes[]=
+		{
+			"Single"
+		};
+		class Single: Mode_SemiAuto
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[]=
+				{
+					"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",
+					1.9952624,
+					1,
+					1500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			recoil="recoil_single_law";
+			aiRateOfFire=5;
+			aiRateOfFireDistance=500;
+			aiRateOfFireDispersion=2;
+			minRange=10;
+			minRangeProbab=0.30000001;
+			midRange=40;
+			midRangeProbab=0.85000002;
+			maxRange=600;
+			maxRangeProbab=0.85000002;
+		};
+		drySound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32.wss",
+			0.44668359,
+			1,
+			20
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32.wss",
+			0.25118864,
+			1,
+			10
+		};
+		canLock=0;
+		weaponLockDelay=3;
+		lockAcquire=0;
+		inertia=0.89999998;
+		aimTransitionSpeed=0.5;
+		dexterity=1.1;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=100;
+		};
+		descriptionShort="$STR_A3_CfgWeapons_launch_LAW1";
+		class Library
+		{
+			libTextDesc="$STR_A3_CfgWeapons_launch_LAW_Library0";
+		};
+		ace_overpressure_angle=40;
+		ace_overpressure_damage=0.69999999;
+		ace_overpressure_priority=1;
+		ace_overpressure_range=20;
+		ace_releadlaunchers_enabled=1;
+	};
+	class WPEC_RPS6_K: launch_RPG32_F
+	{
+		JLTS_hasEMPProtection=1;
+		reloadaction="ReloadRPG";
+		displayName="[104th] RPS6-K";
+		scope=2;
+		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
+		UiPicture="\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		model="\3AS\3AS_Weapons\RPS6HP\3AS_RPS6_HP.p3d";
+		modelSpecial="";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\MRC\JLTS\weapons\E60R\anims\E60R_handanim.rtm"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+		};
+		magazines[]=
+		{
+			"WPEC_MK2_AT_Mag",
+			"WPEC_MK3_AP_Mag",
+			"WPEC_MK4_AP_Mag"
+		};
+		class Single: Single
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[]=
+				{
+					"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",
+					1.9952624,
+					1,
+					1500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			recoil="recoil_single_law";
+			aiRateOfFire=5;
+			aiRateOfFireDistance=500;
+			aiRateOfFireDispersion=2;
+			minRange=10;
+			minRangeProbab=0.30000001;
+			midRange=40;
+			midRangeProbab=0.85000002;
+			maxRange=600;
+			maxRangeProbab=0.85000002;
+		};
+		drySound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32.wss",
+			0.44668359,
+			1,
+			20
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32.wss",
+			0.25118864,
+			1,
+			10
+		};
+		canLock=0;
+		weaponLockDelay=3;
+		lockAcquire=0;
+		inertia=0.89999998;
+		aimTransitionSpeed=0.5;
+		dexterity=1.1;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=100;
+		};
+		descriptionShort="$STR_A3_CfgWeapons_launch_LAW1";
+		class Library
+		{
+			libTextDesc="$STR_A3_CfgWeapons_launch_LAW_Library0";
+		};
+		ace_overpressure_angle=40;
+		ace_overpressure_damage=0.69999999;
+		ace_overpressure_priority=1;
+		ace_overpressure_range=10;
+		ace_releadlaunchers_enabled=1;
+	};
