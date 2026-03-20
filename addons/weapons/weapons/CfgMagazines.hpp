@@ -20,8 +20,6 @@ class CfgMagazines
 	class CA_LauncherMagazine: CA_Magazine
 	{
 	};
-    class 3AS_ThermalDetonator;
-
     #include "primaries/primariesmagazinese.hpp"
     #include "secondaries/secondariesmagazines.hpp"
     #include "tertiaries/tertiariesmagazines.hpp"

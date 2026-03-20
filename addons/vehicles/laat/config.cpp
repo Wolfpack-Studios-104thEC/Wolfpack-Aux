@@ -20,14 +20,11 @@ class CfgPatches {
 };
 
 class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
 class SensorTemplateIR;
 class SensorTemplateVisual;
-class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
-class SensorTemplateDataLink;
 class DefaultVehicleSystemsDisplayManagerLeft
 {
 	class Components;
@@ -39,27 +36,19 @@ class DefaultVehicleSystemsDisplayManagerRight
 class WPEC_impulsor_base;
 
 class CfgVehicles {
-    class Air;
-    class Helicopter: Air {
-        class ACE_Actions;
-    };
-    class Helicopter_Base_F: Helicopter {
-        class ACE_Actions: ACE_Actions {
-            class ACE_MainActions;
-        };
-    };
+    class Helicopter_Base_F;
     class Helicopter_Base_H: Helicopter_Base_F {
         class Turrets;
     };
 	class 3AS_LAAT_Base: Helicopter_Base_H {
-        class HitPoints {
+        /*class HitPoints {
             class HitHull;
             class HitFuel;
             class HitEngine;
             class HitHRotor;
             class HitVRotor;
             class HitAvionics;
-        };
+        };*/
 
         class UserActions;
         class ACE_SelfActions;
@@ -490,7 +479,7 @@ class CfgVehicles {
             };
         };
         //Components deals with the radar range for the Vehicle.  Here it is set to 8000 so the range will be 8000M or 8KM.
-		class Components
+		class Components: Components
 		{
 			class SensorsManagerComponent
 			{
@@ -653,7 +642,6 @@ class CfgVehicles {
 					};
 				};
 			};
-			class TransportCounterMeasuresComponent;
 		};
         //Deals with user actions from the scroll wheel.
 		class UserActions: UserActions

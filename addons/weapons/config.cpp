@@ -16,13 +16,6 @@ class CfgPatches {
     };
 };
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
 
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"

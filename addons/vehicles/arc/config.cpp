@@ -16,12 +16,10 @@ class CfgPatches {
     };
 };
 
-class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
 class SensorTemplateIR;
 class SensorTemplateVisual;
-class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;

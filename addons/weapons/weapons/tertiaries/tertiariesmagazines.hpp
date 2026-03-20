@@ -71,3 +71,9 @@
 		count=100;
 		mass=1;
 	};
+	class WPEC_3AS_Chaingun_Mag: 3AS_Chaingun_Drum_Mag
+	{
+		scope=2;
+		displayName="[104th] Chaingun Energy Cell";
+		ammo="WPEC_3AS_ChaingunAmmo";
+	};
