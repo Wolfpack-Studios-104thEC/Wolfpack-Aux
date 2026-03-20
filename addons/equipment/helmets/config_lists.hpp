@@ -74,13 +74,14 @@
     QGHELMET(arc_Trainee), \
     QGHELMET(arc_Veteran), \
     QGHELMET(ARF), \
-    QGHELMET(arf_Billeted), \
+    QGHELMET(arf_Billet), \
     QGHELMET(BARC), \
     QGHELMET(barc_Billet), \
     QGHELMET(engineer_Billet), \
+    QGHELMET(Pilot_Unmarked), \
     QGHELMET(Pilot_Billeted), \
-    QGHELMET(Tanker_Billeted), \
-    QGHELMET(Airborne_billeted), \
+    QGHELMET(Tanker_Billet), \
+    QGHELMET(Airborne_Billet), \
     QGHELMET(phase1_CT), \
     QGHELMET(phase1_SCT), \
     QGHELMET(phase1_VCT), \

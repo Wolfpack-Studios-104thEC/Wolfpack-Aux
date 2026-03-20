@@ -8,10 +8,6 @@ class XtdGearModels {
             class Person {
                 changeingame = 0;
                 values[] = {"Ghoul","Odin","Ryan"};
-
-                class Ghoul;
-                class Odin;
-                class Ryan;
             };
         };
     };

@@ -7,14 +7,35 @@ class XtdGearModels {
 
             class camo {
                 changeingame = 0;
+                alwaysSelectable = 1;
                 values[] = {"CR","CT","SCT","VCT","CLC","CSP1"};
+            };
+        };
+        class GVAR(role_rank) {
+            label = "[104th] Role Rank Helmets";
+            author = AUTHOR;
+            options[] = {"role","camo"};
+            class role {
+                changeingame = 0;
+                values[] = {"Airborne","ARC","ARF","BARC","Engineer","Pilot","Tanker"};
+                alwaysSelectable = 1;
+            };
+            class camo {
+                changeingame = 0;
+                values[] = {"Unmarked","Trainee","Billet","Veteran"};
+                alwaysSelectable = 1;
+                class Billet { label = "Billeted"; };
+            };
+        };
+        class GVAR(p1_rank) {
+            label = "[104th] Phase 1 Rank Helmets";
+            author = AUTHOR;
+            options[] = {"camo"};
 
-                class CR { label = "CR";};
-                class CT { label = "CT";};
-                class SCT { label = "SCT";};
-                class VCT { label = "VCT";};
-                class CLC { label = "CLC";};
-                class CSP1 { label = "CSP1";};
+            class camo {
+                changeingame = 0;
+                alwaysSelectable = 1;
+                values[] = {"CT","SCT","VCT","CLC","CSP1","ARC","AlphaARC","NCO","Command"};
             };
         };
     };
