@@ -34,7 +34,7 @@
 		explosionEffects="JLTS_fx_exp_EMP";
 		soundFly[]=
 		{
-			"\Z\wps\addons\weapons\Sounds\Grenades\fly\Thermal_Disruptor_Fly.ogg"
+			"\Z\wps\addons\weapons\Sounds\Grenades\fly\Thermal_Disruptor_Fly.ogg",
 			30.0,
 			1,
 			100
