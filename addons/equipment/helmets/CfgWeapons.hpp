@@ -1,5 +1,4 @@
 class CfgWeapons {
-    class WPS_Phase_2_Helmet_Base;
     class WPS_Phase_2_ARC_Helmet_Base;
     class WPS_ARF_Helmet_Base;
     class WPS_BARC_Helmet_Base;

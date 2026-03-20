@@ -8,7 +8,7 @@ class CfgPatches {
         addonRootClass = QADDON;
         name = COMPONENT_NAME;
         units[] = {
-            UNIT_LIST
+            //UNIT_LIST
         };
         weapons[] = {
             ITEM_LIST

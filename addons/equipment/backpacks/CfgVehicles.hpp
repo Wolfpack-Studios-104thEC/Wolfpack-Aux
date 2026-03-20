@@ -1,6 +1,5 @@
-class CfgVehicles {
-    class B_Kitbag_rgr;
 
+class CfgVehicles {
 	class WPS_backpacks_backpack_trooper;
 	class WPS_backpacks_backpack_trooper_lr;
     class WPS_backpacks_backpack_engineer;
