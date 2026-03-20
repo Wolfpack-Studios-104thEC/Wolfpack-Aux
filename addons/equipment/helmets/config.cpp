@@ -11,7 +11,6 @@ class CfgPatches {
             UNIT_LIST
         };
         weapons[] = {
-            CUSTOM_ITEM_LIST,
             STANDARD_ITEM_LIST
         };
         requiredVersion = REQUIRED_VERSION;

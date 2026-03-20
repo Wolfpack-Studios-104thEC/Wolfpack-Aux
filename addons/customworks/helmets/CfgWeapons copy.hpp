@@ -1,0 +1,89 @@
+class CfgWeapons {
+    class WPS_helmets_helmet_phase2;
+    class WPS_helmets_helmet_ARC;
+    class WPS_helmets_helmet_ARF;
+    class WPS_helmets_helmet_BARC;
+    class WPS_helmets_helmet_Engineer;
+    class WPS_helmets_helmet_p2_pilot;
+    class WPS_helmets_helmet_Tanker;
+    class WPS_helmets_helmet_Airborne;
+    class WPS_helmets_helmet_phase1;
+
+    P2_HELMET_CUSTOM_MACRO(Alpha);
+    P2_HELMET_CUSTOM_MACRO(Apathy);
+    P2_HELMET_CUSTOM_MACRO(Bean);
+    P2_HELMET_CUSTOM_MACRO(Bigfella);
+    P2_HELMET_CUSTOM_MACRO(Blue);
+    P2_HELMET_CUSTOM_MACRO(CJ);
+    P2_HELMET_CUSTOM_MACRO(Crometheus);
+    P2_HELMET_CUSTOM_MACRO(Dutchmann);
+    P2_HELMET_CUSTOM_MACRO(Fallen);
+    P2_HELMET_CUSTOM_MACRO(Ghoul);
+    P2_HELMET_CUSTOM_MACRO(Grandpa);
+    P2_HELMET_CUSTOM_MACRO(Hippo);
+    P2_HELMET_CUSTOM_MACRO(Husky);
+    P2_HELMET_CUSTOM_MACRO(Impulse);
+    P2_HELMET_CUSTOM_MACRO(Juicy);
+    P2_HELMET_CUSTOM_MACRO(Kalo);
+    P2_HELMET_CUSTOM_MACRO(Kona);
+    P2_HELMET_CUSTOM_MACRO(Lone);
+    P2_HELMET_CUSTOM_MACRO(Orion);
+    P2_HELMET_CUSTOM_MACRO(Paddy);
+    P2_HELMET_CUSTOM_MACRO(Quake);
+    P2_HELMET_CUSTOM_MACRO(Queue);
+    P2_HELMET_CUSTOM_MACRO(Roach);
+    P2_HELMET_CUSTOM_MACRO(Rodi);
+    P2_HELMET_CUSTOM_MACRO(Ryan);
+    P2_HELMET_CUSTOM_MACRO(Sasquatch);
+    //P2_HELMET_CUSTOM_MACRO(Skitty);
+    P2_HELMET_CUSTOM_MACRO(Shadow);
+    P2_HELMET_CUSTOM_MACRO(Sleepy);
+    P2_HELMET_CUSTOM_MACRO(Spiritual);
+    P2_HELMET_CUSTOM_MACRO(Swift);
+    P2_HELMET_CUSTOM_MACRO(Topdog);
+    P2_HELMET_CUSTOM_MACRO(Turq);
+
+    P2_HELMET_CUSTOM_GLOW_MACRO(Odin,Glow);
+    P2_HELMET_CUSTOM_GLOW_MACRO(Ricebowl,White);
+
+    //ARC
+    ARC_HELMET_CUSTOM_MACRO(Blue);
+    ARC_HELMET_CUSTOM_MACRO(Nook);
+    ARC_HELMET_CUSTOM_MACRO(Boxing);
+    ARC_HELMET_CUSTOM_MACRO(Husky);
+    ARC_HELMET_CUSTOM_MACRO(Firehawk);
+
+    ARC_HELMET_CUSTOM_GLOW_MACRO(Graves,Chrome);
+
+    //ARF
+    ARF_HELMET_CUSTOM_MACRO(Drom);
+    ARF_HELMET_CUSTOM_MACRO(Spec);
+    ARF_HELMET_CUSTOM_MACRO(Subbie);
+
+    //BARC
+    BARC_HELMET_CUSTOM_MACRO(CJ);
+    BARC_HELMET_CUSTOM_MACRO(Firehawk);
+    BARC_HELMET_CUSTOM_MACRO(Gus);
+
+//Engineer
+    ENGINEER_HELMET_CUSTOM_MACRO(Hippo);
+    ENGINEER_HELMET_CUSTOM_MACRO(Lone);
+    ENGINEER_HELMET_CUSTOM_MACRO(Paddy);
+    ENGINEER_HELMET_CUSTOM_MACRO(Shark);
+
+    //Pilot
+    PILOT_HELMET_CUSTOM_MACRO(Bandit);
+    PILOT_HELMET_CUSTOM_MACRO(Killa);
+    PILOT_HELMET_CUSTOM_MACRO(Kurt);
+    PILOT_HELMET_CUSTOM_MACRO(Lego);
+    PILOT_HELMET_CUSTOM_MACRO(Odin);
+    PILOT_HELMET_CUSTOM_MACRO(Pigs);
+    PILOT_HELMET_CUSTOM_MACRO(Sleepy);
+    PILOT_HELMET_CUSTOM_MACRO(Trash);
+
+    //Tanker
+    TANKER_HELMET_CUSTOM_MACRO(Dutchmann);
+    TANKER_HELMET_CUSTOM_MACRO(Gambler);
+    TANKER_HELMET_CUSTOM_MACRO(Lone);
+    TANKER_HELMET_CUSTOM_MACRO(Maverick);
+};
