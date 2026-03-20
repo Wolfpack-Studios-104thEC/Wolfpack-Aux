@@ -13,7 +13,7 @@ _this spawn {
 	private _DEBUG = false;
 
 	switch (_ammo) do {
-		case "104th_PersonalShield_Republic_Ammo": {
+		case "WPEC_PersonalShield_Republic_Ammo": {
 			// Create _shieldClass
 			private _shield = _shieldClass createVehicle getPos _unit;
 
@@ -46,7 +46,7 @@ _this spawn {
 			// Destroy Shield
 			deleteVehicle _shield;
 		};
-		case "104th_PersonalShieldFull_Republic_Ammo": {
+		case "WPEC_PersonalShieldFull_Republic_Ammo": {
 
 			// Create _shieldClass
 			private _shield = _fullShieldClass createVehicle getPos _unit;
@@ -81,7 +81,7 @@ _this spawn {
 			// Destroy Shield
 			deleteVehicle _shield;
 		};
-		case "104th_SquadShield_Republic_Ammo": {
+		case "WPEC_SquadShield_Republic_Ammo": {
 			// Delay a little
 			//sleep 0.95;
 
