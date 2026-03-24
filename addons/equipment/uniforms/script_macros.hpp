@@ -1,7 +1,7 @@
-#define RANKUNIFORMS(scope,name) class GUNIFORM(Phase_2_Uniform_##name##): wps_uniforms_uniform_P2 \
+#define RANKUNIFORMS(name) class GUNIFORM(Phase_2_Uniform_##name##): wps_uniforms_uniform_P2 \
 	{\
-		scope = ##scope##;\
-		scopecurator = ##scope##;\
+		scope = 2;\
+		scopecurator = 2;\
 		displayname = QUOTE([104th] Phase 2 ##name##);\
 		class ItemInfo: ItemInfo\
 		{\
@@ -11,6 +11,10 @@
 			containerclass = "supply150";\
 			mass = 40;\
 		};\
+        class XtdGearInfo { \
+            model = QGVAR(p2_rank_armor); \
+            camo = QUOTE(name); \
+        }; \
 	}
 
 #define RANKUNITS(scope,name) class GUNIT(Phase_2_Unit_##name##): wps_uniforms_unit_P2\

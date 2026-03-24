@@ -24,27 +24,13 @@ class CfgWeapons {
 		};
 	};
     //start renaming uniforms to match units here
-	class GUNIFORM(Phase_2_Uniform_CT): GUNIFORM(Phase_2_Uniform_Base)
-	{
-		author = "Queue";
-		scope = 2;
-		scopecurator = 2;
-		displayname = "[104th] Phase 2 CT";
-		class ItemInfo: ItemInfo
-		{
-			uniformmodel = "-";
-			uniformclass = QGUNIT(Phase_2_Unit_Trooper);
-			uniformtype = "Neopren";
-			containerclass = "supply150";
-			mass = 40;
-		};
-	};
-    RANKUNIFORMS(2,VCT);
-    RANKUNIFORMS(2,CSP1);
-    RANKUNIFORMS(2,CSP2);
-    RANKUNIFORMS(2,CSP1_Medic);
-    RANKUNIFORMS(2,CSP2_Medic);
-    RANKUNIFORMS(2,CS);
+    RANKUNIFORMS(CT);
+    RANKUNIFORMS(VCT);
+    RANKUNIFORMS(CSP1);
+    RANKUNIFORMS(CSP2);
+    RANKUNIFORMS(CSP1_Medic);
+    RANKUNIFORMS(CSP2_Medic);
+    RANKUNIFORMS(CS);
 
     class GUNIFORM(Phase_2_Command_Uniform_Base): wps_uniforms_uniform_command
 	{

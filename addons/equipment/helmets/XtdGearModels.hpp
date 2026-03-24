@@ -1,6 +1,6 @@
 class XtdGearModels {
     class CfgWeapons {
-        class GVAR(p2_rank) {
+        class GVAR(p2_rank_helm) {
             label = "[104th] Phase 2 Rank Helmets";
             author = AUTHOR;
             options[] = {"camo"};
@@ -11,7 +11,7 @@ class XtdGearModels {
                 values[] = {"CR","CT","SCT","VCT","CLC","CSP1"};
             };
         };
-        class GVAR(role_rank) {
+        class GVAR(role_rank_helm) {
             label = "[104th] Role Rank Helmets";
             author = AUTHOR;
             options[] = {"role","camo"};
@@ -27,7 +27,7 @@ class XtdGearModels {
                 class Billet { label = "Billeted"; };
             };
         };
-        class GVAR(p1_rank) {
+        class GVAR(p1_rank_helm) {
             label = "[104th] Phase 1 Rank Helmets";
             author = AUTHOR;
             options[] = {"camo"};
