@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="WPEC\WPEC_Attachments\data\ARCChristmas_nohq.paa";
+	texture="Z\wpec\addons\attachments\data\christmas\p2\P2Christmas_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="WPEC\WPEC_Attachments\data\ARCChristmas_as.paa";
+	texture="Z\wpec\addons\attachments\data\christmas\p2\P2Christmas_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="WPEC\WPEC_Attachments\data\ARCChristmas_smdi.paa";
+	texture="Z\wpec\addons\attachments\data\christmas\p2\P2Christmas_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

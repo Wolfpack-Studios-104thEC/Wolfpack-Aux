@@ -21,43 +21,7 @@ class CfgPatches
 class CfgWeapons
 {
     class NVGoggles;
-    class wps_attachments_nvg_commandvisor_3;
-    class wps_attachments_nvg_commandvisor_4;
 
-
-	class GNVG(cc_Visor_3_Ghoul): wps_attachments_nvg_commandvisor_3
-	{
-		author = "Queue";
-		displayName = "[104th] Command Visor (Ghoul)";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\CCVisor3Ghoul_co.paa)};
-        class XtdGearInfo {
-            model = QGVAR(p2_cc_Customs);
-            Person = "Ghoul";
-        };
-	};
-	class GNVG(cc_Visor_4_Odin): wps_attachments_nvg_commandvisor_3
-	{
-		author = "Queue";
-		displayName = "[104th] Command Visor (Odin)";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\CCVisor3Odin_co.paa)};
-        class XtdGearInfo {
-            model = QGVAR(p2_cc_Customs);
-            Person = "Odin";
-        };
-	};
-	class GNVG(cc_Visor_4_Ryan): wps_attachments_nvg_commandvisor_4
-	{
-		author = "Queue";
-		displayName = "[104th] Command Visor (Ryan)";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\CCVisor4Ryan_co.paa)};
-        class XtdGearInfo {
-            model = QGVAR(p2_cc_Customs);
-            Person = "Ryan";
-        };
-	};
 	class GNVG(Ares_NVG_Chip): NVGoggles
 	{
 		author = "Queue";
@@ -93,8 +57,8 @@ class CfgGlasses
         displayName = "[104th] ARF Antlers";
 		model = QPATHTOF(ARFChristmas.p3d);
         picture = QPATHTOF(icons\logo_co.paa);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\ARFChristmas_co.paa)};
-		hiddenSelectionsMaterials[] = {QPATHTOF(data\ARFChristmas.rvmat)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\christmas\arf\ARFChristmas_co.paa)};
+		hiddenSelectionsMaterials[] = {QPATHTOF(data\christmas\arf\ARFChristmas.rvmat)};
 		mass = 4;
 		mode = 4;
 	};
@@ -107,8 +71,8 @@ class CfgGlasses
         displayName = "[104th] ARC Bells";
 		model = QPATHTOF(ARCChristmas.p3d);
         picture = QPATHTOF(icons\logo_co.paa);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\ARCChristmas_co.paa)};
-		hiddenSelectionsMaterials[] = {QPATHTOF(data\ARCChristmas.rvmat)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\christmas\arc\ARCChristmas_co.paa)};
+		hiddenSelectionsMaterials[] = {QPATHTOF(data\christmas\arc\ARCChristmas.rvmat)};
 		mass = 4;
 		mode = 4;
 	};
@@ -121,8 +85,8 @@ class CfgGlasses
         displayName = "[104th] Infantry Hat";
 		model = QPATHTOF(P2Christmas.p3d);
         picture = QPATHTOF(icons\logo_co.paa);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\P2Christmas_co.paa)};
-		hiddenSelectionsMaterials[] = {QPATHTOF(data\P2Christmas.rvmat)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\christmas\p2\P2Christmas_co.paa)};
+		hiddenSelectionsMaterials[] = {QPATHTOF(data\christmas\p2\P2Christmas.rvmat)};
 		mass = 4;
 		mode = 4;
 	};
@@ -135,8 +99,8 @@ class CfgGlasses
         displayName = "[104th] Rudolph";
 		model = QPATHTOF(Rudolph.p3d);
         picture = QPATHTOF(icons\logo_co.paa);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\Rudolph_co.paa)};
-		hiddenSelectionsMaterials[] = {QPATHTOF(data\Rudolph.rvmat), QPATHTOF(data\RudolphNose.rvmat)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\christmas\rudolph\Rudolph_co.paa)};
+		hiddenSelectionsMaterials[] = {QPATHTOF(data\christmas\rudolph\Rudolph.rvmat), QPATHTOF(data\christmas\rudolph\RudolphNose.rvmat)};
 		mass = 4;
 		mode = 4;
 	};
