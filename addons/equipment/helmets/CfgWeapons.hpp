@@ -26,7 +26,7 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\IconARC_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\arc\Phase2ARC_co.paa), QPATHTOF(data\arc\light\ARCLight_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(ARC);
             camo = QUOTE(Unmarked);
         };
@@ -44,7 +44,7 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\IconARFUnmarked_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\arf\Phas2ARF_co.paa),QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(ARF);
             camo = QUOTE(Unmarked);
         };
@@ -62,7 +62,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\barc\Phase2BARC_co.paa), QPATHTOF(data\visor\visor_co.paa)};
 
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(BARC);
             camo = QUOTE(Unmarked);
         };
@@ -81,7 +81,7 @@ class CfgWeapons {
         displayName = "[104th] Phase 2 Pilot";
         hiddenSelectionsTextures[] = {QPATHTOF(data\pilot\Phase2PilotUpper_co.paa), QPATHTOF(data\pilot\Phase2PilotLower_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(Pilot);
             camo = QUOTE(Unmarked);
         };
@@ -93,7 +93,7 @@ class CfgWeapons {
         displayName = "[104th] Phase 2 Pilot";
         hiddenSelectionsTextures[] = {QPATHTOF(data\pilot\Phase2PilotUpperBillet_co.paa), QPATHTOF(data\pilot\Phase2PilotLower_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(Pilot);
             camo = QUOTE(Billet);
         };
@@ -107,7 +107,7 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\tanker\Phase2TankerBillet_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(Tanker);
             camo = QUOTE(Billet);
         };
@@ -121,7 +121,7 @@ class CfgWeapons {
         picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\airborne\Phase2AirborneBillet_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
-            model = QGVAR(role_rank);
+            model = QGVAR(role_rank_helm);
             role = QUOTE(Airborne);
             camo = QUOTE(Billet);
         };

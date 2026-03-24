@@ -3,7 +3,7 @@ class CfgVehicles {
     class wps_uniforms_unit_arc;
     class wps_uniforms_unit_command;
 
-	class GUNIT(Phase_2_Unit_Trooper): wps_uniforms_unit_P2
+	class GUNIT(Phase_2_Unit_CT): wps_uniforms_unit_P2
 	{
 		scope = 2;
 		scopeCurator = 2;
