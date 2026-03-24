@@ -4,7 +4,7 @@
 	displayName = QUOTE([104th] Phase 2 Helmet (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase2\Phase2##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
-		model = QGVAR(p2_rank); \
+		model = QGVAR(p2_rank_helm); \
 		camo = QUOTE(name); \
 	};  \
 	}
@@ -16,7 +16,7 @@
 	displayName = QUOTE([104th] Phase 2 ARC (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARC\Phase2ARC##name##_co.paa),QPATHTOF(data\arc\light\ARCLight_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(ARC); \
 		camo = QUOTE(name); \
 	}; \
@@ -29,7 +29,7 @@
 	displayName = QUOTE([104th] ARF Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\ARF\Phase2ARF##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(ARF); \
 		camo = QUOTE(name); \
 	}; \
@@ -42,7 +42,7 @@
 	displayName = QUOTE([104th] BARC Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\barc\Phase2BARC##name##_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
 	class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(BARC); \
 		camo = QUOTE(name); \
 	}; \
@@ -55,7 +55,7 @@
 	displayName = QUOTE([104th] Engineer Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\engineer\Phase2Engineer##name##_co.paa),QPATHTOF(data\engineer\light\EngineerLight_co.paa),QPATHTOF(data\visor\visor_co.paa)};\
     class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(Engineer); \
 		camo = QUOTE(name); \
 	}; \
@@ -68,15 +68,10 @@
 	displayName = QUOTE([104th] Pilot Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\pilot\Phase2PilotUpper##name##_co.paa), QPATHTOF(data\pilot\Phase2PilotLower##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
     class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(Pilot); \
 		camo = QUOTE(name); \
 	}; \
-	}e = QPATHTOF(data\icon\Icon##name##_co.paa);*/ \
-	/*class XtdGearInfo { \
-		model = QGVAR(pilot_custom); \
-		camo = QUOTE(name); \
-	};*/ \
 	}
 
 	//Tanker
@@ -86,7 +81,7 @@
 	displayName = QUOTE([104th] Tanker Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\tanker\Phase2Tanker##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
     class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(Tanker); \
 		camo = QUOTE(name); \
 	}; \
@@ -98,7 +93,7 @@
 	scope = 2;\
 	displayName = QUOTE([104th] Airborne Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\airborne\Phase2Airborne##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\class XtdGearInfo { \
-		model = QGVAR(role_rank); \
+		model = QGVAR(role_rank_helm); \
         role = QUOTE(Airborne); \
 		camo = QUOTE(name); \
 	}; \
@@ -111,7 +106,7 @@
 	displayName = QUOTE([104th] Phase 1 Helmet(name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase1\Phase1##name##_co.paa), QPATHTOF(data\visor\visor_co.paa)};\
     class XtdGearInfo { \
-		model = QGVAR(p1_rank); \
+		model = QGVAR(p1_rank_helm); \
 		camo = QUOTE(name); \
 	}; \
 	}
