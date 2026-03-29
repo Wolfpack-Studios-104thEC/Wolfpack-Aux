@@ -13,7 +13,7 @@
     QGUNIFORM(Phase_2_Uniform_Base_Halloween)
 
 #define UNIT_LIST \
-    QGUNIT(Phase_2_Unit_Trooper), \
+    QGUNIT(Phase_2_Unit_CT), \
     QGUNIT(Phase_2_Unit_VCT), \
     QGUNIT(Phase_2_Unit_CS), \
     QGUNIT(Phase_2_Unit_CSP1), \

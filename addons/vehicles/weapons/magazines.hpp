@@ -75,7 +75,7 @@
 		displayNameShort="Maramu A2A";
 		ammo="WPEC_Maramu_A2A_Missile_ammo";
 		count=2;
-		model = "\z\NCA\addons\props\empty.p3d";
+		//model = "\z\NCA\addons\props\empty.p3d";
 		hardpoints[]=
 		{
 			"WPEC_ARC_Universal_1_4_Missile_rail",
@@ -107,7 +107,7 @@
 		displayNameShort="Hoska A2A";
 		ammo="WPEC_Hoska_A2A_Missile_ammo";
 		count=2;
-		model = "\z\NCA\addons\props\empty.p3d";
+		//model = "\z\NCA\addons\props\empty.p3d";
 		hardpoints[]=
 		{
 			"WPEC_ARC_Universal_1_4_Missile_rail",
@@ -147,7 +147,7 @@
 		displayNameShort="Dianoga WGM";
 		ammo="WPEC_Dianoga_WGM_FixWing_Missile_ammo";
 		count=2;
-		model = "\z\NCA\addons\props\empty.p3d";
+		//model = "\z\NCA\addons\props\empty.p3d";
 		hardpoints[]=
 		{
 			"WPEC_ARC_Universal_1_4_Missile_rail",
@@ -181,7 +181,7 @@
 		displayNameShort="Kaada A2A";
 		ammo="WPEC_Kaada_Unguided_Rocket_ammo";
 		count=8;
-		model = "\z\NCA\addons\props\empty.p3d";
+		//model = "\z\NCA\addons\props\empty.p3d";
 		hardpoints[]=
 		{
 			"WPEC_ARC_Universal_5_6_Missile_rail"
@@ -203,7 +203,7 @@
 		displayName="Dumb Bomb";
 		displayNameShort="Dumb Bomb";
 		count=25;
-		model = "\z\NCA\addons\props\empty.p3d";
+		//model = "\z\NCA\addons\props\empty.p3d";
 		ammo="WPEC_Unguided_Bomb_ammo";
 		hardpoints[]=
 		{
@@ -215,7 +215,7 @@
 		count=4;
 		displayName="GBU";
 		displayNameShort="Guided Bomb";
-		model = "\z\NCA\addons\props\empty.p3d";
+		//model = "\z\NCA\addons\props\empty.p3d";
 		ammo="WPEC_Guided_Bomb_ammo";
 		hardpoints[]=
 		{
