@@ -2,9 +2,7 @@ class CfgAmmo
 {
 	class SmokeShell;
 	class GrenadeHand;
-	class Grenade;
-
-    
+	class Grenade;  
     class WPEC_3AS_ThermalDetonator_Ammo: GrenadeHand
 	{
 		hit=18;
@@ -160,5 +158,4 @@ class CfgAmmo
 	{
 		smokeColor[]={0.66970003,0.22750001,0.10053,1};
 	};
-
 };
