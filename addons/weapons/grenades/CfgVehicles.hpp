@@ -14,7 +14,7 @@ class CfgVehicles
 		displayName = "-";
 		editorCategory = "EdCat_VRObjects";
 		editorSubcategory = "EdSubcat_Helpers";
-		sound = "WPECShield";
+		sound = "Shield";
 	};
 	class PersonalShieldFull_Republic: House_F
 	{
@@ -28,7 +28,7 @@ class CfgVehicles
 		displayName = "-";
 		editorCategory = "EdCat_VRObjects";
 		editorSubcategory = "EdSubcat_Helpers";
-		sound = "WPECShield";
+		sound = "Shield";
 	};
 	class SquadShield_Republic: House_F
 	{
@@ -42,21 +42,7 @@ class CfgVehicles
 		displayName = "-";
 		editorCategory = "EdCat_VRObjects";
 		editorSubcategory = "EdSubcat_Helpers";
-		sound = "WPECShield";
+		sound = "Shield";
 		destrType = "DestructNo";
-	};
-};
-class CfgSounds
-{
-	class WPECShield
-	{
-		sound[]=
-		{
-			"",
-			40,
-			1,
-			50
-		};
-		titles[]={};
 	};
 };
