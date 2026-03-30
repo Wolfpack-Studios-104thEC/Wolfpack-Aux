@@ -19,7 +19,7 @@ _this spawn {
 
 			// Enable Sound
 			// playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", player];
-			playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", player, false, getPos player, 5, 0.7, 25];
+			playSound3D ["", player, false, getPos player, 5, 0.7, 25];
 
 			// Attach to player
 			_shield attachTo [_unit, [0.3, 1, -0.3], "Weapon", true]; _shield setDir 0;
@@ -36,7 +36,7 @@ _this spawn {
 
 			// Play shutdown sound
 			// playSound3D ["3AS\3AS_Shield\shield_grenade\disable.ogg", player];
-			playSound3D ["3AS\3AS_Shield\shield_grenade\disable.ogg", player, false, getPos player, 5, 0.7, 25];
+			playSound3D ["", player, false, getPos player, 5, 0.7, 25];
 
 			sleep 0.5;
 
@@ -53,7 +53,7 @@ _this spawn {
 
 			// Enable Sound
 			// playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", player];
-			playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", player, false, getPos player, 5, 0.7, 25];
+			playSound3D ["", player, false, getPos player, 5, 0.7, 25];
 
 			// Attach to player
 			_shield attachTo [_unit, [0, 0.25,-0.7], "Pelvis", true];
@@ -71,7 +71,7 @@ _this spawn {
 
 			// Play shutdown sound
 			// playSound3D ["3AS\3AS_Shield\shield_grenade\disable.ogg", player];
-			playSound3D ["3AS\3AS_Shield\shield_grenade\disable.ogg", player, false, getPos player, 5, 0.7, 25];
+			playSound3D ["", player, false, getPos player, 5, 0.7, 25];
 
 			sleep 0.5;
 
@@ -101,11 +101,11 @@ _this spawn {
 			deleteVehicle _projectile;
 			//_shieldGenDep setPos _position;
 
-			playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", _shieldGenDep, false, getPos _shieldGenDep, 5, 0.7, 50];
+			playSound3D ["", _shieldGenDep, false, getPos _shieldGenDep, 5, 0.7, 50];
 
 			sleep _squadShieldTime;
 
-			playSound3D ["3AS\3AS_Shield\shield_grenade\disable.ogg", _shieldGenDep, false, getPos _shieldGenDep, 5, 0.7, 50];
+			playSound3D ["", _shieldGenDep, false, getPos _shieldGenDep, 5, 0.7, 50];
 
 			sleep 0.5;
 
