@@ -317,7 +317,8 @@
 		magazines[] = {"WPEC_aircraft_green_CAP_plasma_mag"};
 		FCSMaxLeadSpeed = 1800;
 		weaponLockSystem = 2;
-		dexterity = 5;modes[] = {"LowROF"};
+		dexterity = 5;
+		modes[] = {"LowROF"};
 		canLock = 1;
 		ballisticsComputer = 1;
 		class LowROF: LowROF
@@ -344,12 +345,17 @@
 			maxRange = 2;
 			maxRangeProbab = 0.01;
 			textureType = "fullAuto";
-			sounds[] = {"StandardSounds"};
-			class StandardSounds
+			sounds[]=
 			{
-				begin1[] = {"\z\NCA\addons\vehicles\weapons\sounds\cannons\plasmaCannon_fire_left.ogg",1.1,1,1800};
-				begin2[] = {"\z\NCA\addons\vehicles\weapons\sounds\cannons\plasmaCannon_fire_right.ogg",1.1,1,1800};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				"StandardSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_V19Blaster_SoundSet"
+				};
 			};
 		};
 	};

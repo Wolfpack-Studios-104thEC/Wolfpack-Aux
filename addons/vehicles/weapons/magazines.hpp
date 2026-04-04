@@ -13,6 +13,7 @@
 		timeToLive=3;
 		tracerScale=5;
 		tracerStartTime=0;
+		muzzleImpulseFactor[]={0,0};
 	};
 	class WPEC_LAAT_Cannon_LowPower_Magazine: VehicleMagazine
 	{
@@ -25,6 +26,7 @@
 		lastRoundsTracer=1000;
 		maxLeadSpeed=300;
 		ammo="WPEC_LAAT_Cannon_LowPower_Ammo";
+		muzzleImpulseFactor[]={0,0};
 	};
 	class WPEC_LAAT_Cannon_HighPower_Magazine: VehicleMagazine
 	{
@@ -37,6 +39,7 @@
 		lastRoundsTracer=500;
 		maxLeadSpeed=300;
 		ammo="WPEC_LAAT_Cannon_HighPower_Ammo";
+		muzzleImpulseFactor[]={0,0};
 	};
 	class WPEC_aircraft_green_CAP_plasma_mag: VehicleMagazine
 	{
@@ -49,6 +52,7 @@
 		lastRoundsTracer=1000;
 		maxLeadSpeed=300;
 		ammo="WPEC_aircraft_green_CAP_plasma_ammo";
+		muzzleImpulseFactor[]={0,0};
 	};
     class WPEC_coaxium_plasma_magazine: WPEC_aircraft_green_CAP_plasma_mag
 	{
@@ -57,6 +61,7 @@
 		displayNameShort="Coaxium Plasma";
 		ammo="WPEC_coaxium_plasma_ammo";
 		count=20;
+		muzzleImpulseFactor[]={0,0};
 	};
 
     //Missiles

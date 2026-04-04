@@ -29,7 +29,7 @@ class CfgVehicles {
 		//vehicleClass = "GAR_LAATCatNSub";
 		editorSubcategory=QEGVAR(edsubcat,fixedwing);
         //editorPreview = "\z\NCA\addons\vehicles\aircraft\data\ui\editorPreviews\NCA_VWing.jpg";
-		crew = "NCA_cloneArmor_unit_tauntaunEnlisted";
+		crew="3AS_Clone_P2_Pilot";
 		cost = 1000000;
 		threat[] = {0.2,0.7,0.92};
 		insideSoundCoef = 0.2;
@@ -62,17 +62,16 @@ class CfgVehicles {
         weapons[] =
 		{
 			"Laserdesignator_pilotCamera",
-			"WPEC_aircraft_green_CAP_plasma_weapon",
+			"WPEC_LAAT_Cannon_Low",
             "NCA_Talon_A2A_MissileSystem",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
 			"Laserbatteries",
-			"WPEC_aircraft_green_CAP_plasma_mag",
-			"WPEC_aircraft_green_CAP_plasma_mag",
-			"WPEC_aircraft_green_CAP_plasma_mag",
-			"WPEC_aircraft_green_CAP_plasma_mag",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_Talons_A2A_missile_mag",
 			"WPEC_Talons_A2A_missile_mag",
             "WPEC_Talons_A2A_missile_mag",
