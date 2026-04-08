@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_nohq.paa";
+	texture = "Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Wings_nohq.paa";
 	uvSource = "tex";
 };
 class Stage2
@@ -23,12 +23,12 @@ class Stage3
 };
 class Stage4
 {
-	texture = "WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_as.paa";
+	texture = "Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Wings_as.paa";
 	uvSource = "tex";
 };
 class Stage5
 {
-	texture = "WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_smdi.paa";
+	texture = "Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Wings_smdi.paa";
 	uvSource = "tex";
 };
 class Stage6

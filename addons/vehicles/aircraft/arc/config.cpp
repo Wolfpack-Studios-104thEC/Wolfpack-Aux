@@ -58,20 +58,6 @@ class CfgVehicles {
 		acceleration=400;
 		maxSpeed=645;
 		maxOmega=2500;
-		hiddenselections[] =
-		{
-			"camo1",
-			"camo2",
-			"guns",
-			"glass"
-		};
-		hiddenselectionstextures[] =
-		{
-			"\z\NCA\addons\vehicles\aircraft\arc170\data\ARC170_main_21st_co.paa",
-			"\z\NCA\addons\vehicles\aircraft\arc170\data\ARC170_wings_21st_co.paa",
-			"\z\NCA\addons\vehicles\aircraft\arc170\data\ARC170_guns_21st_co.paa",
-			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
-		};
         weapons[] =
 		{
 			"Laserdesignator_pilotCamera",
@@ -94,8 +80,6 @@ class CfgVehicles {
 			"120Rnd_CMFlare_Chaff_Magazine",
 			"120Rnd_CMFlare_Chaff_Magazine"
 		};
-		soundLocked[] = {"\z\NCA\addons\vehicles\aircraft\sounds\targeted_alarm.ogg", 1.0, 1};
-		soundIncommingMissile[] = {"\z\NCA\addons\vehicles\aircraft\sounds\incomingMissile_alarm.ogg", 1.0, 1};
 		class AnimationSources: AnimationSources
 		{
 			class SFoil
@@ -669,7 +653,7 @@ class CfgVehicles {
 		author="Wolfpack Studios";
         scope = 2;
 		scopeCurator = 2;
-		displayName = "[21st] ARC-170";
+		displayName = "[104th] ARC-170";
         faction= QEGVAR(faction,eclipse);
 		editorSubcategory=QEGVAR(edsubcat,fixedwing);
 		class Turrets: Turrets

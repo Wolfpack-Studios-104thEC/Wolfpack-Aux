@@ -411,7 +411,8 @@
 		soundSetBulletFly[] = {"-"};
 		soundSerSonicCrack[] = {"-"};
 		cost = 1;
-		model = "\ls\core\addons\data\effects\ls_laser_green.p3d";
+		model="3as\3as_weapons\data\tracer_yellow.p3d";
+        effectFly="3AS_PlasmaBolt_Medium_Yellow_Fly";
 		tracerScale = 1;
 		brightness = 100000;
 		tracerColor[] = {"Red"};
@@ -682,7 +683,8 @@
 		indirectHitRange = 12;
 		caliber = 6;
 		explosive = 1;
-		model = "\ls\core\addons\data\effects\ls_laser_blue.p3d";
+		model="3as\3as_weapons\data\tracer_yellow.p3d";
+        effectFly="3AS_PlasmaBolt_Medium_Yellow_Fly";
 		aiAmmoUsageFlags = 64 + 128 + 256 + 512;
 		simulation = "shotShell";
 		effectsFire = "CannonFire";
@@ -756,6 +758,7 @@
 		{
 			"blue"
 		};
+		weaponLockDelay = 2; // Drastically faster lock-on
 		brightness=20000;
 		lightColor[]={0,0,1,1};
 		triggerTime=0.1;
@@ -770,6 +773,7 @@
 		timeToLive=40;
 		missileLockMinDistance = 10;
 		missileLockMaxDistance = 6000;
+		airLock=1;
 		class Components: Components
 		{
 			class SensorsManagerComponent
@@ -823,6 +827,7 @@
 		timeToLive = 20;
 		missileLockMinDistance = 1;
 		missileLockMaxDistance = 6000;
+		airLock=1;
 		class Components: Components
 		{
 			class SensorsManagerComponent
@@ -879,6 +884,7 @@
 		timeToLive=20;
 		missileLockMinDistance=1;
 		missileLockMaxDistance=6000;
+		airLock=1;
 		class Components: Components
 		{
 			class SensorsManagerComponent

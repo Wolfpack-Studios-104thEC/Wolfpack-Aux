@@ -11,7 +11,7 @@ class CfgPatches {
             "WPEC_coaxium_plasma_weapon"
         };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = {"A3_Data_F_Tank_Loadorder",};
         author = AUTHOR;
         authors[] = {""};
         url = ECSTRING(main,URL);

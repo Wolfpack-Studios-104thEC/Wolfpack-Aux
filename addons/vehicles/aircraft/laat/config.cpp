@@ -431,19 +431,19 @@ class CfgVehicles {
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Hull.rvmat",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Wings.rvmat",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons.rvmat",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapon_Details.rvmat",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Interior.rvmat"
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Hull.rvmat",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Wings.rvmat",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Weapons.rvmat",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Weapon_Details.rvmat",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Interior.rvmat"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Hull_CO.paa",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Wings_CO.paa",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_CO.paa",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapon_Details_CO.paa",
-			"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Interior_CO.paa"
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Hull_CO.paa",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Wings_CO.paa",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Weapons_CO.paa",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Weapon_Details_CO.paa",
+			"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Interior_CO.paa"
 		};
 		class RotorLibHelicopterProperties: RotorLibHelicopterProperties
 		{
@@ -818,11 +818,11 @@ class CfgVehicles {
 				};
 				textures[]=
 				{
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Hull_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Wings_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Weapons_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Weapon_Details_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\LeadTextures\Apollo_Lead_Interior_CO.paa"
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\LeadTextures\Apollo_Lead_Hull_co.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\LeadTextures\Apollo_Lead_Wings_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\LeadTextures\Apollo_Lead_Weapons_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\LeadTextures\Apollo_Lead_Weapon_Details_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\LeadTextures\Apollo_Lead_Interior_CO.paa"
 				};
 			};
 			class Apollo_Pilot
@@ -835,11 +835,11 @@ class CfgVehicles {
 				};
 				textures[]=
 				{
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Hull_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Wings_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapons_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Weapon_Details_CO.paa",
-					"WPEC\WPEC_Vehicles\WPEC_LAAT\data\textures\Apollo_Interior_CO.paa"
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Hull_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Wings_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Weapons_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Weapon_Details_CO.paa",
+					"\Z\wpec\addons\vehicles\aircraft\laat\data\textures\Apollo_Interior_CO.paa"
 				};
 			};
 			class Apollo_Unmarked
