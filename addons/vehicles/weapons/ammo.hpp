@@ -774,8 +774,6 @@
 		missileLockMinDistance = 10;
 		missileLockMaxDistance = 6000;
 		airLock=1;
-		irLock=1;
-		laserLock=1;
 		class Components: Components
 		{
 			class SensorsManagerComponent
@@ -830,8 +828,6 @@
 		missileLockMinDistance = 1;
 		missileLockMaxDistance = 6000;
 		airLock=1;
-		irLock=1;
-		laserLock=1;
 		class Components: Components
 		{
 			class SensorsManagerComponent
@@ -889,8 +885,6 @@
 		missileLockMinDistance=1;
 		missileLockMaxDistance=6000;
 		airLock=1;
-		irLock=1;
-		laserLock=1;
 		class Components: Components
 		{
 			class SensorsManagerComponent
