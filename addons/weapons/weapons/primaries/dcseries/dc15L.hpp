@@ -26,9 +26,7 @@
 				compatibleItems[]=
 				{
 					"3AS_Optic_DC15L",
-					"Aux501_cows_Holosight",
-					"Aux501_cows_Holosight_2",
-					"Aux501_cows_Holosight_3"
+					"WPEC_Holosight_2xblu"
 				};
 			};
 			class UnderBarrelSlot: 3AS_UnderBarrelSlot_DC15L
