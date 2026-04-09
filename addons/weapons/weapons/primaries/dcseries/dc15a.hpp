@@ -61,7 +61,7 @@ class WPEC_3AS_DC15A: 3AS_DC15A_Base_F
 				compatibleItems[]=
 				{
 					"WPEC_HRCO_blu",
-					"3AS_Optic_LEScope_DC15A",
+					"3AS_optic_DC15LE_F",
 					"WPEC_HMRCO_blu",
 					"WPEC_Holosight_blu",
 					"WPEC_Holosight_2xblu"
@@ -152,10 +152,10 @@ class WPEC_3AS_DC15A: 3AS_DC15A_Base_F
 			{
 				compatibleItems[]=
 				{
-					"3AS_Optic_Red_DC15A",
-					"Aux501_cows_Holosight",
-					"Aux501_cows_Holosight_2",
-					"Aux501_cows_Holosight_3"
+					"WPEC_HRCO_blu",
+					"WPEC_HMRCO_blu",
+					"WPEC_Holosight_blu",
+					"WPEC_Holosight_2xblu"
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

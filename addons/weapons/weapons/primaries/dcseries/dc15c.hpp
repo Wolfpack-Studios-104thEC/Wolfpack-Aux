@@ -23,9 +23,8 @@
 				{
 					"3AS_optic_reflex_DC15C",
 					"3AS_optic_acog_DC15C",
-					"Aux501_cows_Holosight",
-					"Aux501_cows_Holosight_2",
-					"Aux501_cows_Holosight_3"
+					"WPEC_HMRCO_blu",
+					"WPEC_Holosight_2xblu"
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
@@ -66,9 +65,10 @@
 			{
 				compatibleItems[]=
 				{
-					"Aux501_cows_Holosight",
-					"Aux501_cows_Holosight_2",
-					"Aux501_cows_Holosight_3"
+					"3AS_optic_reflex_DC15C",
+					"3AS_optic_acog_DC15C",
+					"WPEC_HMRCO_blu",
+					"WPEC_Holosight_2xblu"
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

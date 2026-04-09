@@ -48,9 +48,7 @@
 			{
 				compatibleItems[]=
 				{
-					"Aux501_cows_Holosight",
-					"Aux501_cows_Holosight_2",
-					"Aux501_cows_Holosight_3",
+					"WPEC_Holosight_blu",
 					"Optre_Recon_Sight"
 				};
 			};

@@ -3,40 +3,46 @@
     class WPEC_3AS_DCLight_PlasmaAmmo: 3AS_EC30_bluePlasma
 	{
 		scope=2;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_DCMid_PlasmaAmmo: 3AS_EC40_BluePlasma
 	{
 		scope=2;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_DCMid_OCPlasmaAmmo: 3AS_EC40_BluePlasma
 	{
 		scope=2;
 		hit=50;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_DCHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
 		scope=2;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_DCExtraHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
 		scope=2;
 		hit=17;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_Z6_PlasmaAmmo: 3AS_EC60_bluePlasma
 	{
 		scope=2;
 		hit=14;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_Sniper_PlasmaAmmo: 3AS_EC80_BluePlasma
@@ -48,7 +54,8 @@
 	class WPEC_3AS_ChaingunAmmo: 3AS_Chaingun_Ammo
 	{
 		scope=2;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_R_Mk40_AT: 3AS_R_Mk40_AT
@@ -244,17 +251,20 @@
 	class WPEC_MK1_Normal_PistolAmmo: 3AS_EC30_bluePlasma
 	{
 		hit=6;
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 	};
 	class WPEC_MK2_Stun_PistolAmmo: JLTS_bullet_stun
 	{
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 	};
 	class WPEC_MK3_EMP_PistolAmmo: JLTS_bullet_emp
 	{
 		model="\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
 		lightcolor[]={0.5,0.5,0.25};
-		effectfly="104th_3AS_FX_Bullet_Teal";
+		//effectfly="104th_3AS_FX_Bullet_Teal";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 	};
 	class WPEC_MK4_OC_PistolAmmo: 3AS_EC30_bluePlasma
 	{
