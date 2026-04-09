@@ -17,7 +17,7 @@ class XtdGearModels {
             options[] = {"role","camo"};
             class role {
                 changeingame = 0;
-                values[] = {"Airborne","ARC","ARF","BARC","Engineer","Pilot","Tanker"};
+                values[] = {"Airborne","ARC","ARF","BARC","Engineer","EVO","Pilot","Tanker"};
                 alwaysSelectable = 1;
             };
             class camo {
