@@ -10,8 +10,7 @@ class CfgPatches
             "WPEC_HRCO_blu", //2x-6x
             "WPEC_HMRCO_blu", // 2x-4x
             "WPEC_Holosight_blu", //1x
-            "WPEC_HMRD_blu",
-			"WPEC_flash_hider"
+            "WPEC_HMRD_blu"
 		};
 		requiredVersion=2.0599999;
 		requiredAddons[]=

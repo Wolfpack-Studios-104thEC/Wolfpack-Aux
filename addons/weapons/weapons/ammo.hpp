@@ -19,14 +19,14 @@
 		scope=2;
 		hit=50;
 		//effectfly="104th_3AS_FX_Bullet_Teal";
-effectFly="3AS_PlasmaBolt_Blue_Fly";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_DCHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
 		scope=2;
 		//effectfly="104th_3AS_FX_Bullet_Teal";
-effectFly="3AS_PlasmaBolt_Blue_Fly";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_DCExtraHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
@@ -34,7 +34,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		scope=2;
 		hit=17;
 		//effectfly="104th_3AS_FX_Bullet_Teal";
-effectFly="3AS_PlasmaBolt_Blue_Fly";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_Z6_PlasmaAmmo: 3AS_EC60_bluePlasma
@@ -42,20 +42,20 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		scope=2;
 		hit=14;
 		//effectfly="104th_3AS_FX_Bullet_Teal";
-effectFly="3AS_PlasmaBolt_Blue_Fly";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_Sniper_PlasmaAmmo: 3AS_EC80_BluePlasma
 	{
 		scope=2;
-		effectfly="104th_3AS_FX_Bullet_Lime_Sniper";
+		effectfly="3AS_PlasmaBolt_Medium_Green_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_ChaingunAmmo: 3AS_Chaingun_Ammo
 	{
 		scope=2;
 		//effectfly="104th_3AS_FX_Bullet_Teal";
-effectFly="3AS_PlasmaBolt_Blue_Fly";
+		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
 	};
 	class WPEC_3AS_R_Mk40_AT: 3AS_R_Mk40_AT
@@ -63,14 +63,14 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		scope=2;
 		displayName="[104th] MK40 AT Rocket";
 		hit=800;
-		effectsMissile="104th_3AS_FX_Missile_Maroon_Rocket";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 	};
 	class WPEC_3AS_M_Mk40_AT: 3AS_M_Mk40_AT
 	{
 		scope=2;
 		displayName="[104th] MK40 AT Missile";
 		hit=800;
-		effectsMissile="104th_3AS_FX_Missile_Maroon_Rocket";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 	};
 	class WPEC_DC15XM_Plasma: JLTS_bullet_sniper_blue
 	{
@@ -80,7 +80,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		indirectHitRange=1;
 		model="\A3\Weapons_f\Data\bullettracer\shell_tracer_green.p3d";
 		tracerScale=2;
-		effectfly="104th_3AS_FX_Bullet_Lime_Sniper";
+		effectfly="3AS_PlasmaBolt_Medium_Yellow_Fly";
 		warheadName="TandemHEAT";
 		submunitionAmmo="3AS_ammo_Penetrator_MK41";
 		submunitionDirectionType="SubmunitionModelDirection";
@@ -97,7 +97,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		hit=120;
 		model="\A3\Weapons_f\Data\bullettracer\shell_tracer_yellow.p3d";
 		tracerScale=2;
-		effectfly="104th_3AS_FX_Bullet_Yellow_Sniper";
+		effectfly="3AS_PlasmaBolt_Yellow_Fly";
 	};
 //Rockets
 	class WPEC_MK1_AT: RocketBase
@@ -126,7 +126,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		CraterEffects="ATMissileCrater";
 		explosionEffects="ATMissileExplosion";
 		effectsMissileInit="";
-		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 		simulationStep=0.02;
 		airLock=0;
 		aiAmmoUsageFlags= 128 + 512;
@@ -206,7 +206,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		indirectHit=20;
 		indirectHitRange=10;
 		allowAgainstInfantry=1;
-		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 	};
 	class WPEC_MK3_AP: WPEC_MK1_AT
 	{
@@ -215,7 +215,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		indirectHitRange=20;
 		submunitionAmmo="";
 		allowAgainstInfantry=1;
-		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 	};
 	class WPEC_MK4_AP: WPEC_MK1_AT
 	{
@@ -224,7 +224,7 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		indirectHitRange=30;
 		submunitionAmmo="";
 		allowAgainstInfantry=1;
-		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 	};
 	class WPEC_MK5_AP: WPEC_MK1_AT
 	{
@@ -233,18 +233,18 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 		indirectHitRange=30;
 		submunitionAmmo="";
 		allowAgainstInfantry=1;
-		effectsMissile="104th_3AS_particle_effect_Rocket_fly_Maroon";
+		effectsMissile="3AS_Rocket_effect_Purple_fly";
 	};
 	class WPEC_3AS_RocketGrenade_HE_ARC: 3AS_RocketGrenade_HE
 	{
 		hit=250;
-		effectfly="104th_3AS_particle_effect_GL_Blue";
+		effectfly="3AS_PlasmaBolt_Blue_Fly";
 		simulation="shotShell";
 	};
 	class WPEC_3AS_RocketGrenade_HE_Commando: 3AS_RocketGrenade_HE
 	{
 		hit=275;
-		effectfly="104th_3AS_particle_effect_GL_Blue";
+		effectfly="3AS_PlasmaBolt_Blue_Fly";
 		simulation="shotShell";
 	};
 // Pistols
@@ -270,5 +270,5 @@ effectFly="3AS_PlasmaBolt_Blue_Fly";
 	{
 		hit=30;
 		caliber=1;
-		effectfly="104th_3AS_FX_Bullet_Yellow_Pistol";
+		effectfly="3AS_PlasmaBolt_Yellow_Fly";
 	};

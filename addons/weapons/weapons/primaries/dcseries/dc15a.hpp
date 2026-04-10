@@ -1,13 +1,3 @@
-class CfgRecoils
-{
-    class recoil_default;
-    class Aux501_Recoil_Z6: recoil_default
-    {
-        muzzleOuter[] = {0.4,0.5,0.6,0.2};
-        kickBack[] = {0.03,0.045};
-        temporary = 0.01;
-    };
-};
 class WPEC_3AS_DC15A: 3AS_DC15A_Base_F
 	{
 		canShootinWater=1;

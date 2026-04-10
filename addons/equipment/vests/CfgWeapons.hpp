@@ -138,7 +138,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\ARCVestTopMedic_co.paa), QPATHTOF(data\ARCKamaA_co.paa)};
         class XtdGearInfo {
             model = QGVAR(Arc_rank_vests);
-            role = "MEDIC";
+            role = "Medic";
             camo = "A";
         };
     };
@@ -150,7 +150,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\ARCVestTopMedic_co.paa), QPATHTOF(data\ARCKamaB_co.paa)};
         class XtdGearInfo {
             model = QGVAR(Arc_rank_vests);
-            role = "MEDIC";
+            role = "Medic";
             camo = "B";
         };
     };
@@ -162,7 +162,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\ARCVestTopMedic_co.paa), QPATHTOF(data\ARCKamaC_co.paa)};
         class XtdGearInfo {
             model = QGVAR(Arc_rank_vests);
-            role = "MEDIC";
+            role = "Medic";
             camo = "C";
         };
     };
@@ -174,7 +174,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\ARCVestTopMedic_co.paa), QPATHTOF(data\ARCKamaD_co.paa)};
         class XtdGearInfo {
             model = QGVAR(Arc_rank_vests);
-            role = "MEDIC";
+            role = "Medic";
             camo = "D";
         };
     };
@@ -186,7 +186,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\ARCVestTopMedic_co.paa), QPATHTOF(data\ARCKamaE_co.paa)};
         class XtdGearInfo {
             model = QGVAR(Arc_rank_vests);
-            role = "MEDIC";
+            role = "Medic";
             camo = "E";
         };
     };
