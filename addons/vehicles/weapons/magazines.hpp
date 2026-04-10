@@ -182,8 +182,8 @@
     class WPEC_Kaada_pylon_x8_Unguided_Rocket_mag: 4Rnd_AAA_missiles
 	{
 		scope=2;
-		displayName="Kaada A2A x8 Missile";
-		displayNameShort="Kaada A2A";
+		displayName="Kaada UGM x8 Missile";
+		displayNameShort="Kaada UGM";
 		ammo="WPEC_Kaada_Unguided_Rocket_ammo";
 		count=8;
 		//model = "\z\NCA\addons\props\empty.p3d";
