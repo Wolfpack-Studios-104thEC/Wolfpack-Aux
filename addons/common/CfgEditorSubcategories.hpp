@@ -18,7 +18,7 @@ class CfgEditorSubcategories
 	};
 	class EGVAR(edsubcat,crate)
 	{
-		displayName = "[104th] Crates";
+		displayName = "[104th] Field Crates";
 	};
 	class EGVAR(edsubcat,aries)
 	{

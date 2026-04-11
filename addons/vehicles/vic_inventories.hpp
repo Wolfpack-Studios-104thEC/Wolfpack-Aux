@@ -41,56 +41,40 @@
 
 #define LAAT_INVENTORY \
         class TransportMagazines { \
-            MAG_XX(104th_MK1_PistolMag,100);\
-            MAG_XX(104th_3AS_DC15A_Mag,100);\
-            MAG_XX(104th_3AS_DC15S_Mag,100);\
-            MAG_XX(104th_3AS_DC15L_Mag,30);\
-            MAG_XX(104th_3AS_DC15C_Mag,50);\
-            MAG_XX(104th_3AS_WestarM5_Mag,40);\
-            MAG_XX(104th_3AS_DC17M_Mag,25);\
-            MAG_XX(104th_MK2_PistolMag_Long,30);\
-            MAG_XX(104th_3AS_Chaingun_Mag,5);\
-            MAG_XX(104th_MK4_PistolMag,5);\
-            MAG_XX(104th_MK2_AT_Mag,10);\
+            MAG_XX(WPEC_DC15XM_EnergyMag,50);\
+            MAG_XX(WPEC_DC15XM_PlasmaMag,50);\
+            MAG_XX(WPEC_3AS_DC15S_Mag,50);\
+            MAG_XX(WPEC_3AS_DC15C_Mag,50);\
+            MAG_XX(WPEC_3AS_DC15C_OCMag,50);\
+            MAG_XX(WPEC_3AS_DC15L_Mag,50);\
+            MAG_XX(WPEC_3AS_DC15A_Mag,50);\
+            MAG_XX(WPEC_3AS_DC17M_Mag,50);\
+            MAG_XX(WPEC_3AS_WestarM5_Mag,50);\
+            MAG_XX(WPEC_3AS_WestarLightAT,50);\
+            MAG_XX(WPEC_3AS_DC17MLightAT,50);\
+            MAG_XX(WPEC_3AS_Z6_Mag,50);\
+            MAG_XX(WPEC_3AS_Valken38X_Mag,50);\
+            MAG_XX(WPEC_MK1_PistolMag,50);\
+            MAG_XX(WPEC_MK2_PistolMag_Long,50);\
+            MAG_XX(WPEC_MK2_PistolMag_Short,50);\
+            MAG_XX(WPEC_MK3_PistolMag,50);\
+            MAG_XX(WPEC_MK4_PistolMag,50);\
+            MAG_XX(WPEC_3AS_MK40_AT_Unguided,50);\
+            MAG_XX(WPEC_3AS_MK40_AT_Guided,50);\
+            MAG_XX(WPEC_MK1_AT_Mag,50);\
+            MAG_XX(WPEC_MK2_AT_Mag,50);\
+            MAG_XX(WPEC_MK3_AP_Mag,50);\
+            MAG_XX(WPEC_MK4_AP_Mag,50);\
+            MAG_XX(Odins_Despair,50);\
+            MAG_XX(WPEC_3AS_Chaingun_Mag,50);\
             MAG_XX(3AS_JLTS_MK43_AT,5);\
             MAG_XX(3AS_JLTS_MK39_AA,5);\
-            MAG_XX(OPTRE_M8_Flare_Green,10);\
-            MAG_XX(OPTRE_M8_Flare_Blue,10);\
-            MAG_XX(3Rnd_Smoke_Grenade_shell,10);\
-            MAG_XX(3Rnd_SmokeBlue_Grenade_shell,10);\
-            MAG_XX(3Rnd_SmokeRed_Grenade_shell,10);\
-            MAG_XX(_xx_3Rnd_SmokeYellow_Grenade_shell,10);\
-            MAG_XX(3Rnd_SmokePurple_Grenade_shell,10);\
-            MAG_XX(3Rnd_SmokeOrange_Grenade_shell,10);\
-            MAG_XX(3Rnd_UGL_FlareWhite_F,5);\
-            MAG_XX(3Rnd_UGL_FlareGreen_F,5);\
-            MAG_XX(3Rnd_UGL_FlareRed_F,5);\
-            MAG_XX(3Rnd_UGL_FlareYellow_F,5);\
-            MAG_XX(3Rnd_UGL_FlareCIR_F,5);\
-            MAG_XX(ACE_HuntIR_M203,5);\
-            MAG_XX(3Rnd_HE_Grenade_shell,10);\
-            MAG_XX(3AS_6Rnd_HE_Grenade_Shell,20);\
-            MAG_XX(104th_3AS_WestarLightAT,20);\
-            MAG_XX(104th_3AS_ThermalDetonator_Mag,30);\
-            MAG_XX(ACE_M84,10);\
-            MAG_XX(104th_PersonalShield_Republic_Mag,15);\
-            MAG_XX(104th_SquadShield_Republic_Mag,5);\
-		};\
-		class TransportWeapons\
-		{\
-            WEAP_XX(104th_3AS_DC15A,10);\
-            WEAP_XX(104th_3AS_DC15AGL,5);\
-            WEAP_XX(104th_3AS_DC15L,5);\
-            WEAP_XX(104th_3AS_DC15C,10);\
-            WEAP_XX(104th_3AS_DC15CGL,5);\
-            WEAP_XX(104th_3AS_DC15S,10);\
-            WEAP_XX(104th_RPS6_K,2);\
-            WEAP_XX(104th_3AS_RPS6_F,3);\
-            WEAP_XX(104th_3AS_RPS6_G,3);\
-            WEAP_XX(104th_JLTS_DC17SA,5);\
-		};\
-        class TransportItems\
-		{\
+		};
+	      class TransportWeapons
+		{
+		};
+            class TransportItems\
+		{
             ITEM_XX(ACE_packingBandage,100);\
             ITEM_XX(ACE_elasticBandage,100);\
             ITEM_XX(ACE_quikclot,150);\
@@ -103,8 +87,7 @@
             ITEM_XX(ACE_epinephrine,20);\
             ITEM_XX(ACE_splint,10);\
             ITEM_XX(ToolKit,1);\
-		};\
+		};
         class TransportBackpacks\
-		{\
-            PACK_XX(B_Parachute,4);\
+		{
 		};
