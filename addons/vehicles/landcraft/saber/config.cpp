@@ -264,6 +264,21 @@ class CfgVehicles
             MAG_XX(WPEC_3AS_Chaingun_Mag,50);\
             MAG_XX(3AS_JLTS_MK43_AT,5);\
             MAG_XX(3AS_JLTS_MK39_AA,5);\
+
+			MAG_XX(3AS_6Rnd_HE_Grenade_shell,20);\
+			MAG_XX(3Rnd_UGL_FlareWhite_F,20);\
+			MAG_XX(3Rnd_UGL_FlareGreen_F,20);\
+			MAG_XX(3Rnd_UGL_FlareRed_F,20);\
+			MAG_XX(3Rnd_UGL_FlareYellow_F,20);\
+			MAG_XX(3Rnd_UGL_FlareCIR_F,20);\
+			MAG_XX(3Rnd_Smoke_Grenade_shell,20);\
+			MAG_XX(3Rnd_SmokeRed_Grenade_shell,20);\
+			MAG_XX(3Rnd_SmokeGreen_Grenade_shell,20);\
+			MAG_XX(3Rnd_SmokeYellow_Grenade_shell,20);\
+			MAG_XX(3Rnd_SmokePurple_Grenade_shell,20);\
+			MAG_XX(3Rnd_SmokeBlue_Grenade_shell,20);\
+			MAG_XX(3Rnd_SmokeOrange_Grenade_shell,20);\
+			MAG_XX(ACE_HuntIR_M203,20);\
 		};
 		class TransportBackpacks
 		{
