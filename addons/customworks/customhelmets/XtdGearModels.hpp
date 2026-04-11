@@ -37,7 +37,7 @@ class XtdGearModels {
                     "Rodi",
                     "Ryan",
                     "Sasquatch",
-                    //"Skitty",
+                    "Skitty",
                     "Shadow",
                     "Sleepy",
                     "Spiritual",

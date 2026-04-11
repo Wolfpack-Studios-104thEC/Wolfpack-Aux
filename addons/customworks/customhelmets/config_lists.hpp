@@ -34,6 +34,7 @@
     QGHELMET(phase2_Turq), \
     QGHELMET(phase2_Odin), \
     QGHELMET(phase2_Ricebowl), \
+    QGHELMET(phase2_Skitty), \
     QGHELMET(arc_Blue), \
     QGHELMET(arc_Nook), \
     QGHELMET(arc_Boxing), \

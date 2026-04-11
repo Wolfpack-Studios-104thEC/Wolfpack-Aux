@@ -80,6 +80,9 @@ class CfgVehicles
 	class 3AS_Supply_Large_Prop;
 	class WPEC_RepairCrate: 3AS_Supply_Large_Prop
 	{
+		ace_dragging_canDrag = 1;
+		ace_Dragging_canCarry = 1;
+		ace_dragging_ignoreWeightCarry = 1;
 		ace_refuel_fuelCargo=75000;
 		ace_repair_canRepair=1;
 		ACE_maxWeightCarry=10000;
@@ -181,6 +184,9 @@ class CfgVehicles
 	};
 	class WPEC_AMMOCrate: 3AS_Supply_Large_Prop
 	{
+		ace_dragging_canDrag = 1;
+		ace_Dragging_canCarry = 1;
+		ace_dragging_ignoreWeightCarry = 1;
 		author="104th Eclipse";
 		class SimpleObject
 		{
@@ -316,6 +322,9 @@ class CfgVehicles
 	};
 	class WPEC_MedicCrate: 3AS_Supply_Large_Prop
 	{
+		ace_dragging_canDrag = 1;
+		ace_Dragging_canCarry = 1;
+		ace_dragging_ignoreWeightCarry = 1;
 		author="104th Eclipse";
 		class SimpleObject
 		{

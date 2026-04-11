@@ -35,7 +35,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_MACRO(Rodi);
     P2_HELMET_CUSTOM_MACRO(Ryan);
     P2_HELMET_CUSTOM_MACRO(Sasquatch);
-    //P2_HELMET_CUSTOM_MACRO(Skitty);
+    P2_HELMET_CUSTOM_MACRO(Skitty);
     P2_HELMET_CUSTOM_MACRO(Shadow);
     P2_HELMET_CUSTOM_MACRO(Sleepy);
     P2_HELMET_CUSTOM_MACRO(Spiritual);
