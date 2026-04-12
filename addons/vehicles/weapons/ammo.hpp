@@ -680,7 +680,7 @@
 	{
 		hit = 6000;
 		indirectHit = 4000;
-		indirectHitRange = 12;
+		indirectHitRange = 10;
 		caliber = 6;
 		explosive = 1;
 		model="3as\3as_weapons\data\tracer_yellow.p3d";
