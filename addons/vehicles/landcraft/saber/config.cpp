@@ -388,15 +388,26 @@ class CfgVehicles
 		{
 			ITEM_XX(ACE_packingBandage,100);\
             ITEM_XX(ACE_elasticBandage,100);\
-            ITEM_XX(ACE_quikclot,150);\
-            ITEM_XX(ACE_salineIV_250,20);\
-            ITEM_XX(ACE_salineIV_500,15);\
-            ITEM_XX(ACE_salineIV,15);\
-            ITEM_XX(ACE_CableTie,50);\
-            ITEM_XX(ACE_tourniquet,20);\
-            ITEM_XX(ACE_morphine,20);\
-            ITEM_XX(ACE_epinephrine,20);\
-            ITEM_XX(ACE_splint,10);\
+            ITEM_XX(ACE_quikclot,100);\
+			ITEM_XX(kat_bloodIV_O_N,20);\
+			ITEM_XX(kat_bloodIV_O_N_250,20);\
+			ITEM_XX(kat_bloodIV_O_N_500,30);\
+			ITEM_XX(kat_plate,10);\
+			ITEM_XX(kat_chestSeal,40);\
+			ITEM_XX(kat_Painkiller,20);\
+			ITEM_XX(kat_EACA,10);\
+			ITEM_XX(kat_flumazenil,10);\
+			ITEM_XX(kat_lorazepam,10);\
+			ITEM_XX(kat_lidocaine,10);\
+			ITEM_XX(ACE_morphine,20);\
+			ITEM_XX(kat_naloxone,10);\
+			ITEM_XX(kat_nitroglycerin,10);\
+			ITEM_XX(kat_norepenephrine,10);\
+			ITEM_XX(ACE_salineIV_250,20);\
+			ITEM_XX(ACE_splint,20);\
+			ITEM_XX(ACE_tourniquet,30);\
+			ITEM_XX(kat_TXA,10);\
+			ITEM_XX(ACE_epinephrine,10);\
             ITEM_XX(ToolKit,1);\
 		};
 		class AnimationSources
