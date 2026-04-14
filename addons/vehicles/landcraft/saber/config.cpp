@@ -13,7 +13,8 @@ class CfgPatches {
             QGVAR(Super_Saber_BloodHowl),
 			"WPEC_RepairCrate",
 			"WPEC_AMMOCrate",
-			"WPEC_MedicCrate"
+			"WPEC_MedicCrate",
+			"WPEC_EODCrate"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -438,5 +439,120 @@ class CfgVehicles
 			};
 		};
 	};
+	class WPEC_EODCrate: 3AS_Supply_Large_Prop
+	{
+		ace_dragging_canDrag = 1;
+		ace_Dragging_canCarry = 1;
+		ace_dragging_ignoreWeightCarry = 1;
+		author="104th Eclipse";
+		class SimpleObject
+		{
+			eden=1;
+			animate[]=
+			{
+				
+				{
+					"ammo_hide",
+					0
+				},
+				
+				{
+					"ammoord_hide",
+					1
+				},
+				
+				{
+					"grenades_hide",
+					1
+				},
+				
+				{
+					"support_hide",
+					1
+				}
+			};
+			hide[]={};
+			verticalOffset=0.28400001;
+			verticalOffsetWorld=0;
+			init="''";
+		};
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="Explosive Ordinance Box";
+		icon="iconCrateAmmo";
+		editorCategory=QEGVAR(edcat,aux);
+		editorSubcategory=QEGVAR(edsubcat,crate);
+		maximumLoad=50000;
+		model="3as\3as_props\crates\models\supply_Large.p3d";
+		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"3AS\3AS_Props\Crates\Data\Supply_Large_orange\Supply_Large_orange_co.paa"
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportMagazines { 
 
+		};
+		class TransportBackpacks
+		{
+		};
+		class TransportItems
+		{
+			ITEM_XX(3AS_DetPack,25);\
+			ITEM_XX(EC01_RemoteMagazine,25);\
+			ITEM_XX(HX_AT_Mine_Mag,25);\
+			ITEM_XX(RTX_RemoteMagazine,25);\
+			ITEM_XX(C7_Remote_Mag,60);\
+			ITEM_XX(C12_Remote_Mag,70);\
+			ITEM_XX(DemoCharge_Remote_Mag,30);\
+			ITEM_XX(ATMine_Range_Mag,20);\
+			ITEM_XX(ClaymoreDirectionalMine_Remote_Mag,20);\
+			ITEM_XX(SLAMDirectionalMine_Wire_Mag,20);\
+			ITEM_XX(APERSMine_Range_Mag,50);\
+			ITEM_XX(ACE_APERSMine_ToePopper_Mag,50);\
+			ITEM_XX(WPEC_3AS_BaridiumCore_Mag,20);\
+			ITEM_XX(WPS_MK1Imploder,20);\
+			ITEM_XX(OPTRE_c7_remote_throwable_sticky_mag,30);\
+			ITEM_XX(ACE_SpraypaintRed,15);\
+			ITEM_XX(ACE_DefusalKit,10);\
+			ITEM_XX(ACE_Clacker,10);\
+			ITEM_XX(ACE_M26_Clacker,10);\
+			ITEM_XX(ACE_wirecutter,10);\
+			ITEM_XX(MineDetector,10 );\
+		};
+		class AnimationSources
+		{
+			class Ammo_source
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+			};
+			class AmmoOrd_source
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+			};
+			class Grenades_source
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+			};
+			class Support_source
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+			};
+		};
+	};
 };
