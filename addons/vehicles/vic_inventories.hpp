@@ -41,36 +41,8 @@
 
 #define LAAT_INVENTORY \
         class TransportMagazines { \
-            MAG_XX(WPEC_DC15XM_EnergyMag,50);\
-            MAG_XX(WPEC_DC15XM_PlasmaMag,50);\
-            MAG_XX(WPEC_3AS_DC15S_Mag,50);\
-            MAG_XX(WPEC_3AS_DC15C_Mag,50);\
-            MAG_XX(WPEC_3AS_DC15C_OCMag,50);\
-            MAG_XX(WPEC_3AS_DC15L_Mag,50);\
-            MAG_XX(WPEC_3AS_DC15A_Mag,50);\
-            MAG_XX(WPEC_3AS_DC17M_Mag,50);\
-            MAG_XX(WPEC_3AS_WestarM5_Mag,50);\
-            MAG_XX(WPEC_3AS_WestarLightAT,50);\
-            MAG_XX(WPEC_3AS_DC17MLightAT,50);\
-            MAG_XX(WPEC_3AS_Z6_Mag,50);\
-            MAG_XX(WPEC_3AS_Valken38X_Mag,50);\
-            MAG_XX(WPEC_MK1_PistolMag,50);\
-            MAG_XX(WPEC_MK2_PistolMag_Long,50);\
-            MAG_XX(WPEC_MK2_PistolMag_Short,50);\
-            MAG_XX(WPEC_MK3_PistolMag,50);\
-            MAG_XX(WPEC_MK4_PistolMag,50);\
-            MAG_XX(WPEC_3AS_MK40_AT_Unguided,50);\
-            MAG_XX(WPEC_3AS_MK40_AT_Guided,50);\
-            MAG_XX(WPEC_MK1_AT_Mag,50);\
-            MAG_XX(WPEC_MK2_AT_Mag,50);\
-            MAG_XX(WPEC_MK3_AP_Mag,50);\
-            MAG_XX(WPEC_MK4_AP_Mag,50);\
-            MAG_XX(Odins_Despair,50);\
-            MAG_XX(WPEC_3AS_Chaingun_Mag,50);\
-            MAG_XX(3AS_JLTS_MK43_AT,5);\
-            MAG_XX(3AS_JLTS_MK39_AA,5);\
 		};
-	      class TransportWeapons
+	    class TransportWeapons
 		{
 		};
             class TransportItems\

@@ -1,4 +1,6 @@
 #include "script_component.hpp"
+#define QUOTE(a) #a
+#define CARGO_XX(a,b) class _xx_##a {type = QUOTE(a); amount = b;}
 
 class CfgPatches {
     class SUBADDON {
@@ -122,6 +124,17 @@ class CfgVehicles {
         ls_vehicles_rampAnims[] = {"ramp"};
         ls_vehicles_rampToggleSounds[] = {"ls_laat_ramp", "ls_laat_ramp"};
 
+		class ACE_Cargo 
+		{
+			class Cargo 
+			{
+				CARGO_XX(WPEC_RepairCrate,1);
+				CARGO_XX(WPEC_AMMOCrate,2);
+				CARGO_XX(WPEC_MedicCrate,2);
+				CARGO_XX(WPEC_EODCrate,2);
+				CARGO_XX(WPEC_GrenadesCrate,2);
+			};
+		};
         //Weapons
         weapons[]=
 		{
@@ -461,12 +474,6 @@ class CfgVehicles {
 			maxTailRotorStress = 5200;
 			retreatBladeStallWarningSpeed = 77.222;
 		};
-        class ACE_Cargo {
-            class Cargo {
-                //CARGO_XX(NCA_BARC,2);
-                //CARGO_XX(NCA_FuelBox,1);
-            };
-        };
         class AnimationSources: AnimationSources {
             class Doors: Doors {
                 initPhase = 0;
