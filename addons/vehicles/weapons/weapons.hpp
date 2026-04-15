@@ -613,6 +613,23 @@
 		magazines[]={"WPEC_Guided_Bomb_mag"};
 	};
 
+	class WPEC_Unguided_Pylon_BombSystem: Mk82BombLauncher
+	{
+        author = AUTHOR;
+		displayName="[104th] Dumb Bomb";
+		magazines[]=
+		{
+			"WPEC_Unguided_Pylons_Bomb_mag"
+		};
+	};
+	class WPEC_Guided_Pylon_BombSystem: weapon_SDBLauncher
+	{
+        author = AUTHOR;
+		displayName="[104th] GBU";
+		magazines[]={"WPEC_Guided_Pylons_Bomb_mag"};
+	};
+
+
 //Landcraft
 	class WPEC_SuperLaser: CannonCore
 	{

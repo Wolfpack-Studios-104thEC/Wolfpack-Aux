@@ -382,7 +382,7 @@ class CfgVehicles {
 						{
 							"WPEC_Ywing_Universal_1_2_Missile_rail"
 						};
-						attachment="WPEC_Unguided_Bomb_mag";
+						attachment="WPEC_Unguided_Pylons_Bomb_mag";
 						priority=10;
 						maxweight=2500;
 						UIposition[]={0.5,0.25};
@@ -410,7 +410,7 @@ class CfgVehicles {
 					};
 					class pylons5: pylons3
 					{
-						attachment="WPEC_Guided_Bomb_mag";
+						attachment="WPEC_Guided_Pylons_Bomb_mag";
 						priority=7;
 						maxweight=5000;
 						UIposition[]={0.60000002,0.44999999};

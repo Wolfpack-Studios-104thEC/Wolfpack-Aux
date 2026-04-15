@@ -229,6 +229,34 @@
 		};
 	};
 
+	class WPEC_Unguided_Pylons_Bomb_mag: 2Rnd_Mk82_MI08
+	{
+		displayName="Dumb Bomb";
+		displayNameShort="Dumb Bomb";
+		count=25;
+		//model = "\z\NCA\addons\props\empty.p3d";
+		ammo="WPEC_Unguided_Bomb_ammo";
+		hardpoints[]=
+		{
+			"WPEC_Ywing_Universal_1_2_Missile_rail"
+		};
+		pylonWeapon = "WPEC_Unguided_Pylon_BombSystem";
+	};
+	class WPEC_Guided_Pylons_Bomb_mag: magazine_Bomb_SDB_x1
+	{
+		count=4;
+		displayName="GBU";
+		displayNameShort="Guided Bomb";
+		//model = "\z\NCA\addons\props\empty.p3d";
+		ammo="WPEC_Guided_Bomb_ammo";
+		hardpoints[]=
+		{
+			"WPEC_Ywing_Universal_1_2_Missile_rail",
+			"WPEC_Ywing_Universal_3_6_Missile_rail"
+		};
+		pylonWeapon = "WPEC_Guided_Pylon_BombSystem";
+	};
+
 
 //Landcraft?
 	class 4Rnd_WPEC_SuperLaser: VehicleMagazine
