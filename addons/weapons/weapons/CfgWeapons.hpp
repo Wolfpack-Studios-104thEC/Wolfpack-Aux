@@ -11,7 +11,6 @@ class CfgWeapons
 	class 3AS_DC15S_Base_F;
 	class 3AS_DC15L_Base_F;
 	class 3AS_DC15C_Base_F;
-	class 3AS_DC17M_F;
 	class 3AS_Z6_F;
 	class 3AS_Valken38X_Base_F;
 	class 3AS_Chaingun;
