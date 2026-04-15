@@ -15,7 +15,7 @@
 	scope = 2;\
 	displayName = QUOTE([104th] Phase 2 Helmet (name));\
 	hiddenSelectionsTextures[] = {QPATHTOF(data\phase2\Phase2##name##_co.paa),QPATHTOEF(equipment,helmets\data\visor\##color##\Visor##color##_co.paa)};\
-	hiddenSelectionsMaterials[] = {"\WPS\WPS_data\Phase2.rvmat", QPATHTOEF(equipment,helmets\data\visor\##color##\Visor##color##.rvmat)};\
+	hiddenSelectionsMaterials[] = {"\z\wps\addons\helmets\data\p2\Phase2.rvmat", QPATHTOEF(equipment,helmets\data\visor\##color##\Visor##color##.rvmat)};\
 	class XtdGearInfo { \
 		model = QGVAR(p2_custom_Helm); \
 		person = QUOTE(name); \
