@@ -12,33 +12,18 @@ class XtdGearModels {
                     "Alpha",
                     "Apathy",
                     "Bean",
-                    "Bigfella",
-                    "Blue",
-                    "CJ",
-                    "Crometheus",
-                    "Dutchmann",
-                    "Fallen",
                     "Ghoul",
                     "Grandpa",
                     "Hippo",
                     "Husky",
-                    "Impulse",
                     "Juicy",
                     "Kalo",
-                    "Kona",
-                    "Lone",
                     "Odin",
                     "Orion",
-                    "Paddy",
-                    "Quake",
                     "Queue",
-                    "Ricebowl",
                     "Roach",
-                    "Rodi",
                     "Ryan",
                     "Sasquatch",
-                    //"Skitty",
-                    "Shadow",
                     "Sleepy",
                     "Spiritual",
                     "Swift",
@@ -56,10 +41,8 @@ class XtdGearModels {
                 values[] =
                 {
                     "Blue",
-                    "Nook",
                     "Boxing",
                     "Husky",
-                    "Firehawk",
                     "Graves"
                 };
                 alwaysSelectable = 1;
@@ -88,9 +71,7 @@ class XtdGearModels {
                 changeingame = 0;
                 values[] =
                 {
-                    "CJ",
-                    "Firehawk",
-                    "Gus"
+                    "CJ"
                 };
                 alwaysSelectable = 1;
             };
@@ -103,10 +84,7 @@ class XtdGearModels {
                 changeingame = 0;
                 values[] =
                 {
-                    "Hippo",
-                    "Lone",
-                    "Paddy",
-                    "Shark"
+                    "Hippo"
                 };
                 alwaysSelectable = 1;
             };
@@ -119,14 +97,9 @@ class XtdGearModels {
                 changeingame = 0;
                 values[] =
                 {
-                    "Bandit",
                     "Killa",
                     "Kurt",
-                    "Lego",
                     "Odin",
-                    "Pigs",
-                    "Sleepy",
-                    "Trash"
                 };
                 alwaysSelectable = 1;
             };
@@ -139,10 +112,6 @@ class XtdGearModels {
                 changeingame = 0;
                 values[] =
                 {
-                    "Dutchmann",
-                    "Gambler",
-                    "Lone",
-                    "Maverick"
                 };
                 alwaysSelectable = 1;
             };

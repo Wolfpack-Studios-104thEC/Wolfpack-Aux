@@ -1,11 +1,4 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: characters_f_bootcamp\Common\Data\VRarmorEmmisive.rvmat
-//Produced from mikero's Dos Tools Dll version 8.35
-//https://mikero.bytex.digital/Downloads
-//'now' is Thu Aug 25 15:37:13 2022 : 'file' last modified on Thu Jan 01 01:00:01 1970
-////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
 
 class StageTI
 {
