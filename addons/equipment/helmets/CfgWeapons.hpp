@@ -128,7 +128,7 @@ class CfgWeapons {
         };
     };
 
-    class WPEC_Helmets_Helmet_EVO: WPS_helmets_helmet_evo
+    class GHELMET(EVO): WPS_helmets_helmet_evo
     {
         scope = 2;
         scopeCurator = 2;
@@ -142,7 +142,7 @@ class CfgWeapons {
         };
     };
 
-    
+
     P1_HELMET_RANK_MACRO(CT);
     P1_HELMET_RANK_MACRO(SCT);
     P1_HELMET_RANK_MACRO(VCT);

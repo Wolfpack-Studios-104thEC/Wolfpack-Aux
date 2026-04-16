@@ -11,7 +11,6 @@ class CfgPatches {
             UNIT_LIST
         };
         weapons[] = {
-            "WPEC_Helmets_Helmet_EVO",
             STANDARD_ITEM_LIST
         };
         requiredVersion = REQUIRED_VERSION;
