@@ -4,9 +4,9 @@
 	{
 		canShootInWater=1;
 		JLTS_hasEMPProtection=1;
-		class FullAuto;
-		class Single;
-		class WeaponSlotsInfo;
+		//class FullAuto;
+		//class Single;
+		//class WeaponSlotsInfo;
 	};
 	class WPEC_3AS_DC17M: 3AS_DC17M_F
 	{
