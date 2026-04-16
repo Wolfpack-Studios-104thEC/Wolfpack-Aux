@@ -9,8 +9,6 @@
     QGHELMET(phase2_Husky), \
     QGHELMET(phase2_Juicy), \
     QGHELMET(phase2_Kalo), \
-    QGHELMET(phase2_Kona), \
-    QGHELMET(phase2_Lone), \
     QGHELMET(phase2_Odin), \
     QGHELMET(phase2_Orion), \
     QGHELMET(phase2_Queue), \
@@ -24,8 +22,6 @@
     QGHELMET(phase2_Swift), \
     QGHELMET(phase2_Topdog), \
     QGHELMET(phase2_Turq), \
-    QGHELMET(phase2_Odin), \
-    QGHELMET(phase2_Skitty), \
     QGHELMET(arc_Blue), \
     QGHELMET(arc_Boxing), \
     QGHELMET(arc_Husky), \

@@ -1,6 +1,4 @@
 #include "script_component.hpp"
-#define QUOTE(a) #a
-#define CARGO_XX(a,b) class _xx_##a {type = QUOTE(a); amount = b;}
 
 class CfgPatches {
     class SUBADDON {
@@ -124,9 +122,9 @@ class CfgVehicles {
         ls_vehicles_rampAnims[] = {"ramp"};
         ls_vehicles_rampToggleSounds[] = {"ls_laat_ramp", "ls_laat_ramp"};
 
-		class ACE_Cargo 
+		class ACE_Cargo
 		{
-			class Cargo 
+			class Cargo
 			{
 				CARGO_XX(WPEC_RepairCrate,1);
 				CARGO_XX(WPEC_AMMOCrate,2);
