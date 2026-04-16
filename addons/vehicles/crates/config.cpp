@@ -4,7 +4,7 @@ class CfgPatches {
     class EclipseCrates {
         addonRootClass = QADDON;
         name = COMPONENT_NAME;
-        units[] = 
+        units[] =
         {
 			"WPEC_RepairCrate",
 			"WPEC_AMMOCrate",
@@ -39,22 +39,22 @@ class CfgVehicles
 			eden=1;
 			animate[]=
 			{
-				
+
 				{
 					"ammo_hide",
 					0
 				},
-				
+
 				{
 					"ammoord_hide",
 					1
 				},
-				
+
 				{
 					"grenades_hide",
 					1
 				},
-				
+
 				{
 					"support_hide",
 					1
@@ -139,22 +139,22 @@ class CfgVehicles
 			eden=1;
 			animate[]=
 			{
-				
+
 				{
 					"ammo_hide",
 					0
 				},
-				
+
 				{
 					"ammoord_hide",
 					1
 				},
-				
+
 				{
 					"grenades_hide",
 					1
 				},
-				
+
 				{
 					"support_hide",
 					1
@@ -186,8 +186,8 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
-		class TransportMagazines 
-		{ 
+		class TransportMagazines
+		{
             MAG_XX(WPEC_DC15XM_EnergyMag,50);\
             MAG_XX(WPEC_DC15XM_PlasmaMag,50);\
             MAG_XX(WPEC_3AS_DC15S_Mag,50);\
@@ -267,22 +267,22 @@ class CfgVehicles
 			eden=1;
 			animate[]=
 			{
-				
+
 				{
 					"ammo_hide",
 					0
 				},
-				
+
 				{
 					"ammoord_hide",
 					1
 				},
-				
+
 				{
 					"grenades_hide",
 					1
 				},
-				
+
 				{
 					"support_hide",
 					1
@@ -314,7 +314,7 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
-		class TransportMagazines { 
+		class TransportMagazines {
 
 		};
 		class TransportBackpacks
@@ -385,22 +385,22 @@ class CfgVehicles
 			eden=1;
 			animate[]=
 			{
-				
+
 				{
 					"ammo_hide",
 					0
 				},
-				
+
 				{
 					"ammoord_hide",
 					1
 				},
-				
+
 				{
 					"grenades_hide",
 					1
 				},
-				
+
 				{
 					"support_hide",
 					1
@@ -432,7 +432,7 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
-		class TransportMagazines { 
+		class TransportMagazines {
 
 		};
 		class TransportBackpacks
@@ -460,7 +460,7 @@ class CfgVehicles
 			ITEM_XX(ACE_Clacker,10);\
 			ITEM_XX(ACE_M26_Clacker,10);\
 			ITEM_XX(ACE_wirecutter,10);\
-			ITEM_XX(MineDetector,10 );\
+			ITEM_XX(MineDetector,10);\
 		};
 		class AnimationSources
 		{
@@ -505,22 +505,22 @@ class CfgVehicles
 			eden=1;
 			animate[]=
 			{
-				
+
 				{
 					"ammo_hide",
 					0
 				},
-				
+
 				{
 					"ammoord_hide",
 					1
 				},
-				
+
 				{
 					"grenades_hide",
 					1
 				},
-				
+
 				{
 					"support_hide",
 					1
