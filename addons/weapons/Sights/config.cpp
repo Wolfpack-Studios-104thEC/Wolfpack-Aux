@@ -10,7 +10,6 @@ class CfgPatches
             "WPEC_HRCO_blu", //2x-6x
             "WPEC_HMRCO_blu", // 2x-4x
             "WPEC_Holosight_blu", //1x
-            "WPEC_HMRD_blu"
             "WPEC_Holosight_2xblu"
             //"WPEC_HMRD_blu", This is not real
 			//"WPEC_flash_hider" This is not real
