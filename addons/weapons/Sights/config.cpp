@@ -11,6 +11,9 @@ class CfgPatches
             "WPEC_HMRCO_blu", // 2x-4x
             "WPEC_Holosight_blu", //1x
             "WPEC_HMRD_blu"
+            "WPEC_Holosight_2xblu"
+            //"WPEC_HMRD_blu", This is not real
+			//"WPEC_flash_hider" This is not real
 		};
 		requiredVersion=2.0599999;
 		requiredAddons[]=
@@ -37,10 +40,10 @@ class CfgPatches
 class CfgWeapons
 {
 	class ItemCore;
-	class optic_DMS: ItemCore
-	{
-		class ItemInfo;
-	};
+	//class optic_DMS: ItemCore
+	//{
+	//	class ItemInfo;
+	//};
 	class optic_Hamr: ItemCore
 	{
 		class ItemInfo;
@@ -53,11 +56,11 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-	class optic_MRD: ItemCore
-	{
-		class ItemInfo;
-	};
-	class InventoryMuzzleItem_Base_F;
+	//class optic_MRD: ItemCore
+	//{
+	//	class ItemInfo;
+	//};
+	//class InventoryMuzzleItem_Base_F;
 	class WPEC_HRCO_blu: optic_Hamr
 	{
 		author="Viking";
@@ -104,14 +107,14 @@ class CfgWeapons
 					};
 					opticsFlare=1;
 					opticsDisablePeripherialVision=1;
-					opticsZoomMin="0.25/2";
-					opticsZoomMax="0.25/4";
-					opticsZoomInit="0.25/2";
+					opticsZoomMin=0.25/2;
+					opticsZoomMax=0.25/4;
+					opticsZoomInit=0.25/2;
 					discreteinitIndex=0;
 					discretefov[]=
 					{
-						"0.25/2",
-						"0.25/4"
+						0.25/2,
+						0.25/4
 					};
 					discreteDistanceInitIndex=1;
 					memoryPointCamera="opticView";
@@ -169,14 +172,14 @@ class CfgWeapons
 					};
 					opticsFlare=1;
 					opticsDisablePeripherialVision=1;
-					opticsZoomMin="0.25/6";
-					opticsZoomMax="0.25/2";
-					opticsZoomInit="0.25/2";
+					opticsZoomMin=0.25/6;
+					opticsZoomMax=0.25/2;
+					opticsZoomInit=0.25/2;
 					discreteinitIndex=0;
 					discretefov[]=
 					{
-						"0.25/2",
-						"0.25/6"
+						0.25/2,
+						0.25/6
 					};
 					discreteDistanceInitIndex=1;
 					memoryPointCamera="opticView";
@@ -272,13 +275,13 @@ class CfgWeapons
 					};
 					opticsFlare=1;
 					opticsDisablePeripherialVision=1;
-					opticsZoomMin="0.25/2";
-					opticsZoomMax="0.25/2";
-					opticsZoomInit="0.25/2";
+					opticsZoomMin=0.25/2;
+					opticsZoomMax=0.25/2;
+					opticsZoomInit=0.25/2;
 					discreteinitIndex=0;
 					discretefov[]=
 					{
-						"0.25/2",
+						0.25/2,
 					};
 					discreteDistanceInitIndex=1;
 					memoryPointCamera="opticView";

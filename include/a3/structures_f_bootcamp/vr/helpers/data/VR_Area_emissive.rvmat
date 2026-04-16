@@ -1,11 +1,4 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: structures_f_bootcamp\VR\Helpers\Data\VR_Area_emissive.rvmat
-//Produced from mikero's Dos Tools Dll version 8.35
-//https://mikero.bytex.digital/Downloads
-//'now' is Thu Aug 25 15:41:23 2022 : 'file' last modified on Thu Jan 01 01:00:01 1970
-////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
 
 class StageTI
 {
