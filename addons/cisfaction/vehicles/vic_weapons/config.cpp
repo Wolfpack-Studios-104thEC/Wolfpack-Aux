@@ -1,0 +1,190 @@
+class CfgPatches
+{
+	class WPEC_CIS_Vic_Weapons
+	{
+		author="WPEC Dev";
+		requiredAddons[]=
+		{
+			"cba_common",
+			"cba_events",
+			"ls_weapons"
+		};
+		requiredVersion=2.2;
+		units[]={};
+		weapons[]={};
+	};
+};
+class Mode_SemiAuto;
+class Mode_Burst;
+class CfgAmmo
+{
+	class Sh_105mm_APFSDS_T_Green;
+	class Sh_120mm_HE;
+	class WPEC_CIS_King_Cannon_Ammo: Sh_105mm_APFSDS_T_Green
+	{
+		caliber=10;
+		hit=400;
+		explosive=1;
+		indirectHitRange=5;
+		aiAmmoUsageFlags="64 + 128 + 256 + 512";
+		model="3as\3AS_Weapons\Data\tracer_shell_purple.p3d";
+		effectFly="3AS_PlasmaBolt_Large_Purple_Fly";
+		tracerScale=3;
+		flaresize=10;
+	};
+	class 3AS_Vulture_Shell;
+	class WPEC_CIS_Vulture_30mm_Ammo: 3AS_Vulture_Shell
+	{
+		model="\3AS\3AS_Weapons\Data\tracer_shell_red.p3d";
+		flaresize=4;
+		caliber=3;
+		maxLeadSpeed=2000;
+		allowAgainstInfantry=1;
+		tracersEvery=1;
+		cost=30;
+		hit=120;
+		explosionEffects="ATRocketExplosion";
+		indirectHit=6;
+		mass=2;
+		indirectHitRange=0.1;
+		tracerscale=2;
+	};
+};
+class CfgMagazines
+{
+	class 40Rnd_105mm_APFSDS_T_Green;
+	class ls_30Rnd_120mm_AP_mag_red;
+	class WPEC_CIS_King_Cannon_Mag: 40Rnd_105mm_APFSDS_T_Green
+	{
+		scope=2;
+		displayName="King AAT Overcharged Plasma (Red)";
+		displayNameShort="Overcharged";
+		ammo="WPEC_CIS_King_Cannon_Ammo";
+		count=30;
+		tracersEvery=1;
+		muzzleImpulseFactor[]={1,6};
+	};
+	class 1000Rnd_25mm_shells;
+	class WPEC_CIS_Vulture_30mm_Mag_x1000: 1000Rnd_25mm_shells
+	{
+		displayName="Vulture main cannon";
+		initSpeed=800;
+		displayNameShort="High Energy";
+		ammo="WPEC_CIS_Vulture_30mm_Ammo";
+		tracersEvery=1;
+		count=1000;
+	};
+};
+class LowROF;
+class player;
+class manual;
+class CfgWeapons
+{
+	class 3AS_HeavyAATCannon_Base;
+	class WPEC_CIS_King_Cannon_Weapon: 3AS_HeavyAATCannon_Base
+	{
+		scope=2;
+		displayName="Overcharged AAT Cannon";
+		magazines[]=
+		{
+			"WPEC_CIS_King_Cannon_Mag"
+		};
+		reloadTime=6;
+		magazineReloadTime=6;
+		autoReload=1;
+	};
+	class Cannon_30mm_Plane_CAS_02_F;
+	class WPEC_CIS_Vulture_cannon_Weapon: Cannon_30mm_Plane_CAS_02_F
+	{
+		magazineWell[]={};
+		magazines[]=
+		{
+			"WPEC_CIS_Vulture_30mm_Mag_x1000"
+		};
+		modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium"
+		};
+		ballisticsComputer=1;
+		displayName="Vulture Main Cannon";
+		class manual: LowROF
+		{
+			displayname="Full";
+			burst=1;
+			magazineReloadTime=6;
+			autoReload=1;
+			reloadTime=0.1;
+			dispersion=0.0020000001;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"3AS\3AS_Main\Sounds\VultureDroidBlaster\Vulturegun1.ogg",
+					1.5,
+					1,
+					3000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class close: manual
+		{
+			aiDispersionCoefX=2;
+			aiDispersionCoefY=2;
+			burst=50;
+			aiRateOfFire=0.1;
+			aiRateOfFireDistance=50;
+			minRange=10;
+			minRangeProbab=0.050000001;
+			midRange=20;
+			midRangeProbab=0.69999999;
+			maxRange=50;
+			maxRangeProbab=0.039999999;
+			showToPlayer=0;
+		};
+		class short: close
+		{
+			aiDispersionCoefX=2;
+			aiDispersionCoefY=2;
+			burst=30;
+			aiRateOfFire=0.1;
+			aiRateOfFireDistance=300;
+			minRange=50;
+			minRangeProbab=0.050000001;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=300;
+			maxRangeProbab=0.039999999;
+		};
+		class medium: close
+		{
+			aiDispersionCoefX=2;
+			aiDispersionCoefY=2;
+			burst=30;
+			aiRateOfFire=0.1;
+			aiRateOfFireDistance=600;
+			minRange=200;
+			minRangeProbab=0.050000001;
+			midRange=300;
+			midRangeProbab=0.69999999;
+			maxRange=2000;
+			maxRangeProbab=0.1;
+		};
+	};
+};
+class cfgMods
+{
+	author="ChaosViking";
+	timepacked="1677279925";
+};
