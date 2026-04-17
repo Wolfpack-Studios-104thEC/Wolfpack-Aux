@@ -63,16 +63,16 @@ class CfgVehicles {
         weapons[] =
 		{
 			"Laserdesignator_pilotCamera",
-			"WPEC_LAAT_Cannon_Low",
+			"WPEC_LAAT_Cannon_High",
 			"WPEC_coaxium_plasma_weapon",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
 			"Laserbatteries",
-			"WPEC_LAAT_Cannon_LowPower_Magazine",
-			"WPEC_LAAT_Cannon_LowPower_Magazine",
-			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_LAAT_Cannon_HighPower_Magazine",
+			"WPEC_LAAT_Cannon_HighPower_Magazine",
+			"WPEC_LAAT_Cannon_HighPower_Magazine",
 			"WPEC_coaxium_plasma_magazine",
 			"WPEC_coaxium_plasma_magazine",
 			"WPEC_coaxium_plasma_magazine",
