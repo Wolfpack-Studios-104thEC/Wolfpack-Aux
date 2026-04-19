@@ -48,7 +48,7 @@ class CfgFunctions
 	{
 		class Droideka_Shield
 		{
-			file="cisfaction\Vehicles\Functions";
+			file="z\wpec\cisfaction\Vehicles\Functions";
 			class initdroideka_move
 			{
 			};

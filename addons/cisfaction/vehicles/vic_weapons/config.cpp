@@ -20,6 +20,59 @@ class CfgAmmo
 {
 	class Sh_105mm_APFSDS_T_Green;
 	class Sh_120mm_HE;
+	class Sh_120mm_APFSDS;
+	class WPEC_CIS_AAT_Main_Cannon_Shell: Sh_120mm_APFSDS
+	{
+		hit=600;
+		caliber=25;
+		warheadName="AP";
+		indirectHit=50;
+		indirectHitRange=8;
+		typicalSpeed=700;
+		explosive=0.30000001;
+		cost=50;
+		airFriction=-0.000275;
+		airlock=1;
+		model="3as\3AS_Weapons\Data\tracer_shell_red.p3d";
+		effectFly="3AS_PlasmaBolt_Large_Red_Fly";
+		tracerScale=4;
+		tracerStartTime=0.0099999998;
+		tracerEndTime=3;
+		muzzleEffect="";
+		CraterEffects="ATRocketCrater";
+		explosionEffects="ATRocketExplosion";
+		explosionSoundEffect="DefaultExplosion";
+		aiAmmoUsageFlags=960;
+		allowAgainstInfantry=1;
+		class CamShakeExplode
+		{
+			power=24;
+			duration=2.2;
+			frequency=20;
+			distance=143.636;
+		};
+		class CamShakeHit
+		{
+			power=120;
+			duration=0.80000001;
+			frequency=20;
+			distance=1;
+		};
+		class CamShakeFire
+		{
+			power=3.3097501;
+			duration=4.1999998;
+			frequency=20;
+			distance=87.635597;
+		};
+		class CamShakePlayerFire
+		{
+			power=0.059999999;
+			duration=0.1;
+			frequency=20;
+			distance=1;
+		};
+	};
 	class WPEC_CIS_King_Cannon_Ammo: Sh_105mm_APFSDS_T_Green
 	{
 		caliber=10;
@@ -54,6 +107,16 @@ class CfgMagazines
 {
 	class 40Rnd_105mm_APFSDS_T_Green;
 	class ls_30Rnd_120mm_AP_mag_red;
+	class WPEC_CIS_AAT_Cannon_Mag: 40Rnd_105mm_APFSDS_T_Green
+	{
+		scope=2;
+		displayName="AAT  Plasma (Red)";
+		displayNameShort="AAT Main Gun Magazine";
+		ammo="WPEC_CIS_AAT_Main_Cannon_Shell";
+		count=30;
+		tracersEvery=1;
+		muzzleImpulseFactor[]={1,6};
+	};
 	class WPEC_CIS_King_Cannon_Mag: 40Rnd_105mm_APFSDS_T_Green
 	{
 		scope=2;
@@ -81,6 +144,18 @@ class manual;
 class CfgWeapons
 {
 	class 3AS_HeavyAATCannon_Base;
+	class WPEC_CIS_AAT_Cannon_Weapon: 3AS_HeavyAATCannon_Base
+	{
+		scope=2;
+		displayName="AAT Cannon";
+		magazines[]=
+		{
+			"WPEC_CIS_AAT_Cannon_Mag"
+		};
+		reloadTime=6;
+		magazineReloadTime=6;
+		autoReload=1;
+	};
 	class WPEC_CIS_King_Cannon_Weapon: 3AS_HeavyAATCannon_Base
 	{
 		scope=2;

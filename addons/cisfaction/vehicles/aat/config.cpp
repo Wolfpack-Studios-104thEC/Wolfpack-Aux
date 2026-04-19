@@ -71,7 +71,8 @@ class CfgVehicles
 			class Movement;
 		};
 	};
-    class WPEC_CIS_AAT_base_F: Tank_F
+
+	class 3AS_AAT_base_F: Tank_F
 	{
 		class Turrets: Turrets
 		{
@@ -89,7 +90,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 3AS_CIS_AAT_base_F:WPEC_CIS_AAT_base_F
+	class 3AS_CIS_AAT_base_F: 3AS_AAT_base_F
 	{
 		class Turrets: Turrets
 		{
@@ -157,6 +158,71 @@ class CfgVehicles
 		editorPreview="\3as\3as_AAT\images\3AS_AAT.jpg";
 		crew="WPEC_CIS_B1_Droid_Crew";
         ejectDamageLimit=0.0099999998;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						weapons[]=
+						{
+							"3AS_AAT_Repeater",
+							"SmokeLauncher"
+						};
+						magazines[]=
+						{
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"3AS_500Rnd_ATT_RedPlasma",
+							"SmokeLauncherMag"
+						};
+					};
+				};
+				weapons[]=
+				{
+					"WPEC_CIS_AAT_Cannon_Weapon",
+					"SmokeLauncher"
+				};
+				magazines[]=
+				{
+					"WPEC_CIS_AAT_Cannon_Mag",
+					"WPEC_CIS_AAT_Cannon_Mag",
+					"WPEC_CIS_AAT_Cannon_Mag",
+					"WPEC_CIS_AAT_Cannon_Mag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+		class AnimationSources
+		{
+			class Muzzle_flash
+			{
+				source="ammorandom";
+				weapon="WPEC_CIS_AAT_Cannon_Weapon";
+			};
+			class recoil_source
+			{
+				source="reload";
+				weapon="WPEC_CIS_AAT_Cannon_Weapon";
+			};
+			class Muzzle_flash2
+			{
+				source="ammorandom";
+				weapon="3AS_AAT_Repeater";
+			};
+			class Muzzle_flash3
+			{
+				source="ammorandom";
+				weapon="3AS_AAT_Repeater";
+			};
+		};
     };
     class WPEC_CIS_AAT_CIS_White: WPEC_CIS_AAT
 	{
