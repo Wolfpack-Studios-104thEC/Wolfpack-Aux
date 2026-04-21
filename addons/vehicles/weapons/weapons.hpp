@@ -366,9 +366,45 @@
 		displayNameShort = "Coaxium Plasma";
 		magazines[] = {"WPEC_coaxium_plasma_magazine"};
 		modes[] = {"LowROF"};
+		class LowROF: LowROF
+		{
+			ballisticsComputer = 1;
+			soundContinuous = 0;
+			autoFire = 1;
+			multiplier = 1;
+			flashSize = 1;
+			dispersion = 0;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			burst = 1;
+			reloadTime = 0.7;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_V19Blaster_SoundSet"
+				};
+			};
+		};
 		dispersion = 9.9999997e-006;
 		aiRateOfFire = 0.40000001;
-		reloadTime = 0.40000001;
 		canLock = 1;
 		weaponLockSystem = 0;
 		burst = 1;
@@ -576,6 +612,23 @@
 		displayName="[104th] GBU";
 		magazines[]={"WPEC_Guided_Bomb_mag"};
 	};
+
+	class WPEC_Unguided_Pylon_BombSystem: Mk82BombLauncher
+	{
+        author = AUTHOR;
+		displayName="[104th] Dumb Bomb";
+		magazines[]=
+		{
+			"WPEC_Unguided_Pylons_Bomb_mag"
+		};
+	};
+	class WPEC_Guided_Pylon_BombSystem: weapon_SDBLauncher
+	{
+        author = AUTHOR;
+		displayName="[104th] GBU";
+		magazines[]={"WPEC_Guided_Pylons_Bomb_mag"};
+	};
+
 
 //Landcraft
 	class WPEC_SuperLaser: CannonCore

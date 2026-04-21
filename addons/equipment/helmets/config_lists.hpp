@@ -27,6 +27,7 @@
     QGHELMET(phase1_ARC), \
     QGHELMET(phase1_AlphaARC), \
     QGHELMET(phase1_NCO), \
-    QGHELMET(phase1_Command)
+    QGHELMET(phase1_Command), \
+    QGHELMET(EVO)
 
 #define UNIT_LIST \

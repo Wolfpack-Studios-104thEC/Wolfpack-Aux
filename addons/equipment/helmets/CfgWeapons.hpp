@@ -8,6 +8,7 @@ class CfgWeapons {
     class WPS_helmets_helmet_Tanker;
     class WPS_helmets_helmet_Airborne;
     class WPS_helmets_helmet_phase1;
+    class WPS_helmets_helmet_evo;
 
     //P2
     P2_HELMET_RANK_MACRO(CR);
@@ -126,6 +127,21 @@ class CfgWeapons {
             camo = QUOTE(Billet);
         };
     };
+
+    class GHELMET(EVO): WPS_helmets_helmet_evo
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] Phase 2 EVO";
+        picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\evo\EVOBillet.paa), QPATHTOF(data\visor\visor_co.paa)};
+        class XtdGearInfo {
+            model = QGVAR(role_rank_helm);
+            role = QUOTE(EVO);
+            camo = QUOTE(Billet);
+        };
+    };
+
 
     P1_HELMET_RANK_MACRO(CT);
     P1_HELMET_RANK_MACRO(SCT);

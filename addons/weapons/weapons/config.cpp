@@ -18,7 +18,10 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+            "3AS_Weapons",
+            "A3_Data_F",
             QE_ADDON(weapons)
+
         };
         VERSION_CONFIG;
     };

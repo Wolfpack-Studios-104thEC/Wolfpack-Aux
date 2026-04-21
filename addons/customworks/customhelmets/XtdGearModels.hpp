@@ -24,6 +24,8 @@ class XtdGearModels {
                     "Roach",
                     "Ryan",
                     "Sasquatch",
+                    "Skitty",
+                    "Shadow",
                     "Sleepy",
                     "Spiritual",
                     "Swift",

@@ -16,6 +16,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "[104th] Gonk Droids";
 	};
+	class EGVAR(edsubcat,crate)
+	{
+		displayName = "[104th] Field Crates";
+	};
 	class EGVAR(edsubcat,aries)
 	{
 		displayName = "[104th] Aries";

@@ -9,17 +9,19 @@
     QGHELMET(phase2_Husky), \
     QGHELMET(phase2_Juicy), \
     QGHELMET(phase2_Kalo), \
+    QGHELMET(phase2_Odin), \
     QGHELMET(phase2_Orion), \
     QGHELMET(phase2_Queue), \
     QGHELMET(phase2_Roach), \
     QGHELMET(phase2_Ryan), \
     QGHELMET(phase2_Sasquatch), \
+    QGHELMET(phase2_Shadow), \
+    QGHELMET(phase2_Skitty), \
     QGHELMET(phase2_Sleepy), \
     QGHELMET(phase2_Spiritual), \
     QGHELMET(phase2_Swift), \
     QGHELMET(phase2_Topdog), \
     QGHELMET(phase2_Turq), \
-    QGHELMET(phase2_Odin), \
     QGHELMET(arc_Blue), \
     QGHELMET(arc_Boxing), \
     QGHELMET(arc_Husky), \

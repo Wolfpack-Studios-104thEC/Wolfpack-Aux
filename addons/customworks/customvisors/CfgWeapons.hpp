@@ -14,7 +14,7 @@ class CfgWeapons {
             Person = "Ghoul";
         };
 	};
-	class GNVG(cc_Visor_4_Odin): wps_attachments_nvg_commandvisor_3
+	class GNVG(cc_Visor_4_Odin): wps_attachments_nvg_commandvisor_4
 	{
 		author = "Queue";
 		displayName = "[104th] Command Visor (Odin)";

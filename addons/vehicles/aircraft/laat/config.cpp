@@ -122,6 +122,17 @@ class CfgVehicles {
         ls_vehicles_rampAnims[] = {"ramp"};
         ls_vehicles_rampToggleSounds[] = {"ls_laat_ramp", "ls_laat_ramp"};
 
+		class ACE_Cargo
+		{
+			class Cargo
+			{
+				CARGO_XX(WPEC_RepairCrate,1);
+				CARGO_XX(WPEC_AMMOCrate,2);
+				CARGO_XX(WPEC_MedicCrate,2);
+				CARGO_XX(WPEC_EODCrate,2);
+				CARGO_XX(WPEC_GrenadesCrate,2);
+			};
+		};
         //Weapons
         weapons[]=
 		{
@@ -461,12 +472,6 @@ class CfgVehicles {
 			maxTailRotorStress = 5200;
 			retreatBladeStallWarningSpeed = 77.222;
 		};
-        class ACE_Cargo {
-            class Cargo {
-                //CARGO_XX(NCA_BARC,2);
-                //CARGO_XX(NCA_FuelBox,1);
-            };
-        };
         class AnimationSources: AnimationSources {
             class Doors: Doors {
                 initPhase = 0;
@@ -481,6 +486,65 @@ class CfgVehicles {
         //Components deals with the radar range for the Vehicle.  Here it is set to 8000 so the range will be 8000M or 8KM.
 		class Components: Components
 		{
+			class TransportPylonsComponent
+			{
+				UIPicture="3as\3AS_LAAT\LAATI\data\ui\pylon_laat.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[]=
+						{
+						};
+						attachment="";
+						priority=10;
+						maxweight=300;
+						UIposition[]={0.5,0.25};
+					};
+					class pylons2: pylons1
+					{
+						UIposition[]={0.15000001,0.25};
+						mirroredMissilePos=1;
+					};
+					class pylons3: pylons1
+					{
+						hardpoints[]=
+						{
+						};
+						attachment="";
+						priority=9;
+						maxweight=2500;
+						UIposition[]={0.55000001,0.34999999};
+					};
+					class pylons4: pylons3
+					{
+						UIposition[]={0.1,0.34999999};
+						mirroredMissilePos=3;
+					};
+				};
+				class presets
+				{
+					class empty
+					{
+						displayName="$STR_empty";
+						attachment[]={};
+					};
+					class AA
+					{
+						displayName="$STR_A3_cfgmagazines_titan_aa_dns";
+						attachment[]=
+						{
+						};
+					};
+					class CAS
+					{
+						displayName="$STR_A3_CAS_PRESET_DISPLAYNAME";
+						attachment[]=
+						{
+						};
+					};
+				};
+			};
 			class SensorsManagerComponent
 			{
 				class Components

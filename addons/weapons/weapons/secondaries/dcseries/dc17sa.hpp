@@ -21,7 +21,6 @@
 				scope=0;
 				compatibleItems[]=
 				{
-					"Aux501_cows_Holosight",
 					"Optre_Recon_Sight_Red"
 				};
 			};
