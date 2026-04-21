@@ -2315,8 +2315,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		backpack="";
@@ -2571,8 +2571,8 @@ class CfgVehicles
 		uniformClass="lsd_cis_bxCaptainDroid_uniform";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		LinkedItems[]=
@@ -2716,8 +2716,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		uniformClass="lsd_cis_bxDroid_uniform";
@@ -2781,8 +2781,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		uniformClass="lsd_cis_bxDroid_uniform";
@@ -2850,8 +2850,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		uniformClass="lsd_cis_bxDroid_uniform";
@@ -2936,8 +2936,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		backpack="";
@@ -3165,8 +3165,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		backpack="";
@@ -3394,8 +3394,8 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		identityTypes[]=
 		{
-			"NoGlasses",
-			"Head_NATO"
+			"LanguageENG_F",
+			"ls_head_bxDroid"
 		};
 		facewear="";
 		backpack="";

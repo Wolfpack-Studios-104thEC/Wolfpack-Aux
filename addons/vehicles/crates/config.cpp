@@ -188,38 +188,38 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-            MAG_XX(WPEC_DC15XM_EnergyMag,50);\
-            MAG_XX(WPEC_DC15XM_PlasmaMag,50);\
+            MAG_XX(WPEC_DC15XM_EnergyMag,10);\
+            MAG_XX(WPEC_DC15XM_PlasmaMag,10);\
             MAG_XX(WPEC_3AS_DC15S_Mag,50);\
             MAG_XX(WPEC_3AS_DC15C_Mag,50);\
             MAG_XX(WPEC_3AS_DC15C_OCMag,50);\
-            MAG_XX(WPEC_3AS_DC15L_Mag,50);\
+            MAG_XX(WPEC_3AS_DC15L_Mag,30);\
             MAG_XX(WPEC_3AS_DC15A_Mag,50);\
-            MAG_XX(WPEC_3AS_DC17M_Mag,50);\
+            MAG_XX(WPEC_3AS_DC17M_Mag,25);\
             MAG_XX(WPEC_3AS_WestarM5_Mag,50);\
-            MAG_XX(WPEC_3AS_WestarLightAT,50);\
-            MAG_XX(WPEC_3AS_DC17MLightAT,50);\
-            MAG_XX(WPEC_3AS_Z6_Mag,50);\
-            MAG_XX(WPEC_3AS_Valken38X_Mag,50);\
+            MAG_XX(WPEC_3AS_WestarLightAT,20);\
+            MAG_XX(WPEC_3AS_DC17MLightAT,20);\
+            MAG_XX(WPEC_3AS_Z6_Mag,30);\
+            MAG_XX(WPEC_3AS_Valken38X_Mag,20);\
             MAG_XX(WPEC_MK1_PistolMag,50);\
             MAG_XX(WPEC_MK2_PistolMag_Long,50);\
             MAG_XX(WPEC_MK2_PistolMag_Short,50);\
             MAG_XX(WPEC_MK3_PistolMag,50);\
             MAG_XX(WPEC_MK4_PistolMag,50);\
-            MAG_XX(WPEC_3AS_MK40_AT_Unguided,50);\
-            MAG_XX(WPEC_3AS_MK40_AT_Guided,50);\
-            MAG_XX(WPEC_MK1_AT_Mag,50);\
-            MAG_XX(WPEC_MK2_AT_Mag,50);\
-            MAG_XX(WPEC_MK3_AP_Mag,50);\
-            MAG_XX(WPEC_MK4_AP_Mag,50);\
-            MAG_XX(Odins_Despair,50);\
-            MAG_XX(WPEC_3AS_Chaingun_Mag,50);\
-            MAG_XX(3AS_JLTS_MK43_AT,5);\
-            MAG_XX(3AS_JLTS_MK39_AA,5);\
-			MAG_XX(3rnd_3GL_FlareWhite_Illumination_F,50);\
-			MAG_XX(3AS_10Rnd_ESlug_Mag,60);\
+            MAG_XX(WPEC_3AS_MK40_AT_Unguided,5);\
+            MAG_XX(WPEC_3AS_MK40_AT_Guided,5);\
+            MAG_XX(WPEC_MK1_AT_Mag,5);\
+            MAG_XX(WPEC_MK2_AT_Mag,5);\
+            MAG_XX(WPEC_MK3_AP_Mag,5);\
+            MAG_XX(WPEC_MK4_AP_Mag,5);\
+            MAG_XX(Odins_Despair,5);\
+            MAG_XX(WPEC_3AS_Chaingun_Mag,5);\
+            MAG_XX(3AS_JLTS_MK43_AT,4);\
+            MAG_XX(3AS_JLTS_MK39_AA,4);\
+			MAG_XX(3rnd_3GL_FlareWhite_Illumination_F,20);\
+			MAG_XX(3AS_10Rnd_ESlug_Mag,30);\
 			MAG_XX(3AS_10Rnd_EC30_Pellets,30);\
-			MAG_XX(3AS_1Rnd_EC80_Flechette,50);\
+			MAG_XX(3AS_1Rnd_EC80_Flechette,30);\
 			MAG_XX(ls_magazine_dc17s,30);\
 		};
 		class TransportBackpacks
