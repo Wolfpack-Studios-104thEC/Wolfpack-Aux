@@ -190,3 +190,14 @@
 		person = QUOTE(name); \
 	}; \
 	}
+
+	#define P15_HELMET_CUSTOM_MACRO(name)\
+	class GHELMET(phase15_##name##): WPS_helmets_helmet_phase15 {\
+	scope = 2;\
+	displayName = QUOTE([104th] Phase 1.5 Helmet (name));\
+	hiddenSelectionsTextures[] = {QPATHTOF(data\phase15\Phase15##name##_co.paa),QPATHTOEF(equipment,helmets\data\visor\visor_co.paa)};\
+	class XtdGearInfo { \
+		model = QGVAR(p15_custom_Helm); \
+		person = QUOTE(name); \
+	}; \
+	}

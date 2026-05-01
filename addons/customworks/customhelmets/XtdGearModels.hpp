@@ -128,5 +128,18 @@ class XtdGearModels {
                 values[] = {};
             };
         };
+        class GVAR(p15_custom_Helm) {
+            label = "[104th] Phase 1.5 Custom Helmets";
+            author = AUTHOR;
+            options[] = {"person"};
+            class person {
+                changeingame = 0;
+                values[] =
+                {
+                    "Queue",
+                };
+                alwaysSelectable = 1;
+            };
+        };
     };
 };
