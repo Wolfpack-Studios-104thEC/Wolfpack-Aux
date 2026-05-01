@@ -12,6 +12,7 @@ class XtdGearModels {
                     "Alpha",
                     "Apathy",
                     "Bean",
+                    "Eskay",
                     "Ghoul",
                     "Grandpa",
                     "Hippo",

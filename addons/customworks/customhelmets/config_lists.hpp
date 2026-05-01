@@ -3,6 +3,7 @@
     QGHELMET(phase2_Alpha), \
     QGHELMET(phase2_Apathy), \
     QGHELMET(phase2_Bean), \
+    QGHELMET(phase2_Eskay), \
     QGHELMET(phase2_Ghoul), \
     QGHELMET(phase2_Grandpa), \
     QGHELMET(phase2_Hippo), \
