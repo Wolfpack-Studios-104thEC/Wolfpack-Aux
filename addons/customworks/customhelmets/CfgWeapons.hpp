@@ -38,6 +38,7 @@ class CfgWeapons {
     ARC_HELMET_CUSTOM_MACRO(Blue);
     ARC_HELMET_CUSTOM_MACRO(Boxing);
     ARC_HELMET_CUSTOM_MACRO(Husky);
+    ARC_HELMET_CUSTOM_MACRO(Waves);
 
     ARC_HELMET_CUSTOM_GLOW_MACRO(Graves,Chrome);
 

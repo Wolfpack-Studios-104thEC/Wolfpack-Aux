@@ -27,6 +27,7 @@
     QGHELMET(arc_Boxing), \
     QGHELMET(arc_Husky), \
     QGHELMET(arc_Graves), \
+    QGHELMET(arc_Waves), \
     QGHELMET(arf_Drom), \
     QGHELMET(arf_Spec), \
     QGHELMET(arf_Subbie), \

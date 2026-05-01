@@ -46,7 +46,8 @@ class XtdGearModels {
                     "Blue",
                     "Boxing",
                     "Husky",
-                    "Graves"
+                    "Graves",
+                    "Waves"
                 };
                 alwaysSelectable = 1;
             };
