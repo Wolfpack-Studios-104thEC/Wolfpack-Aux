@@ -34,5 +34,6 @@
     QGHELMET(pilot_Killa), \
     QGHELMET(pilot_Kurt), \
     QGHELMET(pilot_Odin), \
+    QGHELMET(phase15_Queue), \
 
 #define UNIT_LIST \
