@@ -1766,8 +1766,8 @@ class CfgVehicles
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
 	};
-	class lsd_cis_b2Droid_base;
-	class WBK_B2_Mod_Standart: lsd_cis_b2Droid_base
+	class ls_droid_b2;
+	class WBK_B2_Mod_Standart: ls_droid_b2
 	{
 		class HitPoints;
 	};
@@ -3640,7 +3640,7 @@ class CfgGroups
 	{
 		class WPEC_CIS_faction
 		{
-			name="WPEC CIS";
+			name="[WPEC] CIS Groups";
 			class B1Infantry
 			{
 				name="B1 Groups";
@@ -4678,16 +4678,23 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_King";
+						vehicle="WPEC_CIS_AAT_Red";
 						rank="CORPORAL";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_King";
+						vehicle="WPEC_CIS_AAT_CIS";
 						rank="PRIVATE";
 						position[]={0,-20,-10};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_AAT_CIS";
+						rank="PRIVATE";
+						position[]={0,20,10};
 					};
 				};
 				class WPEC_CIS_AAT_Section
@@ -4699,28 +4706,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Tan";
+						vehicle="WPEC_CIS_AAT";
 						rank="PRIVATE";
 						position[]={0,-20,-20};
 					};
 					class Unit2
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="CORPORAL";
 						position[]={-20,-20,0};
 					};
 					class Unit3
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Tan";
+						vehicle="WPEC_CIS_AAT";
 						rank="PRIVATE";
 						position[]={20,-20,-20};
 					};
@@ -4734,14 +4741,14 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="PRIVATE";
 						position[]={0,-20,-20};
 					};
@@ -4790,7 +4797,7 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};

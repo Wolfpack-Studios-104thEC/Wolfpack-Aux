@@ -238,7 +238,7 @@ class CfgVehicles
 		editorPreview="";
 		accuracy=1000;
 	};
-	class WPEC_CIS_AAT_tan:WPEC_CIS_AAT
+	class WPEC_CIS_AAT_tan: WPEC_CIS_AAT
 	{
 		displayname="Medium AAT (Tan)";
 		hiddenSelections[]=
@@ -280,10 +280,10 @@ class CfgVehicles
 		};
 		accuracy=1000;
 	};
-	class WPEC_CIS_AAT_Red:WPEC_CIS_AAT
+	class WPEC_CIS_AAT_Red: WPEC_CIS_AAT
 	{
 		forceingarage=1;
-		displayname="Heavy Armor AAT";
+		displayname="King AAT";
 		hiddenSelections[]=
 		{
 			"camo1"
