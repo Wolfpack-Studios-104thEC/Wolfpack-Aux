@@ -24,4 +24,8 @@ class CfgEditorSubcategories
 	{
 		displayName = "[104th] Aries";
 	};
+	class EGVAR(edsubcat,groundvics)
+	{
+		displayName = "[104th] Ground Vehicles";
+	};
 };
