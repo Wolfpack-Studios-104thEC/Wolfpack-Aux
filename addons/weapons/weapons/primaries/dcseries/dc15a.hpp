@@ -154,8 +154,10 @@ class WPEC_3AS_DC15A: 3AS_DC15A_Base_F
 				compatibleItems[]=
 				{
 					"WPEC_HRCO_blu",
+					"3AS_optic_DC15LE_F",
 					"WPEC_HMRCO_blu",
 					"WPEC_Holosight_blu",
+					"WPEC_HRCO_blu",
 					"WPEC_Holosight_2xblu"
 				};
 			};
