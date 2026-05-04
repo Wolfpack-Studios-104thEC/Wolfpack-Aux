@@ -774,6 +774,8 @@
 		missileLockMinDistance = 10;
 		missileLockMaxDistance = 6000;
 		airLock=1;
+		irLock=0;
+		laserLock=0;
 		class Components: Components
 		{
 			class SensorsManagerComponent

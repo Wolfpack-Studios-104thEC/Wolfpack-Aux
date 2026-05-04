@@ -26,6 +26,8 @@
 				compatibleItems[]=
 				{
 					"3AS_Optic_DC15L",
+					"WPEC_HMRCO_blu",
+					"WPEC_HRCO_blu",
 					"WPEC_Holosight_2xblu"
 				};
 			};

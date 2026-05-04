@@ -5,6 +5,7 @@ class CfgWeapons {
     class WPS_helmets_helmet_BARC;
     class WPS_helmets_helmet_Engineer;
     class WPS_helmets_helmet_p2_pilot;
+    class WPS_helmets_helmet_phase15;
     //class WPS_helmets_helmet_Tanker;
     //class WPS_helmets_helmet_Airborne;
     //class WPS_helmets_helmet_phase1;
@@ -12,6 +13,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_MACRO(Alpha);
     P2_HELMET_CUSTOM_MACRO(Apathy);
     P2_HELMET_CUSTOM_MACRO(Bean);
+    P2_HELMET_CUSTOM_MACRO(Eskay);
     P2_HELMET_CUSTOM_MACRO(Ghoul);
     P2_HELMET_CUSTOM_MACRO(Grandpa);
     P2_HELMET_CUSTOM_MACRO(Hippo);
@@ -24,7 +26,6 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_MACRO(Ryan);
     P2_HELMET_CUSTOM_MACRO(Sasquatch);
     P2_HELMET_CUSTOM_MACRO(Skitty);
-    P2_HELMET_CUSTOM_MACRO(Shadow);
     P2_HELMET_CUSTOM_MACRO(Sleepy);
     P2_HELMET_CUSTOM_MACRO(Spiritual);
     P2_HELMET_CUSTOM_MACRO(Swift);
@@ -37,6 +38,7 @@ class CfgWeapons {
     ARC_HELMET_CUSTOM_MACRO(Blue);
     ARC_HELMET_CUSTOM_MACRO(Boxing);
     ARC_HELMET_CUSTOM_MACRO(Husky);
+    ARC_HELMET_CUSTOM_MACRO(Waves);
 
     ARC_HELMET_CUSTOM_GLOW_MACRO(Graves,Chrome);
 
@@ -48,7 +50,7 @@ class CfgWeapons {
     //BARC
     BARC_HELMET_CUSTOM_MACRO(CJ);
 
-//Engineer
+    //Engineer
     ENGINEER_HELMET_CUSTOM_MACRO(Hippo);
 
     //Pilot
@@ -57,4 +59,7 @@ class CfgWeapons {
     PILOT_HELMET_CUSTOM_MACRO(Odin);
 
     //Tanker
+
+    //Phase 1.5
+    P15_HELMET_CUSTOM_MACRO(Queue);
 };

@@ -1766,8 +1766,8 @@ class CfgVehicles
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
 	};
-	class lsd_cis_b2Droid_base;
-	class WBK_B2_Mod_Standart: lsd_cis_b2Droid_base
+	class ls_droid_b2;
+	class WBK_B2_Mod_Standart: ls_droid_b2
 	{
 		class HitPoints;
 	};
@@ -3640,7 +3640,7 @@ class CfgGroups
 	{
 		class WPEC_CIS_faction
 		{
-			name="WPEC CIS";
+			name="[WPEC] CIS Groups";
 			class B1Infantry
 			{
 				name="B1 Groups";
@@ -3672,6 +3672,7 @@ class CfgGroups
 						position[]={-3,0,0};
 					};
 				};
+				
 				class WPEC_CIS_Base_Duo
 				{
 					name="B1 Duo";
@@ -3791,6 +3792,83 @@ class CfgGroups
 						position[]={-12,0,0};
 					};
 				};
+				class WPEC_CIS_Riflemen
+				{
+					name="B1 Riflemen Squad";
+					side=0;
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction="WPEC_CIS";
+					class Unit0
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Commander";
+						rank="CORPORAL";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={0,-3,0};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-3,0,0};
+					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-6,0,0};
+					};
+					class Unit4
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="CORPORAL";
+						position[]={0,-6,0};
+					};
+					class Unit5
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={0,-9,0};
+					};
+					class Unit6
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-9,0,0};
+					};
+					class Unit7
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-12,0,0};
+					};
+					class Unit8
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-14,0,0};
+					};
+					class Unit9
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-16,0,0};
+					};
+				};
 				class WPEC_CIS_AT
 				{
 					name="B1 AT Team";
@@ -3800,7 +3878,7 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_Base_B1_Droid";
+						vehicle="WPEC_CIS_B1_Droid_Commander";
 						rank="CORPORAL";
 						position[]={0,0,0};
 					};
@@ -3814,7 +3892,7 @@ class CfgGroups
 					class Unit2
 					{
 						side=0;
-						vehicle="WPEC_CIS_Base_B1_Droid";
+						vehicle="WPEC_CIS_B1_Droid_AT";
 						rank="PRIVATE";
 						position[]={-6,0,0};
 					};
@@ -3835,7 +3913,7 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_Base_B1_Droid";
+						vehicle="WPEC_CIS_B1_Droid_Commander";
 						rank="CORPORAL";
 						position[]={0,0,0};
 					};
@@ -3870,7 +3948,7 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_Base_B1_Droid";
+						vehicle="WPEC_CIS_B1_Droid_Commander";
 						rank="CORPORAL";
 						position[]={0,0,0};
 					};
@@ -3898,7 +3976,7 @@ class CfgGroups
 				};
 				class WPEC_CIS_Assault
 				{
-					name="Assault Squad";
+					name="B1 Assault Squad";
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
@@ -3959,6 +4037,119 @@ class CfgGroups
 						position[]={-12,0,0};
 					};
 				};
+				class WPEC_CIS_Fireteam2
+				{
+					name="B1 Fire Team";
+					side=0;
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction="WPEC_CIS";
+					class Unit0
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Commander";
+						rank="MAJOR";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Heavy";
+						rank="PRIVATE";
+						position[]={0,-3,0};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Heavy";
+						rank="PRIVATE";
+						position[]={-3,0,0};
+					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="PRIVATE";
+						position[]={-6,0,0};
+					};
+					class Unit4
+					{
+						side=0;
+						vehicle="WPEC_CIS_Base_B1_Droid";
+						rank="CORPORAL";
+						position[]={0,-6,0};
+					};
+					class Unit5
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_AT";
+						rank="PRIVATE";
+						position[]={0,-9,0};
+					};
+					class Unit6
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_AT";
+						rank="PRIVATE";
+						position[]={-9,0,0};
+					};
+					class Unit7
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Sniper";
+						rank="PRIVATE";
+						position[]={-12,0,0};
+					};
+				};
+				class WPEC_CIS_AssaultTeam
+				{
+					name="B1 Assault Team";
+					side=0;
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction="WPEC_CIS";
+					class Unit0
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Commander";
+						rank="MAJOR";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Heavy";
+						rank="PRIVATE";
+						position[]={0,-3,0};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Heavy";
+						rank="PRIVATE";
+						position[]={-3,0,0};
+					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Heavy";
+						rank="PRIVATE";
+						position[]={-6,0,0};
+					};
+					class Unit4
+					{
+						side=0;
+						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
+						rank="CORPORAL";
+						position[]={0,-6,0};
+					};
+					class Unit5
+					{
+						side=0;
+						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
+						rank="PRIVATE";
+						position[]={0,-9,0};
+					};
+				};
+				
 			};
 			class B2Infantry
 			{
@@ -4038,6 +4229,41 @@ class CfgGroups
 						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
 						rank="PRIVATE";
 						position[]={0,-3,0};
+					};
+				};
+				class WPEC_CIS_HeavyAssault
+				{
+					name="B2 Heavy Assault Team";
+					side=0;
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction="WPEC_CIS";
+					class Unit0
+					{
+						side=0;
+						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
+						rank="MAJOR";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=0;
+						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
+						rank="PRIVATE";
+						position[]={0,-3,0};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
+						rank="PRIVATE";
+						position[]={-3,0,0};
+					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_B2_Droid_Super_Blaster";
+						rank="PRIVATE";
+						position[]={-6,0,0};
 					};
 				};
 			};
@@ -4678,16 +4904,23 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_King";
+						vehicle="WPEC_CIS_AAT_Red";
 						rank="CORPORAL";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_King";
+						vehicle="WPEC_CIS_AAT_CIS";
 						rank="PRIVATE";
 						position[]={0,-20,-10};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_AAT_CIS";
+						rank="PRIVATE";
+						position[]={0,20,10};
 					};
 				};
 				class WPEC_CIS_AAT_Section
@@ -4699,28 +4932,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Tan";
+						vehicle="WPEC_CIS_AAT";
 						rank="PRIVATE";
 						position[]={0,-20,-20};
 					};
 					class Unit2
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="CORPORAL";
 						position[]={-20,-20,0};
 					};
 					class Unit3
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Tan";
+						vehicle="WPEC_CIS_AAT";
 						rank="PRIVATE";
 						position[]={20,-20,-20};
 					};
@@ -4734,14 +4967,14 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="PRIVATE";
 						position[]={0,-20,-20};
 					};
@@ -4790,7 +5023,7 @@ class CfgGroups
 					class Unit0
 					{
 						side=0;
-						vehicle="WPEC_CIS_AAT_Blue";
+						vehicle="WPEC_CIS_AAT";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};

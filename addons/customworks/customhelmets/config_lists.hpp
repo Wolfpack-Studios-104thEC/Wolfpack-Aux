@@ -3,6 +3,7 @@
     QGHELMET(phase2_Alpha), \
     QGHELMET(phase2_Apathy), \
     QGHELMET(phase2_Bean), \
+    QGHELMET(phase2_Eskay), \
     QGHELMET(phase2_Ghoul), \
     QGHELMET(phase2_Grandpa), \
     QGHELMET(phase2_Hippo), \
@@ -26,6 +27,7 @@
     QGHELMET(arc_Boxing), \
     QGHELMET(arc_Husky), \
     QGHELMET(arc_Graves), \
+    QGHELMET(arc_Waves), \
     QGHELMET(arf_Drom), \
     QGHELMET(arf_Spec), \
     QGHELMET(arf_Subbie), \
@@ -34,5 +36,6 @@
     QGHELMET(pilot_Killa), \
     QGHELMET(pilot_Kurt), \
     QGHELMET(pilot_Odin), \
+    QGHELMET(phase15_Queue), \
 
 #define UNIT_LIST \

@@ -24,6 +24,7 @@
 					"3AS_optic_reflex_DC15C",
 					"3AS_optic_acog_DC15C",
 					"WPEC_HMRCO_blu",
+					"WPEC_HRCO_blu",
 					"WPEC_Holosight_2xblu"
 				};
 			};
@@ -68,6 +69,7 @@
 					"3AS_optic_reflex_DC15C",
 					"3AS_optic_acog_DC15C",
 					"WPEC_HMRCO_blu",
+					"WPEC_HRCO_blu",
 					"WPEC_Holosight_2xblu"
 				};
 			};

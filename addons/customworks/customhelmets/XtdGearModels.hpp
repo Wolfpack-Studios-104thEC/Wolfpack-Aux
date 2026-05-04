@@ -12,6 +12,7 @@ class XtdGearModels {
                     "Alpha",
                     "Apathy",
                     "Bean",
+                    "Eskay",
                     "Ghoul",
                     "Grandpa",
                     "Hippo",
@@ -45,7 +46,8 @@ class XtdGearModels {
                     "Blue",
                     "Boxing",
                     "Husky",
-                    "Graves"
+                    "Graves",
+                    "Waves"
                 };
                 alwaysSelectable = 1;
             };
@@ -126,6 +128,19 @@ class XtdGearModels {
                 changeingame = 0;
                 alwaysSelectable = 1;
                 values[] = {};
+            };
+        };
+        class GVAR(p15_custom_Helm) {
+            label = "[104th] Phase 1.5 Custom Helmets";
+            author = AUTHOR;
+            options[] = {"person"};
+            class person {
+                changeingame = 0;
+                values[] =
+                {
+                    "Queue",
+                };
+                alwaysSelectable = 1;
             };
         };
     };
