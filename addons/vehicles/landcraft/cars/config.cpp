@@ -7,7 +7,8 @@ class CfgPatches {
         units[] = {
             "WPEC_BARC",
             "WPEC_BARCSIDECAR",
-			"WPEC_GV_DEWBACK"
+			"WPEC_GV_DEWBACK",
+			"WPEC_GV_ITT"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

@@ -24,7 +24,6 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         displayName = "[104th] Phase 2 ARC";
-        picture = "\WPEC\WPEC_Helmets\icons\IconARC_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\arc\Phase2ARC_co.paa), QPATHTOF(data\arc\light\ARCLight_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
             model = QGVAR(role_rank_helm);
@@ -42,7 +41,6 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         displayName = "[104th] ARF Helmet [Unmarked]";
-        picture = "\WPEC\WPEC_Helmets\icons\IconARFUnmarked_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\arf\Phas2ARF_co.paa),QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
             model = QGVAR(role_rank_helm);
@@ -59,7 +57,6 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         displayName = "[104th] BARC Helmet (Unmarked)";
-        picture = "\WPEC\WPEC_Helmets\icons\IconBARC_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\barc\Phase2BARC_co.paa), QPATHTOF(data\visor\visor_co.paa)};
 
         class XtdGearInfo {
@@ -105,7 +102,6 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         displayName = "[104th] Phase 2 Tanker";
-        picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\tanker\Phase2TankerBillet_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
             model = QGVAR(role_rank_helm);
@@ -119,7 +115,6 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         displayName = "[104th] Phase 2 Airborne";
-        picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\airborne\Phase2AirborneBillet_co.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
             model = QGVAR(role_rank_helm);
@@ -133,7 +128,6 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         displayName = "[104th] Phase 2 EVO";
-        picture = "\WPEC\WPEC_Helmets\icons\logo_co.paa";
         hiddenSelectionsTextures[] = {QPATHTOF(data\evo\EVOBillet.paa), QPATHTOF(data\visor\visor_co.paa)};
         class XtdGearInfo {
             model = QGVAR(role_rank_helm);

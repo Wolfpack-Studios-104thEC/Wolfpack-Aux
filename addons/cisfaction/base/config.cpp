@@ -7,7 +7,8 @@ class cfgPatches
 		requiredVersion=2.2;
 		requiredAddons[]=
 		{
-			"JLTS_Core"
+			"JLTS_Core",
+			"ls_loadorder"
 		};
 		weapons[]=
 		{
@@ -53,7 +54,7 @@ class cfgPatches
 			"WPEC_CIS_BX_AT",
 			"WPEC_CIS_BX_Melee",
 			"WPEC_CIS_BX_Melee_Heavy",
-			"WPEC_CIS_BX_Shield"
+			"WPEC_CIS_BX_Shield",
 		};
 	};
 };
@@ -63,9 +64,9 @@ class CfgFactionClasses
 	{
 		displayName="[WPEC] CIS Faction";
 		author="WPEC Dev";
-		flag="\a3\Data_f\Flags\flag_nato_co.paa";
-		icon="";
-		priority=1;
+		icon = "\ls\core\addons\data\insignias\cis_ca.paa";
+        flag = "\ls\core\addons\data\flags\flag_cis_ca.paa";
+		priority=2;
 		side=0;
 	};
 };
@@ -704,6 +705,9 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_mag_E60R_AA",
+			"WPEC_CIS_mag_E60R_AA",
+			"WPEC_CIS_mag_E60R_AA",
+			"WPEC_CIS_mag_E60R_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -719,6 +723,9 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
+			"WPEC_CIS_mag_E60R_AA",
+			"WPEC_CIS_mag_E60R_AA",
+			"WPEC_CIS_mag_E60R_AA",
 			"WPEC_CIS_mag_E60R_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
@@ -785,6 +792,10 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -800,6 +811,10 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
@@ -866,6 +881,9 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_mag_E60R_AT",
+			"WPEC_CIS_mag_E60R_AT",
+			"WPEC_CIS_mag_E60R_AT",
+			"WPEC_CIS_mag_E60R_AT",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -881,6 +899,9 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
+			"WPEC_CIS_mag_E60R_AT",
+			"WPEC_CIS_mag_E60R_AT",
+			"WPEC_CIS_mag_E60R_AT",
 			"WPEC_CIS_mag_E60R_AT",
 			"SmokeShell",
 			"SmokeShellGreen"
@@ -3638,10 +3659,10 @@ class CfgGroups
 {
 	class East
 	{
-		class WPEC_CIS_faction
+		class WPEC_CIS
 		{
 			name="[WPEC] CIS Groups";
-			class B1Infantry
+			class B1Infantry		
 			{
 				name="B1 Groups";
 				class WPEC_CIS_Command
@@ -3735,6 +3756,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -3798,6 +3820,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -3980,6 +4003,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -4043,6 +4067,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -4106,6 +4131,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -4160,6 +4186,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -4276,6 +4303,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -4311,6 +4339,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
@@ -4437,6 +4466,7 @@ class CfgGroups
 					side=0;
 					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
 					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
 					class Unit0
 					{
 						side=0;
