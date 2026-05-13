@@ -14,9 +14,6 @@ class cfgPatches
 			"WPEC_CIS_Snail",
 			"WPEC_CIS_Squad_Transport",
 			"WPEC_CIS_Transport_Truck",
-			"WPEC_CIS_Droideka",
-			"WPEC_CIS_Droideka_Static",
-			"Droideka_Shield",
 			"WPEC_CIS_Sniper_Deka",
 			"WPEC_CIS_Spider_Droid",
 			"WPEC_CIS_HMP_Transport",
@@ -44,22 +41,7 @@ class CfgEditorSubcategories
 };
 class CfgFunctions
 {
-	class WPEC_AUX
-	{
-		class Droideka_Shield
-		{
-			file="z\wpec\cisfaction\Vehicles\Functions";
-			class initdroideka_move
-			{
-			};
-			class initdrodeka_shield
-			{
-			};
-			class initDroideka
-			{
-			};
-		};
-	};
+
 };
 class DefaultEventhandlers;
 class SensorTemplatePassiveRadar;
@@ -456,19 +438,7 @@ class CfgVehicles
 		faction="WPEC_CIS";
 		crew="WPEC_CIS_B1_Droid_Crew";
 	};
-	class Full_Shield;
-	class Droideka_Shield: Full_Shield
-	{
-		displayName="Droideka Shield";
-		scope=1;
-		scopecurator=1;
-		armor=600;
-		armorStructural=1;
-		class EventHandlers
-		{
-			init="[_this] spawn WPEC_AUX_fnc_initdrodeka_shield;";
-		};
-	};
+
 	class StaticWeapon: LandVehicle
 	{
 		class Turrets;
@@ -488,60 +458,7 @@ class CfgVehicles
 		};
 		class Components;
 	};
-	class k_CIS_Droideka: StaticMGWeapon
-	{
-		class EventHandlers;
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-			};
-		};
-		class Components;
-		icon="iconStaticMG";
-	};
-	class WPEC_CIS_Droideka: k_CIS_Droideka
-	{
-		scope=2;
-		scopeCurator=2;
-		class EventHandlers
-		{
-			init="[_this] spawn WPEC_AUX_fnc_initdroideka_move;";
-		};
-		displayName="Droideka Moveable";
-		editorSubcategory="WPEC_CIS_Turrets";
-		vehicleClass="WPEC_CIS_Turrets";
-		side=0;
-		faction="WPEC_CIS";
-		armorStructural=1;
-		explosionShielding=0.1;
-		minTotalDamageThreshold=0.0099999998;
-		impactDamageMultiplier=0.1;
-		ace_dragging_canCarry=0;
-		ace_dragging_canDrag=0;
-		armor=225;
-	};
-	class WPEC_CIS_Droideka_Static: k_CIS_Droideka
-	{
-		scope=2;
-		scopeCurator=2;
-		class EventHandlers
-		{
-			init="[_this] spawn WPEC_AUX_fnc_initdroideka;";
-		};
-		displayName="Droideka Static";
-		editorSubcategory="WPEC_CIS_Turrets";
-		vehicleClass="WPEC_CIS_Turrets";
-		side=0;
-		faction="WPEC_CIS";
-		armorStructural=1;
-		explosionShielding=0.1;
-		minTotalDamageThreshold=0.0099999998;
-		impactDamageMultiplier=0.1;
-		ace_dragging_canCarry=0;
-		ace_dragging_canDrag=0;
-		armor=225;
-	};
+
 	class 3AS_Advanced_DSD;
 	class WPEC_CIS_Spider_Droid: 3AS_Advanced_DSD
 	{
