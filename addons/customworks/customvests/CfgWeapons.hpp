@@ -24,6 +24,17 @@ class CfgWeapons {
             person = "Odin";
         };
     };
+    class GVEST(P2_Odin_VPoo): wps_vests_vest_Cmd1
+    {
+        scope = 1;
+        scopecurator = 2;
+        displayName = "[104th] P2 Vest Attachmments (Odin V2)";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\command\CMDVestTopOdin_co.paa), QPATHTOF(data\command\CMDVestBottomOdinVpoo_co.paa)};
+        class XtdGearInfo {
+            model = QGVAR(Custom_p2_rank_vests);
+            person = "Odin V2";
+        };
+    };
     class GVEST(P2_Juicy): wps_vests_vest_Cmd1
     {
         scope = 2;
