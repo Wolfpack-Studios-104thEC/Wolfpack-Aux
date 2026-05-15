@@ -9,6 +9,8 @@ class CfgWeapons {
     class WPS_helmets_helmet_Airborne;
     class WPS_helmets_helmet_phase1;
     class WPS_helmets_helmet_evo;
+    class WPS_helmets_helmet_BARC_bacara;
+    class WPS_helmets_helmet_phase2_bacara;
 
     //P2
     P2_HELMET_RANK_MACRO(CR);
@@ -68,6 +70,33 @@ class CfgWeapons {
 
     BARC_HELMET_RANK_MACRO(Billet);
 
+    //Bacara
+    class GHELMET(p2barc_bacara): WPS_helmets_helmet_BARC_bacara
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] Bacara BARC Helmet (Unmarked)";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\barc\Phase2BARC_co.paa),QPATHTOF(data\bacara\Phase2BARC_Bacara_wpec_co), QPATHTOF(data\visor\visor_co.paa)};
+
+        /*class XtdGearInfo {
+            model = QGVAR(role_rank_helm);
+            role = QUOTE(BARC);
+            camo = QUOTE(Unmarked);
+        };*/
+    };
+    class GHELMET(p2_bacara): WPS_helmets_helmet_phase2_bacara
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[104th] Bacara Phase 2 Helmet (Unmarked)";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\phase2\Phase2CLC_co.paa),QPATHTOF(data\bacara\Bacara104th_co.paa), QPATHTOF(data\visor\visor_co.paa)}; 
+
+        /*class XtdGearInfo {
+            model = QGVAR(role_rank_helm);
+            role = QUOTE(BARC);
+            camo = QUOTE(Unmarked);
+        };*/
+    };
 //Engineer
 
     ENGINEER_HELMET_RANK_MACRO(Billet);
