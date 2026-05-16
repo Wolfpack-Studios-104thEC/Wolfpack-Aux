@@ -39,36 +39,9 @@ class CfgVehicles
 		class Turrets;
 		class HitPoints;
 	};
-	class Helicopter_Base_H: Helicopter_Base_F
-	{
-		class RotorLibHelicopterProperties;
-		class ViewPilot;
-		class ViewOptics;
-		class EventHandlers;
-		class Turrets: Turrets
-		{
-			class CopilotTurret;
-			class MainTurret;
-		};
-		class AnimationSources;
-		class HitPoints: HitPoints
-		{
-			class HitHull;
-			class HitFuel;
-			class HitAvionics;
-			class HitMissiles;
-			class HitEngine;
-			class HitHRotor;
-			class HitVRotor;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-		};
-		class Components;
-	};
+	class Helicopter_Base_H: Helicopter_Base_F {
+        class Turrets;
+    };
     class 3AS_LAS_Base_F: Helicopter_Base_H
     {
         class Turrets: Turrets
@@ -133,7 +106,6 @@ class CfgVehicles
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"WPEC_SmokeLauncher",
 			"WPEC_LAAT_Cannon_Low",
 		};
 		magazines[]=
@@ -142,9 +114,6 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
@@ -680,7 +649,6 @@ class CfgVehicles
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"WPEC_SmokeLauncher",
 			"WPEC_LAAT_Cannon_Low",
 		};
 		magazines[]=
@@ -689,9 +657,6 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",

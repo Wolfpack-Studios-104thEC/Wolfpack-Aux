@@ -54,7 +54,6 @@ class CfgVehicles {
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"WPEC_SmokeLauncher",
 			"WPEC_LAAT_Cannon_High",
 			"WPEC_Maramu_A2A_MissileSystem",
             "WPEC_Hoska_A2A_MissileSystem",
@@ -67,9 +66,6 @@ class CfgVehicles {
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
 			"WPEC_LAAT_Cannon_HighPower_Magazine",
 			"WPEC_LAAT_Cannon_HighPower_Magazine",
 			"WPEC_Maramu_6Rnd_A2A_mag",

@@ -207,7 +207,6 @@ class CfgVehicles
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"104th_SmokeLauncher",
 			"104th_LAAT_Cannon_Low",
 			"104th_LAAT_Cannon_High",
 			"104th_Maramu_A2A_MissileSystem",
@@ -221,9 +220,6 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
 			"104th_LAAT_Cannon_LowPower_Magazine",
 			"104th_LAAT_Cannon_LowPower_Magazine",
 			"104th_LAAT_Cannon_LowPower_Magazine",
@@ -710,7 +706,7 @@ class CfgVehicles
 					};
 				};
 			};
-			class TransportCounterMeasuresComponent;
+			class TransportCountermeasuresComponent {};
 		};
 		//Deals with user actions from the scroll wheel.
 		class UserActions: UserActions
@@ -1046,7 +1042,6 @@ class CfgVehicles
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"104th_SmokeLauncher",
 			"104th_LAAT_Cannon_Low",
 			"104th_LAAT_Cannon_High",
 			"104th_Maramu_A2A_MissileSystem",
@@ -1060,9 +1055,6 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
 			"104th_LAAT_Cannon_LowPower_Magazine",
 			"104th_LAAT_Cannon_LowPower_Magazine",
 			"104th_LAAT_Cannon_LowPower_Magazine",
@@ -1549,7 +1541,7 @@ class CfgVehicles
 					};
 				};
 			};
-			class TransportCounterMeasuresComponent;
+			class TransportCountermeasuresComponent {};
 		};
 		//Deals with user actions from the scroll wheel.
 		class UserActions: UserActions
@@ -1886,7 +1878,6 @@ class CfgVehicles
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"104th_SmokeLauncher",
 			"104th_LAAT_Cannon_Low",
 			"104th_LAAT_Cannon_High",
 			"104th_Maramu_A2A_MissileSystem",
@@ -1900,9 +1891,6 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
-			"104th_SmokeLauncherMag",
 			"104th_LAAT_Cannon_LowPower_Magazine",
 			"104th_LAAT_Cannon_LowPower_Magazine",
 			"104th_LAAT_Cannon_LowPower_Magazine",
@@ -2389,7 +2377,7 @@ class CfgVehicles
 					};
 				};
 			};
-			class TransportCounterMeasuresComponent;
+			class TransportCountermeasuresComponent {};
 		};
 		//Deals with user actions from the scroll wheel.
 		class UserActions: UserActions

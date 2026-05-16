@@ -13,6 +13,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+			"A3_Armor_F_Beta",
+			"A3_Weapons_F",
+			"A3_Data_F",
+			"A3_Air_F",
             QE_ADDON(vehicles)
         };
         VERSION_CONFIG;
@@ -119,9 +123,11 @@ class CfgVehicles {
 		altFullForce = 10000;
 		altNoForce = 20000;
 
-        ls_vehicles_rampAnims[] = {"ramp"};
-        ls_vehicles_rampToggleSounds[] = {"ls_laat_ramp", "ls_laat_ramp"};
 
+
+		smokeLauncherAngle=360;
+		smokeLauncherGrenadeCount=18;
+		smokeLauncherVelocity=20;
 		class ACE_Cargo
 		{
 			class Cargo
@@ -138,23 +144,21 @@ class CfgVehicles {
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
-			"WPEC_SmokeLauncher",
 			"WPEC_LAAT_Cannon_Low",
 			"WPEC_LAAT_Cannon_High",
 			"WPEC_Maramu_A2A_MissileSystem",
             "WPEC_Hoska_A2A_MissileSystem",
 			"WPEC_Dianoga_WGM_MissileSystem",
-            "WPEC_Kaada_DF_MissileSystem"
+            "WPEC_Kaada_DF_MissileSystem",
+			"SmokeLauncher"
 		};
 		magazines[]=
 		{
 			"Laserbatteries",
-			"300Rnd_CMFlare_Chaff_Magazine",
-			"300Rnd_CMFlare_Chaff_Magazine",
-			"300Rnd_CMFlare_Chaff_Magazine",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
-			"WPEC_SmokeLauncherMag",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
@@ -167,6 +171,10 @@ class CfgVehicles {
             "WPEC_Hoska_6Rnd_A2A_mag",
             "WPEC_Dianoga_4Rnd_WGM_mag",
             "WPEC_Dianoga_4Rnd_WGM_mag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
             "WPEC_Kaada_10Rnd_Unguided_Rocket_mag",
             "WPEC_Kaada_10Rnd_Unguided_Rocket_mag"
 		};
@@ -710,30 +718,7 @@ class CfgVehicles {
         //Deals with user actions from the scroll wheel.
 		class UserActions: UserActions
 		{
-			class rampOpen
-			{
-				available=0;
-				showWindow=0;
-				displayName="Ramp Open";
-				position="pilotview";
-				radius=9;
-				condition="((player == driver this) AND (this animationphase 'ramp' ==0))";
-				statement="this animateSource ['ramp',1,1];";
-				onlyforplayer=0;
-				shortcut="User18";
-			};
-			class rampClose
-			{
-				available=0;
-				showWindow=0;
-				displayName="Ramp Close";
-				position="pilotview";
-				radius=9;
-				condition="((player == driver this) AND (this animationphase 'ramp' ==1))";
-				statement="this animateSource ['ramp',0,1];";
-				onlyforplayer=0;
-				shortcut="User18";
-			};
+
         };
 		//Deals with ACE actions in the vehicle.  Can be fairly buggy so use with caution and test with a working SQF script.  May not always work in editor so use a multiplayer setting.
 		class ACE_SelfActions: ACE_SelfActions
