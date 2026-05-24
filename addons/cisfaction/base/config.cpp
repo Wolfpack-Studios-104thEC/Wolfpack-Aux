@@ -2300,32 +2300,16 @@ class CfgVehicles
 			impactEffectsBlood="ImpactMetal";
 		};
 	};
-	class ls_redforDroid_base;
-	class lsd_cis_bxDroid_base: ls_redforDroid_base
+	class ls_droid_base;
+	class ls_droid_bx: ls_droid_base
 	{
 		class HitPoints;
 	};
-	class lsd_cis_bxdroid_specops: lsd_cis_bxDroid_base
+	class WBK_BX_Assasin_1: ls_droid_bx
 	{
 		class HitPoints;
 	};
-	class lsd_cis_bxCaptain_specops: lsd_cis_bxdroid_specops
-	{
-		class HitPoints;
-	};
-	class lsd_cis_bxAssassin_specops: lsd_cis_bxdroid_specops
-	{
-		class HitPoints;
-	};
-	class lsd_cis_bxSecurity_specops: lsd_cis_bxdroid_specops
-	{
-		class HitPoints;
-	};
-	class WBK_BX_Assasin_1: lsd_cis_bxdroid_specops
-	{
-		class HitPoints;
-	};
-	class WPEC_CIS_BX_Base: WBK_BX_Assasin_1
+	class WPEC_CIS_BX_Base: ls_droid_bx
 	{
 		scope=2;
 		scopeCurator=2;
@@ -2341,7 +2325,7 @@ class CfgVehicles
 		};
 		facewear="";
 		backpack="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		LinkedItems[]=
 		{
 			"ItemMap",
@@ -2589,7 +2573,7 @@ class CfgVehicles
 		vehicleClass="WPEC_CIS_Special";
 		side=0;
 		faction="WPEC_CIS";
-		uniformClass="lsd_cis_bxCaptainDroid_uniform";
+		uniformClass="ls_droidUniform_bx_captain";
 		identityTypes[]=
 		{
 			"LanguageENG_F",
@@ -2741,7 +2725,7 @@ class CfgVehicles
 			"ls_head_bxDroid"
 		};
 		facewear="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		LinkedItems[]=
 		{
 			"ItemMap",
@@ -2806,7 +2790,7 @@ class CfgVehicles
 			"ls_head_bxDroid"
 		};
 		facewear="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		LinkedItems[]=
 		{
 			"ItemMap",
@@ -2875,7 +2859,7 @@ class CfgVehicles
 			"ls_head_bxDroid"
 		};
 		facewear="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		linkedItems[]=
 		{
 			"ItemMap",
@@ -2962,7 +2946,7 @@ class CfgVehicles
 		};
 		facewear="";
 		backpack="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		LinkedItems[]=
 		{
 			"ItemMap",
@@ -3191,7 +3175,7 @@ class CfgVehicles
 		};
 		facewear="";
 		backpack="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		LinkedItems[]=
 		{
 			"ItemMap",
@@ -3420,7 +3404,7 @@ class CfgVehicles
 		};
 		facewear="";
 		backpack="";
-		uniformClass="lsd_cis_bxDroid_uniform";
+		uniformClass="ls_droidUniform_bx";
 		LinkedItems[]=
 		{
 			"ItemMap",
