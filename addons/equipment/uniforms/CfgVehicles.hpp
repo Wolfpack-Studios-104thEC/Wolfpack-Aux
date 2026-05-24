@@ -19,6 +19,7 @@ class CfgVehicles {
     RANKUNITS(2,CSP2);
     RANKUNITS(2,CSP1_Medic);
     RANKUNITS(2,CSP2_Medic);
+	RANKUNITS(2,CP);
     RANKUNITS(2,CS);
 
 	class GUNIT(Phase_2_Unit_Trooper_ARC): wps_uniforms_unit_arc

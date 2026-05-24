@@ -11,6 +11,7 @@ class XtdGearModels {
                     "CT",
                     "VCT",
                     "CLC",
+                    "CP",
                     "CS",
                     "CSP1",
                     "CSP2",

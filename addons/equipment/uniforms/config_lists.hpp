@@ -3,6 +3,7 @@
 #define ITEM_LIST \
     QGUNIFORM(Phase_2_Uniform_CT), \
     QGUNIFORM(Phase_2_Uniform_VCT), \
+    QGUNIFORM(Phase_2_Uniform_CP), \
     QGUNIFORM(Phase_2_Uniform_CS), \
     QGUNIFORM(Phase_2_Uniform_CSP1), \
     QGUNIFORM(Phase_2_Uniform_CSP2), \
@@ -15,6 +16,7 @@
 #define UNIT_LIST \
     QGUNIT(Phase_2_Unit_CT), \
     QGUNIT(Phase_2_Unit_VCT), \
+    QGUNIT(Phase_2_Unit_CP), \
     QGUNIT(Phase_2_Unit_CS), \
     QGUNIT(Phase_2_Unit_CSP1), \
     QGUNIT(Phase_2_Unit_CSP2), \
