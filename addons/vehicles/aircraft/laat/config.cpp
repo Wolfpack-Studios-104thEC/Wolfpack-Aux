@@ -73,6 +73,7 @@ class CfgVehicles {
         };
 
         class AnimationSources;
+		class EventHandlers;
     };
 	class 3AS_LAAT_Mk1: 3AS_LAAT_Base {
         class AnimationSources: AnimationSources {
@@ -125,9 +126,10 @@ class CfgVehicles {
 
 
 
-		smokeLauncherAngle=360;
 		smokeLauncherGrenadeCount=18;
-		smokeLauncherVelocity=20;
+		smokeLauncherVelocity=10;
+		smokeLauncherOnTurret=0;
+		smokeLauncherAngle=360;
 		class ACE_Cargo
 		{
 			class Cargo
@@ -150,6 +152,7 @@ class CfgVehicles {
             "WPEC_Hoska_A2A_MissileSystem",
 			"WPEC_Dianoga_WGM_MissileSystem",
             "WPEC_Kaada_DF_MissileSystem",
+			"WPEC_SmokeLauncher",
 			"SmokeLauncher"
 		};
 		magazines[]=
@@ -159,6 +162,9 @@ class CfgVehicles {
 			"240Rnd_CMFlare_Chaff_Magazine",
 			"240Rnd_CMFlare_Chaff_Magazine",
 			"240Rnd_CMFlare_Chaff_Magazine",
+			"WPEC_SmokeLauncherMag",
+			"WPEC_SmokeLauncherMag",
+			"WPEC_SmokeLauncherMag",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
@@ -178,7 +184,10 @@ class CfgVehicles {
             "WPEC_Kaada_10Rnd_Unguided_Rocket_mag",
             "WPEC_Kaada_10Rnd_Unguided_Rocket_mag"
 		};
-
+		class EventHandlers: EventHandlers
+		{
+			fired="_this call (uinamespace getvariable 'BIS_fnc_effectFired');_this execVM '\3AS\3as_Laat\LAATI\scripts\fired_laser.sqf';";
+		};
         class Turrets: Turrets {
 			class Gunner: Copilot {
 				weapons[]=

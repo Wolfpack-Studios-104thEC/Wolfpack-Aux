@@ -55,6 +55,7 @@ class CfgVehicles
 		};
         class Components;
         class RotorLibHelicopterProperties;
+		class EventHandlers;
     };
 
     class GVAR(LAS_Bird): 3AS_LAS_Base_F
@@ -91,6 +92,10 @@ class CfgVehicles
 			"z_gunl_chamber",
 			"z_gunr_chamber"
 		};
+		smokeLauncherGrenadeCount=18;
+		smokeLauncherVelocity=10;
+		smokeLauncherOnTurret=0;
+		smokeLauncherAngle=360;
         class ACE_Cargo
 		{
 			class Cargo
@@ -102,11 +107,13 @@ class CfgVehicles
 				CARGO_XX(WPEC_GrenadesCrate,1);
 			};
 		};
-                weapons[]=
+        weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher",
 			"WPEC_LAAT_Cannon_Low",
+			"WPEC_SmokeLauncher",
+			"SmokeLauncher"
 		};
 		magazines[]=
 		{
@@ -117,7 +124,19 @@ class CfgVehicles
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
 			"WPEC_LAAT_Cannon_LowPower_Magazine",
+			"WPEC_SmokeLauncherMag",
+			"WPEC_SmokeLauncherMag",
+			"WPEC_SmokeLauncherMag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
+			
         };
+		class EventHandlers: EventHandlers
+		{
+			fired="_this call (uinamespace getvariable 'BIS_fnc_effectFired');_this execVM '\3AS\3as_Laat\LAATI\scripts\fired_laser.sqf';";
+		};
         class Components: Components
 		{
 			class SensorsManagerComponent
