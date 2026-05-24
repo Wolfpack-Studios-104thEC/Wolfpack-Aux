@@ -9,7 +9,6 @@ class XtdGearModels {
                 alwaysSelectable = 1;
                 values[] =
                 {
-                    "Alpha",
                     "Apathy",
                     "Bean",
                     "Eskay",
@@ -104,6 +103,7 @@ class XtdGearModels {
                     "Killa",
                     "Kurt",
                     "Odin",
+                    "Argyle"
                 };
                 alwaysSelectable = 1;
             };
