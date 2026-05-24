@@ -20,6 +20,7 @@ class XtdGearModels {
                 changeingame = 0;
                 values[] = {
                     "Odin",
+                    "Queue",
                     "Juicy"
                 };
                 alwaysSelectable = 1;
