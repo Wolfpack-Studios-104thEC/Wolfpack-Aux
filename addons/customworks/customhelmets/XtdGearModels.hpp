@@ -30,7 +30,8 @@ class XtdGearModels {
                     "Spiritual",
                     "Swift",
                     "Topdog",
-                    "Turq"
+                    "Turq",
+                    "Viking"
                 };
             };
         };

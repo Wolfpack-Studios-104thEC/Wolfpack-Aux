@@ -30,6 +30,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_MACRO(Swift);
     P2_HELMET_CUSTOM_MACRO(Topdog);
     P2_HELMET_CUSTOM_MACRO(Turq);
+    P2_HELMET_CUSTOM_MACRO(Viking);
 
     P2_HELMET_CUSTOM_GLOW_MACRO(Odin,Glow);
 
