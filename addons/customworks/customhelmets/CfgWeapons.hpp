@@ -10,7 +10,6 @@ class CfgWeapons {
     //class WPS_helmets_helmet_Airborne;
     //class WPS_helmets_helmet_phase1;
 
-    P2_HELMET_CUSTOM_MACRO(Alpha);
     P2_HELMET_CUSTOM_MACRO(Apathy);
     P2_HELMET_CUSTOM_MACRO(Bean);
     P2_HELMET_CUSTOM_MACRO(Eskay);
@@ -31,6 +30,7 @@ class CfgWeapons {
     P2_HELMET_CUSTOM_MACRO(Swift);
     P2_HELMET_CUSTOM_MACRO(Topdog);
     P2_HELMET_CUSTOM_MACRO(Turq);
+    P2_HELMET_CUSTOM_MACRO(Viking);
 
     P2_HELMET_CUSTOM_GLOW_MACRO(Odin,Glow);
 
@@ -57,6 +57,7 @@ class CfgWeapons {
     PILOT_HELMET_CUSTOM_MACRO(Killa);
     PILOT_HELMET_CUSTOM_MACRO(Kurt);
     PILOT_HELMET_CUSTOM_MACRO(Odin);
+    PILOT_HELMET_CUSTOM_MACRO(Argyle);
 
     //Tanker
 
