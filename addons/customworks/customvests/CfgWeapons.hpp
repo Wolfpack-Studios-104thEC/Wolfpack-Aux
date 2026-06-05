@@ -27,8 +27,8 @@ class CfgWeapons {
     };
     class GVEST(P2_Juicy): wps_vests_vest_Cmd1
     {
-        scope = 1;
-        scopecurator = 1;
+        scope = 2;
+        scopecurator = 2;
         displayName = "[104th] P2 Vest Attachmments (Juicy)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\p2\P2VestTopJuicy_co.paa), QPATHTOF(data\p2\P2VestBottomJuicy_co.paa)};
         class XtdGearInfo {
