@@ -10,6 +10,7 @@ class CfgWeapons {
     //class WPS_helmets_helmet_Airborne;
     //class WPS_helmets_helmet_phase1;
 
+    P2_HELMET_CUSTOM_MACRO(Alpha);
     P2_HELMET_CUSTOM_MACRO(Apathy);
     P2_HELMET_CUSTOM_MACRO(Bean);
     P2_HELMET_CUSTOM_MACRO(Eskay);
