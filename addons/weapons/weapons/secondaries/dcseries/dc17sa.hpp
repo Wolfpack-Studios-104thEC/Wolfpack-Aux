@@ -21,6 +21,7 @@
 				scope=0;
 				compatibleItems[]=
 				{
+					"WPEC_Holosight_blu",
 					"Optre_Recon_Sight_Red"
 				};
 			};
