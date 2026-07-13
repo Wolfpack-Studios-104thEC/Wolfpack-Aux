@@ -130,6 +130,9 @@ class CfgVehicles {
 		smokeLauncherVelocity=10;
 		smokeLauncherOnTurret=0;
 		smokeLauncherAngle=360;
+
+		ace_cargo_space=44;
+		ace_cargo_hasCargo=1;
 		class ACE_Cargo
 		{
 			class Cargo
