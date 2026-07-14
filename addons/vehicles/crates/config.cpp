@@ -344,6 +344,8 @@ class CfgVehicles
 			ITEM_XX(ACE_tourniquet,30);\
 			ITEM_XX(kat_TXA,10);\
 			ITEM_XX(ACE_epinephrine,10);\
+			ITEM_XX(kat_IV_16,10);\
+			ITEM_XX(kat_IO_FAST,10);\
             ITEM_XX(ToolKit,1);\
 		};
 		class AnimationSources
