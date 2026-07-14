@@ -88,6 +88,7 @@ class CfgAmmo
 	class 3AS_Vulture_Shell;
 	class WPEC_CIS_Vulture_30mm_Ammo: 3AS_Vulture_Shell
 	{
+		aiAmmoUsageFlags="64 + 128 + 256 + 512";
 		model="\3AS\3AS_Weapons\Data\tracer_shell_red.p3d";
 		flaresize=4;
 		caliber=3;
@@ -95,7 +96,7 @@ class CfgAmmo
 		allowAgainstInfantry=1;
 		tracersEvery=1;
 		cost=30;
-		hit=120;
+		hit=50;
 		explosionEffects="ATRocketExplosion";
 		indirectHit=6;
 		mass=2;
