@@ -229,7 +229,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
-		armor=75;
+		armor=65;
 		faction="WPEC_CIS";
 		crew="WPEC_CIS_B1_Droid_Crew";
 		editorSubcategory="WPEC_CIS_aircraft";
@@ -261,7 +261,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
-		armor=75;
+		armor=65;
 		faction="WPEC_CIS";
 		crew="WPEC_CIS_B1_Droid_Crew";
 		editorSubcategory="WPEC_CIS_aircraft";
@@ -337,7 +337,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		faction="WPEC_CIS";
-		armor=100;
+		armor=65;
 		crew="WPEC_CIS_B1_Droid_Crew";
 		editorSubcategory="WPEC_CIS_aircraft";
 		vehicleClass="WPEC_CIS_aircraft";
