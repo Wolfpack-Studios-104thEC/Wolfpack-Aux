@@ -49,6 +49,44 @@
 				compatibleItems[]=
 				{
 					"WPEC_Holosight_blu",
+					
+					"WPEC_Holosight_2xblu",
+					"Optre_Recon_Sight"
+				};
+			};
+		};
+	};
+	class WPEC_3AS_DC15SGL: 3AS_DC15S_Base_F
+	{
+		baseWeapon="WPEC_3AS_DC15SGL";
+		scope=2;
+		displayName="[104th] DC-15S-GL";
+		model="\3AS\3AS_Weapons\Republic\DC15S\3AS_DC15S_GL.p3d";
+		picture="\3AS\3AS_Weapons\Republic\DC15S\Data\UI\3as_dc15sgl.paa";
+		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15SGL_Handanim.rtm"
+		};
+		muzzles[]=
+		{
+			"this",
+			"GL_1GL_F"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=50;
+			class MuzzleSlot: 3AS_MuzzleSlot_DC15S
+			{
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					"WPEC_Holosight_blu",
 					"Optre_Recon_Sight"
 				};
 			};

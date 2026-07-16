@@ -1,6 +1,5 @@
 
 #define CUSTOM_ITEM_LIST \
-    QGHELMET(phase2_Alpha), \
     QGHELMET(phase2_Apathy), \
     QGHELMET(phase2_Bean), \
     QGHELMET(phase2_Eskay), \

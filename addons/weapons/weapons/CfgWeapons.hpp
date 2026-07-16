@@ -37,7 +37,10 @@ class CfgWeapons
 	{
 		class Mode_SemiAuto;
 	};
-
+	class 3AS_DP23_Base_F;
+	class 3AS_DP23_GL: 3AS_DP23_Base_F
+	{};
+	class 3AS_CowsSlot_DP23;
     #include "primaries/primariesweaponinclude.hpp"
     #include "secondaries/secondariesweaponinclude.hpp"
     #include "tertiaries/tertiariesweaponinclude.hpp"

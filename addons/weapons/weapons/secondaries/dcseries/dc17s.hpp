@@ -90,7 +90,10 @@
 			holsterScale=0.94999999;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[]={};
+				compatibleItems[]=
+				{
+					"WPEC_Holosight_blu",
+				};
 				iconPosition[]={0.60000002,0.27000001};
 				iconScale=0.15000001;
 			};

@@ -4,6 +4,7 @@
     "WPEC_3AS_DC15A", \
     "WPEC_3AS_DC15AGL", \
     "WPEC_3AS_DC15S", \
+    "WPEC_3AS_DC15SGL", \
     "WPEC_3AS_DC15L", \
     "WPEC_3AS_DC15C", \
     "WPEC_3AS_DC15CGL", \

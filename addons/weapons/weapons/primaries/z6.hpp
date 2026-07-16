@@ -233,3 +233,8 @@
 			};
 		};
 	};
+	class WPEC_3AS_Z6_Stance: WPEC_3AS_Z6
+	{
+		displayName="[104th] Z-6 Rotary Cannon (Stanced)";
+		baseWeapon="WPEC_3AS_Z6_Stance";
+	};
