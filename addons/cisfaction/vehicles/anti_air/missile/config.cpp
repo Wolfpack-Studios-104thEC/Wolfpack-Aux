@@ -58,6 +58,12 @@ class CfgWeapons
 };
 class CfgVehicles
 {
+	class Land;
+	class LandVehicle: Land
+	{
+		class ViewPilot;
+		class NewTurret;
+	};
 	class StaticMGWeapon;
 	class AAA_System_01_base_F: StaticMGWeapon
 	{
@@ -104,7 +110,30 @@ class CfgVehicles
 			};
 		};
 	};
-	class OPTRE_Static_AA: AAA_System_01_base_F
+	class StaticWeapon: LandVehicle
+	{
+		class AnimationSources;
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewOptics;
+				class HitPoints;
+			};
+		};
+	};
+	class StaticAAWeapon: StaticWeapon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+			};
+		};
+		class EventHandlers;
+	};
+	class OPTRE_Static_AA: StaticAAWeapon
 	{
 		class Turrets: Turrets
 		{

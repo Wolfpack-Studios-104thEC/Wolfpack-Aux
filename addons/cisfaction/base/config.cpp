@@ -132,8 +132,8 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="WPEC_CIS_Base_B1_Droid";
-			containerClass="Supply150";
-			mass=100;
+			containerClass="Supply300";
+			mass=50;
 		};
 	};
 	class WPEC_CIS_B1_Droid_AT_U: WPEC_CIS_Base_B1_Droid_U
@@ -149,7 +149,7 @@ class CfgWeapons
 		displayName="[WPEC CIS] B1 AA Uniform";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass="WPEC_CIS_B1_Droid_Shield";
+			uniformClass="WPEC_CIS_B1_Droid_AA";
 		};
 	};
 	class WPEC_CIS_B1_Droid_Shield_U: WPEC_CIS_Base_B1_Droid_U
@@ -157,7 +157,7 @@ class CfgWeapons
 		displayName="[WPEC CIS] B1 AA Uniform";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass="WPEC_CIS_B1_Droid_AA";
+			uniformClass="WPEC_CIS_B1_Droid_Shield";
 		};
 	};
 	class WPEC_CIS_B1_Droid_Sniper_U: WPEC_CIS_Base_B1_Droid_U
@@ -291,15 +291,73 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_rps6mag
+		};
+	};
+	class WPEC_CIS_B1AA_backpack: JLTS_B1_backpack
+	{
+		author="WPEC Dev";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[WPEC CIS] Droid B1 AA Backpack ";
+		maximumload=600;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\characters\DroidArmor\data\b1_backpack_co.paa"
+		};
+		class TransportItems
+		{
+			class _xx_ACE_packingBandage
 			{
-				magazine="JLTS_RPS6_mag";
-				count=2;
+				name="ACE_packingBandage";
+				count=15;
 			};
-			class _xx_aa_mag
+		};
+		class TransportMagazines
+		{
+			class T_AA_Droid
 			{
-				count=2;
-				magazine="Titan_AA";
+				magazine="3AS_E60R_AT";
+				name="3AS_E60R_AT";
+				count=4;
+			};
+		};
+		
+	};
+	class WPEC_CIS_B1HAA_backpack: JLTS_B1_backpack
+	{
+		author="WPEC Dev";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[WPEC CIS] Droid B1 Heavy AA Backpack ";
+		maximumload=600;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\characters\DroidArmor\data\b1_backpack_co.paa"
+		};
+		class TransportItems
+		{
+			class _xx_ACE_packingBandage
+			{
+				name="ACE_packingBandage";
+				count=15;
+			};
+
+		};
+		class TransportMagazines
+		{
+			class T_HAA_Droid
+			{
+				magazine="ls_magazine_e60r_aa";
+				name="ls_magazine_e60r_aa";
+				count=4;
 			};
 		};
 	};
@@ -657,7 +715,7 @@ class CfgVehicles
 			"lsd_voice_b1Droid"
 		};
 		uniformClass="WPEC_CIS_B1_Droid_AA_U";
-		backpack="WPEC_CIS_B1_backpack";
+		backpack="WPEC_CIS_B1AA_backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"
@@ -681,14 +739,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"WPEC_CIS_E60R_AA",
+			"3AS_E60R_F",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"WPEC_CIS_E60R_AA",
+			"3AS_E60R_F",
 			"Throw",
 			"Put"
 		};
@@ -704,10 +762,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"WPEC_CIS_mag_E60R_AA",
-			"WPEC_CIS_mag_E60R_AA",
-			"WPEC_CIS_mag_E60R_AA",
-			"WPEC_CIS_mag_E60R_AA",
+			"3AS_E60R_AT",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -723,10 +778,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"WPEC_CIS_mag_E60R_AA",
-			"WPEC_CIS_mag_E60R_AA",
-			"WPEC_CIS_mag_E60R_AA",
-			"WPEC_CIS_mag_E60R_AA",
+			"3AS_E60R_AT",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -744,7 +796,7 @@ class CfgVehicles
 			"lsd_voice_b1Droid"
 		};
 		uniformClass="WPEC_CIS_B1_Droid_AA_U";
-		backpack="WPEC_CIS_B1_backpack";
+		backpack="WPEC_CIS_B1HAA_backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"
@@ -768,14 +820,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"WPEC_CIS_E60R_AA",
+			"ls_weapon_e60r_aa",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"WPEC_CIS_E60R_AA",
+			"ls_weapon_e60r_aa",
 			"Throw",
 			"Put"
 		};
@@ -791,11 +843,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"ls_magazine_e60r_aa",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -811,11 +859,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
-			"WPEC_CIS_mag_E60R_Heavy_AA",
+			"ls_magazine_e60r_aa",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -3676,6 +3720,62 @@ class CfgGroups
 						rank="PRIVATE";
 						position[]={-3,0,0};
 					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="PRIVATE";
+						position[]={0,-5,0};
+					};
+					class Unit4
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="PRIVATE";
+						position[]={-5,0,0};
+					};
+				};
+				class WPEC_CIS_ShieldWall
+				{
+					name="B1 Shielded Team";
+					side=0;
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction="WPEC_CIS";
+					class Unit0
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="MAJOR";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="PRIVATE";
+						position[]={0,-3,0};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="PRIVATE";
+						position[]={-3,0,0};
+					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="PRIVATE";
+						position[]={0,-5,0};
+					};
+					class Unit4
+					{
+						side=0;
+						vehicle="WPEC_CIS_B1_Droid_Shield";
+						rank="PRIVATE";
+						position[]={-5,0,0};
+					};
 				};
 				
 				class WPEC_CIS_Base_Duo
@@ -4349,6 +4449,42 @@ class CfgGroups
 					{
 						side=0;
 						vehicle="WPEC_CIS_BX_AT";
+						rank="PRIVATE";
+						position[]={-6,0,0};
+					};
+				};
+				class WPEC_CIS_BX_ShieldTeam
+				{
+					name="BX Shield Team";
+					side=0;
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction="WPEC_CIS";
+					ls_dispenser_available = 1;
+					class Unit0
+					{
+						side=0;
+						vehicle="WPEC_CIS_BX_Shield";
+						rank="CORPORAL";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=0;
+						vehicle="WPEC_CIS_BX_Shield";
+						rank="PRIVATE";
+						position[]={0,-3,0};
+					};
+					class Unit2
+					{
+						side=0;
+						vehicle="WPEC_CIS_BX_Shield";
+						rank="PRIVATE";
+						position[]={-3,0,0};
+					};
+					class Unit3
+					{
+						side=0;
+						vehicle="WPEC_CIS_BX_Shield";
 						rank="PRIVATE";
 						position[]={-6,0,0};
 					};
