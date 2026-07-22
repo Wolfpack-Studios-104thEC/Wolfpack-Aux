@@ -272,11 +272,27 @@
 			};
 			class StandardSound
 			{
-				soundsetshot[]=
+				begin1[]=
 				{
-					"3AS_LAAT_Shot_SoundSet"
+					"Z\wpec\addons\vehicles\weapons\sounds\LAAT_Nose.wss",
+					1,
+					1,
+					3000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
 				};
 			};
+			reloadTime=0.1375;
+			dispersion=0;
+			minRange=2;
+			minRangeProbab=0.30000001;
+			midRange=300;
+			midRangeProbab=0.69999999;
+			maxRange=800;
+			maxRangeProbab=0.050000001;
 		};
 	};
 	class WPEC_LAAT_Cannon_High: WPEC_LAAT_Cannon_Base
