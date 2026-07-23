@@ -715,7 +715,7 @@ class CfgVehicles
 			"lsd_voice_b1Droid"
 		};
 		uniformClass="WPEC_CIS_B1_Droid_AA_U";
-		backpack="WPEC_CIS_B1AA_backpack";
+		backpack="WPEC_CIS_B1HAA_backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"
@@ -739,14 +739,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"3AS_E60R_F",
+			"ls_weapon_e60r_aa",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"3AS_E60R_F",
+			"ls_weapon_e60r_aa",
 			"Throw",
 			"Put"
 		};
@@ -762,7 +762,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"3AS_E60R_AT",
+			"ls_magazine_e60r_aa",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -778,7 +778,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"3AS_E60R_AT",
+			"ls_magazine_e60r_aa",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
