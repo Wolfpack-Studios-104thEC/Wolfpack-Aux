@@ -7,6 +7,14 @@
 		ammo="WPEC_DC15XM_Energy";
 		count = 10;
 	};
+	class WPEC_DC15LE_EnergyMag: JLTS_DC15X_mag
+	{
+		scope=2;
+		displayName="[104th] 15LE Energy Cell";
+		displayNameShort = "Energy Cell";
+		ammo="WPEC_3AS_DC15LE_PlasmaAmmo";
+		count = 15;
+	};
 	class WPEC_DC15XM_PlasmaMag: JLTS_DC15X_mag
 	{
 		scope=2;

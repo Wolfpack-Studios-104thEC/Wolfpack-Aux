@@ -1,0 +1,590 @@
+class cfgSkeletons
+{
+	class MRC_DC15A_skeleton
+	{
+		skeletonInherit = "";
+		isDiscrete = 0;
+		SkeletonBones[]=
+		{
+			"sight"	,"",
+			"magazine"	,"",
+			"bullet_001"	,"magazine",
+			"bullet_002"	,"magazine",
+			"bullet_003"	,"magazine",
+			"bullet_004"	,"magazine",
+			"bullet_005"	,"magazine",
+			"bullet_006"	,"magazine",
+			"bullet_007"	,"magazine",
+			"bullet_008"	,"magazine",
+			"bullet_009"	,"magazine",
+			"bullet_010"	,"magazine",
+			"bullet_011"	,"magazine",
+			"bullet_012"	,"magazine",
+			"bullet_013"	,"magazine",
+			"bullet_014"	,"magazine",
+			"bullet_015"	,"magazine",
+			"bullet_016"	,"magazine",
+			"bullet_017"	,"magazine",
+			"bullet_018"	,"magazine",
+			"bullet_019"	,"magazine",
+			"bullet_020"	,"magazine",
+			"bullet_021"	,"magazine",
+			"bullet_022"	,"magazine",
+			"bullet_023"	,"magazine",
+			"bullet_024"	,"magazine",
+			"bullet_025"	,"magazine",
+			"bullet_026"	,"magazine",
+			"bullet_027"	,"magazine",
+			"bullet_028"	,"magazine",
+			"bullet_029"	,"magazine",
+			"bullet_030"	,"magazine",
+			"background_black"	,"bullet_030",
+			"selector"	,"",
+			"zasleh"	,"",
+			"attachment"	,""
+		};
+	};
+};
+class CfgModels
+{
+	class Default
+	{
+		sections[] = {};
+		sectionsInherit="";
+		skeletonName = "";
+	};
+	class DC15A:Default
+	{
+		skeletonName="MRC_DC15A_skeleton";
+		sections[]=
+		{
+			"magazine",
+			"camo1",
+			"zasleh",
+			"illum"
+		};
+/*<potential axis>
+ammo_counter
+background_black
+bipod
+bullet_001
+bullet_002
+bullet_003
+bullet_004
+bullet_005
+bullet_006
+bullet_007
+bullet_008
+bullet_009
+bullet_010
+bullet_011
+bullet_012
+bullet_013
+bullet_014
+bullet_015
+bullet_016
+bullet_017
+bullet_018
+bullet_019
+bullet_020
+bullet_021
+bullet_022
+bullet_023
+bullet_024
+bullet_025
+bullet_026
+bullet_027
+bullet_028
+bullet_029
+bullet_030
+camo1
+eye
+illum
+konec hlavne
+laser dir
+laser pos
+magazine
+pointer
+selector
+selector_axis
+sight
+usti hlavne
+zasleh
+</potential axis>*/
+		class Animations
+		{
+			class sight_hide
+			{
+				type="hide";
+				source="hasoptics";
+				selection="sight";
+//				sourceAddress = clamp;// (default)
+				minValue = 0.0;//rad 0.0
+				maxValue = 1.0;//rad 57.29578
+				hideValue = 0.5;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_001
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_001";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.032268062;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_002
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_002";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.064526126;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_003
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_003";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.09678419;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_004
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_004";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.12904225;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_005
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_005";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.16130032;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_006
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_006";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.19355838;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_007
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_007";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.22581644;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_008
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_008";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.25807452;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_009
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_009";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.2903326;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_010
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_010";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.32259065;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_011
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_011";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.3548487;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_012
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_012";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.38710678;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_013
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_013";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.41936484;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_014
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_014";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.4516229;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_015
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_015";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.48388097;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_016
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_016";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.51613903;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_017
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_017";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.5483971;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_018
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_018";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.58065516;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_019
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_019";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.61291325;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_020
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_020";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.6451713;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_021
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_021";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.6774294;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_022
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_022";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.7096874;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_023
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_023";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.7419455;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_024
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_024";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.77420354;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_025
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_025";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.80646163;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_026
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_026";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.83871967;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_027
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_027";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.87097776;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_028
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_028";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.9032358;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_029
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_029";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.9354939;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class bullet_030
+			{
+				type="hide";
+				source="revolving";
+				selection="bullet_030";
+				sourceAddress = mirror;
+				minValue = -1.0;//rad -57.29578
+				maxValue = 0.0;//rad 0.0
+				hideValue = 0.9677519;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class no_magazine
+			{
+				type="hide";
+				source="hasmagazine.0";
+				selection="magazine";
+//				sourceAddress = clamp;// (default)
+				minValue = 0.0;//rad 0.0
+				maxValue = 1.0;//rad 57.29578
+				hideValue = 0.5;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class no_magazine_2
+			{
+				type="hide";
+				source="hasmagazine.1";
+				selection="attachment";
+//				sourceAddress = clamp;// (default)
+				minValue = 0.0;//rad 0.0
+				maxValue = 1.0;//rad 57.29578
+				hideValue = 0.5;
+//				unHideValue = -1.0;//(default)
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class magazine_hide
+			{
+				type="hide";
+				source="reloadmagazine";
+				selection="magazine";
+//				sourceAddress = clamp;// (default)
+				minValue = 0.0;//rad 0.0
+				maxValue = 1.0;//rad 57.29578
+				hideValue = 0.25;
+				unHideValue = 0.6;
+				animPeriod = 0.0;
+				initPhase = 0.0;
+			};
+			class safety_mode_rot
+			{
+				type="rotationZ";
+				source="weaponmode";
+				selection="selector";
+				axis="selector_axis";//*probably*
+//				sourceAddress = clamp;// (default)
+				minValue = 0.0;//rad 0.0
+				maxValue = 0.25;//rad 14.323945
+				angle0 = 0.0;//rad 0.0;
+				angle1 = -0.90757126;//rad -52.000004;
+				animPeriod = 0.0;
+				initPhase = 0.0;
+//				memory = true;//(default assumed)
+			};
+			class zaslehrot
+			{
+				type="rotation";
+				source="revolving.0";
+				selection="zasleh";
+				axis="zasleh_axis";//*probably*
+				sourceAddress = loop;
+				minValue = 0.0166665;//rad 0.9549201
+				maxValue = 0.016666668;//rad 0.9549297
+				angle0 = 0.0;//rad 0.0;
+				angle1 = 6.2831855;//rad 360.0;
+				animPeriod = 0.0;
+				initPhase = 0.0;
+//				memory = true;//(default assumed)
+			};
+		};//</Animations>
+	};//</Modelclass>
+};//</CfgModels>
