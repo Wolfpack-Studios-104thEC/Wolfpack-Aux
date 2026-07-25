@@ -320,8 +320,8 @@ class CfgVehicles
 		{
 			class T_AA_Droid
 			{
-				magazine="3AS_E60R_AT";
-				name="3AS_E60R_AT";
+				magazine="WPEC_CIS_mag_E60R_Heavy_AA";
+				name="WPEC_CIS_mag_E60R_Heavy_AA";
 				count=4;
 			};
 		};
@@ -355,8 +355,8 @@ class CfgVehicles
 		{
 			class T_HAA_Droid
 			{
-				magazine="ls_magazine_e60r_aa";
-				name="ls_magazine_e60r_aa";
+				magazine="WPEC_CIS_mag_E60R_AA";
+				name="WPEC_CIS_mag_E60R_AA";
 				count=4;
 			};
 		};
@@ -739,14 +739,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"ls_weapon_e60r_aa",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"ls_weapon_e60r_aa",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
@@ -762,7 +762,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"ls_magazine_e60r_aa",
+			"WPEC_CIS_mag_E60R_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -778,7 +778,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"ls_magazine_e60r_aa",
+			"WPEC_CIS_mag_E60R_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -820,14 +820,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"ls_weapon_e60r_aa",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"ls_weapon_e60r_aa",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
@@ -843,7 +843,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"ls_magazine_e60r_aa",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -859,7 +859,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"ls_magazine_e60r_aa",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
