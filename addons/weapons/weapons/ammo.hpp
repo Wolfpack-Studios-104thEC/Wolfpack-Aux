@@ -6,6 +6,9 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
+		
 	};
 	class WPEC_3AS_DCMid_PlasmaAmmo: 3AS_EC40_BluePlasma
 	{
@@ -13,6 +16,8 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_DCMid_OCPlasmaAmmo: 3AS_EC40_BluePlasma
 	{
@@ -21,6 +26,8 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_DCHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
@@ -28,6 +35,8 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_DCExtraHeavy_PlasmaAmmo: 3AS_EC50_bluePlasma
 	{
@@ -36,6 +45,8 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_Z6_PlasmaAmmo: 3AS_EC60_bluePlasma
 	{
@@ -44,12 +55,25 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_Sniper_PlasmaAmmo: 3AS_EC80_BluePlasma
 	{
 		scope=2;
 		effectfly="3AS_PlasmaBolt_Medium_Green_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
+	};
+	class WPEC_3AS_DC15LE_PlasmaAmmo: 3AS_EC60_bluePlasma
+	{
+		hit=20;
+		scope=2;
+		effectfly="3AS_PlasmaBolt_Blue_Fly";
+		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_ChaingunAmmo: 3AS_Chaingun_Ammo
 	{
@@ -57,6 +81,8 @@
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_3AS_R_Mk40_AT: 3AS_R_Mk40_AT
 	{
@@ -91,6 +117,8 @@
 		deleteParentWhenTriggered=0;
 		explosive=1;
 		cost=50;
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_DC15XM_Energy: JLTS_bullet_sniper_blue
 	{
@@ -98,6 +126,8 @@
 		model="\A3\Weapons_f\Data\bullettracer\shell_tracer_yellow.p3d";
 		tracerScale=2;
 		effectfly="3AS_PlasmaBolt_Yellow_Fly";
+		coefGravity=0;
+		airFriction=0;
 	};
 //Rockets
 	class WPEC_MK1_AT: RocketBase
@@ -253,6 +283,8 @@
 		hit=6;
 		//effectfly="104th_3AS_FX_Bullet_Teal";
 		effectFly="3AS_PlasmaBolt_Blue_Fly";
+		coefGravity=0;
+		airFriction=0;
 	};
 	class WPEC_MK2_Stun_PistolAmmo: JLTS_bullet_stun
 	{

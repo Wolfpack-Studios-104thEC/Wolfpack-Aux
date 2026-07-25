@@ -56,6 +56,31 @@ class CfgWeapons
 		};
 	};
 };
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
 class CfgVehicles
 {
 	class Land;
@@ -139,6 +164,7 @@ class CfgVehicles
 		{
 			class MainTurret;
 		};
+		class Components;
 	};
 	class WPEC_CIS_Static_AA: OPTRE_Static_AA
 	{
@@ -167,6 +193,63 @@ class CfgVehicles
 					"WPEC_CIS_AA_Condor_Mag_6",
 					"WPEC_CIS_AA_Condor_Mag_6",
 					"WPEC_CIS_AA_Condor_Mag_6"
+				};
+			};
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3500;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						typeRecognitionDistance=3500;
+						maxTrackableSpeed=600;
+						angleRangeHorizontal=60;
+						angleRangeVertical=40;
+						animDirection="mainGun";
+						aimDown=-0.5;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=10000;
+							maxRange=10000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=7000;
+							maxRange=7000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=7000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=100;
+						aimDown=-45;
+						maxTrackableSpeed=1388.89;
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink
+					{
+					};
 				};
 			};
 		};

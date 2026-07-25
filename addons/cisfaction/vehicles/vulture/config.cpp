@@ -253,8 +253,63 @@ class CfgVehicles
 		{
 			EjectionSeatEnabled=0;
 		};
+			 VTOLPitchInfluence = 10;
+			 VTOLRollInfluence = 10;
+			 VTOLYawInfluence = 12;
+			 htMin = 60;
+			 htMax = 1800;
+			 afMax = 200;
+			 mfMax = 100;
+			 mFact = 0;
+			 tBody = 0;
+			 radartype = 4;
+			 lockdetectionsystem = "2 + 8 + 4";
+			 incommingmissliedetectionsystem = 16;
+			 maxSpeed = 1400;
+			 landingAoa = 6 * 3.1415 / 180; // landing angle of attack in radians, for AI
+			 landingSpeed = 215;			   // for AI to approach the runawy, the plane should be stable at this speed
+			 stallSpeed = 190;
+			 stallWarningTreshold = 0.1;
+			 armorStructured = 1;
+			 envelope[] = {0,0.01,0.2,4,6,7.6,8.4,9.2,9.4,9.6,9.7,9.8,8,1};
+			 draconicForceXCoef = 4.5;
+			 draconicForceYCoef = 3;
+			 draconicForceZCoef = 6;
+			 draconicTorqueXCoef = 2.0999999;
+			 draconicTorqueYCoef = -0.3;
+			 angleOfIndicence = 0;
+			 airFriction0[] = {100, 50, 12};
+			 airFriction1[] = {100, 50, 12};
+			 airFriction2[] = {100, 50, 12};
+			 altNoForce = 20000;
+			 altFullForce = 20000;
+			 //air physics
+			 elevatorCoef[] = {1};
+			 elevatorSensitivity = 1;
+			 elevatorControlsSensitivityCoef = 4;
+			 aileronCoef[] = {2};
+			 aileronSensitivity = 1;
+			 aileronControlsSensitivityCoef = 5;
+			 rudderCoef[] = {3.5};
+			 rudderInfluence = 0.9;
+			 rudderControlsSensitivityCoef = 6;
+			 thrustCoef[] = {2,2.17,2.15,3.14,3.13,3.12,3.1,3.07,2.99,2.2,2,2};
+			 irScanRangeMin = 10;
+			 irScanRangeMax = 10000;
+			 irScanToEyeFactor = 8;
+			 fuelCapacity = 2000;
+			 wheelSteeringSensitivity = 1.5;
+			 maxOmega = 2000;
+			 airBrake = 1;
+			 airBrakeFrictionCoef = 50;
+			 flaps = 0;
+			 flapsFrictionCoef = 0.32;
+			 gearsUpFrictionCoef = 0.6;
+			 airFrictionCoefs0[] = {0.0, 0.0, 0.0};
+			 airFrictionCoefs1[] = {0.1, 0.5, 0.0066};
+			 airFrictionCoefs2[] = {0.001, 0.005, 0.000068};
 	};
-	class WPEC_CIS_Vulture_CAS: 3AS_Vulture_Base_F
+	class WPEC_CIS_Vulture_CAS: WPEC_CIS_Vulture_Standard
 	{
 		displayName="Vulture CAS ";
 		author="WPEC Dev";
@@ -329,7 +384,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class WPEC_CIS_Vulture_Elite: 3AS_Vulture_Base_F
+	class WPEC_CIS_Vulture_Elite: WPEC_CIS_Vulture_Standard
 	{
 		displayName="Vulture Elite ";
 		author="WPEC Dev";
