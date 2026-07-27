@@ -112,6 +112,10 @@ class CfgEditorSubcategories
 	{
 		displayName=" Special Forces";
 	};
+	class WPEC_CIS_Geonosians
+	{
+		displayName= "Geonosians Mercs";
+	};
 };
 class CfgWeapons
 {
