@@ -68,7 +68,7 @@
 	};
 	class WPEC_3AS_DC15LE_PlasmaAmmo: 3AS_EC60_bluePlasma
 	{
-		hit=20;
+		hit=15;
 		scope=2;
 		effectfly="3AS_PlasmaBolt_Blue_Fly";
 		timeToLive=6;
