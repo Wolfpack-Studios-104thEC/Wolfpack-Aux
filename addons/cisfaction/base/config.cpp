@@ -70,6 +70,15 @@ class CfgFactionClasses
 		side=0;
 	};
 };
+
+class CfgEditorCategories
+{
+	class WPEC_CIS_GEO
+	{
+		displayName="[WPEC] Geonosian Auxilliary";
+	};
+};
+
 class CfgEditorSubcategories
 {
 	class WPEC_CIS_inf
@@ -111,10 +120,6 @@ class CfgEditorSubcategories
 	class WPEC_CIS_Special
 	{
 		displayName=" Special Forces";
-	};
-	class WPEC_CIS_Geonosians
-	{
-		displayName= "Geonosians Mercs";
 	};
 };
 class CfgWeapons
