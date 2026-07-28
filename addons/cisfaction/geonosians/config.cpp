@@ -18,12 +18,14 @@ class cfgPatches
             "WPEC_Geonosian_Security_Uniform",
 			"WPEC_Geonosian_Scientist_Uniform",
 			"WPEC_Geonosian_SonicBlaster_Uniform",
+			"WPEC_Geonosian_E5_Uniform",
 		};
 		units[]=
 		{
             "WPEC_Geonosian_Security_Unit",
 			"WPEC_Geonosian_Scientist_Unit",
 			"WPEC_Geonosian_SonicBlaster_Unit",
+			"WPEC_Geonosian_E5_Unit",
 		};
 	};
 };
