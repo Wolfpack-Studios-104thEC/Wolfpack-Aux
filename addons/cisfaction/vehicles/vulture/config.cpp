@@ -8,6 +8,7 @@ class CfgPatches
 		{
 			"WPEC_CIS_Vulture_Standard",
 			"WPEC_CIS_Vulture_CAS",
+			"WPEC_CIS_Vulture_Bombs",
 			"WPEC_CIS_Vulture_Elite"
 		};
 		requiredAddons[]={};
@@ -468,6 +469,98 @@ class CfgVehicles
 							"3AS_PylonRack_Vulture_1Rnd_Missile_AA",
 							"3AS_PylonRack_Vulture_1Rnd_Missile_AA",
 							"3AS_PylonRack_Vulture_1Rnd_Missile_AA"
+						};
+					};
+				};
+			};
+		};
+	};
+	class WPEC_CIS_Vulture_Bombs: WPEC_CIS_Vulture_Standard
+	{
+		displayName="Vulture Bombs ";
+		author="WPEC Dev";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		faction="WPEC_CIS";
+		armor=65;
+		crew="WPEC_CIS_B1_Droid_Crew";
+		editorSubcategory="WPEC_CIS_aircraft";
+		vehicleClass="WPEC_CIS_aircraft";
+		editorPreview="\3as\3as_vulture\3as_Vulture_dynamicLoadout.jpg";
+		driverCanEject=0;
+		hiddenselections[]=
+		{
+			"camo"
+		};
+		hiddenselectionstextures[] = {"3as\3as_vulture\data\VultureDroid_CO.paa"};
+		class EjectionSystem
+		{
+			EjectionSeatEnabled=0;
+		};
+		weapons[]=
+		{
+			"WPEC_CIS_Vulture_cannon_Weapon",
+			"3AS_HMP_Cluster",
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"WPEC_CIS_Vulture_30mm_Mag_x1000",
+			"WPEC_CIS_Vulture_30mm_Mag_x1000",
+			"3AS_PylonHMP_Cluster",
+			"3AS_PylonHMP_Cluster",
+			"3AS_PylonHMP_Cluster",
+			"3AS_PylonHMP_Cluster",
+			"120Rnd_CMFlare_Chaff_Magazine",
+			"120Rnd_CMFlare_Chaff_Magazine",
+			"120Rnd_CMFlare_Chaff_Magazine",
+			"120Rnd_CMFlare_Chaff_Magazine"
+		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture="a3\air_f_gamma\plane_fighter_03\data\ui\plane_a143_3den_ca.paa";
+				class pylons
+				{
+					class pylons1: pylons1
+					{
+						attachment="";
+					};
+					class pylons2: pylons2
+					{
+						attachment="";
+					};
+					class pylons3: pylons3
+					{
+						attachment="";
+					};
+					class pylons4: pylons4
+					{
+						attachment="";
+					};
+					class pylons5: pylons5
+					{
+						attachment="";
+					};
+					class pylons6: pylons6
+					{
+						attachment="";
+					};
+				};
+				class Presets
+				{
+					class Empty
+					{
+						displayName="Empty";
+						attachment[]={};
+					};
+					class Default
+					{
+						displayName="Default";
+						attachment[]=
+						{
 						};
 					};
 				};
