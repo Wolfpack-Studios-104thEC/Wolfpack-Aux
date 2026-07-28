@@ -88,6 +88,7 @@ class CfgWeapons
 					""
 				};
 			};
+			dispersion=0.0030000001;
 		};
 		class FullAuto: Mode_FullAuto
 		{
@@ -111,6 +112,7 @@ class CfgWeapons
 					"3AS_E5_Shot_SoundSet"
 				};
 			};
+			dispersion=0.0030000001;
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{

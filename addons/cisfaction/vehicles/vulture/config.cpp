@@ -493,7 +493,7 @@ class CfgVehicles
 		{
 			"camo"
 		};
-		hiddenselectionstextures[] = {"3as\3as_vulture\data\VultureDroid_CO.paa"};
+		hiddenselectionstextures[] = {"3as\3as_vulture\data\vulturedroid_tradefederation_brown_co.paa"};
 		class EjectionSystem
 		{
 			EjectionSeatEnabled=0;
