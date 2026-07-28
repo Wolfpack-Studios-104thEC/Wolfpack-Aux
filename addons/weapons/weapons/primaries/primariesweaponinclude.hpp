@@ -1,5 +1,6 @@
 
     #include "dcseries/dc15a.hpp"
+    #include "dcseries/dc15le.hpp"
     #include "dcseries/dc15c.hpp"
     #include "dcseries/dc15L.hpp"
     #include "dcseries/dc15s.hpp"

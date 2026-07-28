@@ -104,7 +104,7 @@ class CfgAmmo
 	};
 	class WPEC_CIS_Ammo_65: WPEC_CIS_Ammo_Core
 	{
-		hit=14;
+		hit=12;
 		model="\3AS\3AS_Weapons\Data\tracer_red.p3d";
 		effectFly="3AS_PlasmaBolt_Red_Fly";
 		visiblefire=5;
@@ -118,7 +118,7 @@ class CfgAmmo
 	};
 	class WPEC_CIS_Ammo_B2: WPEC_CIS_Ammo_Core
 	{
-		hit=22;
+		hit=18;
 		model="\3AS\3AS_Weapons\Data\tracer_red.p3d";
 		effectFly="3AS_PlasmaBolt_Red_Fly";
 		visiblefire=5;
@@ -147,7 +147,7 @@ class CfgAmmo
 	};
 	class WPEC_CIS_Ammo_45acp: WPEC_CIS_Ammo_Core
 	{
-		hit=10;
+		hit=5;
 		audibleFire=50;
 		dangerRadiusBulletClose=4;
 		dangerRadiusHit=10;

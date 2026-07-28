@@ -70,6 +70,15 @@ class CfgFactionClasses
 		side=0;
 	};
 };
+
+class CfgEditorCategories
+{
+	class WPEC_CIS_GEO
+	{
+		displayName="[WPEC] Geonosian Auxilliary";
+	};
+};
+
 class CfgEditorSubcategories
 {
 	class WPEC_CIS_inf
@@ -320,8 +329,8 @@ class CfgVehicles
 		{
 			class T_AA_Droid
 			{
-				magazine="3AS_E60R_AT";
-				name="3AS_E60R_AT";
+				magazine="WPEC_CIS_mag_E60R_Heavy_AA";
+				name="WPEC_CIS_mag_E60R_Heavy_AA";
 				count=4;
 			};
 		};
@@ -355,8 +364,8 @@ class CfgVehicles
 		{
 			class T_HAA_Droid
 			{
-				magazine="ls_magazine_e60r_aa";
-				name="ls_magazine_e60r_aa";
+				magazine="WPEC_CIS_mag_E60R_AA";
+				name="WPEC_CIS_mag_E60R_AA";
 				count=4;
 			};
 		};
@@ -715,7 +724,7 @@ class CfgVehicles
 			"lsd_voice_b1Droid"
 		};
 		uniformClass="WPEC_CIS_B1_Droid_AA_U";
-		backpack="WPEC_CIS_B1AA_backpack";
+		backpack="WPEC_CIS_B1HAA_backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"
@@ -739,14 +748,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"3AS_E60R_F",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"3AS_E60R_F",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
@@ -762,7 +771,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"3AS_E60R_AT",
+			"WPEC_CIS_mag_E60R_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -778,7 +787,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"3AS_E60R_AT",
+			"WPEC_CIS_mag_E60R_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -820,14 +829,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"WPEC_CIS_E5",
-			"ls_weapon_e60r_aa",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"WPEC_CIS_E5",
-			"ls_weapon_e60r_aa",
+			"WPEC_CIS_E60R_AA",
 			"Throw",
 			"Put"
 		};
@@ -843,7 +852,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"ls_magazine_e60r_aa",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
@@ -859,7 +868,7 @@ class CfgVehicles
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
 			"WPEC_CIS_E5_Mag",
-			"ls_magazine_e60r_aa",
+			"WPEC_CIS_mag_E60R_Heavy_AA",
 			"SmokeShell",
 			"SmokeShellGreen"
 		};
