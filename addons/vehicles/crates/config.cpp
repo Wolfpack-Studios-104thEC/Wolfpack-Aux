@@ -221,6 +221,7 @@ class CfgVehicles
 			MAG_XX(3AS_10Rnd_EC30_Pellets,30);\
 			MAG_XX(3AS_1Rnd_EC80_Flechette,30);\
 			MAG_XX(ls_magazine_dc17s,30);\
+			MAG_XX(WPEC_DC15LE_EnergyMag,30);\
 		};
 		class TransportBackpacks
 		{
