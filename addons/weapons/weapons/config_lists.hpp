@@ -20,7 +20,10 @@
     "WPEC_RPS6_K_Odin", \
     "WPEC_RPS6_K", \
     "WPEC_JLTS_DC15X", \
-    "WPEC_JLTS_DC17SA"
+    "WPEC_JLTS_DC17SA", \
+    "WPEC_DC15LE", \
+    "WPEC_DP23_3AS", \
+    "WPEC_3AS_Z6_Stance" 
 
 #define MAGAZINE_LIST \
     "WPEC_3AS_DC15S_Mag", \

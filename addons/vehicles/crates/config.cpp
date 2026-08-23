@@ -212,7 +212,6 @@ class CfgVehicles
             MAG_XX(WPEC_MK2_AT_Mag,5);\
             MAG_XX(WPEC_MK3_AP_Mag,5);\
             MAG_XX(WPEC_MK4_AP_Mag,5);\
-            MAG_XX(Odins_Despair,5);\
             MAG_XX(WPEC_3AS_Chaingun_Mag,5);\
             MAG_XX(3AS_JLTS_MK43_AT,4);\
             MAG_XX(3AS_JLTS_MK39_AA,4);\

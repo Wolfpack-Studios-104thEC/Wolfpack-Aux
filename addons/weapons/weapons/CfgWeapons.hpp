@@ -41,6 +41,8 @@ class CfgWeapons
 	class 3AS_DP23_GL: 3AS_DP23_Base_F
 	{};
 	class 3AS_CowsSlot_DP23;
+	class 3AS_DC15S_GL;
+	class GL_3GL_F;
     #include "primaries/primariesweaponinclude.hpp"
     #include "secondaries/secondariesweaponinclude.hpp"
     #include "tertiaries/tertiariesweaponinclude.hpp"
